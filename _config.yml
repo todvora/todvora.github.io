@@ -1,0 +1,15 @@
+# Site settings
+title: Tomas Dvorak - programming, travel, sport
+email: todvora@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Software Developer (Java, Node.js, MongoDB, security), who loves travelling and sports (ski, bike, via ferrata). Also vegetarian and passionate reader. Currently living in Austria and enjoying the mountains.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://todvora.github.io" # the base hostname & protocol for your site
+twitter_username: tdvorak
+github_username:  todvora
+
+# Build settings
+markdown: redcarpet
+
+# Outputting
+permalink: "/posts/:title.html"
