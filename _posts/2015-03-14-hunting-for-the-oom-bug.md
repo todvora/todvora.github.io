@@ -9,17 +9,17 @@ You know it, you have probably experienced it too. Your tests are slowing down, 
 With all the modern hardware is easy to overlook, that something has gone wrong. My working computer (i7, 16G RAM) should be fast enough to run simple test suite of 350 tests. But one day, the tests started to failing. The OutOfMemory error happened every time. Initially I thought, that one of the latest tests is to blame. But reverting several commits back didn't helped. The error was still there. It has to be something tricky, that slowly eats all the memory. With every added test it slows the whole suite down. How can you find it?
 
 ### Visualize your VM
-Luckily there is a tool included in JDK distribution, that helps you detect regressions like this. It's called [Java VisualVM](http://visualvm.java.net/). It connects to JVM and displays memory/CPU usage, threads, heap and most important - the types and counts of objects, that stays in the memory. 
+Luckily there is a tool included in JDK distribution, that helps you detect regressions like this. It's called [Java VisualVM](http://visualvm.java.net/), connects to JVM and displays memory/CPU usage, threads, heap, the types and count of objects in the memory.
 
 ![Memory consumption, failing tests](/images/oom/graph_failed.png)
 
-All the symptoms are there - memory consumption is quickly rising, the GC runs more and more often, the CPU goes crazy. Lets see, what are the objects in our memory.
+All the symptoms are there - memory consumption is quickly rising, the GC runs more and more often, the CPU goes crazy. Let's see, what are the objects in our memory.
 
 ![Memory dump, tests failing](/images/oom/memory_failed.png)
 
 ### Mockito to blame?
 
-My tests use the [Mockito framework](http://mockito.org/). I love Mockito. Simple, elegant and powerful. But 2 500 000 of [InvocationImpl](https://github.com/mockito/mockito/blob/master/src/org/mockito/internal/invocation/InvocationImpl.java) objects is too much. These objects holds all the information about mock invocations. Mainly for later verification. Usually something like this:
+My tests use the [Mockito framework](http://mockito.org/). I love Mockito. Simple, elegant and powerful. But 2 500 000 of [InvocationImpl](https://github.com/mockito/mockito/blob/master/src/org/mockito/internal/invocation/InvocationImpl.java) objects is too much. These objects hold all the information about mock invocations. Usually for later verification:
 
 
 ```
@@ -40,7 +40,7 @@ public void setUp() throws Exception {
 }
 ```
 
-This setUp seems strange. Mainly because there is no @After method, that removes this [Appender](https://logging.apache.org/log4j/2.x/manual/appenders.html). It is static. It is logging - so heavily used indeed. And it is not cleaned up. We probably found our suspect. Quick debugging session confirmed this idea. The appenders are added and never removed.
+This setUp seems strange. There is no @After method, that removes this [Appender](https://logging.apache.org/log4j/2.x/manual/appenders.html). It is static. It is logging - so heavily used indeed. And it is not cleaned up. We probably found our suspect. Quick debugging session confirmed this idea. The appenders are added and never removed.
 
 Lets add to every affected test simple cleanup method:
 
@@ -60,5 +60,7 @@ There are no instances of ```InvocationImpl``` in the top of the charts.
 
 ![Memory dump, tests OK](/images/oom/memory_ok.png)
 
+The Appenders stayed attached all the time during tests suite execution. Every interaction with log4j, like ```log.warn``` and ```log.error``` caused new record in mock invocation history. That happened for every attached mock again. With 10 attached mocked appenders was every invocation recorded 10 times.
+
 ### Lesson learned
-Be cautious when you are dealing with static code. Especially, when you are passing mocks, that records every interaction. Clean up all the tests resources you created. And mainly, use the tools given to you. Without [JVisualVM](http://visualvm.java.net/) I would be hunting this bug till now. 
+Be cautious when you are dealing with any static code. Especially, when you are passing mocks, that record every interaction. Clean up all the tests resources you created. And mainly, use the tools given to you. Without [JVisualVM](http://visualvm.java.net/) I would be hunting this bug till now.
