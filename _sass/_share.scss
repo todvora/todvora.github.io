@@ -1,0 +1,15 @@
+.share-page {
+    text-align: center;
+    background: $grey-color-light;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5 * $spacing-unit 0;
+    a {
+        font-weight: 700;
+        margin-left: 10px;
+    }
+}
+
+.share-page:before {
+  content: " Share this on → ";
+}

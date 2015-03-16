@@ -12,4 +12,8 @@ github_username:  todvora
 markdown: redcarpet
 
 # Outputting
-permalink: "/posts/:title.html"
+paginate: 10
+permalink: "/posts/:title"
+
+gems:
+  - jekyll-sitemap

@@ -4,8 +4,88 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+## Tomas Dvorak
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+### Contact
+- E-mail: [todvora@gmail.com](mailto:todvora@gmail.com)
+- Web: [www.tomas-dvorak.cz](http://www.tomas-dvorak.cz)
+- GitHub: [github.com/todvora](https://github.com/todvora)
+- LinkedIn: [www.linkedin.com/in/dvoraktomas](https://www.linkedin.com/in/dvoraktomas)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+### Education
+- 2009–2011 : University of West Bohemia in Pilsen, The Faculty of Applied Sciences
+  Master study, Computer Science - Software Engineering
+  (Completed only first two semesters, then terminated because of work reasons)
+- 2005–2009 : University of West Bohemia in Pilsen, The Faculty of Applied Sciences
+  Computer Science and Engineering - Bachelor study - Information Technologies
+- 2001–2005 : Gymnasium Cheb
+  Graduation : Math, IT, English, Czech language
+
+### Experience
+
+- **March 2014 - Present: Software Developer, Skidata A.G., Austria**
+
+    Main technologies: Java EE, JBoss, Hibernate, WebServices, JUnit+Mockito, Oracle
+
+
+
+- **August 2008 – February 2014 (5 years 7 months): Freelance software/web developer**
+
+    Open source projects, non profit project odcizena-vozidla.cz, web presentations for customers, data mining
+
+    Webapp security audits (mostly SQL injection and XSS vulnerabilities, unauthorized access)
+
+    Main technologies: Java, PHP, Node.js, Python, Javascript, Bash, MongoDB
+
+
+- **September 2008 – July 2013 (4 years 11 months): IVITERA a.s., Czech Republic**
+    Software development manager, Java developer, architect, team leader
+
+    Responsible for development, long term maintenance and enhancement of Java based web portals. For example www.educity.cz www.hrnews.cz www.selflearning.cz www.jobcity.cz and many other
+
+    Providing data and customized web applications for large companies mostly in telco, IT, financial and energo sectors
+
+    Website traffic analysis tool development - tens of millions of records every year, realtime data, Wicket frontend, MongoDB storage
+
+    Large set of tests, tools and Continuous Integration utilities for quality assurance (Teamcity, JUnit, Nagios, Git)
+
+    Main backend technologies: Java, Groovy, Wicket, GWT, Webservices, NoSQL DB, Python, Apache, Tomcat
+    Frontend technologies: JavaScript, Bootstrap, Mustache, Velocity
+
+
+- **May 2008 – April 2010 (2 years): Elektro Euron s.r.o., Czech Republic**
+    Management of ICT Infrastructure, administering Windows SBS 2003, Debian, management and maintenance of workstations, Helios IS administration, network monitoring
+
+- **November 2007 – April 2008 (6 months): Netspring s.r.o., Czech Republic**
+    PHP programmer, CMS and CRM development and modifications, configuration and administration of MySQL, Smarty template language, communication with customers
+
+- **March 2007 –  March 2008 (1 year): YoungBrains s.r.o., Czech Republic**
+    Developer of portal for real estate companies, J2EE and postgreSQL, designer of object model, backend implementations
+
+### Languages
+- Czech (Native)
+- English (Professional working proficiency)
+- German (Limited working proficiency)
+- Spanish (Elementary proficiency)
+
+### Projects
+- [Wicket Lambdamodel](https://github.com/todvora/wicket-lambdamodel)
+- [Database of Stolen Cars](http://www.odcizena-vozidla.cz/)
+- [Apache Velocity templates validator](https://github.com/todvora/velocity-validator)
+- [Unofficial API](http://www.policeapi.cz/) to the official CZ police database of stolen vehicles
+- [Interactive map of Czechpoints] (https://todvora.github.io/czechpoints/) (network of assisted public administration centres):
+- [Variety - schema analyzer for MongoDB](https://github.com/variety/variety)
+- And other, listed on my [LinkedIn Profile](https://www.linkedin.com/in/dvoraktomas).
+
+### Certificates
+- [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) @ Coursera
+- [Cryptography](https://www.coursera.org/course/crypto) I @ Coursera
+- [R programming](https://www.coursera.org/course/rprog) @ Coursera
+- [Machine Learning](https://www.coursera.org/course/ml) @ Coursera
+- [MongoDB for Java developers](https://university.mongodb.com/courses/10gen/M101J/2013_October/info) @ 10gen
+- [MongoDB for DBAs](https://university.mongodb.com/courses/10gen/M102/2013_December/about) @ 10gen
+- [NetBeans Certified Associate](https://edu.netbeans.org/courses/nbplatform-certified-training/) @ ZČU Pilsen
+- Designing What to Design: A Task-Focused Conceptual Model
+- SEO for webmasters by H1
+
+For up to date informations, skills, recommendations and experience please visit also my [LinkedIn Profile](https://www.linkedin.com/in/dvoraktomas).

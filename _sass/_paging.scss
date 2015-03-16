@@ -1,0 +1,11 @@
+a.previous:before {
+  content: "◂ ";
+}
+
+a.next:after {
+  content: " ▸";
+}
+
+.pagination a {
+  padding: 10px;
+}
