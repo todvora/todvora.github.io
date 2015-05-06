@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Hunting for the OOM bug in my test suite"
+title:  Hunting for the OOM bug in my test suite
 date:   2015-03-14 05:51:47
 tags:
-  -java
-  -tests
-  -junit
-  -mockito
+- java
+- tests
+- junit
+- mockito
+image: /images/oom/graph_failed.png
 ---
 You know it, you have probably experienced it too. Your tests are slowing down, memory consumption is rising, the CPU is burning itself. There has to be a bug somewhere. Maybe one bad line of code, that ruins everything. But how can you find it?
 

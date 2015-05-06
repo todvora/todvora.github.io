@@ -7,6 +7,7 @@ tags:
 - eures
 - práce v zahraničí
 - práce v německu
+image: http://www.tomas-dvorak.cz/images/117t.jpg
 ---
 Ve středu 4.7.2012 jsem coby pozorovatel a doprovod absolvoval návštěvu zástupců úřadu práce z Weidenu v Plzni a rád bych celý proces popsal a uvedl údaje, kontakty a odkazy, které žádný zpravodajský server neuvedl a nikdo se ani neobtěžoval napsat, na které adrese se akce pořádá. Zřejmě se počítá s tím, že uchazeč o práci občas úřad práce navštíví tak jako tak a přečte si informace nalepené na nástěnce...
 

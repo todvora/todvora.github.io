@@ -7,6 +7,7 @@ tags:
 - vyhledávání
 - mvčr
 - datová zpráva
+image: http://www.tomas-dvorak.cz/images/141.jpg
 ---
 Po dlouhé době se do datových schránek dá dostat z libovolného systému a prohlížeče. Takže jsem se mohl konečně pustit do zkoumání funkcí DS. Chtěl jsem odeslat testovací datovou zprávu a zjistil jsem, že je vlastně nemožné najít příjemce. Jediná cesta je znát to správné ID datové schránky. A ani potom nic nepošlete...
 
