@@ -174,7 +174,13 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+       margin-bottom: 40px;
+       border-bottom: 1px solid #f5f5f5;
+       padding-bottom: 20px;
+    }
+
+    > li > h2 {
+       clear:both;
     }
 }
 
