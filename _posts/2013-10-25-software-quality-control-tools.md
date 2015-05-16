@@ -8,7 +8,7 @@ tags:
 - QA
 - testing
 - bug tracking
-image: http://www.tomas-dvorak.cz/images/99.png
+image: /images/99.png
 ---
 In IVITERA, we deployed and configured many automated tests and monitoring to keep high quality standards. I would like to describe software and configuration that we used.
 
@@ -49,10 +49,10 @@ In IVITERA, we deployed and configured many automated tests and monitoring to ke
 <li>Czech, free, public service for screenshots (in time machine form): <a href="http://webshotter.com/">http://webshotter.com/</a></li>
 </ul>
 <div> </div>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.tomas-dvorak.cz/images/386t.png" alt="" width="350" height="316" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/386.png" alt="" width="350" height="316" /></p>
 <p style="text-align: center;">(Schema of Webshots3 environment)</p>
 <p> </p>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.tomas-dvorak.cz/images/387t.png" alt="" width="350" height="190" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/387.png" alt="" width="350" height="190" /></p>
 <p style="text-align: center;">(Webshots results app - one URL in three different browsers)</p>
 <h2>Selenium testing</h2>
 <ul>
@@ -84,4 +84,4 @@ In IVITERA, we deployed and configured many automated tests and monitoring to ke
 <li>Free web pages monitoring service - <a href="http://www.monitor.us/en/website-monitoring">http://www.monitor.us/en/website-monitoring</a></li>
 </ul>
 <p> </p>
-<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.tomas-dvorak.cz/images/99t.png" alt="" width="500" height="200" /></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="/images/99.png" alt="" width="500" height="200" /></p>

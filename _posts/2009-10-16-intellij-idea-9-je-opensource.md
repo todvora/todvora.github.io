@@ -21,7 +21,7 @@ verzi, která má o mnoho vlastností méně, ale na takový ten domácí
 vývoj…</p>
 
 <div style="text-align:center"><img
-src="http://www.tomas-dvorak.cz/images/62.png" width="223" height="58" /></div>
+src="/images/62.png" width="223" height="58" /></div>
 
 <p><strong>Ke stažení zde:</strong></p>
 

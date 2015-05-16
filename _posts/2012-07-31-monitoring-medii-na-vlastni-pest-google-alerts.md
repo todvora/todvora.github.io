@@ -21,13 +21,13 @@ Monitoring médií, monitoring tisku, monitoring sociálních sítí. Každý ř
 </ul>
 <div>Zároveň aplikace při vytváření nového upozornění ihned ukazuje, jaké výsledky dotazu odpovídají a co že to budete dostávat emailem:</div>
 <div> </div>
-<div><img src="http://www.tomas-dvorak.cz/images/125t.png" alt="" width="500" height="370" /></div>
+<div><img src="/images/125.png" alt="" width="500" height="370" /></div>
 <p>Při definování dotazu máte stejné možnosti, jako při rozšířených možnostech fulltextového hledání (znakem minus můžete odfiltrovat spojení která vás nezajímají, uzavřením do uvozovek  hledáte přesné sousloví, více viz <a href="http://www.google.cz/advanced_search">advanced search</a>)</p>
 <p>V emailu notifikace uvidíte vždy výsledek upozornění v obdobné formě, jako když byste jej našli ve fulltextovém vyhledávání (následuje ukázka notifikačního emailu na výraz Dobeš):</p>
-<p><img src="http://www.tomas-dvorak.cz/images/126t.png" alt="" width="500" height="500" /></p>
+<p><img src="/images/126.png" alt="" width="500" height="500" /></p>
 <p> </p>
 <p>A teď už je jen na vás, jak službu využijete. Monitorujte vlastní IČ, název společnosti, název služby nebo produktu. Vše, co vás napadne. Zprávy v reálném čase vám budou chodit v okamžiku, kdy se o nich google dozví. Často jen minuty nebo hodiny od zveřejnění. Navíc z celého světa a k tomu zdarma. </p>
 <p>Notifikací si můžete nastavit libovolně mnoho, s různou četností upozornění. Spravovat jednotlivé notifikace můžete z adresy <a href="http://www.google.cz/alerts/manage">http://www.google.cz/alerts/manage</a></p>
-<p><img src="http://www.tomas-dvorak.cz/images/127t.png" alt="" width="500" height="350" /></p>
+<p><img src="/images/127.png" alt="" width="500" height="350" /></p>
 <p> </p>
 <p> Znáte obdobnou nebo lepší službu zdarma? Podělte se v diskuzi, jak monitorujete vy.</p>

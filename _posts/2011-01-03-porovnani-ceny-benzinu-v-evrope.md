@@ -109,7 +109,7 @@ Kratičké zamyšlení nad cenama benzínu u nás a v zahraničí s porovnáním
 <p> </p>
 <h2 style="text-align: center;">Vývoj ceny barelu ropy</h2>
 <p> </p>
-<p style="text-align: center;"><img src="http://www.tomas-dvorak.cz/images/65.png" alt="" /></p>
+<p style="text-align: center;"><img src="/images/65.png" alt="" /></p>
 <p> </p>
 <h2 style="text-align: center;">Složky ceny jednoho litru benzínu</h2>
 <p> </p>

@@ -29,7 +29,7 @@ Letošní ročník konference o použitelnosti se opravdu povedl. Přednášky z
 <p>Uf, tahle přednáška toho měla tolik co nabídnout. Ale zvrhla se v <a href="https://twitter.com/OndrejMirtes/status/266499101800148992">odrážkové peklo</a>. Desítky stran, stovky odrážek celkem. Takhe nějak nás mučili ve škole. Přitom perfektní téma. Kdo má zkušenosti s trackováním pohybu očí? Koho by nezajímalo, kam běžně lidi koukají, jak jezdí očima po obrazovce? Pár videí a fotek by to dost oživilo. Odrážky nikoho nebaví. </p>
 <h1>V SYMBIU si z práce dělají zábavu</h1>
 <p>Další ukázka toho, že lidi od reklamy ví, jak zaujmout. Stačilo několik ukázek aplikací pro pojišťovny. Že je sjednání cestovního pojištění nuda? To jste ještě nezkusili web <a href="http://www.poslimedu.cz/">poslimedu.cz</a></p>
-<p><img src="http://www.tomas-dvorak.cz/images/157t.png" alt="Poslimedu.cz" width="546" height="250" /></p>
+<p><img src="/images/157.png" alt="Poslimedu.cz" width="546" height="250" /></p>
 <p>Takhle to dopadne, když pošlete méďu do Norska.</p>
 <p> </p>
 <p>Další ukázky práce podobného ražení můžete vidět na <a href="http://nebudjarda.symbio.cz/">nebudjarda.symbio.cz</a>, <a href="http://www.kufrovana.cz/">kufrovana.cz</a> nebo <a href="http://www.chuckville.com/">chuckville.com</a>. Práce nemusí být vopruz. Dělejte to tak, ať to baví vás i klienty. Inspirujte se u <a href="http://www.symbio.cz/">symbio.cz</a>.</p>

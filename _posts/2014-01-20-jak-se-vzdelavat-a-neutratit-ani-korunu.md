@@ -5,11 +5,11 @@ date: '2014-01-20 11:51:13'
 tags:
 - vzdělávání
 - elearning
-image: http://www.tomas-dvorak.cz/images/404.png
+image: /images/404.png
 ---
 Když se podíváte na tradiční nabídku školení, zjistíte, že jednodenní kurz stojí několik tisíc, vícedenní třeba i desítky tisíc korun. Pokud vás na školení nepošle firma, sami si ho asi nezaplatíte. Naštěstí existuje dostatek možností, jak se dobře vzdělávat a neutrácet nic nebo jen pár stokorun.
 
-<p><br /><img style="float: right; border: 1px solid #e3e3e3; background-color: white; margin: 10px;" src="http://www.tomas-dvorak.cz/images/404.png" alt="" width="262" height="178" /></p>
+<p><br /><img style="float: right; border: 1px solid #e3e3e3; background-color: white; margin: 10px;" src="/images/404.png" alt="" width="262" height="178" /></p>
 <div>
 <h2>Online kurzy</h2>
 <p>Mnoho univerzit a institucí sdílí kurzy na internetu. Můžete studovat kurzy na Stanfordu, Yale, Harvardu, Berkeley, MIT a přitom sedět v pohodlí svého domova. Online kurzy jsou snadná možnost, jak se vzdělávat sám, v čase, který se vejde do vašeho plánu a navíc neutratit ani korunu. </p>
@@ -23,13 +23,13 @@ Když se podíváte na tradiční nabídku školení, zjistíte, že jednodenní
 </ul>
 <div> </div>
 <div> </div>
-<h2><img style="float: right; border: 1px solid #e3e3e3;" src="http://www.tomas-dvorak.cz/images/405.png" alt="duolingo" width="220" height="199" /><span style="font-size: 1.5em;">Jazyky v mobilu</span></h2>
+<h2><img style="float: right; border: 1px solid #e3e3e3;" src="/images/405.png" alt="duolingo" width="220" height="199" /><span style="font-size: 1.5em;">Jazyky v mobilu</span></h2>
 <p>Pokud umíte anglicky a chcete se naučit další cizí jazyk, nepřehlédněte <a href="http://www.duolingo.com">Duolingo</a>. Zábavnou formou se naučíte gramatiku, slovíčka ale i poslech a výslovnost. Navíc můžete soutěžit s přáteli a sledovat navzájem své skóre a postup lekcemi. Studium tak není nuda, ale hra.</p>
 <p>Vybrat si můžete ze španělštiny, francouzštiny, italštiny, němčiny a portugalštiny.</p>
 <p>Program má velmi pěkně zpracované mobilní aplikace pro Android a iPhone (zdarma a bez reklam). Můžete tak studovat i cestou do práce při čekání na zastávce.</p>
 <p> </p>
 <p> </p>
-<img style="float: right; border: 1px solid #e3e3e3; background-color: white; margin: 10px;" src="http://www.tomas-dvorak.cz/images/407.jpg" alt="" width="160" height="160" />
+<img style="float: right; border: 1px solid #e3e3e3; background-color: white; margin: 10px;" src="/images/407.jpg" alt="" width="160" height="160" />
 <h2>Naučme se naživo<span style="font-size: 10px;"> </span></h2>
 <p>Když chcete raději lektora vidět na živo, nejen z monitoru, a nějaká ta koruna se najde, neměli byste přehlédnout <a href="http://www.naucmese.cz/">Naučmese</a>. Jde o český projekt a české lektory, kteří vyučují možná i ve vašem městě. A když vás <a href="http://www.naucmese.cz/">Naučmese</a> chytne, můžete se stát nejen studentem, ale i učitelem.</p>
 <p>Kurzy jsou většinou plánovány na několik hodin a cena se pohybuje v rozmezí několika stokorun, někdy stačí zaplatit lektorovi oběd. Témata jsou velmi různorodá, vybírat můžete z osobního rozvoje, gastronomie, kreativity, techniky a mnoha dalších oborů. </p>
@@ -43,7 +43,7 @@ Když se podíváte na tradiční nabídku školení, zjistíte, že jednodenní
 <p>Jak vidíte, není to standardní firemní nuda a témata jsou opravdu pestrá. </p>
 <p> </p>
 <p> </p>
-<img style="float: right; border: 1px solid #e3e3e3; background-color: white; margin: 10px;" src="http://www.tomas-dvorak.cz/images/406.png" alt="" width="300" height="69" />
+<img style="float: right; border: 1px solid #e3e3e3; background-color: white; margin: 10px;" src="/images/406.png" alt="" width="300" height="69" />
 <h2>Khanova škola<span style="font-size: 10px;"> </span></h2>
 <p>Možná nepotřebujete certifikáty, nechcete týden co týden plnit domácí úkoly a skládat závěrečný test. Třeba si chcete jen doplnit znalosti z matematiky nebo fyziky, které vám na škole utekly. Pustit si video a naučit se něco nového. Pro radost z učení se.</p>
 <p>A přesně tak funguje <a href="https://khanovaskola.cz/">Khanova škola</a>. Stačí si vybrat téma a spustit video. Přes sto přednášek je nadabováno do češtiny, více než tisíc videí opatřeno českými titulky. </p>

@@ -45,9 +45,9 @@ X-FRAME-OPTIONS HTTP hlavička funguje jako prostředek, jak může server sděl
 <pre class="prettyprint">add_header X-Frame-Options SAMEORIGIN;</pre>
 <p>Pozor! Než hlavičku nastavíte, zvažte zda neposkytujete některému jinému webu svůj obsah v podobě stránky připravené pro vložení do iframu. Typicky se tak vkládá reklamní bloček s nabídkou volných pracovních pozic a pod. V takovém případě by se na stránkách Vašeho partnera začala zobrazovat chybová zpráva obdobná té v obrázcích níže.</p>
 <p>V chromiu se mi místo zakázaného rámce zobrazí pouze prázdné místo, opera zobrazí srozumitelnou hlášku o nemožnosti rám načíst s prolinkem na originální stránku. Internet Explorer 9 zobrazí také srozumitelnou chybovou hlášku.</p>
-<p><img src="http://www.tomas-dvorak.cz/images/100.png" alt="Informace prohlížeče opera o zakázaném zobrazení iframu" width="404" height="239" /></p>
+<p><img src="/images/100.png" alt="Informace prohlížeče opera o zakázaném zobrazení iframu" width="404" height="239" /></p>
 <p>(Obrázek 1: informace o nemožnosti zobrazit stránku v iframu, opera 11.64)</p>
-<p><img src="http://www.tomas-dvorak.cz/images/101t.png" alt="" width="400" height="240" /></p>
+<p><img src="/images/101.png" alt="" width="400" height="240" /></p>
 <p>(Obrázek 2: informace o nemožnosti zobrazit stránku v iframu, Internet Explorer 9)</p>
 <p> </p>
 <p>Pokud nemáte možnost manipulovat s HTTP hlavičkami a přesto byste rádi dosáhli podobné funkcionality, využijte JavaScript. Kód, který to řeší se běžně označuje jako <strong>Framekiller</strong>. Jeho nejjednodušší implementace může vypadat nějak takto:</p>

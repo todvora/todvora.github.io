@@ -10,10 +10,10 @@ Tak ukázkové SQL injection, jako je na webu iŽabka, už jsem dlouho neviděl.
 
 <p><em>Ahoj, já jsem Tomáš a mám takovou úchylku. Pokaždé, když vidím na webu vyhledávací políčko, zadávám do něj divné věci. Většinou stačí málo. Uvozovky, apostrof nebo dvojkombinace ">. A podle toho, co na mě vypadne, si o vás často myslím něco ošklivého.</em></p>
 <p><em>Nejsem ale takovej zmetek a dám vám o chybě vědět. Na twitteru, na emailu, kde zrovna jste. Většinou reagujete pěkně, poděkujete a chybu rychle opravíte. Občas hrajete mrtvého brouka, neodpovíte, nic neopravíte. A mě pak nezbývá, než chybu zveřejnit, udělat vám ostudu a pobavit odbornou veřejnost.</em></p>
-<p>A proto se dnes pojďme zasmát na účet webu iŽabka.cz. <a href="http://www.tomas-dvorak.cz/images/303.png">Je to týden, co jsem je upozorňoval na SQL injection</a> a žádná reakce, ani oprava. Ukážu vám, co udělali špatně a čemu se máte vyvarovat, pokud nemám příště psát o vašem webu.</p>
+<p>A proto se dnes pojďme zasmát na účet webu iŽabka.cz. <a href="/images/303.png">Je to týden, co jsem je upozorňoval na SQL injection</a> a žádná reakce, ani oprava. Ukážu vám, co udělali špatně a čemu se máte vyvarovat, pokud nemám příště psát o vašem webu.</p>
 <p>Na stránce <a href="http://www.izabka.cz/">http://www.izabka.cz</a> najdeme vyhledávací pole, do něj vepíšeme několik znaků, přidáme apostrof a stiskneme ENTER. </p>
 <p>Výsledek bude vypadat zhruba takhle: <a href="http://www.izabka.cz/cs/component/search/?searchword=whisky%20grant's&ordering=newest&searchphrase=exact">http://www.izabka.cz/cs/component/search/?searchword=whisky%20grant's&ordering=newest&searchphrase=exact</a></p>
-<p><img src="http://www.tomas-dvorak.cz/images/302t.png" alt="iŽabka SQL injection" width="522" height="250" /></p>
+<p><img src="/images/302.png" alt="iŽabka SQL injection" width="522" height="250" /></p>
 <p> </p>
 <p>Na co to koukáme? Tím apostrofem jsme rozbili syntaxi SQL dotazu. Část, která vyhledává přítomnost fráze v textu - LIKE, jsme naším apostrofem ukončili tak, že je celý dotaz neplatný. To je neklamná známka toho, že se vhodnou formulací vyhledávací fráze dá dotaz upravit vlastním představám.</p>
 <p>Celou věc maximálně zjednodušuje ten chybový výpis s kompletním SQL dotazem. Nemusíte odhadovat, co že se to stalo a jak zhruba skládají dotaz do databáze. Máte to tu vypsané černé na bílém. </p>

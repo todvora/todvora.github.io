@@ -17,7 +17,7 @@ Je to půl roku, co jsem na svém webu tomas-dvorak.cz nasadil AdSense reklamy. 
 <p>Reklama je umístěná v článcích pod úvodním odstavcem a na výpisu článků podle štítku (např <a href="http://www.tomas-dvorak.cz/tag/fstab/">tady</a>). Jde o leaderboard s rozměry 728x90px. Zobrazuje pouze textovou reklamu. </p>
 <p><strong>Celkové zisky z AdSense</strong> reklamy jsou 677Kč za půl roku,  tedy zhruba <strong>112Kč měsíčně</strong>. Je to pár korun. Zaplatí mi to doménu a hosting pro tenhle i další weby (<a href="http://www.tomas-dvorak.cz/clanky/jak-minimalizuji-naklady-na-provoz-webu">multihosting</a>). A na nic víc nezbyde. Nezbohatnu na tom. Na druhou stranu nemusím provoz webu dotovat a potěší mě, když vidím, že občas někdo na reklamu klikne. Web neprovozuji z důvodu výdělku.</p>
 <p> </p>
-<p><img src="http://www.tomas-dvorak.cz/images/239t.png" alt="Google Adsence - zisky z reklamy na webu" width="400" height="232" /></p>
+<p><img src="/images/239.png" alt="Google Adsence - zisky z reklamy na webu" width="400" height="232" /></p>
 <p>(Zisky webu z AdSense, klikněte pro zvětšení obrázku)</p>
 <p> </p>
 <p>Jednotlivé parametry z Adsense:</p>
@@ -26,7 +26,7 @@ Je to půl roku, co jsem na svém webu tomas-dvorak.cz nasadil AdSense reklamy. 
 <p>Návštěv webu za půl roku je 17 740. Konktrétní parametry:</p>
 <p>Unikátní návštěvníci: 12 628<br /> Zobrazení stránek: 25 807<br /> Počet stránek na návštěvu: 1,45<br /> Průměrná doba návštěvy: 1:03<br /> Míra opuštění: 83%<br /> Procento nových návštěv: 69,67%</p>
 <p> </p>
-<p><img src="http://www.tomas-dvorak.cz/images/240t.png" alt="Google analytics - návštěvnost webu" width="400" height="435" /></p>
+<p><img src="/images/240.png" alt="Google analytics - návštěvnost webu" width="400" height="435" /></p>
 <p>(Návštěvnost webu podle Analytics, klikněte pro zvětšení obrázku)</p>
 <p> </p>
 <h1>Co má na zisky vliv</h1>

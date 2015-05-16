@@ -23,7 +23,7 @@ monitorovací systém. Obdobný script, jen pro tiskárnu HP jsem popisoval již
 dříve: <a
 href="http://www.tomas-dvorak.cz/clanky/monitorovani-stavu-inkoustu-v-hp-tiskarne-pomoci-nagios">http://www.tomas-dvorak.cz/clan­ky/monitorova­ni-stavu-inkoustu-v-hp-tiskarne-pomoci-nagios</a></p>
 
-<p style="text-align:center"><img src="http://www.tomas-dvorak.cz/images/71.gif"
+<p style="text-align:center"><img src="/images/71.gif"
 alt="" />
 <br />Ilustrační obrázek tiskárny Samsung SCX-4×28 Series</p>
 
@@ -83,11 +83,11 @@ exit(return_code)</code></pre>
 <hr />
 
 <p style="text-align:center"><img
-src="http://www.tomas-dvorak.cz/images/72t.png" alt="" />
+src="/images/72.png" alt="" />
 <br />Screenshot z webového rozhraní, které ukazuje stav inkoustu</p>
 
 <p style="text-align:center"><img
-src="http://www.tomas-dvorak.cz/images/73t.png" alt="" />
+src="/images/73.png" alt="" />
 <br />Graf z Centreonu, který získává data výše popsaným pluginem
 pro Nagios</p>
 

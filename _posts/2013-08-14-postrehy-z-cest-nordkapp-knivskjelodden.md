@@ -3,7 +3,7 @@ layout: post
 title: Postřehy z cest - Nordkapp, Knivskjelodden
 date: '2013-08-14 17:10:55'
 tags: []
-image: /images/360t.jpg
+image: /images/360.jpg
 ---
 Druhý týden na cestách, nejsevernější bod Evropy - Knivskjelodden. Nordkapp jako masově turistická atrakce. Jezdíme stopem, jde to rychleji než busem a navíc zdarma.
 
@@ -17,7 +17,7 @@ Druhý týden na cestách, nejsevernější bod Evropy - Knivskjelodden. Nordkap
 <p>Na křižovatce těsně před Honningsvagem je Rema, ideálně při cestě pro doplnění zásob.</p>
 </li>
 </ul>
-<h2><img src="http://www.tomas-dvorak.cz/images/351t.jpg" alt="Německá výletní loď v Honningsvagu" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/352t.jpg" alt="Sušení tresek%2C Honningsvag" width="300" height="225" /></h2>
+<h2><img src="/images/351.jpg" alt="Německá výletní loď v Honningsvagu" width="300" height="225" /> <img src="/images/352.jpg" alt="Sušení tresek%2C Honningsvag" width="300" height="225" /></h2>
 <h2>Prší, odpočíváme den v kempu</h2>
 <p>Od rána prší. Původně jsme měli v úmyslu vyrazit hned ráno směr Nordkapp, ale rozhodujeme se zůstat. Nemá smysl utíkat někam v dešti. Na recepci se zapisujeme. Chvilku mluvíme anglicky a když slečna zjistí, že jsme z Čech, začne na nás mluvit česky. Je z Lotyšska, ale mluví dost dobře. Kemp je poměrně drahej, vychází na 225NOK za noc. Co se dá dělat, platíme dvě noci. Prostorná kuchyňka je fajn místo pro to sedět u počítače a dopsat deník, přečíst maily a novinky z čech. Nahráváme na internet další várku fotek. K obědu zas jednou luxusní jídlo, těstoviny s rajskou omáčkou. To bychom v ešusu těžko dělali. Tady je plně vybavená kuchyně, takže jíme z talířů, příborem :-)</p>
 <p>Odpoledne nás slečna z recepce veze do města, vyrážíme na kešky. V pořádným slejváku snad 20 minut oblejzáme jedno zábradlí a ne a ne najít. Nakonec to vzdáváme, prší moc. Druhá keška je pro změnu tak divně umístěná, že bychom za toho deště museli lézt po skalách. Takže taky nic. Alespoň nakoupíme večeři a do kempu jdeme zpět pěšky. Je to tak 6 km, ale bez batohů se to jde krásně, hoďka chůze a jsme tam.</p>
@@ -40,13 +40,13 @@ Druhý týden na cestách, nejsevernější bod Evropy - Knivskjelodden. Nordkap
 </li>
 </ul>
 <p> </p>
-<h2><img src="http://www.tomas-dvorak.cz/images/353t.jpg" alt="Sob přímo v kempu" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/354t.jpg" alt="Sobí rodinka" width="300" height="225" /></h2>
+<h2><img src="/images/353.jpg" alt="Sob přímo v kempu" width="300" height="225" /> <img src="/images/354.jpg" alt="Sobí rodinka" width="300" height="225" /></h2>
 <h2>Trek na nejsevernější bod, přespání v zátoce pod Norkappem</h2>
 <p>Ráno vypadá počasí o trochu lépe. Téměř neprší a mraky se tak nějak trhají. Balíme stan, nakládáme batohy. V deset a kousek projíždí autobus a ochotně nám na mávnutí staví. Jízdenka na parkoviště, odkud se vychází na <a href="http://en.wikipedia.org/wiki/Knivskjellodden">Knivskjelodden</a> stojí 85NOK na osobu. Vědět to předem, asi zkusíme stop. </p>
 <p>Na parkovišti je pár aut a krásně značená cesta na nejsevernější bod. Dotahujeme boty a vyrážíme. Cesta je pohodová, dokonce přes bažiny vedou lávky (no, spíš položená prkna, ale i tak luxus). 9km dlouhá cesta utíká jako nic, většina je z kopce. Pozorujeme soby hned vedle cesty, ignorují nás. </p>
 <p>Když se dojde k zálivu, je nádherný výhled na Nordkapp. Máme slunečno a fotíme o 106. K opravdovému nejsevernějšímu bodu zbývají tak 2km po pobřeží. U cíle je kamenná mohyla se souřadnicemi. Fotíme se, fotíme Pingu Explorera s námi (travelbug, co si vezeme už z Čech). Zapisujeme se do knihy návštěv (číslo 225 a 226). Pak pokračujeme hledat kešku, do které TB uložíme. Míjíme malý maják a pod skalou leží krabička. Máme radost,že se nám jej povedlo popovést o téměř 3000 km severně. Uleháme na karimatku, batohy pod hlavou a svačíme, odpočíváme. </p>
 <p>Když se dost pokocháme a vymrzneme na kost, vracíme se odlovit tu opravdu nejsevernější kešku. Dál pokračujeme zpět do zálivu, kde máme v plánu spát. Stavíme stan, pokoušíme se marně rozdělat oheň. Z moře se valí mraky a mlha. Uleháme a spíme jako zabití.</p>
-<p><img src="http://www.tomas-dvorak.cz/images/355t.jpg" alt="útes Nordkapp" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/356t.jpg" alt="Knivskjelodden" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/357t.jpg" alt="Nejsevernější bod" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/358t.jpg" alt="Dobré ráno z Knivskjelodden" width="300" height="225" /></p>
+<p><img src="/images/355.jpg" alt="útes Nordkapp" width="300" height="225" /> <img src="/images/356.jpg" alt="Knivskjelodden" width="300" height="225" /> <img src="/images/357.jpg" alt="Nejsevernější bod" width="300" height="225" /> <img src="/images/358.jpg" alt="Dobré ráno z Knivskjelodden" width="300" height="225" /></p>
 <h2>Atrakce Nordkapp, stopujeme směr jih, vítr z moře, zpět v Altě</h2>
 <p>Probouzíme se za svitu slunce, s výhledem na Nordkapp. Krása, tady to opravdu není masově turistické. Nikde nikdo. Balíme stan, doplňujeme vodu (z potoka hned za stanem) a vyrážíme zpět na parkoviště. 9km do kopce zdoláváme jako nic, plni sil. Z parkoviště je to pak dalších 6-7km na samotný Nordkapp. Ťapkáme po asfaltce, zdravíme cyklisty, když najednou slyšíme „Ahoj!”. Otáčíme se a na nosiči vlaje česká vlajka. Vybavujeme se, cyklista se jmenuje Kuba Vlček a vyrazil na studijní pobyt do Tromso. Je ale taky tak trochu blázen a jede tedy na kole. Byl rychlejší, než čekal, a proto si udělal projížďku na nejsevernější bod. Denně prý urazí okolo 250km a jede nalehko. Vyměňujeme si kontakty a domlouváme se, že se potkáme na kafe v Tromso.</p>
 <p>Po hodině a půl šlapání asfaltu jsme nadosah mýtné brány. My s úsměvem procházíme, ostatní platí. Obří parkoviště nás děsí, masová turistika není naše hobby. Obcházíme Nordkapphallen a na lavičce svačíme (zas ty sušenky). Lidí tu moc není, těch je prý nejvíc v noci, na půlnoční slunce. Batohy necháváme ležet u zábradlí a jdeme udělat pár fotek ke známému globusu. Poté opět keška. Když se dost pokocháme okolím, jdeme prošmejdit samotnou halu (protože není nic, kam bychom nenakoukli a nestrčili nos). Vstupné nikdo nechce, a tak zvládneme zkouknout film o Nordkappu, prohlédnout si thajské muzeum, jeskyni světel i všechny další výstavy. Celkově je pro nás Nordkapp trochu zklamání, asi po tom perfektním Knivskjelodden. </p>
@@ -59,4 +59,4 @@ Druhý týden na cestách, nejsevernější bod Evropy - Knivskjelodden. Nordkap
 <p> </p>
 </li>
 </ul>
-<p><img src="http://www.tomas-dvorak.cz/images/359t.jpg" alt="Nordkapp pokořen" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/360t.jpg" alt="Nordkapp" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/361t.jpg" alt="Nordkapp Hallen" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/362t.jpg" alt="" width="300" height="225" /></p>
+<p><img src="/images/359.jpg" alt="Nordkapp pokořen" width="300" height="225" /> <img src="/images/360.jpg" alt="Nordkapp" width="300" height="225" /> <img src="/images/361.jpg" alt="Nordkapp Hallen" width="300" height="225" /> <img src="/images/362.jpg" alt="" width="300" height="225" /></p>

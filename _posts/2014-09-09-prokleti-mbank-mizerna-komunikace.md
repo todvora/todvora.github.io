@@ -17,7 +17,7 @@ Po několika letech odcházím od mBank. Proč? Co se mi líbilo a co mě štval
 <p>Každá nová věc se dřív nebo později omrzí. A pak se ukážou všechny problémy, které člověk ze začátku neviděl nebo nechtěl vidět. Následuje seznam věcí, které mi znepříjemňovaly život:</p>
 <h3>Pravidelné odstávky</h3>
 <p>Banka si na nonstop provoz nehraje. Minimálně jednou měsíčně mají o víkendu mnohahodinovou odstávku. Pokud chcete používat internetové bankovnictví, nebo platit kartou! v neděli ráno, je velká šance, že to nepůjde.</p>
-<p><img style="border: 2px solid white;" title="Odstávky mBank" src="http://www.tomas-dvorak.cz/images/410.png" alt="Odstávky mBank" width="803" height="340" /></p>
+<p><img style="border: 2px solid white;" title="Odstávky mBank" src="/images/410.png" alt="Odstávky mBank" width="803" height="340" /></p>
 <h3>Výpis e-mailem - Email Push</h3>
 <p>Informační e-maily o změně zůstatku nebo přehledu pohybů za poslední měsíc stále chodí v příloze jako *.htm. Na mobilu často nejdou otevřít,  mají děsivý formát a rozpadlou diakritiku. Náprava se neplánuje. Kdo zná maily od AirBank, ví, že to jde výrazně lépe.</p>
 <h3> Nové bankovnictví</h3>

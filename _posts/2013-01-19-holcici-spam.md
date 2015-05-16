@@ -9,7 +9,7 @@ tags:
 Poslední dobou se mi ve schránce hromadí holičí SPAM. Píše mi Pavla, Lenka, Veronika a další. Všechny mi nabízejí něco se slevových portálů. To na mě má fungovat?
 
 <p>Takhle vypadá můj mailbox, složka SPAM. Posuďte sami, tolik Veronik, Elišek, Pavlín a Dian mi nikdy v životě nepsalo. Mám z nich stejnou radost, jako má přítelkyně (co za krávu ti to zas píše?!). Stýská se mi po starém dobrákovi Patriku Chanovi.</p>
-<p><img src="http://www.tomas-dvorak.cz/images/269t.png" alt="Holčičí spam - slevové portály" width="600" height="317" /></p>
+<p><img src="/images/269.png" alt="Holčičí spam - slevové portály" width="600" height="317" /></p>
 <p>(Můj holčičí spam - klikněte pro zvětšení)</p>
 <p> </p>
 <h2>Kde se vzal</h2>

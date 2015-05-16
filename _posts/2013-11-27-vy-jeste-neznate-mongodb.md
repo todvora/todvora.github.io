@@ -6,12 +6,12 @@ tags:
 - MongoDB
 - java
 - elearning
-image: http://www.tomas-dvorak.cz/images/402.png
+image: /images/402.png
 ---
 Aneb co jsem se naučil v kurzu MongoDB pro Java vývojáře a proč byste jej měli absolvovat také.
 
 <p>Před pár dny jsem dokončil kurz <a href="https://university.mongodb.com/courses/10gen/M101J/2014_January/about">MongoDB for Java Developers</a> a jsem doslova nadšen. Perfektní elearning, zajímavá témata a mnoho tipů z praxe. Navíc je kurz zdarma a neklade nároky na přesný čas, kdy musíte u počítače sedět. Co víc si přát.</p>
-<h2><img style="float: right; margin: 10px;" src="http://www.tomas-dvorak.cz/images/402.png" alt="" width="300" height="100" /></h2>
+<h2><img style="float: right; margin: 10px;" src="/images/402.png" alt="" width="300" height="100" /></h2>
 <h2>Proč si vůbec dělat kurz?</h2>
 <p>S MongoDB už mám nějakou praxi, v posledním zaměstnání jsme nad ním postavili nástroj pro sledování návštěvnosti webů a dva roky jej vylepšovali a rozvíjeli. Kurz jsem si tedy zapsal pro to, abych ověřil, že nemám ve vzdělání mezery a nedělám něco vyloženě špatně.</p>
 <p><strong>A musím uznat, mnoho jsem toho nevěděl a spoustu věcí dělal mizerně</strong>. Špatně jsem navrhoval <a href="http://docs.mongodb.org/manual/indexes/">indexy</a>, spoustu věcí počítal zbytečně až v aplikaci, protože jsem neznal <a href="http://docs.mongodb.org/manual/aggregation/">aggregation framework</a>.  </p>

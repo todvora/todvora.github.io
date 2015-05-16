@@ -14,5 +14,5 @@ Nabízím k prodeji mnou drženou doménu ristorante-sanmarino.cz
 href="http://ristorante-sanmarino.cz">www.ristorante-sanmarino.cz</a></strong></p>
 
 <div style="text-align:center"><img
-src="http://www.tomas-dvorak.cz/images/63.png" width="400" height="235" /></div>
+src="/images/63.png" width="400" height="235" /></div>
 

@@ -16,7 +16,7 @@ Chcete udělat dobrý skutek? Nemáte zájem platit vysoké daně a raději než
 <p>O trasu stezky a trvale udržitelný rozvoj území na Trojstátí se stará parta dobrovolníků, která pravidelně na zmiňovaných místech uklízí, seká trávu a místo opravuje. Díky několika <a href="http://www.regionhranice.cz/sponzori-stezky">sponzorským darům</a> se mohlo místo turisticky zatraktivnit a zviditelnit. </p>
 <p><strong style="text-align: left;">Veškeré informace o stezce jsou dostupné na </strong><strong style="text-align: left;"><span style="font-size: 150%;"><a href="http://www.regionhranice.cz/">www.regionhranice.cz</a></span></strong></p>
 <p>K dalšímu rozvoji stezky je ale potřeba malá materiální nebo finanční pomoc. Nedostáváme miliony z dotací. Táhneme to především ze své kapsy. A to bohužel nedovedeme napořád. Proto bychom vás chtěli požádat o malý příspěvěk nebo pomoc.</p>
-<p><img src="http://www.tomas-dvorak.cz/images/242t.jpg" alt="Povalový chodník - NS na cestě k trojstátí" width="200" height="150" /> <img src="http://www.tomas-dvorak.cz/images/243t.jpg" alt="Strudánka - NS na cestě k trojstátí" width="200" height="150" /> <img src="http://www.tomas-dvorak.cz/images/244t.jpg" alt="Rosnatka - NS na cestě k trojstátí" width="200" height="150" /></p>
+<p><img src="/images/242.jpg" alt="Povalový chodník - NS na cestě k trojstátí" width="200" height="150" /> <img src="/images/243.jpg" alt="Strudánka - NS na cestě k trojstátí" width="200" height="150" /> <img src="/images/244.jpg" alt="Rosnatka - NS na cestě k trojstátí" width="200" height="150" /></p>
 <h1>Jak mohu pomoci?</h1>
 <p>Peníze nejsou to podstatné. Neplatíme si odměny, nepotřebujeme telefony, kancelář ani rauty. Raději tak uvítáme, když nám předáte hotovou lavičku na stezku, než peníze na její výrobu. Pokud je ale pro vás jednodušší poslat peníze, celou věc samozřejmě zařídíme my.</p>
 <h1>Které konkrétní věci bychom rádi realizovali?</h1>
@@ -44,7 +44,7 @@ Chcete udělat dobrý skutek? Nemáte zájem platit vysoké daně a raději než
 <p>Ideálně přímo na autora stezky, <strong>Josefa Levého: <a href="mailto:levjos@post.cz">levjos@post.cz</a></strong> . </p>
 <p>Za jakoukoliv pomoc nebo i propagaci stezky mockrát děkujeme.</p>
 <h1>Několik informací o stezce samotné</h1>
-<p><img src="http://www.tomas-dvorak.cz/images/241t.jpg" alt="Naučná stezka Na cestě k trojstátí" width="400" height="196" /></p>
+<p><img src="/images/241.jpg" alt="Naučná stezka Na cestě k trojstátí" width="400" height="196" /></p>
 <p><a href="http://www.mapy.cz/#t=s&x=12.171524&y=50.297502&z=12&l=16">http://www.mapy.cz/#t=s&x=12.171524&y=50.297502&z=12&l=16</a></p>
 <p> </p>
 <h2>ochrana přírody a trvale udržitelný rozvoj</h2>

@@ -31,26 +31,26 @@ neoxidovaly.</p>
 
 <p style="text-align:center"><strong>Celkový pohled na rozlámaný
 kryt</strong>
-<br /><a href="/images/37.jpg"><img src="/images/37t.jpg" /></a></p>
+<br /><a href="/images/37.jpg"><img src="/images/37.jpg" /></a></p>
 
 <p style="text-align:center"><strong>Vnitřní strana krytu</strong>
-<br /><a href="/images/38.jpg"><img src="/images/38t.jpg" /></a></p>
+<br /><a href="/images/38.jpg"><img src="/images/38.jpg" /></a></p>
 
 <p style="text-align:center"><strong>Detail poškození</strong>
-<br /><a href="/images/39.jpg"><img src="/images/39t.jpg" /></a></p>
+<br /><a href="/images/39.jpg"><img src="/images/39.jpg" /></a></p>
 
 <p style="text-align:center"><strong>Spoj nýty</strong>
-<br /><a href="/images/40.jpg"><img src="/images/40t.jpg" /></a></p>
+<br /><a href="/images/40.jpg"><img src="/images/40.jpg" /></a></p>
 
 <p style="text-align:center"><strong>Detail poškození</strong>
-<br /><a href="/images/39.jpg"><img src="/images/39t.jpg" /></a></p>
+<br /><a href="/images/39.jpg"><img src="/images/39.jpg" /></a></p>
 
 <p style="text-align:center"><strong>Postup opravy</strong>
-<br /><a href="/images/41.jpg"><img src="/images/41t.jpg" /></a></p>
+<br /><a href="/images/41.jpg"><img src="/images/41.jpg" /></a></p>
 
 <p style="text-align:center"><strong>Hotovo, opraveno</strong>
-<br /><a href="/images/43.jpg"><img src="/images/43t.jpg" /></a></p>
+<br /><a href="/images/43.jpg"><img src="/images/43.jpg" /></a></p>
 
 <p style="text-align:center"><strong>Kryt zpět na svém místě</strong>
-<br /><a href="/images/42.jpg"><img src="/images/42t.jpg" /></a></p>
+<br /><a href="/images/42.jpg"><img src="/images/42.jpg" /></a></p>
 

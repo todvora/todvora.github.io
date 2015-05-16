@@ -47,7 +47,7 @@ Konzoli javascriptu pak dovedeme pustit například příkazem</p>
 
 <pre><code>java -cp .:js.jar org.mozilla.javascript.tools.shell.Main</code></pre>
 
-<div><img src="http://www.tomas-dvorak.cz/images/67.png" alt="rhino js console"
+<div><img src="/images/67.png" alt="rhino js console"
 /></div>
 
 <p><strong>js.jar</strong> je samotná implementace Rhina, stáhnout lze ze
@@ -173,7 +173,7 @@ example.js:2:13: var t = setTimeout("alertMsg()", 3000);
 -----------
 Error, file 'bin/example.js' contains 1 errors!</code></pre>
 
-<div><img src="http://www.tomas-dvorak.cz/images/68.png"
+<div><img src="/images/68.png"
 alt="js validace - vysledky" /></div>
 
 <p>Ve vzorovém javascriptu tedy byla nalezena chyba, kde se nachází a jaké

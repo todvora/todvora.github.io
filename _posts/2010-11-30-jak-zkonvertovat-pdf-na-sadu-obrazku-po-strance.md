@@ -38,11 +38,11 @@ Nyní můžeme porovnat výsledky s vyhlazením a bez vyhlazení, rozdíl
 je značný.</p>
 
 <p style="text-align:center"><a href="/images/74.jpg"><img
-src="http://www.tomas-dvorak.cz/images/74t.jpg" alt="" /></a>
+src="/images/74.jpg" alt="" /></a>
 <br />Bez vyhlazení (rozklikněte pro zobrazení celého obrázku)</p>
 
 <p style="text-align:center"><a href="/images/75.jpg"><img
-src="http://www.tomas-dvorak.cz/images/75t.jpg" alt="" /></a>
+src="/images/75.jpg" alt="" /></a>
 <br />S vyhlazením (rozklikněte pro zobrazení celého obrázku)</p>
 
 <p>Kód celého příkladu by mohl vypadat například takto:</p>

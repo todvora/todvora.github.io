@@ -22,9 +22,9 @@ Máte na vašich stránkách korektně uvedeny všechny běžně používané me
 </ul>
 <p>Tyto tři údaje jdou většinou velmi snadno určit z každé běžné stránky tak jak je, aniž by ji bylo třeba upravovat pro potřeby sdílení. </p>
 <p>Jak vypadá ideální stav můžeme vidět při pokusu o sdílení <a href="http://www.lupa.cz/clanky/zakladni-registry-zatim-skoro-nikdo-nepouziva-a-ministerstvo-o-chybach-mlci/">článku</a> z webu <a href="http://www.lupa.cz/">lupa.cz</a>:</p>
-<p><img src="http://www.tomas-dvorak.cz/images/120.png" alt="Sdílení článku z lupa.cz na facebooku" width="438" height="386" /></p>
+<p><img src="/images/120.png" alt="Sdílení článku z lupa.cz na facebooku" width="438" height="386" /></p>
 <p>Výsledek vyhledávání na google.com pak zobrazuje ty v podstatě ty samé informace (krom obrázku):</p>
-<p><img src="http://www.tomas-dvorak.cz/images/121.png" alt="" width="524" height="262" /></p>
+<p><img src="/images/121.png" alt="" width="524" height="262" /></p>
 <h2>Titulek - title</h2>
 <p>Titulek stránky si každý robot načte z hlavičky (<em><head></em>), elementu <em><title></em>. Titulek stránky je zobrazován i v tabech prohlížeče, výsledcích vyhledávání. autoři stránky by měli mít titulek v pořádku i když neplánují žádné sdílení na sociálních sítích.</p>
 <p>Správně má titulek vypadat v kódu takto:</p>
@@ -51,7 +51,7 @@ Máte na vašich stránkách korektně uvedeny všechny běžně používané me
 <h2>Testování - jak si web stojí?</h2>
 <p>Nakonec to nejdůležitější, jak poznám, že mám vše v pořádku a roboti u mě na webu vidí, co mají? Facebook poskytuje jednoduchý ladící nástroj - vložíte url a ihned vidíte to, co facebook robot. Adresa ladícího nástroje je: <a href="http://developers.facebook.com/tools/debug">http://developers.facebook.com/tools/debug</a></p>
 <p>Pokud Vás zajímá, jak si stojí mockrát zmíněná stránka lupy - prohlédněte si její <a href="http://developers.facebook.com/tools/debug/og/object?q=http%3A%2F%2Fwww.lupa.cz%2Fclanky%2Fzakladni-registry-zatim-skoro-nikdo-nepouziva-a-ministerstvo-o-chybach-mlci%2F">kompletní report</a>.</p>
-<p> <img src="http://www.tomas-dvorak.cz/images/122t.png" alt="" width="300" height="400" /></p>
+<p> <img src="/images/122.png" alt="" width="300" height="400" /></p>
 <h2>Poděkování</h2>
 <p>Poděkování patří <a href="http://www.lupa.cz/">lupě</a> za vzorné zpracování metadat u svých článků. Sám nemám na svých webech informace tak dopodrobna zpracované, proto jsem v příkladech využil článek <a href="http://www.lupa.cz/">lupy</a>.</p>
 <p> </p>

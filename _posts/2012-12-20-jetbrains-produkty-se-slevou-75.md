@@ -13,6 +13,6 @@ Používáte některý z produktů JetBrains? IntelliJ IDEA, PhpStorm, RubyMine 
 <p>Pravda je, že nabízí <a href="http://www.jetbrains.com/idea/free_java_ide.html">komunitní</a> verzi IDEA, ta ale neumí zdaleka tolik, co placená. </p>
 <p><strong><a href="http://www.jetbrains.com/specials/index.jsp">http://www.jetbrains.com/specials/index.jsp</a></strong></p>
 <p>Akce je tak zajímavá, že jim nestíhá web :-)</p>
-<p><strong><img src="http://www.tomas-dvorak.cz/images/247t.png" alt="JetBrains Special Offers" width="500" height="401" /></strong></p>
+<p><strong><img src="/images/247.png" alt="JetBrains Special Offers" width="500" height="401" /></strong></p>
 <p><strong>Doplněno ve 14:41:</strong></p>
 <p>Další informace o IDEA v češtině třeba na <a href="http://blog.novoj.net/2012/12/20/intellij-idea-12-za-par-korun-pri-vyroci-konce-sveta/">http://blog.novoj.net/2012/12/20/intellij-idea-12-za-par-korun-pri-vyroci-konce-sveta/</a><strong><br /></strong>﻿﻿﻿</p>

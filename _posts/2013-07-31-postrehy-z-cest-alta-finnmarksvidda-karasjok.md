@@ -3,7 +3,7 @@ layout: post
 title: Postřehy z cest - Alta, Finnmarksvidda, Karasjok
 date: '2013-07-31 17:48:53'
 tags: []
-image: http://www.tomas-dvorak.cz/images/337t.jpg
+image: /images/337.jpg
 ---
 První týden na cestě po severním Norsku. Nalehko, jen s batohem a stanem. Žádné auto, žádné časové plány ani termín návratu, který by nás tlačil. Do Alty letadlem, pak 140 km chůze tundrou do Karasjoku.
 
@@ -17,7 +17,7 @@ První týden na cestě po severním Norsku. Nalehko, jen s batohem a stanem. Ž
 <li>V Altě se dá krásně přespat v lesoparku nad letištěm (20 minut chůze)</li>
 </ul>
 <p> </p>
-<p><img src="http://www.tomas-dvorak.cz/images/333t.jpg" alt="Letiště Alta, SAS letadlo" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/347t.jpg" alt="Letiště v Altě" width="300" height="225" /></p>
+<p><img src="/images/333.jpg" alt="Letiště Alta, SAS letadlo" width="300" height="225" /> <img src="/images/347.jpg" alt="Letiště v Altě" width="300" height="225" /></p>
 <p> </p>
 <p> </p>
 <h2>2. den - Alta, nákup zásob, muzeum</h2>
@@ -27,7 +27,7 @@ První týden na cestě po severním Norsku. Nalehko, jen s batohem a stanem. Ž
 <p>V recepci muzea kupujeme vstupenky, které pro jednoho stojí 90 NOK a zahrnují venkovní cca tří kilometrový okruh a tři vnitřní expozice. V muzeu je kavárna a šatny, naše batohy se ale do šatních skříněk nevejdou, proto nám je ochotně uskladní na recepci. </p>
 <p>Venkovní okruh vede po dřevěných chodníčcích kolem nástěnných maleb z doby kamenné. Kolem tří tisíc maleb je zahrnuto na seznamu UNESCO již od roku 1973. Jsou zvýrazněné červenou barvou, aby byly lépe viditelné. Barvivo by mělo být stejné, jako to původní. Vnitřní expozice jsou věnované Altě, Sámské kultuře a poslední putovní výstavě nuceném exilu královské rodiny během druhé světové války. Muzeum opravdu stojí za to vidět.</p>
 <p>Večer jsme se chtěli utábořit v kempu u lososí řeky, ale cestou k němu jsme se zastavili ještě v turistických informacích nacházejícíh se v hotelu BestWestern, kde jsme dostali podrobnou mapku Alty a cestu ke kempu jsme si po celodenním šlapání po asfaltu rozmysleli. Přespali jsme kousek za městem na poli, celkem blízko obytným domům, ale nikdo nás vyhnat nepřišel (všem jsme šumák). Vůbec nám spíš připadalo, že  v Altě na turisty-pěšáky moc zvyklí nejsou, alespoň my jen s batohy jsme působili, podle výrazů místních, exoticky.</p>
-<p><img src="http://www.tomas-dvorak.cz/images/334t.jpg" alt="Muzeum Alta, nástěnné malby" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/348t.jpg" alt="Muzeum Alta" width="300" height="225" /></p>
+<p><img src="/images/334.jpg" alt="Muzeum Alta, nástěnné malby" width="300" height="225" /> <img src="/images/348.jpg" alt="Muzeum Alta" width="300" height="225" /></p>
 <h2>3. den - mapy, kemp Kronstad<span style="font-size: 10px;"> </span></h2>
 <p>Putování po Altě nekončí. Naplánovali jsme si přechod přes Finnmarksviddu a k jeho přesné trase jsme potřebovali mapy. Ty jsme koupili v místním knihkupectví, byly potřeba nakonec tři, každá za 199 NOK. Ale bez nich bychom byli nejspíš v háji(a hluboko v bažinách)... Jedniným dnešním cílem bylo znovu přejít celou Altu, dát si oběd na hřebenu s vyhlídkou na letiště, dostat se do kempu KRONSTAD CAMPING a podrobně rozvrhnout trasu přechodu náhorní plošiny. V kempu jsme byli celkem brzo, zaplatili jsme 80 NOK za dvě osoby a místo pro malý stan a dalších 40 NOK za dva žetony do sprch. Nakonec by žeton stačil i jeden, sprcha je velká a voda teče dost dlouho pro oba (na dámské a pánské sprchy si nehrajeme, nejsme fajnovky). Kemp není žádný zázrak, ale máme kde spát, umýt se a uvařit si. Odpoledne jsme ještě zvládli procházku k vodopádům SAGA a k lososí řece ALTAELVA, bez batohů se to chodí, jedna radost. Po večeři už jen sedíme nad mapami. Celý den zase pražilo sluníčko, není poznat, že jsme na severu.</p>
 <h3>Postřehy<span style="font-size: 10px;"> </span></h3>
@@ -41,14 +41,14 @@ První týden na cestě po severním Norsku. Nalehko, jen s batohem a stanem. Ž
 <ul>
 <li>Když vám Nor řekne, že je to dvě míle daleko, neradujte se. Není to zhruba 3km. Norové mají vlastní míli, která měří 10km. 2 míle jsou tak cesta na 4 hodiny nejméně!</li>
 </ul>
-<p><img src="http://www.tomas-dvorak.cz/images/349t.jpg" alt="Cesta směr Ovre Stilla" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/335t.jpg" alt="Tundra, noc první" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/337t.jpg" alt="Tundra" width="300" height="225" /></p>
+<p><img src="/images/349.jpg" alt="Cesta směr Ovre Stilla" width="300" height="225" /> <img src="/images/335.jpg" alt="Tundra, noc první" width="300" height="225" /> <img src="/images/337.jpg" alt="Tundra" width="300" height="225" /></p>
 <p> </p>
 <h2>5. den - Joatka chatka, první sobí parohy, první bouřka</h2>
 <p>Noc v tundře byla pohodová. Ticho, jen vítr trochu foukal. Ráno byl stan obalený komáry, naštěstí jen zvenku. Vaříme čaj ke snídani a vyrážíme směr Joatka. Měla by to být chata DNT(klub norských turistů). Tam plánujeme odpočinek a uvařit si oběd. Cestou křížíme silnici, na křížení začíná stezka značená přímo na Joatku (do té doby jdeme jen po turistické označené červeným T). Na trase potkáváme první známky sobů - různé úlomky paroží. </p>
 <p>K chatce přicházíme opravdu okolo oběda, značně zmordovaní. Máme za sebou od rána takových 15km chůze. Chata(teda komplex budov) je vidět už z dálky, ale nám trvá snad ještě hodinu se k ní přiblížit. Stejně to bude i u dalších chat. Pokaždé uvažujeme, jestli si s náma jen nepohrává mysl a není to fatamorgana.</p>
 <p>Chata je s personálem, což v reálu znamená, že v některých z budov žije norská rodina, která se o zařízení stará. Nám je poněkud trapně, protože pro vodu jde člověk vlastně do něčí kuchyně. Ale co, oběd uvařen, snězen a hurá dál na cestu. Chata ležela v údolí, čeká nás dlouhé stoupání a dál už známá zvlněná krajina - do kopce z kopce, přes bažinu a opakovat.</p>
 <p>Okolo páté nás dohání bouřka. Hřmí, mraky jsou černé. Narychlo stavíme stan v údolí potoka, děláme večeři, myjeme se v ledové vodě. Sotva dojíme, začíná slejvák a blesky lítají o sto šest. V krajině se vše rozléhá a bouřka se několikrát vrací a točí nad námi. Unaveni usínáme dřív, než to všechno přejde.</p>
-<p><img src="http://www.tomas-dvorak.cz/images/350t.jpg" alt="Jezera%2C Finnmarksvidda" width="300" height="225" /></p>
+<p><img src="/images/350.jpg" alt="Jezera%2C Finnmarksvidda" width="300" height="225" /></p>
 <h2>6. den - písečné duny, opravdové bažiny, Mollišjoka a bouřka v patách</h2>
 <p>Ráno je počasí zcela jiné než večer (mění se tu hrozně rychle). Dnes nás čeká opravdu hodně bažin a řek podle mapy. Netrvá ani hodinu a už stojíme před první řekou, která nejde přeskákat po kamenech. Zkoušíme přejít bosi, ale s těžkýma batohama a ostrýma kamenama pod chodidly to moc nejde. Naštěstí máme sandále přímo pro takové účely. Pak už je brodění hračka, voda není hlubší než po kolena.</p>
 <p>Další kopec a údolí, tentokrát už ne řeka ale pořádná bažina. Zkoušíme návleky na nohy, ale jsou vcelku zbytečné, projdeme v pohodě, jen se propadáme po kotníky do bahna. Tak to bude dnes ještě mockrát.</p>
@@ -60,7 +60,7 @@ První týden na cestě po severním Norsku. Nalehko, jen s batohem a stanem. Ž
 <ul>
 <li>Cena za ubytování je ve všech chatách DNT stejná - 220NOK za noc s vlastním spacákem. Chaty jsou vybavené a útulné. Pokud je ošklivé počasí, je to ideální přenocování, i když za trochu vyšší cenu. </li>
 </ul>
-<div><img src="http://www.tomas-dvorak.cz/images/346t.jpg" alt="Bažiny%2C pohodová část" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/345t.jpg" alt="Tundra - odvrácená tvář" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/338t.jpg" alt="Mollišjoka - chata DNT" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/344t.jpg" alt="Mollišjoka" width="300" height="225" /></div>
+<div><img src="/images/346.jpg" alt="Bažiny%2C pohodová část" width="300" height="225" /> <img src="/images/345.jpg" alt="Tundra - odvrácená tvář" width="300" height="225" /> <img src="/images/338.jpg" alt="Mollišjoka - chata DNT" width="300" height="225" /> <img src="/images/344.jpg" alt="Mollišjoka" width="300" height="225" /></div>
 <h2>7. den - Ravnastua - nekonečné kamenné pláně a bažiny, poslední den v opravdové tundře<span style="font-size: 10px;"> </span></h2>
 <p>Po vydatném spánku vyrážíme na cestu odpočatí. Pán z chaty nám radí, kudy jít, abychom nemuseli přes řeku brodit. Super tip, brodíme až o pár set metrů dál jiný potok. To si takhle sundáte boty a než se narovnáte, sedí vám na obličeji dvacet, třicet komárů. Jsou všude, náš repelent jim snad chutná a nedají se odbít. Probíháme vodou, obouváme na mokré nohy od písku boty a honem co nejdál od vody. Teprve daleko na kopci jich je dost málo na to, aby člověk mohl v klidu vysypat písek, obout se do suchého a upravit. Jdeme dál, kopec-údolí-bažina, znovu a znovu. Některé kopce jsou pokryty tolika kameny, že vypadají jako pocukrované buchty. A hledejte kámen na kameni (turistické značení), když je kolem vás asi sto tisíc dalších kamenů. Jdeme celý den, dnes je cesta ještě namáhavější, než dřív. Možná je to tím 4. dnem na pochodu, možná je terén náročnější. Chceme dojít na dohled k chatě Ravnastua. To se nám daří až kolem šesté hodiny, opět za hřmění. Komplex budov vypadá tak nějak v rekonstrukci, všude nářadí, prkna, barvy. Stavíme si stan daleko za chatou, na písčítém plácku na konci cesty. Uleháme totálně vyřízení a přemýšlíme, jak že se to dostaneme zítra do Karasjoku. </p>
 <h2>8.den - úmorná cesta po silnici, kemp v nedohlednu</h2>
@@ -69,7 +69,7 @@ První týden na cestě po severním Norsku. Nalehko, jen s batohem a stanem. Ž
 <p>Posvačíme, převlékneme a vyrážíme na asfalt. Čeká nás úmorných 13 km podél silnice, než dojdeme ke kempu v Karasjoku. Slunce pálí a batoh je těžkej jako nikdy, přestože už neneseme skoro žádné jídlo ani zásoby vody. Několik pauz na cestě a konečně je v dálce cedule mířící na kemp. Takovou radost z cíle už jsem dlouho neměl. Huráááá!</p>
 <p>Jsme odhodláni vzít si chatku, srovnat věci, vyprat a usušit. Paní v recepci (vypadá trochu jako amazonka) nám půjčuje klíče, ať si vybereme. Volíme chatku s názvem „Villa”. Dvě postele, stolek, kuchyňskej kout a teráska. Cena není tak veselá, 380NOK za noc celkem. Ale co naplat, po 140 km chůze je třeba nějakej ten relax. Ubytujeme se, jdeme nakoupit (ano, opět REMA). Pokoušíme se o bramborovou kaši z pytlíku, párky a kafe. Nic z toho není ideální, ale lepší než sušenky a polívka, které jsme jedli dosud.  </p>
 <p>Večer zvládáme ještě vyprat v kempové turbopračce (40NOK za 40minut cyklus) a odpadáme vyřízení.</p>
-<p><img src="http://www.tomas-dvorak.cz/images/339t.jpg" alt="" width="300" height="225" /></p>
+<p><img src="/images/339.jpg" alt="" width="300" height="225" /></p>
 <p> </p>
 <h2>9. den - Karasjok, sámský parlament, muzeum, relax</h2>
 <p>Dneska je plán jednouchej. Chatku máme na dvě noci, můžeme tak nechat všechno v kempu a jít se jen na lehko projít do města, prohlídnout památky, nakoupit a odpočívat. </p>
@@ -83,4 +83,4 @@ První týden na cestě po severním Norsku. Nalehko, jen s batohem a stanem. Ž
 <li>V obchodech mají hrozně levnou a  dobrou marmeládu. Kilové balení v plastovém kelímku vychází okolo 15-20NOK. </li>
 <li>Chleba se cenově pohybuje někde od 6 do 40NOK. Nejlevnější se jmenuje Kneipp a chutná dobře.</li>
 </ul>
-<div><img src="http://www.tomas-dvorak.cz/images/340t.jpg" alt="Konečně pořádná snídaně" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/341t.jpg" alt="Sámský parlament - vstup a knihovna" width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/342t.jpg" alt="Sámský parlament " width="300" height="225" /> <img src="http://www.tomas-dvorak.cz/images/343t.jpg" alt="Kostel v Karasjoku%2C jediná budova%2C která přežila 2sv válku" width="300" height="225" /></div>
+<div><img src="/images/340.jpg" alt="Konečně pořádná snídaně" width="300" height="225" /> <img src="/images/341.jpg" alt="Sámský parlament - vstup a knihovna" width="300" height="225" /> <img src="/images/342.jpg" alt="Sámský parlament " width="300" height="225" /> <img src="/images/343.jpg" alt="Kostel v Karasjoku%2C jediná budova%2C která přežila 2sv válku" width="300" height="225" /></div>

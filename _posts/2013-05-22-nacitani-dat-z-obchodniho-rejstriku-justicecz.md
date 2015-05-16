@@ -13,15 +13,15 @@ Pracujete automatizovaně s daty firem? Jméno, IČ, sídlo firmy? Pak určitě 
 
 <p>API ARESu (Administrativní registr ekonomických subjektů) je pěkně <a href="http://wwwinfo.mfcr.cz/ares/ares.html.cz">dokumentované</a>, má bohaté možnosti a funguje poměrně spolehlivě. Na druhou stranu je tak pomalé, že nad ním našeptavač nepostavíte. A když postavíte, budete čekat a vaše uživatele akorát naštvete. </p>
 <p>Rozhodl jsem se tedy data o firmách brát jinde. Konkrétně na webu <a href="https://or.justice.cz/ias/ui/rejstrik-rozsirene">justice.cz</a>. V mém případě mi stačí název firmy, IČ a adresa. Všechny tyto hodnoty justice obsahuje. Web justice bohužel nemá žádné API (hezky se o tom rozepsal <a href="http://blog.aktualne.centrum.cz/blogy/michal-skop.php?itemid=15872">Michal Škop na svém blogu</a>). Co bychom chtěli za <a href="http://aktualne.centrum.cz/ekonomika/podnikani/clanek.phtml?id=736767">80 milionů</a> (cena je za celý systém, web <a href="http://or.justice.cz">or.justice.cz</a> je jen jedna z mnoha částí). Bude tak nutné parsovat HTML výstup.</p>
-<p><img src="http://www.tomas-dvorak.cz/images/304t.png" alt="Obchodní rejstřík a Sbírka listin - Ministerstvo spravedlnosti České republiky" width="500" height="106" /></p>
+<p><img src="/images/304.png" alt="Obchodní rejstřík a Sbírka listin - Ministerstvo spravedlnosti České republiky" width="500" height="106" /></p>
 <p>Limity pro přístupy jsou přísně nastaveny jak u <a href="http://wwwinfo.mfcr.cz/ares/ares.html.cz">ARESu</a>, tak u <a href="https://or.justice.cz/ias/ui/podminky">justice.cz</a>. U justice jde o 3000 dotazů denně / 50 za minutu. Není to moc, ale pro nějakou menší aplikaci, kde jde o rychlou odezvu a požadavků není moc to stačí. </p>
 <p>Hlavním důvodem pro nevyužití ARESu je tedy jeho velmi pomalá odezva. Tam, kde justice vrací data za desítky milisekund, ARES přemýšlí několik sekund (aktuálně okolo 3s, někdy i půl minuty, zřejmě podle zátěže). </p>
 <p> </p>
 <p>Srovnejte sami:</p>
 <p><strong>ARES</strong>: <a href="http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?czk=utf&max_pocet=10&obchodni_firma=Seznam">http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?czk=utf&max_pocet=10&obchodni_firma=Seznam</a></p>
-<p><img src="http://www.tomas-dvorak.cz/images/306t.png" alt="Doba odezvy API ARESu" width="500" height="45" /></p>
+<p><img src="/images/306.png" alt="Doba odezvy API ARESu" width="500" height="45" /></p>
 <p><strong>JUSTICE</strong>: <a href="https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=Seznam">https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=Seznam</a></p>
-<p><img src="http://www.tomas-dvorak.cz/images/305t.png" alt="Doba odezvy webu justice.cz" width="500" height="45" /></p>
+<p><img src="/images/305.png" alt="Doba odezvy webu justice.cz" width="500" height="45" /></p>
 <div> </div>
 <div>Napsal jsem si tedy vlastní kód na parsování dat z justice a chtěl bych vám jej poskytnout. Není dokonalý, nejspíš jde napsat lépe, ale o to teď nejde. Funguje dobře a data poskytuje rychle. V našeptavači je to v pohodě použitelné. </div>
 <div>
@@ -151,4 +151,4 @@ public class Justice {
 <p>Nakonec, pro zajímavost, jak se optimalizuje výkon takového API ARESu. Cituji z <a href="http://wwwinfo.mfcr.cz/ares/ares_xml_get.html.cz">dokumentace</a>.</p>
 <blockquote>Výstupy jsou uváděny buď v plné verzi, tj. plnými názvy elementů, nebo úsporné ve zkratkách (parametr ver). Implicitně jsou nastaveny u jednotlivých výstupů úsporné verze, protože šetří přenosové linky.</blockquote>
 <p>Nikoho už ale nenapadlo vracet data <a href="http://httpd.apache.org/docs/2.2/mod/mod_deflate.html">gzipovaná</a>. To by teprve byla znatelná úspora linky :-)</p>
-<p><img src="http://www.tomas-dvorak.cz/images/307t.png" alt="Hlavičky ARESu%2C žádný gzip není aktivován" width="500" height="270" /></p>
+<p><img src="/images/307.png" alt="Hlavičky ARESu%2C žádný gzip není aktivován" width="500" height="270" /></p>
