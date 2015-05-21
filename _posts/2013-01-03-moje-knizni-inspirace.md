@@ -19,7 +19,7 @@ Nevíte, jakou knihu začít číst? Podívejte se, které jsem za poslední dob
 <li>Jak drahá je nepoctivost</li>
 </ul>
 <p>Pokud vás zajímá, jak jsme my lidé omylní, jednáme na základě předsudků a intuice, proč podvádíme a co nás dovede umravnit, nemůžete některou z knih Dan Arielyho minout. Zabývá se behaviorální ekonomií a na mnoha experimentech dokazuje, proč se nechováme racionálně a slušně. Knihy jsou napsány velmi lehkou a stravitelnou formou, prošpikovány příklady a příběhy. Rozhodně se nebudete nudit jako v hodině ekonomie.</p>
-<h2><img style="float: right; padding: 10px;" src="/images/263.jpg" alt="" width="200" height="267" /></h2>
+<h2><img style="float: right; padding: 10px;" src="/images/263.jpg" alt="knihy" width="200" height="267" /></h2>
 <h2>Nassim Nicholas Taleb</h2>
 <ul>
 <li>Černá labuť</li>

@@ -180,7 +180,7 @@ alt="js validace - vysledky" /></div>
 je její řešení je standardním výstupem validátoru.</p>
 
 <p>Zdrojové kódy k tomuto článku včetně příkladu jsou ke stažení:
-<a href="http://www.tomas-dvorak.cz/file_download/40">jsvalidation.zip</a></p>
+<a href="/file_download/40">jsvalidation.zip</a></p>
 
 <p><strong>Odkazy</strong>
 <br /><a

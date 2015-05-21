@@ -59,4 +59,4 @@ Druhý týden na cestách, nejsevernější bod Evropy - Knivskjelodden. Nordkap
 <p> </p>
 </li>
 </ul>
-<p><img src="/images/359.jpg" alt="Nordkapp pokořen" width="300" height="225" /> <img src="/images/360.jpg" alt="Nordkapp" width="300" height="225" /> <img src="/images/361.jpg" alt="Nordkapp Hallen" width="300" height="225" /> <img src="/images/362.jpg" alt="" width="300" height="225" /></p>
+<p><img src="/images/359.jpg" alt="Nordkapp pokořen" width="300" height="225" /> <img src="/images/360.jpg" alt="Nordkapp" width="300" height="225" /> <img src="/images/361.jpg" alt="Nordkapp Hallen" width="300" height="225" /> <img src="/images/362.jpg" alt="nordkapp" width="300" height="225" /></p>

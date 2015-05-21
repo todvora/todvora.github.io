@@ -18,14 +18,10 @@ nebo velká písmena a kombinaci kterékoli varianty z výše uvedených.
 Nové vygenerované heslo si pamatuje, dokud ho nepřegenerujete novým, je tak
 šance nezapomenout jej hned :)</p>
 
-<p>Cílová platforma je Windows Mobile Classic/Profes­sional.</p>
+<p>Cílová platforma je Windows Mobile Classic/Professional.</p>
 
-<div style="text-align:center"><img src="/images/54.gif" width="240"
+<div><img src="/images/54.gif" width="240" alt="NS PassGen"
 height="320" /></div>
-
-<p><strong>Ke stažení:</strong>
-<br /><a
-href="http://www.tomas-dvorak.cz/file_download/26">http://www.tomas-dvorak.cz/…_dow­nload/26</a></p>
 
 <p><strong>Domovská stránka programu :</strong>
 <br /><a

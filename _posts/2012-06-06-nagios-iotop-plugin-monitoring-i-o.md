@@ -13,7 +13,7 @@ tags:
 Monitorování I/O systému pomocí utility iotop a následný přenos dat do nagiosu využíváme k sledování čtení a zápisů na disk našich serverů. Slouží k hrubé představě o tom, jak systém I/O využívá. Iotop zobrazuje souhrná čísla pro čtení a zápis, ta budeme ukládat v nagiosu a zobrazovat pomocí frontendu centreon.
 
 <p><a href="http://guichaz.free.fr/iotop/">Iotop</a> je utilita pro monitorování I/O navržená podle vzhledu a chování unixové utility <a href="http://www.unixtop.org/">top</a>. Poskytuje zjednodušený pohled na procesy, které využívají I/O a zobrazuje celková čísla pro zápis a čtení z disku (neřeší, na kterém z disků operace probíhá). Utilita tak nevystihuje, jak je využit který disk, ale spíše jak který proces masivně využívá čtení a zápisy. Zároveň poskytuje zjednodušená celková čísla pro zápis a čtení disků (<strong>Total DISK READ | Total DISK WRITE</strong>). Tyto dvě hodnoty chceme monitorovat v nagiosu.</p>
-<p><img src="/images/98.png" alt="" width="642" height="393" /></p>
+<p><img src="/images/98.png" alt="iotopu v konzoli" width="642" height="393" /></p>
 <p>(Obrázek: Okno iotopu v konzoli)</p>
 <p> </p>
 <p>Protože se ale hodnoty <strong>Total DISK READ </strong>a<strong> Total DISK WRITE </strong>﻿mění v čase velmi značně, budeme muset data odečíst několikrát za sebou v krátkých intervalech a jejich hodnoty zprůměrovat. Počet oprakování se dá scriptu podstrčit v parametru <em>repeats.</em></p>
@@ -99,5 +99,5 @@ print status_message + ", disk read: "+str(average_speed_read)+"B/s, disk write:
 exit(return_code)
 </pre>
 <p>Script už jen jednoduše nahrajete na monitorovaný server a voláte jej například pomocí obalového pluginu <em>check_by_ssh </em>, který zajistí přístup ke vzdálenému stroji pomocí ssh. Data se sbírají do nagiosu, graf níže je pak vyrenderovaný z centreonu (grafická nadstavba nad nagiosem)</p>
-<p> <img src="/images/99.png" alt="" width="647" height="241" /></p>
+<p> <img src="/images/99.png" alt="centreon graf" width="647" height="241" /></p>
 <p>Takový monitoring vám pak poskytne informaci o tom, jak moc stroj zapisuje/čte. Pokud vás zajímají přesnější čísla, monitoring jednotlivých disků, zaměřte se spíše na data z <a href="http://en.wikipedia.org/wiki/Iostat">http://en.wikipedia.org/wiki/Iostat</a>. </p>

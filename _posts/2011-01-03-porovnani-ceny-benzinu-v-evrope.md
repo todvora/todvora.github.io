@@ -9,7 +9,7 @@ Kratičké zamyšlení nad cenama benzínu u nás a v zahraničí s porovnáním
 
 <p>Cena benzínu v posledních dnech se v České republice šplhá do závratných výší, tak mě napadlo porovnat jak je to s cenama v jiných státech. Jezdím na benzín, porovnávat budu tedy natural 95. Nečekejte žádné super přesné pororvnání, všechna čísla jsou jen +- a mění se neustále v čase</p>
 <p> </p>
-<h2 style="text-align: center;">Přehled cen benzínu v Evropě a přepočet na čistý příjem</h2>
+<h2>Přehled cen benzínu v Evropě a přepočet na čistý příjem</h2>
 <p> </p>
 <table style="text-align: left;">
 <tbody>
@@ -107,11 +107,11 @@ Kratičké zamyšlení nad cenama benzínu u nás a v zahraničí s porovnáním
 </tbody>
 </table>
 <p> </p>
-<h2 style="text-align: center;">Vývoj ceny barelu ropy</h2>
+<h2>Vývoj ceny barelu ropy</h2>
 <p> </p>
-<p style="text-align: center;"><img src="/images/65.png" alt="" /></p>
+<p><img src="/images/65.png" alt="Vývoj ceny barelu ropy" /></p>
 <p> </p>
-<h2 style="text-align: center;">Složky ceny jednoho litru benzínu</h2>
+<h2>Složky ceny jednoho litru benzínu</h2>
 <p> </p>
 <table style="text-align: right; margin-left: 100px;">
 <tbody>

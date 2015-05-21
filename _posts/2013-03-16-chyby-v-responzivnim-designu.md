@@ -31,9 +31,9 @@ Responsivní design je hit poslední doby. Denně se ale setkávám se stránkam
 <p>Je na zvážení každého designera, co vše by mělo v hlavičce na mobilním zobrazení být, a jestli je to tam opravdu nutné. U zdrojáku je velké pole pro hledání, které jsem nikdy nepoužil. Překáží mi ale při čtení každého článku.</p>
 <h2>Příliš velký padding stránky</h2>
 <p>Pro responsivní weby používá mnoho vývojářů framework Bootstrap. Ten má v základním nastavení na můj vkus zbytečně velké odsazení obsahu a na menších displayích to vypadá, že na obsah už skoro žádné místo nezbývá. První ukázka pochází z <a href="http://blog.mefistofeles.cz/">blog.mefistofeles.cz</a> a sejmuta byla telefonem Sony Xperia Tipo (display 320x480px). Padding stránky je nastaven zleva i zprava na 25px, dalších 20px zleva i zprava vezme padding samotného obsahu. Při poměrně běžném rozlišení 320x480px tedy padding ukousne celých 28% šířky displaye. Řešením by bylo buď jej snížit na mnohem nižší čísla nebo nastavovat relativně k šířce displaye. Druhá ukázka je z mého webu, kdy jsem stejné výchozí hodnoty snížil na 10px z každé strany padding textu a 5px padding stránky. Celkem tedy jen 1/3 původních hodnot. Zároveň jsem zmenšil velikost nadpisu, aby nevycházelo jedno slovo na řádek. Dává to tak víc prostoru samotnému textu.</p>
-<p><img src="/images/279.png" alt="Příliš velký padding stránky" width="250" height="375" /> <img src="/images/280.png" alt="" width="250" height="375" /></p>
+<p><img src="/images/279.png" alt="Příliš velký padding stránky" width="250" height="375" /> <img src="/images/280.png" alt="ukázka paddingu" width="250" height="375" /></p>
 <h2>Zbytečně moc dat a scriptů</h2>
-<p>Pokud máte pod každým článkem umístěno několik sociálních tlačítek (facebook, twitter, g+, linkedIn) a pro každé používáte doporučovaný způsob vložení, nutíte tak prohlížeč stahovat mnoho dat navíc. Pro zmíněná čtyři tlačítka to může být 400KB dat a 22 requestů. Pokud vám to také přijde hodně, přečtěte si můj článek <a href="http://www.tomas-dvorak.cz/clanky/jak-delat-tlacitka-pro-socialni-site-lepe">Jak dělat tlačítka pro sociální sítě lépe</a>. Jde to i bez externích zdrojů a hromady dat navíc.</p>
+<p>Pokud máte pod každým článkem umístěno několik sociálních tlačítek (facebook, twitter, g+, linkedIn) a pro každé používáte doporučovaný způsob vložení, nutíte tak prohlížeč stahovat mnoho dat navíc. Pro zmíněná čtyři tlačítka to může být 400KB dat a 22 requestů. Pokud vám to také přijde hodně, přečtěte si můj článek <a href="/posts/jak-delat-tlacitka-pro-socialni-site-lepe">Jak dělat tlačítka pro sociální sítě lépe</a>. Jde to i bez externích zdrojů a hromady dat navíc.</p>
 <h2>Nástroje, které vám pomohou</h2>
 <p><strong>Window resizery</strong> jsou rozšíření do prohlížeče, která umožní změnit velikost okna a tím simulovat menší display.</p>
 <ul>
@@ -47,6 +47,6 @@ Responsivní design je hit poslední doby. Denně se ale setkávám se stránkam
 <li><a href="http://www.opera.com/developer/mobile-emulator">Opera mobile emulator</a></li>
 </ul>
 <div><img src="/images/281.png" alt="Opera mini - online verze mobilního prohlížeče" width="250" height="372" /></div>
-<div> </div>
+
 <p><strong>Vývojářské nástroje</strong>, jako jsou <a href="http://getfirebug.com/">firebug ve firefoxu</a>, <a href="http://www.opera.com/dragonfly/">dragonfly v opeře</a> nebo <a href="https://developers.google.com/chrome-developer-tools/?hl=cs">developer tools v chrome</a>, pomohou odhalit, kde se bere padding a margin, jak je který prvek zarovnán. Zároveň umožňují ihned hodnoty měnit a testovat. Nemusíte tak dokola upravovat soubor se styly a přenačítat stránku. Vždy je ale lepší otestovat web na reálných zařízeních. Zjistíte tak, jak se stránka používá, jak reaguje na dotek a posun.</p>
 <h2>Závěrem</h2>

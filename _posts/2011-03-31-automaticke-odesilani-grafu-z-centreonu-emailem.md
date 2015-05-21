@@ -21,8 +21,7 @@ k rozhraní umí připojit a stahnout si vybrané grafy, které následně
 pošle emailem. Umožnuje to tak mít každé ráno přehled o grafech za
 poslední den a vidět jak se situace mění během dne.</p>
 
-<div style="text-align:center"><a href="/images/70.png"><img
-src="/images/70.png" /></a></div>
+<p><a href="/images/70.png"><img src="/images/70.png" alt="centreon monitoring"/></a></p>
 
 <pre class=".prettyprint"><code>import subprocess
 import sys

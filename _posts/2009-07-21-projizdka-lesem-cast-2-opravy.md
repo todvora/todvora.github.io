@@ -13,7 +13,7 @@ Popis opravy krytu motoru frontery poškozené pařezem.
 
 
 <p style="text-align:justify">V přechozím článku <a
-href="/clanky/projizdka-lesem">o vyprošťování frontery</a> jsem se už
+href="/posts/projizdka-lesem">o vyprošťování frontery</a> jsem se už
 nijak nezmiňoval co bylo s autem dál. Odnesl to kryt motoru, ne nijak
 vážně, ale dost na to, aby stálo za to sundat ho a opravit. Kdyt drží na
 čtyřech šroubech pod motorem, dva jsou v předním náběhovém krytu
@@ -29,28 +29,28 @@ stran, ale je to zbytečné, spoj drží krásně i s plechem jen zespoda.
 Nakonec bude ještě celý kryt nastříkán gumoasfaltem, aby spoje
 neoxidovaly.</p>
 
-<p style="text-align:center"><strong>Celkový pohled na rozlámaný
+<p><strong>Celkový pohled na rozlámaný
 kryt</strong>
-<br /><a href="/images/37.jpg"><img src="/images/37.jpg" /></a></p>
+<br /><a href="/images/37.jpg"><img src="/images/37.jpg" alt=">Celkový pohled na rozlámaný"/></a></p>
 
-<p style="text-align:center"><strong>Vnitřní strana krytu</strong>
-<br /><a href="/images/38.jpg"><img src="/images/38.jpg" /></a></p>
+<p><strong>Vnitřní strana krytu</strong>
+<br /><a href="/images/38.jpg"><img src="/images/38.jpg" alt="Vnitřní strana krytu"/></a></p>
 
-<p style="text-align:center"><strong>Detail poškození</strong>
-<br /><a href="/images/39.jpg"><img src="/images/39.jpg" /></a></p>
+<p><strong>Detail poškození</strong>
+<br /><a href="/images/39.jpg"><img src="/images/39.jpg" alt="Detail poškození"/></a></p>
 
-<p style="text-align:center"><strong>Spoj nýty</strong>
-<br /><a href="/images/40.jpg"><img src="/images/40.jpg" /></a></p>
+<p><strong>Spoj nýty</strong>
+<br /><a href="/images/40.jpg"><img src="/images/40.jpg" alt="Spoj nýty" /></a></p>
 
-<p style="text-align:center"><strong>Detail poškození</strong>
-<br /><a href="/images/39.jpg"><img src="/images/39.jpg" /></a></p>
+<p><strong>Detail poškození</strong>
+<br /><a href="/images/39.jpg"><img src="/images/39.jpg" alt="Detail poškození"/></a></p>
 
-<p style="text-align:center"><strong>Postup opravy</strong>
-<br /><a href="/images/41.jpg"><img src="/images/41.jpg" /></a></p>
+<p><strong>Postup opravy</strong>
+<br /><a href="/images/41.jpg"><img src="/images/41.jpg" alt="Postup opravy"/></a></p>
 
-<p style="text-align:center"><strong>Hotovo, opraveno</strong>
-<br /><a href="/images/43.jpg"><img src="/images/43.jpg" /></a></p>
+<p><strong>Hotovo, opraveno</strong>
+<br /><a href="/images/43.jpg"><img src="/images/43.jpg" alt="Hotovo, opraveno"/></a></p>
 
-<p style="text-align:center"><strong>Kryt zpět na svém místě</strong>
-<br /><a href="/images/42.jpg"><img src="/images/42.jpg" /></a></p>
+<p><strong>Kryt zpět na svém místě</strong>
+<br /><a href="/images/42.jpg"><img src="/images/42.jpg" alt="Kryt zpět na svém místě"/></a></p>
 

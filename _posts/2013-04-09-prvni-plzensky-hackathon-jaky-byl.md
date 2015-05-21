@@ -40,4 +40,4 @@ Co jsme programovali, jaké technologie se naučili? Líbilo se nám kódovat na
 <li>Twitter účet <a href="https://twitter.com/HackatonPlzen">@HackatonPlzen</a> a hashtag <a href="https://twitter.com/search/realtime?q=%23plzenskyhackathon&src=hash">#plzenskyhackathon</a></li>
 </ul>
 <p> </p>
-<p><img src="/images/300.jpg" alt="" width="333" height="250" /></p>
+<p><img src="/images/300.jpg" alt="bus" width="333" height="250" /></p>

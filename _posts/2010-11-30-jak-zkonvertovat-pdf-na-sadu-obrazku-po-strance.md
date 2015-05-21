@@ -37,12 +37,12 @@ velikosti. Zároveň provedl vyhlazení a výsledek vypadá o mnoho lépe.
 Nyní můžeme porovnat výsledky s vyhlazením a bez vyhlazení, rozdíl
 je značný.</p>
 
-<p style="text-align:center"><a href="/images/74.jpg"><img
-src="/images/74.jpg" alt="" /></a>
+<p><a href="/images/74.jpg"><img
+src="/images/74.jpg" alt="Bez vyhlazení" /></a>
 <br />Bez vyhlazení (rozklikněte pro zobrazení celého obrázku)</p>
 
-<p style="text-align:center"><a href="/images/75.jpg"><img
-src="/images/75.jpg" alt="" /></a>
+<p><a href="/images/75.jpg"><img
+src="/images/75.jpg" alt="S vyhlazením" /></a>
 <br />S vyhlazením (rozklikněte pro zobrazení celého obrázku)</p>
 
 <p>Kód celého příkladu by mohl vypadat například takto:</p>

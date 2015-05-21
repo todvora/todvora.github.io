@@ -11,7 +11,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 
 <h2>Nejprve nějaká data pro výpočty</h2>
 <p>Začněme tím, že si vytvoříme kolekci, na které budeme agregaci testovat. Aby byla snadno pochopitelná a blízká českému prostředí, použijeme databázi českých PSČ.</p>
-<p>Kolekci <a href="http://cs.wikipedia.org/wiki/JavaScript_Object_Notation">JSON</a> dokumentů připravených pro import vytvořil <a href="http://blog.pavek.net/o-autorovi/">Michal Pávek</a> (viz <a href="http://blog.pavek.net/2013/11/ceske-psc-pro-mongodb/">článek</a>) a zpřístupnil ji na <a href="http://www.tomas-dvorak.cz/github.com/MichalSpitfire/cz-zip-json">Githubu</a>. Odtud si ji můžeme snadno stáhnout:</p>
+<p>Kolekci <a href="http://cs.wikipedia.org/wiki/JavaScript_Object_Notation">JSON</a> dokumentů připravených pro import vytvořil <a href="http://blog.pavek.net/o-autorovi/">Michal Pávek</a> (viz <a href="http://blog.pavek.net/2013/11/ceske-psc-pro-mongodb/">článek</a>) a zpřístupnil ji na <a href="https://github.com/MichalSpitfire/cz-zip-json">Githubu</a>. Odtud si ji můžeme snadno stáhnout:</p>
 <p><code>wget https://raw.github.com/MichalSpitfire/cz-zip-json/master/cz_zip_codes.json</code></p>
 <p>Data do MongoDB naimportujeme příkazem (předpokládám defaultní port a localhost):</p>
 <p><code>mongoimport --db test --collection zips cz_zip_codes.json</code></p>

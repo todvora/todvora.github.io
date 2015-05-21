@@ -15,7 +15,7 @@ href="http://www.vlada.cz/cz/pracovni-a-poradni-organy-vlady/rlp/rlp-uvod-17537/
 jako nevhodnou.
 <br />Děkuji :)</p>
 
-<p style="text-align:center"><a style="border:2px solid red"
+<p><a style="border:2px solid red"
 href="http://ohlaste.horkalinka.cz/redButton/insert.asp?text=hnus,hnus,hnus&url=http://www.vlada.cz/cz/pracovni-a-poradni-organy-vlady/rlp/rlp-uvod-17537/&date=10.2.2010:12:12:12">Nahlásit
 jako nevhodnou : Rada vlády pro lidská práva</a>
 <br />

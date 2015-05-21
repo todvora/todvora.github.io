@@ -33,7 +33,7 @@ Tak ukázkové SQL injection, jako je na webu iŽabka, už jsem dlouho neviděl.
 <li>Nechť vaši programátoři píšou bezpečný kód. SQL injection je známá, snadno odhalitelná chyba, o které se mluví už celou věčnost. Zeptejte se, co o SQL injection ví a jak se jí brání.</li>
 <li>Testujte, zda web nevrací, co nemá. Jak jsem psal v úvodu, stačí několik jednoduchých znaků na úvodní otestování a odhalení největších problémů. Uvozovka, apostrof a podobně.</li>
 <li>Koukejte do Google Analytics. Všímejte si, jaké dotazy lidi pokládají. Když odhalíte divné dotazy, ozkoušejte, co dělají. Máte je zaznamenány, neignorujte tu informaci.</li>
-<li>Monitorujte nějak zmínky na internetu. Podobnou informaci někdo často někde utrousí a vy o ní vůbec nevíte. Pro začátek stačí třeba Google Alerts a monitorovat název domény. Jak na to jsem psal už dříve, v článku <a href="http://www.tomas-dvorak.cz/clanky/monitoring-medii-na-vlastni-pest-google-alerts">Monitoring médií na vlastní pěst - Google Alerts</a>.</li>
+<li>Monitorujte nějak zmínky na internetu. Podobnou informaci někdo často někde utrousí a vy o ní vůbec nevíte. Pro začátek stačí třeba Google Alerts a monitorovat název domény. Jak na to jsem psal už dříve, v článku <a href="/posts/monitoring-medii-na-vlastni-pest-google-alerts">Monitoring médií na vlastní pěst - Google Alerts</a>.</li>
 <li>Zeptejte se tvůrce webu, zda je na produkčním webu vypnutý výpis chyb. Neprozrazujte, co není nutné. Stačí napsat, že nastala chyba.</li>
 <li>Když už vám někdo pošle zprávu o tom, že máte na webu zranitelnost, poděkujte a opravte tu chybu. Posílá vám to proto, že chce poradit. Kdyby chtěl škodit, proč by vám o tom dával vědět?</li>
 <li>Nakonec, pokud ignorujete všechno zmíněné, nedivte se.</li>

@@ -17,7 +17,7 @@ upozornění, při nízkých nárocích na systémové prostředky.
 navrchu displaye ukazuje stav baterie. Má rozsáhlé možnosti konfigurace a
 upozornění.</p>
 
-<div style="text-align:center"><img src="/images/56.png" width="240"
+<div><img src="/images/56.png" width="240" alt="stav baterie"
 height="320" /></div>
 
 <p>Při normální práci o aplikaci ani nevíte, spotřebuje malé
@@ -32,7 +32,7 @@ nastavení ovládá.</p>
 
 <h3>General</h3>
 
-<div style="text-align:center"><img src="/images/59.gif" width="240"
+<div><img src="/images/59.gif" width="240" alt="konfigurační volby"
 height="320" /></div>
 
 <p><strong>Indicate charging</strong> – ukazatel znázornuje nabíjení,
@@ -61,7 +61,7 @@ proužek, na výběr je :</p>
 
 <h3>Advanced</h3>
 
-<div style="text-align:center"><img src="/images/57.gif" width="240"
+<div><img src="/images/57.gif" width="240" alt="konfiruační volby"
 height="320" /></div>
 
 <p>Záložka advanced umožnuje nastavit v první řadě události
@@ -84,8 +84,7 @@ nastane při jakém nabití baterie.</p>
 
 <h3>Appearance</h3>
 
-<div style="text-align:center"><img src="/images/58.gif" width="240"
-height="320" /></div>
+<div><img src="/images/58.gif" width="240" alt="design" height="320" /></div>
 
 <p>Poslední záložka nastavuje vzhled indikačního proužku. Volby jsou:
 <br /><strong>Left margin</strong> – odsazení proužku zleva

@@ -21,9 +21,7 @@ s odkazem na aktuální katalog sortimentu.Použité technologie:</p>
 	<li>CSS</li>
 </ul>
 
-<div style="text-align:center"><img src="http://data-4.xf.cz/images/4.png"
-alt="" /></div>
+<div><img src="/images/4.png" alt="VELKOOBCHOD-KRATOCHVÍL" /></div>
 
-<p>více informací na <a
-href="http://www.velkoobchod-kratochvil.cz">http://www.vel­koobchod-kratochvil.cz</a></p>
+<p>více informací na <a href="http://www.velkoobchod-kratochvil.cz">http://www.vel­koobchod-kratochvil.cz</a></p>
 

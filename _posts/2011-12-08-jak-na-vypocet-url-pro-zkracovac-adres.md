@@ -252,7 +252,7 @@ takto:</p>
 
 <ol>
 	<li>Chci zkrátit URL, například <a
-	href="http://www.tomas-dvorak.cz/kategorie/Internet/">http://www.tomas-dvorak.cz/kate­gorie/Internet/</a>.
+	href="http://www.tomas-dvorak.cz/kategorie/Internet/">http://www.tomas-dvorak.cz/kategorie/Internet/</a>.
 	V databázi mám vloženo již <em>12577</em> adres, které byly zkráceny.
 	Vložím tedy tuto a vím, že její ID je <em>12578</em>.</li>
 
@@ -267,9 +267,9 @@ takto:</p>
 
 	<li>Dohledání správné URL v databázi, která má ID odpovídající
 	získanému číslu <em>12578</em>, výsledkem je původní adresa <a
-	href="http://www.tomas-dvorak.cz/kategorie/Internet/">http://www.tomas-dvorak.cz/kate­gorie/Internet/</a></li>
+	href="http://www.tomas-dvorak.cz/kategorie/Internet/">http://www.tomas-dvorak.cz/kategorie/Internet/</a></li>
 
 	<li>Pošlu HTTP redirect na zjištěnou kompletní URL <a
-	href="http://www.tomas-dvorak.cz/kategorie/Internet/">http://www.tomas-dvorak.cz/kate­gorie/Internet/</a></li>
+	href="http://www.tomas-dvorak.cz/kategorie/Internet/">http://www.tomas-dvorak.cz/kategorie/Internet/</a></li>
 </ol>
 

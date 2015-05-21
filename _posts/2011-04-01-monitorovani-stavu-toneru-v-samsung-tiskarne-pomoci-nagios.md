@@ -21,10 +21,9 @@ monitoruje stav tiskárny Samsung SCX-4×28 Series a výsledky měření
 předává ve formátu pro <a href="http://www.nagios.org/">Nagios</a>
 monitorovací systém. Obdobný script, jen pro tiskárnu HP jsem popisoval již
 dříve: <a
-href="http://www.tomas-dvorak.cz/clanky/monitorovani-stavu-inkoustu-v-hp-tiskarne-pomoci-nagios">http://www.tomas-dvorak.cz/clan­ky/monitorova­ni-stavu-inkoustu-v-hp-tiskarne-pomoci-nagios</a></p>
+href="/posts/monitorovani-stavu-inkoustu-v-hp-tiskarne-pomoci-nagios">Monitorování stavu inkoustu v HP tiskárně pomocí nagios</a></p>
 
-<p style="text-align:center"><img src="/images/71.gif"
-alt="" />
+<p><img src="/images/71.gif" alt="Samsung SCX-4×28 Series" />
 <br />Ilustrační obrázek tiskárny Samsung SCX-4×28 Series</p>
 
 <hr />
@@ -82,12 +81,12 @@ exit(return_code)</code></pre>
 
 <hr />
 
-<p style="text-align:center"><img
-src="/images/72.png" alt="" />
+<p><img
+src="/images/72.png" alt="stav inkoustu" />
 <br />Screenshot z webového rozhraní, které ukazuje stav inkoustu</p>
 
-<p style="text-align:center"><img
-src="/images/73.png" alt="" />
+<p><img
+src="/images/73.png" alt="centreon monitoring" />
 <br />Graf z Centreonu, který získává data výše popsaným pluginem
 pro Nagios</p>
 

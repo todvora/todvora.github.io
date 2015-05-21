@@ -69,7 +69,7 @@ První týden na cestě po severním Norsku. Nalehko, jen s batohem a stanem. Ž
 <p>Posvačíme, převlékneme a vyrážíme na asfalt. Čeká nás úmorných 13 km podél silnice, než dojdeme ke kempu v Karasjoku. Slunce pálí a batoh je těžkej jako nikdy, přestože už neneseme skoro žádné jídlo ani zásoby vody. Několik pauz na cestě a konečně je v dálce cedule mířící na kemp. Takovou radost z cíle už jsem dlouho neměl. Huráááá!</p>
 <p>Jsme odhodláni vzít si chatku, srovnat věci, vyprat a usušit. Paní v recepci (vypadá trochu jako amazonka) nám půjčuje klíče, ať si vybereme. Volíme chatku s názvem „Villa”. Dvě postele, stolek, kuchyňskej kout a teráska. Cena není tak veselá, 380NOK za noc celkem. Ale co naplat, po 140 km chůze je třeba nějakej ten relax. Ubytujeme se, jdeme nakoupit (ano, opět REMA). Pokoušíme se o bramborovou kaši z pytlíku, párky a kafe. Nic z toho není ideální, ale lepší než sušenky a polívka, které jsme jedli dosud.  </p>
 <p>Večer zvládáme ještě vyprat v kempové turbopračce (40NOK za 40minut cyklus) a odpadáme vyřízení.</p>
-<p><img src="/images/339.jpg" alt="" width="300" height="225" /></p>
+<p><img src="/images/339.jpg" alt="rozcestník na Finmarskviddě" width="300" height="225" /></p>
 <p> </p>
 <h2>9. den - Karasjok, sámský parlament, muzeum, relax</h2>
 <p>Dneska je plán jednouchej. Chatku máme na dvě noci, můžeme tak nechat všechno v kempu a jít se jen na lehko projít do města, prohlídnout památky, nakoupit a odpočívat. </p>

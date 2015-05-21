@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Speed Check</title>
+</head>
+<body>
+<h3> Speed check </h3>
+<br>
+
+Speed : <span id="speedTest"></span>
+<script type="text/javascript">
+
+var SpeedTest = function() {};
+
+SpeedTest.prototype = {
+  imgUrl: "/images/23.png"    // Where the image is located at
+  ,size: 199642                // bytes
+  ,run: function( options ) {
+
+    if( options && options.onStart )
+      options.onStart();
+
+    var imgUrl = this.imgUrl + "?r=" + Math.random();
+    this.startTime = (new Date()).getTime() ;
+
+    var testImage = new Image();
+    var me = this;
+    testImage.onload = function() {
+      me.endTime = (new Date()).getTime();
+      me.runTime = me.endTime - me.startTime;
+
+      if( options && options.onEnd )
+        options.onEnd( me.getResults() );
+    };
+    testImage.src = imgUrl;
+  }
+
+  ,getResults: function() {
+    if( !this.runTime )
+      return null;
+
+    return {
+      runTime: this.runTime
+      ,Kbps: ( this.size * 8 / 1024 / ( this.runTime / 1000 ) )
+      ,KBps: ( this.size / 1024 / ( this.runTime / 1000 ) )
+    };
+  }
+}
+
+ var st = new SpeedTest();
+ st.run({
+    onStart: function() {
+       document.getElementById("speedTest").innerHTML = "zacal vypocet...";
+   }
+   ,onEnd: function(speed) {
+document.getElementById("speedTest").innerHTML = Math.round(speed.Kbps) + ' Kbps';
+   }
+ });
+</script>
+</body>
+
+</html>

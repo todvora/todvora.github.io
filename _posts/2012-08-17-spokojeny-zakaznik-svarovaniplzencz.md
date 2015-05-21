@@ -32,7 +32,7 @@ Pokud chcete v Plzni sehnat někoho, kdo Vám svaří kdejaký kov, opraví chla
 </tbody>
 </table>
 <p> </p>
-<p><img src="/images/129.jpg" alt="" width="200" height="150" /><img src="/images/130.jpg" alt="" width="200" height="150" /><img src="/images/131.jpg" alt="" width="200" height="150" /><img src="/images/132.jpg" alt="" width="200" height="150" /><img src="/images/133.jpg" alt="" width="200" height="150" /><img src="/images/134.jpg" alt="" width="200" height="150" /></p>
+<p><img src="/images/129.jpg" alt="stupačka Kawasaki-zr7" width="200" height="150" /><img src="/images/130.jpg" alt="stupačka Kawasaki-zr7" width="200" height="150" /><img src="/images/131.jpg" alt="stupačka Kawasaki-zr7" width="200" height="150" /><img src="/images/132.jpg" alt="stupačka Kawasaki-zr7" width="200" height="150" /><img src="/images/133.jpg" alt="stupačka Kawasaki-zr7" width="200" height="150" /><img src="/images/134.jpg" alt="stupačka Kawasaki-zr7" width="200" height="150" /></p>
 <p>Takže jsem se na ně obrátil teď znovu, když jsem potřeboval upravit nosiče kufrů na motorku. Opět perfektní práce, do druhého dne hotovo a velmi rozumná cena. Jednalo se o zkrácení jednoho úchytu na dvou nosičích, zabroušení, vyvrtání nových děr pro šrouby, přelakování místa, kde bylo řezáno. </p>
 <p>Díky za perfektní práci.</p>
-<p>Článek patří do sekce <a href="http://www.tomas-dvorak.cz/kategorie/spokojeny-zakaznik/">spokojený zákazník</a>, kde se snažím poukázat na řemeslníky a firmy, se kterými jsem byl velmi spokojen a rád je doporučím dál.</p>
+<p>Článek patří do sekce spokojený zákazník, kde se snažím poukázat na řemeslníky a firmy, se kterými jsem byl velmi spokojen a rád je doporučím dál.</p>

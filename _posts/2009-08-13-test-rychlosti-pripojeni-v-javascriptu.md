@@ -25,39 +25,33 @@ začneme nahrávat obrázek a v okamžiku kdy nahrávání skončí,
 změříme čas podruhé. Ze zjištěného času a známé velikosti obrázku
 vypočteme přenosovou rychlost.</p>
 
-<pre><code><script type="text/javascript">
-// vytvoreni nove funkce
+<pre><code>&lt;script type=&quot;text/javascript&quot;&gt;
+
 var SpeedTest = function() {};
 
-// jeji navrzeni
 SpeedTest.prototype = {
-  imgUrl: "/images/23.png"    // umisteni obrazku
-  ,size: 199642                // a jeho velikost v bitech
+  imgUrl: &quot;/images/23.png&quot;    // Where the image is located at
+  ,size: 199642                // bytes
   ,run: function( options ) {
 
-    if( options && options.onStart )
+    if( options &amp;&amp; options.onStart )
       options.onStart();
 
-// nahodne cislo, aby se zamezilo cachovani
-    var imgUrl = this.imgUrl + "?r=" + Math.random();
-
-// prvni stopnuti casu
+    var imgUrl = this.imgUrl + &quot;?r=&quot; + Math.random();
     this.startTime = (new Date()).getTime() ;
 
     var testImage = new Image();
     var me = this;
     testImage.onload = function() {
-// druhe stopnuti casu, po nahrani obrazku
       me.endTime = (new Date()).getTime();
       me.runTime = me.endTime - me.startTime;
 
-      if( options && options.onEnd )
+      if( options &amp;&amp; options.onEnd )
         options.onEnd( me.getResults() );
     };
     testImage.src = imgUrl;
   }
 
-// vypocet rychlosti
   ,getResults: function() {
     if( !this.runTime )
       return null;
@@ -70,39 +64,37 @@ SpeedTest.prototype = {
   }
 }
 
-// samotne vytvoreni testovani
  var st = new SpeedTest();
-// spusteni
  st.run({
-// co provest na zacatku
     onStart: function() {
-       document.getElementById("speedTest").innerHTML = "zacal vypocet...";
+       document.getElementById(&quot;speedTest&quot;).innerHTML = &quot;zacal vypocet...&quot;;
    }
-// co provest nakonci
    ,onEnd: function(speed) {
-document.getElementById("speedTest").innerHTML = Math.round(speed.Kbps) + ' Kbps';
+document.getElementById(&quot;speedTest&quot;).innerHTML = Math.round(speed.Kbps) + ' Kbps';
    }
  });
-</script></code></pre>
+&lt;/script&gt;
+</code></pre>
 
 <p>Takto definovaná funkce a její spouštěč se sama postará
 o spuštění a prezentaci výsledků, v námi uvedeném případě
 obojí zapisuje do elementu s id „speedtest“. Proto by bylo
 vhodné javaSctript vložit do stránky s následující strukturou :</p>
 
-<pre><code><html>
- <head>
-  <title>Speed Check</title>
- </head>
- <body>
-  <h3> Speed check </h3>
-  <br>
-Speed : <span id="speedTest"></span>
-</body>
-</html></code></pre>
+<pre><code>&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Speed Check&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;h3&gt; Speed check &lt;/h3&gt;
+  &lt;br&gt;
+Speed : &lt;span id=&quot;speedTest&quot;&gt;&lt;/span&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 
 <p>Nezbývá než si celý kód ozkoušet a případně prohlédnout zdrojový
-kód na stránce <a href="/speedtest">SpeedTest</a></p>
+kód na stránce <a href="/examples/speedcheck/speedcheck.html">SpeedTest</a></p>
 
 <p>Za kompletní návod děkuji autorovi článku : <a
 href="http://alexle.net/archives/257">http://alexle­.net/archives/257</a></p>

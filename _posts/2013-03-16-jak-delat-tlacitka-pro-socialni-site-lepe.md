@@ -11,7 +11,7 @@ tags:
 Také máte pod článkem několik tlačítek (pluginů) pro sociální sítě? Umožnit snadno sdílet článek a ukázat, kolik lidí už tak učinilo. Víte, že taková tlačítka dovedou přenést klidně stovky KB dat a načítat se 10 sekund?  Přečtěte si, jak je vytvořit lépe a jednoduše.
 
 <h2>Kde je problém?</h2>
-<p>Vytvořil jsem jednoduchou ukázkovou stránku,do které jsem vložil běžná tlačítka pro sdílení na sociálních sítích. Stránka je k vidění tady: <a href="http://www.tomas-dvorak.cz/examples/sharebuttons.html">test sociálních tlačítek</a>. Až odkaz rozkliknete, sledujte jak dlouho se tlačítka zobrazují.</p>
+<p>Vytvořil jsem jednoduchou ukázkovou stránku,do které jsem vložil běžná tlačítka pro sdílení na sociálních sítích. Stránka je k vidění tady: <a href="/examples/sharebuttons.html">test sociálních tlačítek</a>. Až odkaz rozkliknete, sledujte jak dlouho se tlačítka zobrazují.</p>
 <p>Ve stránce není vloženo nic, než sdílecí tlačítka a čtyři odstavečky pro uvození konkrétní sítě a pod tím hned tlačítko. Žádný obsah, styly, nic dalšího. Přesto má stránka přímo obludné rozměry a parametry. Posuďte sami:</p>
 <ul>
 <li><strong>22 requestů</strong> na různé URL</li>
@@ -49,7 +49,7 @@ Také máte pod článkem několik tlačítek (pluginů) pro sociální sítě? 
 <p>Proměnné <strong>{articleUrl} </strong>a<strong> </strong><strong>{articleTitle} </strong>nahraďte za konkrétní hodnoty pro vaši stránku(pro každý článek).<strong> </strong>Hodnoty by měly být URL encodovány (jak na to viz dokumentace pro <a href="http://php.net/manual/en/function.urlencode.php">PHP</a>, <a href="http://www.w3schools.com/jsref/jsref_encodeuricomponent.asp">JavaScript</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/net/URLEncoder.html">Javu</a>). Další možné parametry jsou například {via}, {related} nebo {hashtags}. Kompletní seznam a návod najdete v již zmíněné <a href="https://dev.twitter.com/docs/tweet-button">dokumentaci</a>.</p>
 <h3>Facebook URL pro sdílení</h3>
 <p>U facebooku se mi nepovedlo dohledat přímou dokumentaci ke konstrukci URL pro sdílení. Nějaká dokumentace je <a href="https://developers.facebook.com/docs/plugins/">zde</a>, ale samotná adresa tam popsána není.</p>
-<p>Adresa pro sdílení na facebooku je jednodušší, než u jiných služeb. Stačí předat cílovou stránku a Facebook si sám načte potřebné <a href="http://www.tomas-dvorak.cz/clanky/ma-vase-stranka-meta-informace-v-poradku">metainformace</a> (titulek, text, obrázek). Je tak dobré mít svůj web dobře upravený pro čtení facebook robotem. Jak na to jsem psal již dříve v článku <a href="http://www.tomas-dvorak.cz/clanky/ma-vase-stranka-meta-informace-v-poradku">Má vaše stránka meta informace v pořádku?</a></p>
+<p>Adresa pro sdílení na facebooku je jednodušší, než u jiných služeb. Stačí předat cílovou stránku a Facebook si sám načte potřebné <a href="/posts/ma-vase-stranka-meta-informace-v-poradku">metainformace</a> (titulek, text, obrázek). Je tak dobré mít svůj web dobře upravený pro čtení facebook robotem. Jak na to jsem psal již dříve v článku <a href="/posts/ma-vase-stranka-meta-informace-v-poradku">Má vaše stránka meta informace v pořádku?</a></p>
 <p>Adresa má následující formát:</p>
 <pre class="prettyprint">http://www.facebook.com/sharer.php?u=<strong>{articleUrl}</strong></pre>
 <p>ArticleUrl by mělo být opět encodováno.</p>
@@ -60,7 +60,7 @@ Také máte pod článkem několik tlačítek (pluginů) pro sociální sítě? 
 <h3 style="white-space: normal;">LinkedIn URL pro sdílení</h3>
 <p style="white-space: normal;">Detailní popis konstrukce URL je popsán v <a href="https://developer.linkedin.com/documents/share-linkedin">dokumentaci</a>. Tvar je takový:</p>
 <pre class="prettyprint">http://www.linkedin.com/shareArticle?mini=true&url=<strong>{articleUrl}</strong>&title=<strong>{articleTitle}</strong>&summary=<strong>{articleSummary}</strong>&source=<strong>{articleSource}</strong> </pre>
-<p style="white-space: normal;">Parametry musí být URL encodované a nejsou všechny povinné (měl by stačit odkaz na článek, zbytek si dovede linkedin donačíst sám z <a href="http://www.tomas-dvorak.cz/clanky/ma-vase-stranka-meta-informace-v-poradku">metadat</a>).</p>
+<p style="white-space: normal;">Parametry musí být URL encodované a nejsou všechny povinné (měl by stačit odkaz na článek, zbytek si dovede linkedin donačíst sám z <a href="/posts/ma-vase-stranka-meta-informace-v-poradku">metadat</a>).</p>
 <h2 class="prettyprint"><strong>Co tím získám?</strong></h2>
 <ul>
 <li>Významně nižsí objem dat přenášených při načtení stránky (ocení hlavně mobilní uživatelé).</li>

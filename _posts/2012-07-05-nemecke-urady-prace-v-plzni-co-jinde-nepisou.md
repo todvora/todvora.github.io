@@ -39,10 +39,10 @@ Ve středu 4.7.2012 jsem coby pozorovatel a doprovod absolvoval návštěvu zás
 <p>Formuláře pro jednotlivé ÚP  si můžete prohlédnout a vytisknout, každý z ÚP má vlastní formulář: </p>
 <ul>
 <li><a href="http://www.arbeitsagentur.de/nn_625204/Navigation/Dienststellen/RD-BY/Weiden/Agentur/Buerger/Arbeiten-in-der-Grenzregion/Arbeiten-in-der-Grenzregion-Nav.html%20">ÚP Weiden</a></li>
-<li><a href="http://www.tomas-dvorak.cz/file_download/42/OKI-C9850-UP240.pdf">ÚP Cham</a></li>
-<li><a href="http://www.tomas-dvorak.cz/file_download/41/OKI-C9850-UP239.pdf">ÚP Zwiesel</a></li>
+<li><a href="/file_download/42/OKI-C9850-UP240.pdf">ÚP Cham</a></li>
+<li><a href="/file_download/41/OKI-C9850-UP239.pdf">ÚP Zwiesel</a></li>
 </ul>
-<div> </div>
+
 <p>V případě, že byste jej chtěli rovnou vyplnit a poslat do Weidenu na ÚP, pak jej prosím zašlete na email <a href="mailto:Weiden.EURES-T@arbeitsagentur.de">Weiden.EURES-T@arbeitsagentur.de</a> . Doporučoval bych ale formulář vyplnit s někým, kdo ovládá slušně němčinu a následně jej sebou vzít na prezentaci do Plzně. Tam Vám zadané údaje budou zkontrolovány, doplněny a ihned nabídnuto několik zajímavých pozic.</p>
 <p>Nakonec s vámi bude celý formulář kontrolovat zástupce německého úřadu práce a ihned vám nabídne několik vhodných pozic podle údajů z formuláře (o jakou pozici a v které lokalitě máte zájem uvádíte ve formuláři). Po konzultaci tak odcházíte s vytištěnými tipy na zaměstnání v německu.</p>
 <p> </p>
@@ -57,12 +57,12 @@ Ve středu 4.7.2012 jsem coby pozorovatel a doprovod absolvoval návštěvu zás
 <p>Protože když jsem o akci hledal informace na internetu, našel jsem jen ve všech novinách přetištěné prohlášení o tom, že úřady práce spolupracují a několik málo bulvárních informací jako kolik si říct v německu EUR na hodinu. Žádné kontaktní údaje, návod, jak postupovat, co člověka čeká a jak se připravit. Webů okolo EURESu je několik, ale nepřijdou mi moc srozumitelné, z mpsv se odkazuje na neexistující stránky, formuláře se mi nepovedlo vyhledavači najít. Celou akci ale považuji za přínosnou a dobře provedenou. Díky organizátorům za možnost účastnit se.</p>
 <h2>Co bych doporučil na závěr?</h2>
 <p>Hlavně vypnout mobil po dobu prezentace, nevypadá to dobře, když pořád ruší zvonící mobil a někdo odbíhá telefonovat ven. Přijďte včas a oblečte se aspoň trošku slušně a buďte trpěliví, chvíli to trvá a oběd dost možná budete muset posunout do odpoledních hodin. </p>
-<p><img src="/images/119.jpg" alt="" width="200" height="280" /></p>
+<p><img src="/images/119.jpg" alt="pozvánka - poradenský den" width="200" height="280" /></p>
 <p> </p>
 <h2><strong>Důležité odkazy:</strong></h2>
 <p>Nabídka volných míst v Německu: <a href="http://portal.mpsv.cz/eures/prace_v_eu/inzeraty/nemecko/">http://portal.mpsv.cz/eures/prace_v_eu/inzeraty/nemecko/</a></p>
 <p>Organizační záležitosti ohledně práce v Německu (sociální a zdravotní pojištění a pod.): <a href="http://portal.mpsv.cz/eures/prace_v_eu/zeme/nemecko/">http://portal.mpsv.cz/eures/prace_v_eu/zeme/nemecko/</a></p>
-<p>Formulář se žádostí o zařazení uchazeče na ÚP v Německu: <a href="http://www.arbeitsagentur.de/nn_625204/Navigation/Dienststellen/RD-BY/Weiden/Agentur/Buerger/Arbeiten-in-der-Grenzregion/Arbeiten-in-der-Grenzregion-Nav.html%20">ÚP Weiden</a>, <a href="http://www.tomas-dvorak.cz/file_download/42/OKI-C9850-UP240.pdf">ÚP Cham</a>, <a href="http://www.tomas-dvorak.cz/file_download/41/OKI-C9850-UP239.pdf">ÚP Zwiesel</a></p>
+<p>Formulář se žádostí o zařazení uchazeče na ÚP v Německu: <a href="http://www.arbeitsagentur.de/nn_625204/Navigation/Dienststellen/RD-BY/Weiden/Agentur/Buerger/Arbeiten-in-der-Grenzregion/Arbeiten-in-der-Grenzregion-Nav.html%20">ÚP Weiden</a>, <a href="/file_download/42/OKI-C9850-UP240.pdf">ÚP Cham</a>, <a href="/file_download/41/OKI-C9850-UP239.pdf">ÚP Zwiesel</a></p>
 <p> </p>
 <h2><strong>Poděkování:</strong></h2>
 <p>Děkuji paní Mgr. Lence Kastnerové za organizaci celé akce, doplnění odkazů na příslušné formuláře a kontrolu zde umístěných informací. </p>

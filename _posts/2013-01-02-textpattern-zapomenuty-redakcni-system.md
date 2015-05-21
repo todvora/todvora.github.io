@@ -12,7 +12,7 @@ tags:
 ---
 Znáte Textpattern? Redakční systém z dob, kdy začínal i WordPress. Dodnes se vyvíjí, přestože jej ostatní CMS dávno předběhly. Pojďte se mnou na krátkou prohlídku tohoto redakčního systému. 
 
-<p><img style="float: right; margin: 0 0 10px 10px;" src="/images/259.png" alt="Textpattern logo" width="200" height="57" /></p>
+<p><img style="float: right; margin: 0 0 10px 10px;" src="/images/textpattern-logo.png" alt="Textpattern logo" width="200" height="57" /></p>
 <p>Textpattern je redakční systém postaven na jazyce PHP a MySQL databázi. Největší úspěchy slavil v letech 2005-2007 a v České republice byl značně populární. Poté byl převálcován WordPressem. A také Joomlou, Drupalem a dalšími. Pojďme se podívat, co zajímavého Textpattern dovede, kde jsou jeho silné a slabé stránky a proč pravděpodobně skončil v propadlišti dějin. </p>
 <p><img src="/images/251.png" alt="Textpattern - popularita v čase, Google Trends" width="600" height="189" /></p>
 <p><em>Obrázek - Jak se měnil zájem o <a href="http://www.google.cz/trends/explore#q=textpattern&cmpt=q">Textpattern - Google trends</a>. Klikněte pro zvětšení</em></p>

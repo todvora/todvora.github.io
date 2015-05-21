@@ -18,3 +18,5 @@ permalink: "/posts/:title"
 
 gems:
   - jekyll-sitemap
+
+exclude: [vendor]

@@ -11,7 +11,7 @@ Cenzuruje Váš poskytovatel internetu stránky?
 <p>Jestli Váš ISP provádí cenzuru stránek se dovíte podle obrázku
 níže.</p>
 
-<div style="text-align:center"><a href="http://blok.hrach.eu/"><img
+<div><a href="http://blok.hrach.eu/"><img
 src="http://blok.hrach.eu/blok/img.php?styl=hf"
 alt="cenzuruje váš poskytovatel připojení?" style="border:0px none"
 /></a></div>

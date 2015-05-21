@@ -20,8 +20,6 @@ A pokud se vám zalíbí, můžete ji mít teď zadarmo. Sice jen komunitni
 verzi, která má o mnoho vlastností méně, ale na takový ten domácí
 vývoj…</p>
 
-<div style="text-align:center"><img
-src="/images/62.png" width="223" height="58" /></div>
 
 <p><strong>Ke stažení zde:</strong></p>
 

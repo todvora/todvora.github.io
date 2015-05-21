@@ -22,7 +22,7 @@ Tak jsem si řekl, že bude fajn babičce zautomatizovat platby a zjednodušit j
 <p>FIO <a href="https://twitter.com/FIO_banka/status/423731934473109504">reaguje na twitteru</a> a žádá o zaslání informace skrze bankovnictví. Snad už se tak dá věc do pohybu a vše dořeší.</p>
 <p><strong>Update 10:13</strong></p>
 <p>Přichází e-mail od FIO, zřejmě založili někde ticket s problémem. Pro pobavení přikládám malý screenshot. Jako odesílatel je uveden Aladin (Aladin) s e-mailovou whatever@fio.cz a obsah zprávy je poněkud nicneříkající. To taky není žert?!</p>
-<p><img src="/images/403.png" alt="" width="386" height="146" /></p>
+<p><img src="/images/403.png" alt="whatever@fio.cz" width="386" height="146" /></p>
 <p> </p>
 <p><strong>Update: 13:31</strong></p>
 <p>Z pobočky banky volali, že kurýra popohnali a dnes odpoledne bude účet odblokován. Bylo mi vysvětleno, že když píšu zprávu z prostředí IB, mám se podepisovat jako babička, nikoliv svým jménem, prý to nevypadá dobře :-) Poněkud zábavné, vhledem k tomu, jak podepsaný přišel e-mail z banky (Aladin (Aladin) <whatever@fio.cz>). </p>

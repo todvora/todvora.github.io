@@ -15,7 +15,7 @@ komu se povedlo patentovat si vynález jakým je posílání různého obsahu
 různým prohlížečům/za­řízením?
 
 
-<div style="text-align:center"><a
+<div><a
 href="http://petition.stopsoftwarepatents.eu/871003533596/"><img
 src="http://petition.stopsoftwarepatents.eu/banner/871003533596/ssp-300-250.gif"
 alt="stopsoftwarepatents.eu petition banner" width="300" height="250"

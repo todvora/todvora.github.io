@@ -19,7 +19,7 @@ How can be ski injury converted to the best customer experience?
 <p>Thank you very much, people from Leoganger Bergbahnen. This is the little extra thing, that makes you better than others.</p>
 <p>Guess, where we're going skiing next winter?</p>
 <p> </p>
-<p><img src="/images/383.jpg" alt="" width="300" height="225" /> <img src="/images/384.jpg" alt="" width="169" height="225" /> <img src="/images/385.jpg" alt="" width="300" height="225" /></p>
+<p><img src="/images/383.jpg" alt="envelope" width="300" height="225" /> <img src="/images/384.jpg" alt="letter" width="169" height="225" /> <img src="/images/385.jpg" alt="chocolate" width="300" height="225" /></p>
 <p> </p>
 <h2><span style="font-size: 1.5em;">Links</span></h2>
 <p><a href="http://skicircus.at/">http://skicircus.at/</a></p>

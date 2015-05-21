@@ -39,7 +39,7 @@ title="Prezentace k obhajobě BP">prezentace_to­mas_dvorak.pdf</a></p>
 <p>Nejdůležitější je samozřejmě samotná bakalářská práce, moje byla
 na téma „Lokalizace produktů IT“ a PDF varianta je ke stažení
 zde:
-<br /><a href="http://www.tomas-dvorak.cz/file_download/39"
+<br /><a href="/file_download/39"
 title="Bakalářská práce - Lokalizace produktů IT - Tomáš Dvořák">bakalarska_pra­ce_tomas_dvorak­.pdf</a></p>
 
 <p>Na závěr bych rád připojil postřeh na téma „jakou otázku asi

@@ -27,8 +27,7 @@ Podrobnosti o prezentaci firmy LBKS
 <p>Stránky fungují jako statické, umožnují odesílat emaily přímo ze
 serveru, JavaScript použit kvůli formátování vzhledu.</p>
 
-<div style="text-align:center"><img src="http://data-4.xf.cz/images/3.png"
-alt="" /></div>
+<p><img src="/images/3.png"alt="lbks" /></p>
 
-<p>Více na <a href="http://www.lbks.cz">http://www.lbks­.cz</a></p>
+<p>Více na <a href="http://www.lbks.cz">http://www.lbks.cz</a></p>
 

@@ -20,22 +20,20 @@ X-FRAME-OPTIONS HTTP hlavička funguje jako prostředek, jak může server sděl
 <li><strong>SAMEORIGIN</strong> - je povoleno zobrazovat stránku v rámu na vlastním webu</li>
 <li><strong>DENY</strong> - stránka nikdy nesmí být zobrazena v rámu</li>
 </ul>
-<div> </div>
+
 <div>Podpora je v nových prohlížečích v pořádku:</div>
-<div> </div>
+
 <div>Internet Explorer: 8.0</div>
 <div>Firefox: (Gecko)3.6.9 (1.9.2.9)</div>
 <div>Opera: 10.50</div>
 <div>Safari: 4.0</div>
 <div>Chrome: 4.1.249.1042</div>
-<div> </div>
+
 <div>Zdroj: <a href="https://developer.mozilla.org/en/The_X-FRAME-OPTIONS_response_header">developer.mozilla.org</a></div>
-<div> </div>
-<div>Pokud si chcete zkusit, jak na takovou hlavičku reaguje Váš prohlížeč, připravil jsem jednoduchou testovací stránku, která obsahuje tři iframy, každý zobrazující stránku s jinak nastavenou hlavičkou X-FRAME-OPTIONS: <a href="http://www.tomas-dvorak.cz/examples/xframe.html" target="_blank">testovací stránka pro X-FRAME-OPTIONS hlavičku</a>.</div>
-<div> </div>
-<div> </div>
+
+
 <div>V PHP můžete hlavičku nastavit voláním funkce <a href="http://php.net/manual/en/function.header.php">header</a>, například:</div>
-<div> </div>
+
 <pre class="prettyprint">header('X-Frame-Options: DENY'); </pre>
 <div>nebo:</div>
 <pre class="prettyprint">header('X-Frame-Options: SAMEORIGIN');</pre>
@@ -47,7 +45,7 @@ X-FRAME-OPTIONS HTTP hlavička funguje jako prostředek, jak může server sděl
 <p>V chromiu se mi místo zakázaného rámce zobrazí pouze prázdné místo, opera zobrazí srozumitelnou hlášku o nemožnosti rám načíst s prolinkem na originální stránku. Internet Explorer 9 zobrazí také srozumitelnou chybovou hlášku.</p>
 <p><img src="/images/100.png" alt="Informace prohlížeče opera o zakázaném zobrazení iframu" width="404" height="239" /></p>
 <p>(Obrázek 1: informace o nemožnosti zobrazit stránku v iframu, opera 11.64)</p>
-<p><img src="/images/101.png" alt="" width="400" height="240" /></p>
+<p><img src="/images/101.png" alt="informace o nemožnosti zobrazit stránku v iframu, Internet Explorer 9" width="400" height="240" /></p>
 <p>(Obrázek 2: informace o nemožnosti zobrazit stránku v iframu, Internet Explorer 9)</p>
 <p> </p>
 <p>Pokud nemáte možnost manipulovat s HTTP hlavičkami a přesto byste rádi dosáhli podobné funkcionality, využijte JavaScript. Kód, který to řeší se běžně označuje jako <strong>Framekiller</strong>. Jeho nejjednodušší implementace může vypadat nějak takto:</p>

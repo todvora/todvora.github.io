@@ -14,8 +14,8 @@ Available a Active. Hodí se pro automatické startování dalších runnerů,
 případně k jinému automatizovnému přístupu ke Gridu
 
 
-<div style="text-align:center"><a href="/images/69.png"><img
-src="/images/69.png" alt="" /></a></div>
+<div><a href="/images/69.png"><img
+src="/images/69.png" alt="selenium grid screenshot" /></a></div>
 
 <pre class=".prettyprint"><code># -*- coding: utf-8 -*-
 

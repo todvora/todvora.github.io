@@ -91,10 +91,10 @@ nic?</p>
 <p>Soubory ke stažení:</p>
 
 <ol>
-	<li><a href="http://data-4.xf.cz/file_download/12">Kompletní ceník
+	<li><a href="/file_download/12">Kompletní ceník
 	poplatků</a></li>
 
-	<li><a href="http://data-4.xf.cz/file_download/13">Vyhláška
+	<li><a href="/file_download/13">Vyhláška
 	o poplatcích</a></li>
 </ol>
 

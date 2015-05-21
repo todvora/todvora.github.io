@@ -10,7 +10,7 @@ tags:
 Sedm národů u večeře. V pátek odpoledne se nepracuje. A zdravotní pojišťovna ze mě udělala špiona. Jak si žiju v Rakousku? Tentokrát převážně nevážně.
 
 <h2>Sedm národů u večeře</h2>
-<p><a href="http://www.tomas-dvorak.cz/clanky/postrehy-ze-zivota-v-rakousku">V minulém článku</a> jsem se zmiňoval o <a href="http://www.salzburgagentur.at/en/expatservice/">Expat service</a>, která nám pomohla v začátcích našeho bydlení v Rakousku. Společnost pořádá jednou měsíčně setkání svých klientů nad dobrým jídlem a pivem v hospodě. A musím říct, že takovou příležitost by byla chyba nevyužít.</p>
+<p><a href="/posts/postrehy-ze-zivota-v-rakousku">V minulém článku</a> jsem se zmiňoval o <a href="http://www.salzburgagentur.at/en/expatservice/">Expat service</a>, která nám pomohla v začátcích našeho bydlení v Rakousku. Společnost pořádá jednou měsíčně setkání svých klientů nad dobrým jídlem a pivem v hospodě. A musím říct, že takovou příležitost by byla chyba nevyužít.</p>
 <p>Kde jinde si popovídáte s Brazilcem, Holanďanem, Španělkou, Řekyní, Němci, Rakušany? Angličtina fungovala jako univerzální jazyk všech. O němčině se to říct nedá. </p>
 <h2>Pracovní doba</h2>
 <p>Z Čech jsme tak nějak zvyklí, že se pracuje celý týden, supermarkety jedou od pondělí do neděle, někdy i nonstop a když se na Štědrý den zavře už v poledne, davy zuří.</p>

@@ -24,7 +24,7 @@ je definován jako konstanta TIME_GENERATOR.</p>
 <h2>Diagram v systému REX</h2>
 
 <div><a href="/images/60.png"><img
-src="/images/60.png" width="120" height="78"
+src="/images/60.png" width="120" height="78" alt="Diagram v systému REX"
 /></a></div>
 
 <h2>zdrojové kódy pro REX</h2>

@@ -22,7 +22,7 @@ Pracujete automatizovaně s daty firem? Jméno, IČ, sídlo firmy? Pak určitě 
 <p><img src="/images/306.png" alt="Doba odezvy API ARESu" width="500" height="45" /></p>
 <p><strong>JUSTICE</strong>: <a href="https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=Seznam">https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=Seznam</a></p>
 <p><img src="/images/305.png" alt="Doba odezvy webu justice.cz" width="500" height="45" /></p>
-<div> </div>
+
 <div>Napsal jsem si tedy vlastní kód na parsování dat z justice a chtěl bych vám jej poskytnout. Není dokonalý, nejspíš jde napsat lépe, ale o to teď nejde. Funguje dobře a data poskytuje rychle. V našeptavači je to v pohodě použitelné. </div>
 <div>
 <h2>Node.js implementace parsování webu justice (<a href="https://npmjs.org/package/request">request</a> + <a href="https://npmjs.org/package/cheerio">cheerio</a>)</h2>
@@ -52,7 +52,7 @@ getData("Seznam", function(data) {
     console.log(data);
 });</pre>
 </div>
-<div> </div>
+
 <p>Výstupem scriptu pak je:</p>
 <pre class="prettyprint">[ { 'Název subjektu:': 'Seznam.cz, a.s.',
     'Identifikační číslo:': '261 68 685',
@@ -78,7 +78,7 @@ getData("Seznam", function(data) {
 <p> </p>
 <h2>Java implementace (<a href="http://nekohtml.sourceforge.net/faq.html">nekoHTML</a> parser)</h2>
 <div>Implementace zdaleka nedosahuje lehkosti javascriptu pro node, funguje ale stejně a vrací stejná data. Dalo by se to napsat úsporněji, využít nějaké další knihovny a podobně, to ale není smyslem článku. Ukázka alespoň demonstruje lehkost javascriptu a těžkopádnost javy. I proto je zřejmě node.js tak populární. </div>
-<div> </div>
+
 <pre class="prettyprint">import org.cyberneko.html.parsers.DOMParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

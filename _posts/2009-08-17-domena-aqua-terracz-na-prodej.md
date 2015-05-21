@@ -11,6 +11,6 @@ chovatelskými potřebami? Výstavu exotických tvorů?
 
 <p>Doména je na prodej, více informací naleznete na adrese</p>
 
-<p style="text-align:center"><strong><a
+<p><strong><a
 href="http://www.aqua-terra.cz">www.aqua-terra.cz</a></strong></p>
 

@@ -3,7 +3,7 @@ layout: post
 title: Netbeans + Ubuntu + Compiz problém
 date: '2008-04-13 08:04:03'
 tags: []
-image: '24'
+image: '/images/24.png'
 ---
 
 Návod jak vyřešit problém s prázdnými okny na ubuntu při práci

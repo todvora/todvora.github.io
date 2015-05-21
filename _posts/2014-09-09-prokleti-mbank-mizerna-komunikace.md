@@ -40,4 +40,4 @@ Po několika letech odcházím od mBank. Proč? Co se mi líbilo a co mě štval
 <h2>Zbyl jen SPAM</h2>
 <p>Přesně den na to, co mi mBank SMSkou oznámila, že můj e-mail byl změněn na "", dorazil do mojí mailové schránky jejich běžný spam, nabízející mPůjčku. E-mail tak dál v databázi skladují a já udělal chybu, že jsem ihned netrval i na odvolání souhlasu se zasíláním čehokoliv.  </p>
 <p>Celkově si myslím, že mBank není tak špatná volba a pro určité situace je opravdu výhodná. Jen ta komunikace...</p>
-<p>Článek zapadá do série mých zkušeností s bankami, kde už jsem stihl 'pochválit' <a href="http://www.tomas-dvorak.cz/clanky/jak-jeste-vic-znechutit-odchazejiciho-zakaznika-banky">KB</a> a <a href="http://www.tomas-dvorak.cz/clanky/fio-banka-a-tragikomedie-se-zakladanim-uctu">Fio</a> :-)</p>
+<p>Článek zapadá do série mých zkušeností s bankami, kde už jsem stihl 'pochválit' <a href="/posts/jak-jeste-vic-znechutit-odchazejiciho-zakaznika-banky">KB</a> a <a href="/posts/fio-banka-a-tragikomedie-se-zakladanim-uctu">Fio</a> :-)</p>
