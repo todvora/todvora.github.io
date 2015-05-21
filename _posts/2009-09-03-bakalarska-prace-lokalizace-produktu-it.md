@@ -74,6 +74,5 @@ stránku.</p>
 
 <h2>Ke stažení</h2>
 
-<p><a href="/file_download/39"
-title="Bakalářská práce - Lokalizace produktů IT - Tomáš Dvořák">bakalarska_pra­ce_tomas_dvorak­.pdf</a></p>
+<p><a href="/downloads/bakalarska_prace_tomas_dvorak.pdf" title="Bakalářská práce - Lokalizace produktů IT - Tomáš Dvořák">bakalarska_prace_tomas_dvorak.pdf</a></p>
 

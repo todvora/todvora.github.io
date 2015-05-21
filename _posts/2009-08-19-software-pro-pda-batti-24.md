@@ -100,16 +100,13 @@ stupňů</p>
 <h2>Lokalizace programu do češtiny</h2>
 
 <ul>
-	<li>Stáhněte soubor <a href="/file_download/28">czech.lng</a></li>
+	<li>Stáhněte soubor <a href="/downloads/czech.lng">czech.lng</a></li>
 
 	<li>přejmenujte jej na „default.lng“</li>
 
 	<li>nakopírujte do složky, kde je batti nainstalován, přepíše se tím již
 	existující soubor s lokalizací</li>
 </ul>
-
-<p>Program je ke stažení v aktuální verzi 2.4 zde: <a
-href="/file_download/27">Batti 2.4</a></p>
 
 <p>Domovské stránky autora software : <a
 href="http://pda.jasnapaka.com/">pda.jasnapaka.com</a></p>

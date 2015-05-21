@@ -91,10 +91,9 @@ nic?</p>
 <p>Soubory ke stažení:</p>
 
 <ol>
-	<li><a href="/file_download/12">Kompletní ceník
-	poplatků</a></li>
+	<li><a href="/downloads/cenikautor.PDF">Kompletní ceník poplatků</a></li>
 
-	<li><a href="/file_download/13">Vyhláška
+	<li><a href="/downloads/Vyhlaska 88_1.PDF">Vyhláška
 	o poplatcích</a></li>
 </ol>
 

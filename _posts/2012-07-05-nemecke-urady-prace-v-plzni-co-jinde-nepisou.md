@@ -39,8 +39,8 @@ Ve středu 4.7.2012 jsem coby pozorovatel a doprovod absolvoval návštěvu zás
 <p>Formuláře pro jednotlivé ÚP  si můžete prohlédnout a vytisknout, každý z ÚP má vlastní formulář: </p>
 <ul>
 <li><a href="http://www.arbeitsagentur.de/nn_625204/Navigation/Dienststellen/RD-BY/Weiden/Agentur/Buerger/Arbeiten-in-der-Grenzregion/Arbeiten-in-der-Grenzregion-Nav.html%20">ÚP Weiden</a></li>
-<li><a href="/file_download/42/OKI-C9850-UP240.pdf">ÚP Cham</a></li>
-<li><a href="/file_download/41/OKI-C9850-UP239.pdf">ÚP Zwiesel</a></li>
+<li><a href="/downloads/OKI-C9850-UP240.pdf">ÚP Cham</a></li>
+<li><a href="/downloads/OKI-C9850-UP239.pdf">ÚP Zwiesel</a></li>
 </ul>
 
 <p>V případě, že byste jej chtěli rovnou vyplnit a poslat do Weidenu na ÚP, pak jej prosím zašlete na email <a href="mailto:Weiden.EURES-T@arbeitsagentur.de">Weiden.EURES-T@arbeitsagentur.de</a> . Doporučoval bych ale formulář vyplnit s někým, kdo ovládá slušně němčinu a následně jej sebou vzít na prezentaci do Plzně. Tam Vám zadané údaje budou zkontrolovány, doplněny a ihned nabídnuto několik zajímavých pozic.</p>
@@ -62,7 +62,7 @@ Ve středu 4.7.2012 jsem coby pozorovatel a doprovod absolvoval návštěvu zás
 <h2><strong>Důležité odkazy:</strong></h2>
 <p>Nabídka volných míst v Německu: <a href="http://portal.mpsv.cz/eures/prace_v_eu/inzeraty/nemecko/">http://portal.mpsv.cz/eures/prace_v_eu/inzeraty/nemecko/</a></p>
 <p>Organizační záležitosti ohledně práce v Německu (sociální a zdravotní pojištění a pod.): <a href="http://portal.mpsv.cz/eures/prace_v_eu/zeme/nemecko/">http://portal.mpsv.cz/eures/prace_v_eu/zeme/nemecko/</a></p>
-<p>Formulář se žádostí o zařazení uchazeče na ÚP v Německu: <a href="http://www.arbeitsagentur.de/nn_625204/Navigation/Dienststellen/RD-BY/Weiden/Agentur/Buerger/Arbeiten-in-der-Grenzregion/Arbeiten-in-der-Grenzregion-Nav.html%20">ÚP Weiden</a>, <a href="/file_download/42/OKI-C9850-UP240.pdf">ÚP Cham</a>, <a href="/file_download/41/OKI-C9850-UP239.pdf">ÚP Zwiesel</a></p>
+<p>Formulář se žádostí o zařazení uchazeče na ÚP v Německu: <a href="http://www.arbeitsagentur.de/nn_625204/Navigation/Dienststellen/RD-BY/Weiden/Agentur/Buerger/Arbeiten-in-der-Grenzregion/Arbeiten-in-der-Grenzregion-Nav.html%20">ÚP Weiden</a>, <a href="/downloads/OKI-C9850-UP240.pdf">ÚP Cham</a>, <a href="/downloads/OKI-C9850-UP239.pdf">ÚP Zwiesel</a></p>
 <p> </p>
 <h2><strong>Poděkování:</strong></h2>
 <p>Děkuji paní Mgr. Lence Kastnerové za organizaci celé akce, doplnění odkazů na příslušné formuláře a kontrolu zde umístěných informací. </p>

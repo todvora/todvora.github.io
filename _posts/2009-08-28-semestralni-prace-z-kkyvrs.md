@@ -30,11 +30,11 @@ src="/images/60.png" width="120" height="78" alt="Diagram v systému REX"
 <h2>zdrojové kódy pro REX</h2>
 
 <p>Zdrojové kódy práce jsou ke stažení: <a
-href="/file_download/29">sp-kky-vrs.zip</a></p>
+href="/downloads/sp-kky-vrs.zip">sp-kky-vrs.zip</a></p>
 
 <h2>Dokumentace</h2>
 
-<p>Dokumentace je ke stažení: <a href="/file_download/30"
+<p>Dokumentace je ke stažení: <a href="/downloads/dokumentace.pdf"
 title="Dokumentace k sp z KKY/VRS">dokumentace.pdf</a></p>
 
 <h2>Návrh regulátorů</h2>

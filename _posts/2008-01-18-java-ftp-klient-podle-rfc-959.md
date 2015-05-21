@@ -44,5 +44,5 @@ pracovního a­dresáře
 a ascii</p>
 
 <p>Odkaz ke stažení semestrální práce:
-<br /><a href="/files/FTPclient.zip">FTPclient.zip</a></p>
+<br /><a href="/downloads/FTPclient.zip">FTPclient.zip</a></p>
 
