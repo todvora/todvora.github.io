@@ -26,7 +26,7 @@ výrazem a v případě že obsahuje hledaný výraz, objekt je
 akceptován. kód je bohatě komentován, další vysvětlování postrádá
 smysl.</p>
 
-<pre class="prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
@@ -42,29 +42,29 @@ public class SearchReflection {
     public static void main(String[] args) {
 
         // Vytvorim pole vzorovych dat, ve kterych budu vyhledavat
-        List<User> users = new ArrayList<User>();
-        users.add(new User("Tomáš Dvořák", "lorem@ipsum.com", "Nová 3, Brno"));
-        users.add(new User("Tomáš Dvořák", "dolor@ipsum.com", "Nová 3, Praha 1"));
-        users.add(new User("Petr Dvořák", "foo@bar.com", "Krátká, Plzeň"));
-        users.add(new User("Jan Novák", "foo@bar.com", "Nová 3, Praha 1"));
+        List&lt;User&gt; users = new ArrayList&lt;User&gt;();
+        users.add(new User(&quot;Tom&aacute;&scaron; Dvo&#345;&aacute;k&quot;, &quot;lorem@ipsum.com&quot;, &quot;Nov&aacute; 3, Brno&quot;));
+        users.add(new User(&quot;Tom&aacute;&scaron; Dvo&#345;&aacute;k&quot;, &quot;dolor@ipsum.com&quot;, &quot;Nov&aacute; 3, Praha 1&quot;));
+        users.add(new User(&quot;Petr Dvo&#345;&aacute;k&quot;, &quot;foo@bar.com&quot;, &quot;Kr&aacute;tk&aacute;, Plze&#328;&quot;));
+        users.add(new User(&quot;Jan Nov&aacute;k&quot;, &quot;foo@bar.com&quot;, &quot;Nov&aacute; 3, Praha 1&quot;));
 
         // v prvni ukazce budu vyhledavat podle prijmeni
-        System.out.println("Vyhledavani podle retezce 'Dvořák'");
-        System.out.println("-----");
-        List<User> result = find(User.class, users, "Dvořák");
+        System.out.println(&quot;Vyhledavani podle retezce 'Dvo&#345;&aacute;k'&quot;);
+        System.out.println(&quot;-----&quot;);
+        List&lt;User&gt; result = find(User.class, users, &quot;Dvo&#345;&aacute;k&quot;);
         for (User found : result) {
             System.out.println(found.toString());
         }
-        System.out.println("");
+        System.out.println(&quot;&quot;);
 
         // v druhe ukazce budu vyhledavat podle adresy
-        System.out.println("Vyhledavani podle retezce 'brno'");
-        System.out.println("-----");
-        List<User> result2 = find(User.class, users, "brno");
+        System.out.println(&quot;Vyhledavani podle retezce 'brno'&quot;);
+        System.out.println(&quot;-----&quot;);
+        List&lt;User&gt; result2 = find(User.class, users, &quot;brno&quot;);
         for (User found : result2) {
             System.out.println(found.toString());
         }
-        System.out.println("");
+        System.out.println(&quot;&quot;);
     }
 
     /**
@@ -73,14 +73,14 @@ public class SearchReflection {
      * objektu a nevedel bych, jaka maji definovana pole
      * @param allObjects seznam objektu, ve kterych budu vyhledavat
      * @param query vyhledavaci dotaz
-     * @param <T> typ objektu, ktere prochazim pri prohledavani
+     * @param &lt;T&gt; typ objektu, ktere prochazim pri prohledavani
      * @return seznam objektu, ktere prosly vyhledavacim kriteriem
      */
-    private static <T> List<T> find(Class<T> clazz, Collection<T> allObjects,
+    private static &lt;T&gt; List&lt;T&gt; find(Class&lt;T&gt; clazz, Collection&lt;T&gt; allObjects,
                                     String query) {
         // vytahnu z tridy vsechny definovane promenne
         Field[] declaredFields = clazz.getDeclaredFields();
-        List<T> acceptedObjects = new ArrayList<T>();
+        List&lt;T&gt; acceptedObjects = new ArrayList&lt;T&gt;();
         // budu prochazet vsechny objekty
         for (T object : allObjects) {
             // a v kazdem objektu vsechny promenne tridy tohoto objektu
@@ -100,11 +100,11 @@ public class SearchReflection {
      * @param field pole tridy, definovana promenna
      * @param object objekt urceny k prohledani
      * @param query fulltextovy dotaz pro nalezeni objektu
-     * @param <T> typ objektu
+     * @param &lt;T&gt; typ objektu
      * @return {code true} pokud ma nejake pole textovou hodnotu obsahujici
      * hledany vyraz
      */
-    private static <T> boolean isFieldAccepted(Field field, T object,
+    private static &lt;T&gt; boolean isFieldAccepted(Field field, T object,
                                                String query) {
 
         try {
@@ -146,7 +146,7 @@ public class SearchReflection {
 
         @Override
         public String toString() {
-            return name + ", " + email + ", " + address;
+            return name + &quot;, &quot; + email + &quot;, &quot; + address;
         }
     }
 }</code></pre>
@@ -154,12 +154,11 @@ public class SearchReflection {
 <p><strong>Ukázka výstupu</strong></p>
 
 <pre><code>Vyhledavani podle retezce 'Dvořák'
------
+
 Tomáš Dvořák, lorem@ipsum.com, Nová 3, Brno
 Tomáš Dvořák, dolor@ipsum.com, Nová 3, Praha 1
 Petr Dvořák, foo@bar.com, Krátká, Plzeň
 
 Vyhledavani podle retezce 'brno'
------
 Tomáš Dvořák, lorem@ipsum.com, Nová 3, Brno</code></pre>
 

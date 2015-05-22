@@ -10,18 +10,18 @@ tags:
 
 Každý kdo se někdy snažil zjistit z Javy informace
 o prostředí na kterém běží se jistě setkal s metodou
-System.getPro­perty(). Ta zpřístupňuje některé informace
+System.getProperty(). Ta zpřístupňuje některé informace
 o stroji, uživateli a umožnuje číst a nastavovat tyto hodnoty.
 Přestože se properties chovají jako hash mapa, mají určité vykonostní
 problémy. Provedeme porovnání rychlosti načítání hodnot ze systémových
 proměnných a statické finální proměnné v Javě.
 
 
-<pre class=".prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 public class SystemEnvSpeed {
 
-    private static final String PROPERTY_NAME = "java.runtime.name";
+    private static final String PROPERTY_NAME = &quot;java.runtime.name&quot;;
     private static final String RUNTIME = System.getProperty(PROPERTY_NAME);
     private static final int LOOPS = 100000000;
 
@@ -37,25 +37,25 @@ public class SystemEnvSpeed {
 
         long startPropertyReading = System.currentTimeMillis();
         String valueProperty = null;
-        for (int i = 0; i < LOOPS; i++) {
+        for (int i = 0; i &lt; LOOPS; i++) {
             valueProperty = System.getProperty(PROPERTY_NAME);
         }
-        System.out.println("Value of " + PROPERTY_NAME + " is: " + valueProperty);
+        System.out.println(&quot;Value of &quot; + PROPERTY_NAME + &quot; is: &quot; + valueProperty);
         long timePropertyReading = System.currentTimeMillis() - startPropertyReading;
-        System.out.println("System.getProperty took " + timePropertyReading + " ms");
+        System.out.println(&quot;System.getProperty took &quot; + timePropertyReading + &quot; ms&quot;);
 
         long startVariableReading = System.currentTimeMillis();
         String valueVariable = null;
-        for (int i = 0; i < LOOPS; i++) {
+        for (int i = 0; i &lt; LOOPS; i++) {
             valueVariable = RUNTIME;
         }
-        System.out.println("Value of " + PROPERTY_NAME + " is: " + valueVariable);
+        System.out.println(&quot;Value of &quot; + PROPERTY_NAME + &quot; is: &quot; + valueVariable);
         long timeVariableReading = System.currentTimeMillis() - startVariableReading;
-        System.out.println("Final variable took " + timeVariableReading + " ms");
+        System.out.println(&quot;Final variable took &quot; + timeVariableReading + &quot; ms&quot;);
 
-        System.out.println("Reading static final property is "
+        System.out.println(&quot;Reading static final property is &quot;
                 + (timePropertyReading /  timeVariableReading)
-                + " faster than reading system property");
+                + &quot; faster than reading system property&quot;);
     }
 }</code></pre>
 
@@ -63,7 +63,7 @@ public class SystemEnvSpeed {
 
 <p><strong>Výstup</strong></p>
 
-<pre class=".prettyprint"><code>Value of java.runtime.name is: Java(TM) SE Runtime Environment
+<pre><code>Value of java.runtime.name is: Java(TM) SE Runtime Environment
 System.getProperty took 4754 ms
 Value of java.runtime.name is: Java(TM) SE Runtime Environment
 Final variable took 5 ms

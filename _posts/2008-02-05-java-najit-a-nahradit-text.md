@@ -14,7 +14,7 @@ bez problémů s regulárními výrazy
 
 <p><strong>Pro java 1.5 a výše:</strong></p>
 
-<pre class="prettyprint"><code>text.replace("co","cim");</code></pre>
+<pre><code>text.replace("co","cim");</code></pre>
 
 <p>kde nehrozí problémy se znaky využitými v regulárních
 výrazech</p>
@@ -23,7 +23,7 @@ výrazech</p>
 <br />Java standartně obsahuje metodu pro nahrazování textů
 v řetězci.</p>
 
-<pre class="prettyprint"><code>text.replaceAll(regExp, nahrada);</code></pre>
+<pre><code>text.replaceAll(regExp, nahrada);</code></pre>
 
 <p>A tady začínají problémy. Jako první parametr chce java zadat
 regulární výraz. Nás ale zajímá obyčejný text. Rozdíl je ten, že
@@ -37,7 +37,7 @@ všechny významné znaky samy escapovaly.</p>
 
 <p>Řídící znaky jsou tyto:</p>
 
-<pre class="prettyprint"><code>String escapers = "\\([{^$|)?*+.";</code></pre>
+<pre><code>String escapers = &quot;\\([{^$|)?*+.&quot;;</code></pre>
 
 <p>Proto najít v textu řetězec „{obsah}“ a nahradit ho
 naší textem je dosti komplikovaná úloha.</p>
@@ -46,19 +46,19 @@ naší textem je dosti komplikovaná úloha.</p>
 jednoduché, projdeme celý řetězec,a všude kde se nachází řídící znak,
 vložíme před něj lomítko.</p>
 
-<pre class="prettyprint"><code>String regExp = escapeChars(text, escapers);</code></pre>
+<pre><code>String regExp = escapeChars(text, escapers);</code></pre>
 
 <p>Samotný kód metod je zde:</p>
 
-<pre class="prettyprint"><code>private static String escapeChars(String string, String characters) {
+<pre><code>private static String escapeChars(String string, String characters) {
        String result = string; //default;
 
-       if (string != null && characters != null) {
+       if (string != null &amp;&amp; characters != null) {
            StringCharacterIterator sci = new StringCharacterIterator(characters);
            char c = sci.first();
            boolean backslashEscaped = false;
            while (c != CharacterIterator.DONE) {
-               if (c == '\\' && !backslashEscaped) {
+               if (c == '\\' &amp;&amp; !backslashEscaped) {
                    result = escape(result, c, '\\');
                    backslashEscaped = true;
                } else {
@@ -93,11 +93,11 @@ vložíme před něj lomítko.</p>
 
 <p>A použítí tohoto celku je už triviální:</p>
 
-<pre class="prettyprint"><code>String regExp = escapeChars(co, escapers);
+<pre><code>String regExp = escapeChars(co, escapers);
 String poNahrazeni=text.replaceAll(regExp, cim);</code></pre>
 
 <p>Převzato z <a
-href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4948767">http://bugs­.sun.com/bugda­tabase/view_bug­.do?bug_id=4948­767</a></p>
+href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4948767">http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4948767</a></p>
 
 <p>Uvedený postup pro java 1.4 a nižší funguje spolehlivě i pro
 funkci replaceFirst() která i nadále očekává regulární výraz.</p>

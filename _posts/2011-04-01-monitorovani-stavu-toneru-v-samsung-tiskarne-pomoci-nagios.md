@@ -28,7 +28,7 @@ href="/posts/monitorovani-stavu-inkoustu-v-hp-tiskarne-pomoci-nagios">Monitorov√
 
 <hr />
 
-<pre class=".prettyprint"><code>#! /usr/bin/env python
+<pre><code>#! /usr/bin/env python
 
 import urllib2
 import re
@@ -40,42 +40,42 @@ timeout = 10
 urllib2.socket.setdefaulttimeout(timeout)
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "H:c:w:", ["host="])
+    opts, args = getopt.getopt(sys.argv[1:], &quot;H:c:w:&quot;, [&quot;host=&quot;])
 
     host = None
     warning_level = 10
     critical_level = 5
 
     for opt, arg in opts:
-        if opt in ("-H", "--host"):
+        if opt in (&quot;-H&quot;, &quot;--host&quot;):
             host = arg
-        elif opt in ("-c"):
+        elif opt in (&quot;-c&quot;):
             critical_level = int(arg)
-        elif opt in ("-w"):
+        elif opt in (&quot;-w&quot;):
             warning_level = int(arg)
 
-    conn = urllib2.urlopen("http://" + host + "/Information/supplies_status.htm") # get the url
+    conn = urllib2.urlopen(&quot;http://&quot; + host + &quot;/Information/supplies_status.htm&quot;) # get the url
     src = conn.read() # read page contents
     # hledam retezec ve tvaru: var BlackTonerPer = 92;
     m = re.search('var\s+BlackTonerPer\s+=\s+(\d+)', src)
     toner = int(m.group(1))
     # http://nagiosplug.sourceforge.net/developer-guidelines.html#AEN33
 except:
-    print "Unknown: " + str(sys.exc_info()[1])
+    print &quot;Unknown: &quot; + str(sys.exc_info()[1])
     exit(3)
 
 return_code = 0
-status_message = "OK"
-if toner < warning_level:
-    if toner < critical_level:
-        status_message="Critical"
+status_message = &quot;OK&quot;
+if toner &lt; warning_level:
+    if toner &lt; critical_level:
+        status_message=&quot;Critical&quot;
         return_code = 2
     else:
-        status_message = "Warning"
+        status_message = &quot;Warning&quot;
         return_code = 1
 
-return_message = status_message + ": Black toner level: " + str(toner) + "%|black="+str(toner
-)+"%;"+str(warning_level) + ";" + str(critical_level) + ";;"
+return_message = status_message + &quot;: Black toner level: &quot; + str(toner) + &quot;%|black=&quot;+str(toner
+)+&quot;%;&quot;+str(warning_level) + &quot;;&quot; + str(critical_level) + &quot;;;&quot;
 print return_message
 exit(return_code)</code></pre>
 

@@ -20,7 +20,7 @@ debianu.
 
 <p><strong>1. Cíl</strong>
 <br />Cílem mého snažení bylo rozeběhnout na vnitřní síti společnosti
-flyspray ( <a href="http://flyspray.org/">http://flyspray­.org/</a> ), což
+flyspray ( <a href="http://flyspray.org/">http://flyspray.org/</a> ), což
 je nástroj pro hlášení chyb. Zde bude použit jako systém pro zadávání
 úkolů a sledování jejich plnění. Něco o bug tracking systémech je
 k přečtení například na <a
@@ -35,10 +35,10 @@ bude spolehlivější a jednodušší než nutit php běžet na windows.</p>
 <p><strong>3. Ke stažení</strong>
 <br />budeme potřebovat tyto věci :
 <br />Virtualbox – <a
-href="http://www.virtualbox.org/wiki/Downloads">http://www.vir­tualbox.org/wi­ki/Downloads</a>
+href="http://www.virtualbox.org/wiki/Downloads">http://www.virtualbox.org/wiki/Downloads</a>
 – pro windows
 <br />Image debian cd – <a
-href="http://debian.org/distrib/netinst#smallcd">http://debian­.org/distrib/ne­tinst#…</a>
+href="http://debian.org/distrib/netinst#smallcd">http://debian.org/distrib/netinst#smallcd</a>
 <br />flyspray už pak stáhneme přímo z debianu</p>
 
 <p><strong>4. Instalace virtualboxu</strong>
@@ -83,7 +83,7 @@ být připraveno všechno pro instalaci operačního systému.</p>
 
 <p><strong>7. Konfigurace debianu</strong>
 <br />Nejprve je třeba debian nastavit tak, aby byl viditelný ve vnitřní
-síti. Nastavíme mu pevnou ip. To provedeme v /etc/networkin­g/interfaces
+síti. Nastavíme mu pevnou ip. To provedeme v /etc/networking/interfaces
 <br />Jak na to :
 <br />přihlašte se jako root a do terminálu zadejte
 <br /><code>nano /etc/network/interfaces</code></p>
@@ -154,7 +154,7 @@ TO flysprayuser@localhost IDENTIFIED BY 'yourpassword';
 
 <p>Po restartu apache by již měl být flyspray dostupný na
 <br /><a
-href="http://192.168.1.2/flyspray/setup/">http://192.168­.1.2/flyspray­/setup/</a></p>
+href="http://192.168.1.2/flyspray/setup/">http://192.168.1.2/flyspray/setup/</a></p>
 
 <p>Následujte pokyny na obrazovce, jde o vyplnění konfiguračních
 údajů, jako je přístup do databáze a podobně.</p>

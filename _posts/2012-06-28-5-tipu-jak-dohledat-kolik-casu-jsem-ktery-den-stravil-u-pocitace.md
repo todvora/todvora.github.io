@@ -13,13 +13,13 @@ Potřebujete dohledat, kolik hodin jste seděli u počítače minulý čtvrtek n
 
 <h2>Uptime</h2>
 <p>Uptime je první z pomocníků, ale pouze pokud hledáte čas od současného spuštění počítače do přítomnosti. Ideálně jako odpověď na otázku "kolik hodin už u toho dnes sedím". Předpokladem je, že jste si počítač pustili z vypnutého stavu a během práce ho nerestartovali. Výpis z uptime vypadá nějak tak:</p>
-<pre class="prettyprint">dvorak@machine:/mnt/raid/home/dvorak$ uptime
+<pre>dvorak@machine:/mnt/raid/home/dvorak$ uptime
  10:58:03 up  2:21,  4 users,  load average: 1.11, 1.15, 1.09</pre>
 <p>A důležitá hodnota je to up 2:21, která říká, že dnes už sedím u počítače 2h a 21 minut.</p>
 <p> </p>
 <h2>Last</h2>
 <p>Pokud už od onoho hledaného dne uběhla nějaká doba, uptime nám nepomůže. Last uchovává v souboru data o přihlášených uživatelích a to i zpětně (podle nastavení systému, u mě jeden měsíc).  </p>
-<pre class="prettyprint">dvorak@machine:/mnt/raid/home/dvorak$ last
+<pre>dvorak@machine:/mnt/raid/home/dvorak$ last
 dvorak   pts/2        :0.0             Thu Jun 28 10:50   still logged in   
 dvorak   pts/1        :0.0             Thu Jun 28 09:41   still logged in   
 dvorak   pts/0        :0.0             Thu Jun 28 08:40   still logged in   
@@ -47,7 +47,7 @@ reboot   system boot  2.6.32-40-generi Tue Jun 26 11:13 - 20:28  (09:15)
 <p>Data bere last v souboru /var/log/wtmp (u mě na ubuntu, jinde možná jiná cesta). Zároveň mi systém drží ještě jeden odrolovaný log v gzipu /var/log/wtmp.1.gz, ten se dá rozbalit a podstrčit  příkazu last pokud budete chtít jít v historii ještě dál. A pokud pravidelně zálohujete, dovedete si soubor s daty pro last vytahnout ze zálohování a načíst.</p>
 <h2>Log samby</h2>
 <p>Jestli provozujete někde na serveru sambu a máte nastaveno automatické připojování síťových disků, můžete údaje o připojení a odpojení disků najít v auditních záznamech samby pod událostmi connect a disconnect. Pozor na to, že záznamy se opakují, disky mužete během dne připojit a odpojit vícekrát. Pro pátrání, kdy ráno člověk začal a kdy večer dopracoval je to ale použitelné.</p>
-<pre class="prettyprint">server:~# tail -n 1000 /var/log/samba/audit.log | grep connect | grep dvorak
+<pre>server:~# tail -n 1000 /var/log/samba/audit.log | grep connect | grep dvorak
 Jun 26 11:05:23 server smbd[18862]: dvorak|192.168.1.32|__ffff_192.168.1.32|preklady_data|connect|ok|preklady_data 
 Jun 26 11:05:23 server smbd[18862]: dvorak|192.168.1.32|__ffff_192.168.1.32|shared|connect|ok|shared 
 Jun 26 11:29:40 server smbd[15667]: dvorak|192.168.1.32|__ffff_192.168.1.32|shared|connect|ok|shared 

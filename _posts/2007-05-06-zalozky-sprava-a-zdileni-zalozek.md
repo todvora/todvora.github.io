@@ -11,12 +11,12 @@ internetu
 
 
 <p>Stalo se Vám někdy že jste si potřebovali poznamenat nějaký odkaz
-z počítače ve škole,kavárně­,abyste se na něj mohli doma
+z počítače ve škole,kavárně,abyste se na něj mohli doma
 podívat?Psát ho na papír snad nikoho nenapadne,ukládat do textového
 souboru je pracné,posílat si ho mejlem není pohodlné. Tady si pouze
 poznamenáte adresu a k ní popis,a vše zůstane dostupné odkudkoli.
 Navíc není problém aby se o jeden účet dělilo několik lidí,a
 sdílelo tak své záložky.</p>
 
-<p>více na <a href="http://zalozky.xf.cz">http://zalozky­.xf.cz</a></p>
+<p>více na <a href="http://zalozky.xf.cz">http://zalozky.xf.cz</a></p>
 

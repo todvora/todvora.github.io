@@ -25,7 +25,7 @@ Tak jsem si řekl, že bude fajn babičce zautomatizovat platby a zjednodušit j
 <p><img src="/images/403.png" alt="whatever@fio.cz" width="386" height="146" /></p>
 <p> </p>
 <p><strong>Update: 13:31</strong></p>
-<p>Z pobočky banky volali, že kurýra popohnali a dnes odpoledne bude účet odblokován. Bylo mi vysvětleno, že když píšu zprávu z prostředí IB, mám se podepisovat jako babička, nikoliv svým jménem, prý to nevypadá dobře :-) Poněkud zábavné, vhledem k tomu, jak podepsaný přišel e-mail z banky (Aladin (Aladin) <whatever@fio.cz>). </p>
+<p>Z pobočky banky volali, že kurýra popohnali a dnes odpoledne bude účet odblokován. Bylo mi vysvětleno, že když píšu zprávu z prostředí IB, mám se podepisovat jako babička, nikoliv svým jménem, prý to nevypadá dobře :-) Poněkud zábavné, vhledem k tomu, jak podepsaný přišel e-mail z banky (Aladin (Aladin) &lt;whatever@fio.cz&gt;). </p>
 <p><strong>Update: 19:06</strong></p>
 <p>Přes veškerá ujištění, jak účet odpoledne bude dořešen a plně funkční, stále nemohu ani povolit SIPO a chyba opakuje: "Vinkulace zvoleného účtu neumožňuje elektronické podání pokynu. V případě potřeby kontaktujte, prosím, svoji pobočku.". Zřejmě se tak dosud nedostala smlouva fyzicky na pobočku, jak mi bylo slíbeno.   </p>
 <p><strong>Update 17.1. 9:05</strong></p>

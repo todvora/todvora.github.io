@@ -112,7 +112,7 @@ stupňů</p>
 href="http://pda.jasnapaka.com/">pda.jasnapaka.com</a></p>
 
 <p>Domovská stránka projektu na google code: <a
-href="http://code.google.com/p/batti/">http://code.go­ogle.com/p/bat­ti/</a></p>
+href="http://code.google.com/p/batti/">http://code.google.com/p/batti/</a></p>
 
 <p>Z předchozích dvou stránek jsem čerpal informace a použil
 screenshoty. Jejich autorovi tedy velmi děkuji.</p>

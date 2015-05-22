@@ -15,11 +15,11 @@ soubor na server a uložit ho tam
 
 <p>HTML formulář, stránka která umožní vybrat který soubor odeslat,</p>
 
-<pre class="prettyprint"><code><form action="upload.jsp" method="post"
-enctype="multipart/form-data">
-<input name="soubor" type="file" />
-<input type="submit" value="ulozit"  />
-</form></code></pre>
+<pre><code>&lt;form action=&quot;upload.jsp&quot; method=&quot;post&quot;
+enctype=&quot;multipart/form-data&quot;&gt;
+&lt;input name=&quot;soubor&quot; type=&quot;file&quot; /&gt;
+&lt;input type=&quot;submit&quot; value=&quot;ulozit&quot;  /&gt;
+&lt;/form&gt;</code></pre>
 
 <hr />
 
@@ -27,41 +27,41 @@ enctype="multipart/form-data">
 
 <div></div>
 
-<pre class="prettyprint"><code><%@ page import="java.io.*" %>
+<pre><code>&lt;%@ page import=&quot;java.io.*&quot; %&gt;
 
-<%
+&lt;%
 String contentType = request.getContentType();
-System.out.println("Content type is :: " +contentType);
-if ((contentType != null) && (contentType.indexOf("multipart/form-data") >= 0)) {
+System.out.println(&quot;Content type is :: &quot; +contentType);
+if ((contentType != null) &amp;&amp; (contentType.indexOf(&quot;multipart/form-data&quot;) &gt;= 0)) {
 DataInputStream in = new DataInputStream(request.getInputStream());
 int formDataLength = request.getContentLength();
 
 byte dataBytes[] = new byte[formDataLength];
 int byteRead = 0;
 int totalBytesRead = 0;
-while (totalBytesRead < formDataLength) {
+while (totalBytesRead &lt; formDataLength) {
 byteRead = in.read(dataBytes, totalBytesRead, formDataLength);
 totalBytesRead += byteRead;
 }
-String cesta="webapps/ROOT/img/banners/";
+String cesta=&quot;webapps/ROOT/img/banners/&quot;;
 String file = new String(dataBytes);
-String saveFile = file.substring(file.indexOf("filename=\"") + 10);
-saveFile = saveFile.substring(0, saveFile.indexOf("\n"));
-saveFile = saveFile.substring(saveFile.lastIndexOf("\\") + 1,saveFile.indexOf("\""));
+String saveFile = file.substring(file.indexOf(&quot;filename=\&quot;&quot;) + 10);
+saveFile = saveFile.substring(0, saveFile.indexOf(&quot;\n&quot;));
+saveFile = saveFile.substring(saveFile.lastIndexOf(&quot;\\&quot;) + 1,saveFile.indexOf(&quot;\&quot;&quot;));
 
 //out.print(dataBytes);
 
-int lastIndex = contentType.lastIndexOf("=");
+int lastIndex = contentType.lastIndexOf(&quot;=&quot;);
 String boundary = contentType.substring(lastIndex + 1,contentType.length());
 //out.println(boundary);
 int pos;
-pos = file.indexOf("filename=\"");
+pos = file.indexOf(&quot;filename=\&quot;&quot;);
 
-pos = file.indexOf("\n", pos) + 1;
+pos = file.indexOf(&quot;\n&quot;, pos) + 1;
 
-pos = file.indexOf("\n", pos) + 1;
+pos = file.indexOf(&quot;\n&quot;, pos) + 1;
 
-pos = file.indexOf("\n", pos) + 1;
+pos = file.indexOf(&quot;\n&quot;, pos) + 1;
 
 
 int boundaryLocation = file.indexOf(boundary, pos) - 4;
@@ -76,10 +76,10 @@ fileOut.write(dataBytes, startPos, (endPos - startPos));
 fileOut.flush();
 fileOut.close();
 
-out.println("File saved as " +saveFile);
+out.println(&quot;File saved as &quot; +saveFile);
 
 }
-%></code></pre>
+%&gt;</code></pre>
 
 <hr />
 

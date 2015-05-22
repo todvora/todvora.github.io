@@ -53,5 +53,5 @@ print_r($arr);</code></pre>
 obrovské množství funkcí :)</p>
 
 <p>Více na <a
-href="http://cz2.php.net/get_defined_functions">http://cz2.php­.net/get_defi­ned_functions</a></p>
+href="http://cz2.php.net/get_defined_functions">http://cz2.php.net/get_defined_functions</a></p>
 

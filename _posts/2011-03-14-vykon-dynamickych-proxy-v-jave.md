@@ -28,7 +28,7 @@ když dostanete úzké hrdlo k celému rozhraní. Protože je ale pak
 konstrukce složitější, zajímal jsem se o výkon takového řešení.
 Jak vypadal test:</p>
 
-<pre class=".prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 import java.lang.reflect.Method;
 
@@ -41,26 +41,26 @@ public class ProxyPerformanceBenchmark {
         TestInterface simpleInstance = new TestInterfaceImpl();
 
         long proxyStart = System.currentTimeMillis();
-        for (int i = 0; i < LOOPS; i++) {
+        for (int i = 0; i &lt; LOOPS; i++) {
             proxyInstance.foo();
         }
         long proxyEnd = System.currentTimeMillis();
 
         long simpleStart = System.currentTimeMillis();
-        for (int i = 0; i < LOOPS; i++) {
+        for (int i = 0; i &lt; LOOPS; i++) {
             simpleInstance.foo();
         }
         long simpleEnd = System.currentTimeMillis();
 
-        System.out.println("Proxy instance run took "
-                + (proxyEnd - proxyStart) + " ms");
+        System.out.println(&quot;Proxy instance run took &quot;
+                + (proxyEnd - proxyStart) + &quot; ms&quot;);
 
-        System.out.println("Simple instance run took "
-                + (simpleEnd - simpleStart) + " ms");
+        System.out.println(&quot;Simple instance run took &quot;
+                + (simpleEnd - simpleStart) + &quot; ms&quot;);
         double percentsDiference = (100.0 / (simpleEnd - simpleStart))
                 * (proxyEnd - proxyStart) - 100;
-        System.out.println("Proxy calls are " + percentsDiference
-                + "% slower than ordinal calls");
+        System.out.println(&quot;Proxy calls are &quot; + percentsDiference
+                + &quot;% slower than ordinal calls&quot;);
     }
 }
 
@@ -70,7 +70,7 @@ interface TestInterface {
 
 class TestInterfaceImpl implements TestInterface {
     private String value = null;
-    private static final String PROPERTY_NAME = "java.runtime.name";
+    private static final String PROPERTY_NAME = &quot;java.runtime.name&quot;;
 
     public void foo() throws InterruptedException {
         value = System.getProperty(PROPERTY_NAME);
@@ -81,7 +81,7 @@ class MyProxy implements java.lang.reflect.InvocationHandler {
 
     private TestInterface impl;
 
-    public static synchronized <T extends TestInterface> T newInstance(T service) {
+    public static synchronized &lt;T extends TestInterface&gt; T newInstance(T service) {
         return (T) java.lang.reflect.Proxy.newProxyInstance(service.getClass().getClassLoader(),
                 service.getClass().getInterfaces(), new MyProxy(service));
     }
@@ -109,7 +109,7 @@ standardního volání oproti proxy variantě.</p>
 
 <p><strong>Výsledky:</strong></p>
 
-<pre class=".prettyprint"><code>Proxy instance run took 108353 ms
+<pre><code>Proxy instance run took 108353 ms
 Simple instance run took 61760 ms
 Proxy calls are 75.44203367875647% slower than ordinal calls</code></pre>
 
@@ -117,11 +117,11 @@ Proxy calls are 75.44203367875647% slower than ordinal calls</code></pre>
 
 <p>Zdroje:
 <br /><a
-href="http://download.oracle.com/javase/6/docs/technotes/guides/reflection/proxy.html">http://downlo­ad.oracle.com/ja­vase/6/docs/techno­tes/guides/re­flection/proxy­.html</a>
+href="http://download.oracle.com/javase/6/docs/technotes/guides/reflection/proxy.html">http://download.oracle.com/javase/6/docs/technotes/guides/reflection/proxy.html</a>
 <br /><a
-href="http://www.ibm.com/developerworks/java/library/j-jtp08305.html">http://www.ib­m.com/developer­works/java/li­brary/j-jtp08305.html</a>
+href="http://www.ibm.com/developerworks/java/library/j-jtp08305.html">http://www.ibm.com/developerworks/java/library/j-jtp08305.html</a>
 <br /><a
-href="http://ordinaryjava.blogspot.com/2008/08/benchmarking-cost-of-dynamic-proxies.html">http://ordina­ryjava.blogspot­.com/2008/08/ben­chmarking-cost-of-dynamic-proxies.html</a>
+href="http://ordinaryjava.blogspot.com/2008/08/benchmarking-cost-of-dynamic-proxies.html">http://ordinaryjava.blogspot.com/2008/08/benchmarking-cost-of-dynamic-proxies.html</a>
 <br /><a
-href="http://blog.springsource.com/2007/07/19/debunking-myths-proxies-impact-performance/">http://blog.sprin­gsource.com/2007/07­/19/debunking-myths-proxies-impact-performance/</a></p>
+href="http://blog.springsource.com/2007/07/19/debunking-myths-proxies-impact-performance/">http://blog.springsource.com/2007/07/19/debunking-myths-proxies-impact-performance/</a></p>
 

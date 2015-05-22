@@ -33,7 +33,7 @@ nutné počkat na další výskyt.</p>
 
 <p>Metadata vypadají například takto:</p>
 
-<pre class=".prettyprint"><code>StreamTitle='Blondie - One Way Or Another';StreamUrl='http://www.bandit.no';</code></pre>
+<pre><code>StreamTitle='Blondie - One Way Or Another';StreamUrl='http://www.bandit.no';</code></pre>
 
 <p>Kde středníkem jsou odděleny jednotlivé informace ve tvaru
 Klíč=‚hodnota‘.</p>
@@ -45,7 +45,7 @@ nalezení. Vypisovat budeme jen pokud se text změní s dalším songem,
 protože metadata se ve streamu vyskytují v různé hustotě a často se
 opakují v rámci jednoho songu. Celý script vypadá takto:</p>
 
-<pre class=".prettyprint"><code># -*- coding: utf-8 -*-
+<pre><code># -*- coding: utf-8 -*-
 import urllib2
 import sys
 import io
@@ -56,20 +56,20 @@ import re
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-req = urllib2.Request("http://mms-live.online.no:80/p4_bandit")
-req.add_header("Icy-Metadata", 1)
+req = urllib2.Request(&quot;http://mms-live.online.no:80/p4_bandit&quot;)
+req.add_header(&quot;Icy-Metadata&quot;, 1)
 stream = urllib2.urlopen(req)
-byteinterval = int(stream.info().get("icy-metaint"))
-last_text = ""
+byteinterval = int(stream.info().get(&quot;icy-metaint&quot;))
+last_text = &quot;&quot;
 while(stream.read(byteinterval)):
     length = ord(stream.read(1)) * 16
     text = stream.read(length)
-    if(length > 0 and text != last_text):
+    if(length &gt; 0 and text != last_text):
         last_text = text
         m = re.search('StreamTitle=\'(.*?)\';', text)
         title = m.group(1)
-        if(len(title.strip()) > 0):
-            print title + " (" + strftime("%H:%M:%S", localtime()) + ")"</code></pre>
+        if(len(title.strip()) &gt; 0):
+            print title + &quot; (&quot; + strftime(&quot;%H:%M:%S&quot;, localtime()) + &quot;)&quot;</code></pre>
 
 <p>a výstupem může být například</p>
 
@@ -99,7 +99,7 @@ Jeff Beck - I Ain't Superstitious (12:47:59)
 David Bowie - Golden Years (12:52:39)
 Duncan Sheik - Barely Breathing (12:56:39)
 Thin Lizzy - The Boys Are Back In Town (13:00:39)
-Marc Bolan/& T. Rex - Metal Guru (13:07:19)
+Marc Bolan/&amp; T. Rex - Metal Guru (13:07:19)
 Bryan Adams - Summer Of '69 (13:09:58)
 Poison - Unskinny Bop (13:13:08)
 My Chemical Romance - Welcome To The Black Parade (13:17:10)

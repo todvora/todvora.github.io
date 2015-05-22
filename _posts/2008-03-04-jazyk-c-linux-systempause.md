@@ -13,7 +13,7 @@ s podmínkou
 <p>Ve školních příkladech se často na konci metody main nachází
 volání</p>
 
-<pre><code>system("pause");</code></pre>
+<pre><code>system(&quot;pause&quot;);</code></pre>
 
 <p>což způsobí zastavení běhu programu a umožní užívateli přečíst si
 co program vytiskl do konzole, a čeká na stisk klávesy.</p>
@@ -26,18 +26,18 @@ toto fungovat nebude. Stejnou funkci však vykoná tento jednoduchý cyklus:</p>
 
 <p>A nejlépe bude funkce vidět na celém příkladu:</p>
 
-<pre><code>#include <stdio.h>
-#include <stdlib.h>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
 
 int main(int argc, char *argv[]){
-    printf("%s\n","ahoj");
+    printf(&quot;%s\n&quot;,&quot;ahoj&quot;);
     pause();
     return 0;
 }
 
 pause(){
-    printf("%s","\n");
-    printf("%s","stisknete klavesu ENTER");
+    printf(&quot;%s&quot;,&quot;\n&quot;);
+    printf(&quot;%s&quot;,&quot;stisknete klavesu ENTER&quot;);
     while(getchar()!='\n')
         ;
 }</code></pre>

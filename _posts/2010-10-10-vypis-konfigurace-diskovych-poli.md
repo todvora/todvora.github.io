@@ -27,5 +27,5 @@ konfiguraci těchto polí
 <p>md2 : active raid10 sdb2[2] sda2[0]
 <br />19534848 blocks 64K chunks 2 near-copies [4/2] [U_U_]</p>
 
-<p>unused devices: <none></p>
+<p>unused devices: &lt;none&gt;</p>
 

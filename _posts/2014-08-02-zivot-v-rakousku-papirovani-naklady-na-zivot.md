@@ -14,9 +14,9 @@ Láska k úřadům, formulářům a papírování obecně má v Rakousku zřejm�
 <p>V okamžiku, kdy se člověk rozkouká, najde si práci a bydlení a kalendář ukazuje čtvrtý měsíc života v nové zemi, nastává nová etapa papírování. Je třeba zažádat o <a href="https://www.help.gv.at/Portal.Node/hlpd/public/content/12/Seite.120810.html" rel="noreferrer">Anmeldebescheinigung</a> - povolení k trvalému pobytu. Pro občana ze země EU to působí poněkud zvláštně, jde ale především o formalitu. Stačí dokázat, že máte kde bydlet a máte prokazatelné příjmy. Lhůta na vyřízení je mezi 3. a 4. měsícem života v zemi. My byli o něco rychlejší a žádali jsme zhruba dva týdny předem, nebyl to však problém.</p>
 <p>O povolení se žádá na úřadě:</p>
 <ul class="task-list">
-<li>Hejtmanství - Die <a href="https://www.help.gv.at/linkaufloesung/applikation-flow?flow=LO&quelle=HELP&leistung=LA-HP-RL-Fremdenpolizei" rel="noreferrer">Bezirkshauptmannschaft</a></li>
-<li>Ve statutárních městech (Statutarstädten): <a href="https://www.help.gv.at/linkaufloesung/applikation-flow?flow=LO&quelle=HELP&leistung=LA-HP-RL-Fremdenpolizei" rel="noreferrer">der Magistrat</a></li>
-<li>Vídeň: die <a href="https://www.help.gv.at/linkaufloesung/applikation-flow?flow=LO&quelle=HELP&leistung=LA-HP-RL-Fremdenpolizei" rel="noreferrer">MA 35</a></li>
+<li>Hejtmanství - Die <a href="https://www.help.gv.at/linkaufloesung/applikation-flow?flow=LO&amp;quelle=HELP&amp;leistung=LA-HP-RL-Fremdenpolizei" rel="noreferrer">Bezirkshauptmannschaft</a></li>
+<li>Ve statutárních městech (Statutarstädten): <a href="https://www.help.gv.at/linkaufloesung/applikation-flow?flow=LO&amp;quelle=HELP&amp;leistung=LA-HP-RL-Fremdenpolizei" rel="noreferrer">der Magistrat</a></li>
+<li>Vídeň: die <a href="https://www.help.gv.at/linkaufloesung/applikation-flow?flow=LO&amp;quelle=HELP&amp;leistung=LA-HP-RL-Fremdenpolizei" rel="noreferrer">MA 35</a></li>
 </ul>
 <p><strong>V Salzburgu jde o Bezirkshauptmannschaft</strong>, který je nedaleko hlavního nádraží.</p>
 <p>Ke kladnému vyřízení je třeba doložit několik různých dokumentů a zaplatit poplatek 15 Eur:</p>

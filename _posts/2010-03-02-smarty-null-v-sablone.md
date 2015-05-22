@@ -14,7 +14,7 @@ Jak ve smarty poznat, že proměnná je null.
 mám zrovna v plánu vypsat je NULL. Provést se to dá velmi
 jednoduše:</p>
 
-<pre class="prettyprint"><code>{if $paging->getFirst()}
+<pre><code>{if $paging->getFirst()}
     {* mám první stránku stránkování *}
 {else}
     {* metoda getFirst() vrátila NULL *}

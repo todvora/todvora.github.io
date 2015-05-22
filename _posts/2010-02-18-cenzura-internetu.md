@@ -22,5 +22,5 @@ představu, jak se tam stránky dostávají. Možná tam přibude právě moje
 stránka :)</p>
 
 <p>Hodnotné informace si přečtěte prosím zde : <a
-href="http://blok.hrach.eu/">http://blok.hrach­.eu/</a></p>
+href="http://blok.hrach.eu/">http://blok.hrach.eu/</a></p>
 

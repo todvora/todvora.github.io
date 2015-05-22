@@ -53,5 +53,5 @@ takto:
 znovu zapněte. Applety by měly být již funkční.</p>
 
 <p>Převzato z <a
-href="https://help.ubuntu.com/community/Java">https://hel­p.ubuntu.com/com­munity/Java</a></p>
+href="https://help.ubuntu.com/community/Java">https://help.ubuntu.com/community/Java</a></p>
 

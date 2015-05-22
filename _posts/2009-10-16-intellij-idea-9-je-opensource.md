@@ -24,10 +24,10 @@ vývoj…</p>
 <p><strong>Ke stažení zde:</strong></p>
 
 <p><a
-href="http://www.jetbrains.com/idea/nextversion/free_java_ide.html">http://www.jet­brains.com/ide­a/nextversion/fre­e_java_ide.html</a></p>
+href="http://www.jetbrains.com/idea/nextversion/free_java_ide.html">http://www.jetbrains.com/idea/nextversion/free_java_ide.html</a></p>
 
 <p><strong>a porovnání s placenou verzí:</strong></p>
 
 <p><a
-href="http://www.jetbrains.com/idea/nextversion/editions_comparison_matrix.html">http://www.jet­brains.com/ide­a/nextversion/e­ditions_compa­rison_matrix.html</a></p>
+href="http://www.jetbrains.com/idea/nextversion/editions_comparison_matrix.html">http://www.jetbrains.com/idea/nextversion/editions_comparison_matrix.html</a></p>
 

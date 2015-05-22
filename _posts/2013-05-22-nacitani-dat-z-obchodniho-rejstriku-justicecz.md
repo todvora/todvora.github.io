@@ -18,7 +18,7 @@ Pracujete automatizovaně s daty firem? Jméno, IČ, sídlo firmy? Pak určitě 
 <p>Hlavním důvodem pro nevyužití ARESu je tedy jeho velmi pomalá odezva. Tam, kde justice vrací data za desítky milisekund, ARES přemýšlí několik sekund (aktuálně okolo 3s, někdy i půl minuty, zřejmě podle zátěže). </p>
 <p> </p>
 <p>Srovnejte sami:</p>
-<p><strong>ARES</strong>: <a href="http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?czk=utf&max_pocet=10&obchodni_firma=Seznam">http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?czk=utf&max_pocet=10&obchodni_firma=Seznam</a></p>
+<p><strong>ARES</strong>: <a href="http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?czk=utf&amp;max_pocet=10&amp;obchodni_firma=Seznam">http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_std.cgi?czk=utf&amp;max_pocet=10&amp;obchodni_firma=Seznam</a></p>
 <p><img src="/images/306.png" alt="Doba odezvy API ARESu" width="500" height="45" /></p>
 <p><strong>JUSTICE</strong>: <a href="https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=Seznam">https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=Seznam</a></p>
 <p><img src="/images/305.png" alt="Doba odezvy webu justice.cz" width="500" height="45" /></p>
@@ -27,17 +27,17 @@ Pracujete automatizovaně s daty firem? Jméno, IČ, sídlo firmy? Pak určitě 
 <div>
 <h2>Node.js implementace parsování webu justice (<a href="https://npmjs.org/package/request">request</a> + <a href="https://npmjs.org/package/cheerio">cheerio</a>)</h2>
 <p>Pokud neznáte cheerio, jde o populární serverovou implementaci jQuery. Můžete tak velmi snadno využívat jQuery metody pro práci s DOMem. Více o cheeriu třeba na <a href="https://github.com/MatthewMueller/cheerio">github repozitáři</a>.</p>
-<pre class="prettyprint">var request = require('request');
+<pre>var request = require('request');
 var cheerio = require('cheerio');
 
 function getData(companyName, callback) {
-    request("https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=" + encodeURIComponent(companyName), function (error, response, body) {
-        if (!error && response.statusCode == 200) {
+    request(&quot;https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=&quot; + encodeURIComponent(companyName), function (error, response, body) {
+        if (!error &amp;&amp; response.statusCode == 200) {
             var results = [];
             $ = cheerio.load(body);
-            $(".search-results li.result").each(function (i, elem) {
+            $(&quot;.search-results li.result&quot;).each(function (i, elem) {
                 var company = {};
-                $(elem).find("th").each(function (j, cell) {
+                $(elem).find(&quot;th&quot;).each(function (j, cell) {
                     var key = $(cell).text().trim();
                     company[key] = $(cell).next().text().trim();
                 });
@@ -48,38 +48,38 @@ function getData(companyName, callback) {
     });
 }
 
-getData("Seznam", function(data) {
+getData(&quot;Seznam&quot;, function(data) {
     console.log(data);
 });</pre>
 </div>
 
 <p>Výstupem scriptu pak je:</p>
-<pre class="prettyprint">[ { 'Název subjektu:': 'Seznam.cz, a.s.',
-    'Identifikační číslo:': '261 68 685',
-    'Spisová značka:': 'B 6493 vedená u Městského soudu v Praze',
-    'Den zápisu:': '05.04.2000',
-    'Sídlo:': 'Praha 5 - Smíchov, Radlická 3294/10, PSČ 150 00' },
-  { 'Název subjektu:': 'Seznam.cz datová centra, s.r.o.',
-    'Identifikační číslo:': '016 73 408',
-    'Spisová značka:': 'C 209831 vedená u Městského soudu v Praze',
-    'Den zápisu:': '15.05.2013',
-    'Sídlo:': 'Radlická 3294/10, Smíchov, 150 00 Praha 5' },
-  { 'Název subjektu:': 'Seznámení, s.r.o.',
-    'Identifikační číslo:': '293 87 108',
-    'Spisová značka:': 'C 38117 vedená u Krajského soudu v Ostravě',
-    'Den zápisu:': '29.09.2011',
-    'Sídlo:': 'Ostrava - Moravská Ostrava, Nádražní 3113/128, PSČ 702 00' },
-  { 'Název subjektu:': 'Seznam firem s.r.o.',
-    'Identifikační číslo:': '292 82 934',
-    'Spisová značka:': 'C 70854 vedená u Krajského soudu v Brně',
-    'Den zápisu:': '10.06.2011',
-    'Sídlo:': 'Brno, Příční 118/10, PSČ 602 00' } ]
+<pre>[ { 'N&aacute;zev subjektu:': 'Seznam.cz, a.s.',
+    'Identifika&#269;n&iacute; &#269;&iacute;slo:': '261&nbsp;68&nbsp;685',
+    'Spisov&aacute; zna&#269;ka:': 'B 6493 veden&aacute; u M&#283;stsk&eacute;ho soudu v Praze',
+    'Den z&aacute;pisu:': '05.04.2000',
+    'S&iacute;dlo:': 'Praha 5 - Sm&iacute;chov, Radlick&aacute; 3294/10, PS&#268;&nbsp;150&nbsp;00' },
+  { 'N&aacute;zev subjektu:': 'Seznam.cz datov&aacute; centra, s.r.o.',
+    'Identifika&#269;n&iacute; &#269;&iacute;slo:': '016&nbsp;73&nbsp;408',
+    'Spisov&aacute; zna&#269;ka:': 'C 209831 veden&aacute; u M&#283;stsk&eacute;ho soudu v Praze',
+    'Den z&aacute;pisu:': '15.05.2013',
+    'S&iacute;dlo:': 'Radlick&aacute;&nbsp;3294/10, Sm&iacute;chov, 150&nbsp;00 Praha 5' },
+  { 'N&aacute;zev subjektu:': 'Sezn&aacute;men&iacute;, s.r.o.',
+    'Identifika&#269;n&iacute; &#269;&iacute;slo:': '293&nbsp;87&nbsp;108',
+    'Spisov&aacute; zna&#269;ka:': 'C 38117 veden&aacute; u Krajsk&eacute;ho soudu v Ostrav&#283;',
+    'Den z&aacute;pisu:': '29.09.2011',
+    'S&iacute;dlo:': 'Ostrava - Moravsk&aacute; Ostrava, N&aacute;dra&#382;n&iacute; 3113/128, PS&#268;&nbsp;702&nbsp;00' },
+  { 'N&aacute;zev subjektu:': 'Seznam firem s.r.o.',
+    'Identifika&#269;n&iacute; &#269;&iacute;slo:': '292&nbsp;82&nbsp;934',
+    'Spisov&aacute; zna&#269;ka:': 'C 70854 veden&aacute; u Krajsk&eacute;ho soudu v Brn&#283;',
+    'Den z&aacute;pisu:': '10.06.2011',
+    'S&iacute;dlo:': 'Brno, P&#345;&iacute;&#269;n&iacute; 118/10, PS&#268;&nbsp;602&nbsp;00' } ]
 </pre>
 <p> </p>
 <h2>Java implementace (<a href="http://nekohtml.sourceforge.net/faq.html">nekoHTML</a> parser)</h2>
 <div>Implementace zdaleka nedosahuje lehkosti javascriptu pro node, funguje ale stejně a vrací stejná data. Dalo by se to napsat úsporněji, využít nějaké další knihovny a podobně, to ale není smyslem článku. Ukázka alespoň demonstruje lehkost javascriptu a těžkopádnost javy. I proto je zřejmě node.js tak populární. </div>
 
-<pre class="prettyprint">import org.cyberneko.html.parsers.DOMParser;
+<pre>import org.cyberneko.html.parsers.DOMParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -96,37 +96,37 @@ import java.util.Map;
 
 public class Justice {
 
-    public static List<Map<String, String>> getFromJusticeCz(String query) throws Exception {
-        String url = "https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=" + URLEncoder.encode(query, "UTF-8");
+    public static List&lt;Map&lt;String, String&gt;&gt; getFromJusticeCz(String query) throws Exception {
+        String url = &quot;https://or.justice.cz/ias/ui/rejstrik-dotaz?dotaz=&quot; + URLEncoder.encode(query, &quot;UTF-8&quot;);
         DOMParser parser = new DOMParser(); //see http://nekohtml.sourceforge.net/faq.html
         InputStream stream = new URL(url).openStream();
-        parser.parse(new InputSource(new InputStreamReader(stream, "utf-8")));
+        parser.parse(new InputSource(new InputStreamReader(stream, &quot;utf-8&quot;)));
         Document doc = parser.getDocument();
-        NodeList tables = doc.getElementsByTagName("table");
-        List<Map<String, String>> data = new ArrayList<Map<String, String>>();
-        for (int i = 0; i < tables.getLength(); i++) {
+        NodeList tables = doc.getElementsByTagName(&quot;table&quot;);
+        List&lt;Map&lt;String, String&gt;&gt; data = new ArrayList&lt;Map&lt;String, String&gt;&gt;();
+        for (int i = 0; i &lt; tables.getLength(); i++) {
             Node item = tables.item(i);
-            Node cssClass = item.getAttributes().getNamedItem("class");
-            if (cssClass != null && cssClass.getNodeValue().contains("result-details")) {
+            Node cssClass = item.getAttributes().getNamedItem(&quot;class&quot;);
+            if (cssClass != null &amp;&amp; cssClass.getNodeValue().contains(&quot;result-details&quot;)) {
                 NodeList subnodes = item.getChildNodes();
-                for (int j = 0; j < subnodes.getLength(); j++) {
+                for (int j = 0; j &lt; subnodes.getLength(); j++) {
                     Node subnode = subnodes.item(j);
-                    if ("TBODY".equals(subnode.getNodeName())) {
-                        Map<String, String> company = new HashMap<String, String>();
+                    if (&quot;TBODY&quot;.equals(subnode.getNodeName())) {
+                        Map&lt;String, String&gt; company = new HashMap&lt;String, String&gt;();
                         NodeList companyNodes = subnode.getChildNodes();
-                        for (int k = 0; k < companyNodes.getLength(); k++) {
+                        for (int k = 0; k &lt; companyNodes.getLength(); k++) {
                             String key = null;
                             String value = null;
                             Node row = companyNodes.item(k);
                             NodeList cells = row.getChildNodes();
-                            for (int m = 0; m < cells.getLength(); m++) {
+                            for (int m = 0; m &lt; cells.getLength(); m++) {
                                 Node cell = cells.item(m);
-                                if ("TH".equals(cell.getNodeName())) {
+                                if (&quot;TH&quot;.equals(cell.getNodeName())) {
                                     key = cell.getTextContent();
                                     key = key.trim();
                                     key = key.substring(0, key.length() - 1);
                                 }
-                                if ("TD".equals(cell.getNodeName())) {
+                                if (&quot;TD&quot;.equals(cell.getNodeName())) {
                                     value = cell.getTextContent().trim();
                                     company.put(key, value);
                                 }
@@ -142,7 +142,7 @@ public class Justice {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println(getFromJusticeCz("Seznam"));
+        System.out.println(getFromJusticeCz(&quot;Seznam&quot;));
     }
 }
 

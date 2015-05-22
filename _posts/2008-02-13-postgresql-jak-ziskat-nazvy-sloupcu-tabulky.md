@@ -16,21 +16,21 @@ Jednoduchý způsob zjištění a zpracování názvů sloupců tabulky
 použití a zpracování dat z databáze. Jednoduchou možností jak to
 zařídít je tento sql dotaz:</p>
 
-<pre class="prettyprint"><code>"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.Columns WHERE
-TABLE_NAME = 'nazev_tabulky'";</code></pre>
+<pre><code>"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.Columns WHERE
+TABLE_NAME = 'nazev_tabulky'&quot;;</code></pre>
 
 <p>a celý kód pro zpracování tohoto dotazu:</p>
 
-<pre class="prettyprint"><code>Class.forName("org.postgresql.Driver");
-String dbUri = "jdbc:postgresql://" + "localhost" + "/"
-                                + "databaze" + "?user=" + "uzivatel"
-                                +"&password=" + "heslo" +
-                                 "&characterEncoding=cp1250";
+<pre><code>Class.forName(&quot;org.postgresql.Driver&quot;);
+String dbUri = &quot;jdbc:postgresql://&quot; + &quot;localhost&quot; + &quot;/&quot;
+                                + &quot;databaze&quot; + &quot;?user=&quot; + &quot;uzivatel&quot;
+                                +&quot;&amp;password=&quot; + &quot;heslo&quot; +
+                                 &quot;&amp;characterEncoding=cp1250&quot;;
  Connection con = DriverManager.getConnection(dbUri);
 Statement s = con.createStatement();
-String sql = "SELECT COLUMN_NAME FROM
+String sql = &quot;SELECT COLUMN_NAME FROM
                      INFORMATION_SCHEMA.Columns WHERE
-                     TABLE_NAME = 'nazev_tabulky'";
+                     TABLE_NAME = 'nazev_tabulky'&quot;;
               ResultSet rs = s.executeQuery(sql);
               while (rs.next()) {
                 System.out.println(rs.getString(1));

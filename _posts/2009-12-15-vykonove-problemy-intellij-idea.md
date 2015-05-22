@@ -29,5 +29,5 @@ editovat soubor idea.vmoptions a přidat do něj řádek</p>
 s podobnými komplikacemi, zkuste to.</p>
 
 <p>A kde jsem na to přišel: <a
-href="http://www.cs.bgu.ac.il/~gwiener/programming/how-to-make-intellij-idea-8-usable-on-linux/">http://www.cs­.bgu.ac.il/~gwi­ener/programmin­g/how-to-make-intellij-idea-8-usable-on-linux/</a></p>
+href="http://www.cs.bgu.ac.il/~gwiener/programming/how-to-make-intellij-idea-8-usable-on-linux/">http://www.cs.bgu.ac.il/~gwiener/programming/how-to-make-intellij-idea-8-usable-on-linux/</a></p>
 

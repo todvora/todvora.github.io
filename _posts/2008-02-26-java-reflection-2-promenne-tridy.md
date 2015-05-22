@@ -16,7 +16,7 @@ proměnných třídy
 <p>V tomto příkladu budeme předpokládat existenci stejné třídy
 JavaBean jako minule, tedy :</p>
 
-<pre class="prettyprint"><code>public class JavaBean {
+<pre><code>public class JavaBean {
 
     private String Jmeno;
     private String Prijmeni;
@@ -44,7 +44,7 @@ JavaBean jako minule, tedy :</p>
 
 <p>Dále potřebujeme třídu Main, ze které budeme provádět pokusy:</p>
 
-<pre class="prettyprint"><code>public class Main {
+<pre><code>public class Main {
 
     public static void main(String[] args) {
         try {
@@ -60,7 +60,7 @@ konkrétní. Podmínkou následujících operací je to,že proměnné nejsou
 s atributem private, tedy je třeba upravit třídu JavaBean
 v deklaraci proměnných nějak takto:</p>
 
-<pre class="prettyprint"><code>public class JavaBean {
+<pre><code>public class JavaBean {
 
     public String Jmeno;
     public String Prijmeni;
@@ -69,27 +69,27 @@ v deklaraci proměnných nějak takto:</p>
 
 <p>Pak přístup k proměnné Jmeno získáme snadno:</p>
 
-<pre class="prettyprint"><code>Field promennaJmeno= c.getDeclaredField("Jmeno");</code></pre>
+<pre><code>Field promennaJmeno= c.getDeclaredField("Jmeno");</code></pre>
 
 <p>Nastavení hodnoty pak provedeme:</p>
 
-<pre class="prettyprint"><code>promennaJmeno.set(jb,"Pavel");</code></pre>
+<pre><code>promennaJmeno.set(jb,"Pavel");</code></pre>
 
 <p>a získání hodnoty (v našem případě String) provedeme:</p>
 
-<pre class="prettyprint"><code>String hodnotaJmeno=(String)promennaJmeno.get(jb);</code></pre>
+<pre><code>String hodnotaJmeno=(String)promennaJmeno.get(jb);</code></pre>
 
 <p><strong>Přístup k private atributům:</strong>
 <br />Pokud jsou proměnné s atributem private,pak při pokusu
 o jejich čtení nebo zápis dostaneme tuto vyjímku:</p>
 
-<pre class="prettyprint"><code>java.lang.IllegalAccessException: Class javareflections.Main can
+<pre><code>java.lang.IllegalAccessException: Class javareflections.Main can
 not access a member of class javareflections.JavaBean with
 modifiers "private"</code></pre>
 
 <p>Možnost,jak potlačit kontrolu přístupových atributů je taková:</p>
 
-<pre class="prettyprint"><code>Field promennaJmenoPotlaceno= c.getDeclaredField("Jmeno");
+<pre><code>Field promennaJmenoPotlaceno= c.getDeclaredField("Jmeno");
  promennaJmenoPotlaceno.setAccessible(true);</code></pre>
 
 <p>metoda setAccessible() nastavuje,zda java provede kontrolu atributu pro
@@ -98,7 +98,7 @@ neprovádí, false kontrolu vynutí.
 <br />Teď již není problém pracovat s proměnnou jako by žádný
 přístupový modifikátor neměla, tedy:</p>
 
-<pre class="prettyprint"><code>promennaJmenoPotlaceno.set(jb,"Pavel");
+<pre><code>promennaJmenoPotlaceno.set(jb,"Pavel");
 String hodnotaJmeno=(String)promennaJmenoPotlaceno.get(jb);</code></pre>
 
 <p>Aniž bychom dostali jakékoli chybové hlášení.</p>
@@ -109,7 +109,7 @@ s proměnnými, a můžeme tak snadno dosáhnout nekonzistentního stavu
 JavaBeany, obejdeme možné kontroly a úpravy hodnot
 v setterech…</p>
 
-<p><strong>Modifikátory(A­tributy):</strong>
+<p><strong>Modifikátory(Atributy):</strong>
 <br />Proměnná může mít tyto modifikátory:
 <br />Přístupové atributy: public, protected, and private
 <br />Atribut omezení na jednu instanci: static
@@ -117,7 +117,7 @@ v setterech…</p>
 
 <p>Modifikátor dané proměnná získáme voláním:</p>
 
-<pre class="prettyprint"><code>Field atribut = c.getDeclaredField("Jmeno");
+<pre><code>Field atribut = c.getDeclaredField("Jmeno");
 Int modifikator = atribut.getModifiers();</code></pre>
 
 <p>Návratová hodnota je typu int, vyjadřuje i několik modifikátorů
@@ -125,7 +125,7 @@ zároveň, pokud jich je více.
 <br />Ideální test na ten či onen modifikátor je použít statické třídy
 Modifier :</p>
 
-<pre class="prettyprint"><code>Modifier.isPrivate(arg0);</code></pre>
+<pre><code>Modifier.isPrivate(arg0);</code></pre>
 
 <p>která vrací true/false podle toho,zda modifikátor je privátní. Těchto
 testů je samozřejmě v třídě Modifier celá sada,na všechny
@@ -134,7 +134,7 @@ modifikátory.</p>
 <p><strong>Typ proměnné:</strong>
 <br />získání typu proměnné</p>
 
-<pre class="prettyprint"><code>Field atribut = c.getDeclaredField("Jmeno");
+<pre><code>Field atribut = c.getDeclaredField("Jmeno");
 Type typ = atribut.getType();</code></pre>
 
 <p><strong>Zdroje:</strong>

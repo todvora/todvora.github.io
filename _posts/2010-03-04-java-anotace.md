@@ -13,7 +13,7 @@ tags:
 
 V tomto článku bych chtěl nastínit, co jsou to java anotace,
 k čemu jsou dobré a jak s nimi pracovat. Také se zlehka podíváme
-na obsah balíku java.lang.anno­tation
+na obsah balíku java.lang.annotation
 
 
 <p>Anotace je v javě zápis, jak přiřadit nějakému elementu (třída,
@@ -26,7 +26,7 @@ ukázat něco, co smysl dává.</p>
 <p>Jedna z běžně používaných anotací je například
 <strong>@Deprecated</strong></p>
 
-<pre class="prettyprint"><code>public
+<pre><code>public
 class Thread implements Runnable {
 ...
 @Deprecated
@@ -51,7 +51,7 @@ napsat sami.</p>
 <p>Definice takové jednoduché bezparametrické anotace by mohla vypadat
 například takto:</p>
 
-<pre class="prettyprint"><code>import java.lang.annotation.Retention;
+<pre><code>import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import java.lang.annotation.ElementType;
@@ -62,15 +62,15 @@ public @interface NeedsRootPermissions {
 }</code></pre>
 
 <p>Co vlastně jednotlivé řádky znamenají :
-<br /><strong>@Retention(Re­tentionPolicy­.RUNTIME)</strong> –
+<br /><strong>@Retention(RetentionPolicy.RUNTIME)</strong> –
 anotace, která říká, že vaše nově vytvořená anotace bude dostupná za
 běhu.
-<br /><strong>@Target(Elemen­tType.TYPE)</strong> – anotace, která
+<br /><strong>@Target(ElementType.TYPE)</strong> – anotace, která
 říká, že anotace jde použít nad třídou, rozhraním nebo enumem.</p>
 
-<p><strong>public @interface NeedsRootPermis­sions</strong> –
+<p><strong>public @interface NeedsRootPermissions</strong> –
 samotná definice anotace, veřejná anotace (@interface) se jménem
-NeedsRootPermis­sions</p>
+NeedsRootPermissions</p>
 
 <p>Taková anotace se teď dá velmi snadno připojit ke kterékoli
 třídě.</p>
@@ -79,7 +79,7 @@ třídě.</p>
 superuživatelé. Přístup k některým třídám chceme omezit jen na
 superuživatele.</p>
 
-<pre class="prettyprint"><code>@NeedsRootPermissions
+<pre><code>@NeedsRootPermissions
 public class CreateUser extends AbstractProcess {
 ...</code></pre>
 
@@ -91,7 +91,7 @@ anotací naložíte. Možná že Vám bude stačit jen jako dokumentační
 anotace pro potřeby vývoje. Ale java nabízí slušné api. Anotaci tak nad
 třídou můžeme zjistit například:</p>
 
-<pre class="prettyprint"><code>Class<?> clazz = this.getClass();
+<pre><code>Class&lt;?&gt; clazz = this.getClass();
 if (clazz != null) {
     NeedsRootPermissions annotation = clazz
                .getAnnotation(NeedsRootPermissions.class);
@@ -102,10 +102,10 @@ if (clazz != null) {
 <p>Co tedy provádíme:
 <br />vezmeme aktuální třídu (this.getClass()), a nad ní se pokusíme
 získat anotaci námi požadovaného typu NeedsRootPermission
-(clazz.getAnno­tation(NeedsRo­otPermissions­.class)). Pokud se
+(clazz.getAnnotation(NeedsRootPermissions.class)). Pokud se
 vše povede a anotace neni rovna null, víme, že anotace je nad současnou
 třídou clazz přítomna. Ještě máme k dispozici metodu
-isAnnotationPre­sent(NeedsRoot­Permissions.clas­s), která nám
+isAnnotationPresent(NeedsRootPermissions.class), která nám
 poví jen zda je anotace přítomna. Ta by byla užitečná v předchozím
 případě. Ovšem to, že získáme objekt anotace záhy velmi oceníme</p>
 
@@ -117,7 +117,7 @@ lepšího, na anotace nesoucí námi dané hodnoty.</p>
 <p>Definice anotace, tentokrát z webového světa by mohla vypadat
 například takto:</p>
 
-<pre class="prettyprint"><code>@Retention(RetentionPolicy.RUNTIME)
+<pre><code>@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Inherited
 /**
@@ -131,7 +131,7 @@ public @interface ErrorPage {
 anotace bude vyžadovat jeden parametr typu int. Použití pak může vypadat
 takto:</p>
 
-<pre class="prettyprint"><code>@ErrorPage(404)
+<pre><code>@ErrorPage(404)
 public class EcErrorPage extends AbstractScreen {</code></pre>
 
 <p>Zápis je volitelně možný ještě způsobem který popíšeme
@@ -143,7 +143,7 @@ vždy používá metoda value() a možnost vynechat přiřazení, tedy
 <p>Pokud chceme v anotaci přiřadit více hodnot, pak definice vypadá
 nějak takto</p>
 
-<pre class="prettyprint"><code>@Retention(RetentionPolicy.RUNTIME)
+<pre><code>@Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Inherited
 public @interface Author {
@@ -151,10 +151,10 @@ public @interface Author {
     String email();
 }</code></pre>
 
-<p>a její použití v pak bude @Author(name = „Tomas Dvorak“,
-email=„todvora­@gmail.com“)</p>
+<p>a její použití v pak bude @Author(name = &bdquo;Tomas Dvorak&ldquo;,
+email=&bdquo;todvora&shy;@gmail.com&ldquo;)</p>
 
-<pre class="prettyprint"><code>Class<?> clazz = this.getClass();
+<pre><code>Class&lt;?&gt; clazz = this.getClass();
 if (clazz != null) {
     Author annotation = clazz.getAnnotation(Author.class);
     if (annotation != null) {
@@ -167,14 +167,14 @@ if (clazz != null) {
 
 <p>Defaultní hodnota anotaci se dá nastavit při jejím definování</p>
 
-<pre class="prettyprint"><code>public @interface Author {
+<pre><code>public @interface Author {
     String name() default "unknown developer";
     String email() default "unknown@mydomain.com;
 }</code></pre>
 
 <p>a při použití anotace je pak možné hodnoty, které mají default
 nastaveno vynechat. Například
-@Author(email=„tod­vora@gmail.com“).</p>
+@Author(email=&bdquo;todvora@gmail.com&ldquo;).</p>
 
 <h2>Anotace pro anotace</h2>
 

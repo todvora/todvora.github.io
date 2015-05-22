@@ -42,7 +42,7 @@ Návod, jak sečíst v OpenOffice Calc sloupec, kde jsou evidovány hodiny ve fo
 <p>viz <a href="http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_MINUTE_function">oficiální dokumentace k openoffice</a>.</p>
 <p>Dovedeme tak relativně snadno sečíst a převést čas na hodiny jako desetinné číslo. Čas 5:40 tak funcí</p>
 <p> </p>
-<p><code class="prettyprint">=HOUR(buňka)+(MINUTE(buňka)/60)</code></p>
+<p><code>=HOUR(buňka)+(MINUTE(buňka)/60)</code></p>
 <p> </p>
 <p>vypočíst hodnotu v hodinách ve formátu desetinného čísla:  5,66666666666667</p>
 <p> </p>

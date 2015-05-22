@@ -25,5 +25,5 @@ height="320" /></div>
 
 <p><strong>Domovská stránka programu :</strong>
 <br /><a
-href="http://nyxbull.com/index.php?page=soft&id=nspassgen">http://nyxbull­.com/index.php?pa­ge=soft&id=ns­passgen</a></p>
+href="http://nyxbull.com/index.php?page=soft&amp;id=nspassgen">http://nyxbull.com/index.php?page=soft&amp;id=nspassgen</a></p>
 

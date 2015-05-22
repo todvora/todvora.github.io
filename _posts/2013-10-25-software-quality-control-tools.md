@@ -40,7 +40,7 @@ In IVITERA, we deployed and configured many automated tests and monitoring to ke
 <li>Testing <a href="http://velocity.apache.org/">velocity</a> templates - <a href="http://code.google.com/p/velocity-validator/">http://code.google.com/p/velocity-validator/</a></li>
 <li>Validation of css and js - <a href="http://www.jshint.com/">jshint</a>, <a href="/posts/jshint-a-spousteni-validace-javascriptu-z-prikazove-radky"> /posts/jshint-a-spousteni-validace-javascriptu-z-prikazove-radky </a></li>
 <li>Source code analysers: <a href="http://pmd.sourceforge.net/">PMD</a> and <a href="http://checkstyle.sourceforge.net/">checkstyle</a></li>
-<li>Custom checks for searching merge symbols (<<<<<<<), developer internal URLs, <a href="http://cs.wikipedia.org/wiki/Byte_order_mark">BOM</a> symbols, mixed encoding</li>
+<li>Custom checks for searching merge symbols (&lt;&lt;&lt;&lt;&lt;&lt;&lt;), developer internal URLs, <a href="http://cs.wikipedia.org/wiki/Byte_order_mark">BOM</a> symbols, mixed encoding</li>
 </ul>
 <h2>Webshots</h2>
 <ul>

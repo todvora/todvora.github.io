@@ -11,7 +11,7 @@ Jednoduchý script, který je cyklicky spouštěn z cronu, zjistí stav
 databáze, najde podezřele dlouho běžící dotazy a odešle je emailem.
 
 
-<pre class="prettyprint"><code>import MySQLdb
+<pre><code>import MySQLdb
 import sys
 import smtplib
 from email.MIMEText import MIMEText

@@ -24,7 +24,7 @@ která měla smysl možná někdy v historii, refaktoringem ale už
 ztratily význam. Taková makra se pokouší nalézt následující scriptík
 v pythonu:</p>
 
-<pre class=".prettyprint"><code>import sys
+<pre><code>import sys
 import re
 import os
 import fnmatch
@@ -39,13 +39,13 @@ class Macro:
         self.regex = re.compile(self._get_regular_expression(macro_params))
 
     def _get_regular_expression(self, macro_params):
-        params = macro_params.strip().split(" ")
-        regex = "#" + self.macro_name + "\s*?\("
+        params = macro_params.strip().split(&quot; &quot;)
+        regex = &quot;#&quot; + self.macro_name + &quot;\s*?\(&quot;
         params_regex = []
         for param in params:
-            if len(param.strip()) > 0:
-                params_regex.append("\S+?|\'.+?\'|\".+?\"")
-        regex = regex + '\w+?'.join(params_regex) + "\)"
+            if len(param.strip()) &gt; 0:
+                params_regex.append(&quot;\S+?|\'.+?\'|\&quot;.+?\&quot;&quot;)
+        regex = regex + '\w+?'.join(params_regex) + &quot;\)&quot;
         return regex
 
     def get_regex(self): return self.regex
@@ -59,8 +59,8 @@ macro_regex = re.compile('#macro\s*?\((\w+)(.*?)\)')
 def callback(arg, dirname, fnames):
     for filename in fnames:
         if fnmatch.fnmatch(filename, '*.vm'):
-            simpleFile = dirname.replace(os.getcwd(), "", 1) +"/"+ filename
-            file = open(dirname + "/" +  filename)
+            simpleFile = dirname.replace(os.getcwd(), &quot;&quot;, 1) +&quot;/&quot;+ filename
+            file = open(dirname + &quot;/&quot; +  filename)
             lines_counter = 0
             for line in file:
                 lines_counter = lines_counter + 1
@@ -70,32 +70,32 @@ def callback(arg, dirname, fnames):
                     macro = Macro(simpleFile, lines_counter, line, match.group(1), match.group(2))
                     macros.append(macro)
 
-os.path.walk(".", callback, None)
-print "Found " + str(len(macros)) + " defined macros, searching for usages ..."
+os.path.walk(&quot;.&quot;, callback, None)
+print &quot;Found &quot; + str(len(macros)) + &quot; defined macros, searching for usages ...&quot;
 
 def callback2(arg, dirname, fnames):
     for macro in macros:
         for filename in fnames:
             if fnmatch.fnmatch(filename, '*.vm'):
-                filecontent = open(dirname + "/" +  filename).read()
+                filecontent = open(dirname + &quot;/&quot; +  filename).read()
                 result = macro.get_regex().findall(filecontent)
                 macro.addusage(len(result))
 
-os.path.walk(".", callback2, None)
+os.path.walk(&quot;.&quot;, callback2, None)
 
 not_used_macros = []
 
 for macro in macros:
-    if macro.getusage() < 1:
+    if macro.getusage() &lt; 1:
         not_used_macros.append(macro)
 
-if len(not_used_macros) > 0:
-    sys.stdout.write("Found " + str(len(not_used_macros)) + " not used velocity macros!\n")
+if len(not_used_macros) &gt; 0:
+    sys.stdout.write(&quot;Found &quot; + str(len(not_used_macros)) + &quot; not used velocity macros!\n&quot;)
     for macro in not_used_macros:
-        sys.stdout.write(macro.file + ":" + str(macro.line_number) + ": " + macro.line + "\n")
+        sys.stdout.write(macro.file + &quot;:&quot; + str(macro.line_number) + &quot;: &quot; + macro.line + &quot;\n&quot;)
     exit(1)
 else:
-    print "Done, every detected velocity macro is used somewere"
+    print &quot;Done, every detected velocity macro is used somewere&quot;
     exit(0)</code></pre>
 
 <hr />
@@ -103,7 +103,7 @@ else:
 <p><strong>Výstup scriptu na datech jednoho z našich
 projektů:</strong></p>
 
-<pre class=".prettyprint"><code>python uselessmacros.py
+<pre><code>python uselessmacros.py
 
 Found 238 defined macros, searching for usages ...
 Found 21 not used velocity macros!

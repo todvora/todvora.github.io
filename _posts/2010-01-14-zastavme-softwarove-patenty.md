@@ -12,7 +12,7 @@ Přijde vám normální platit někomu za to, že máte e-shop, ale on drží
 patent na jakýkoli e-shop? Nebo platit majiteli patentu elektronického
 nákupního košíku? Máte mobilní verzi stránek a nechcete platit někomu,
 komu se povedlo patentovat si vynález jakým je posílání různého obsahu
-různým prohlížečům/za­řízením?
+různým prohlížečům/zařízením?
 
 
 <div><a

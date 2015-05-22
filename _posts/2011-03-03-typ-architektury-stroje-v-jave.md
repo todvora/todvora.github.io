@@ -15,10 +15,10 @@ v javě.
 
 <p>V zásadě by se takové rozlišování nemělo používat, ale pokud
 už vyloženě potřebujeme využívat nějaké konkrétní binární
-ovladače/knihov­ny/software, občas je nutné vědět, která architektura
+ovladače/knihovny/software, občas je nutné vědět, která architektura
 stojí pod JVM.</p>
 
-<pre class="prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 public class ArchitectureDetection {
     public static void main(String[] args) {
@@ -41,5 +41,5 @@ public class ArchitectureDetection {
 <hr />
 
 <p>Inspirováno FAQ: <a
-href="http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#64bit_detection">http://www.ora­cle.com/technet­work/java/hot­spotfaq-138619.html#64bit_­detection</a></p>
+href="http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#64bit_detection">http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#64bit_detection</a></p>
 

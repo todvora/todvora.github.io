@@ -145,11 +145,11 @@ Kratičké zamyšlení nad cenama benzínu u nás a v zahraničí s porovnáním
 <p> </p>
 <p> </p>
 <p>Zdroje:<br /><br /></p>
-<p><a href="http://www.financninoviny.cz/kariera/zpravy/oecd-kde-jsou-nejvyssi-ciste-mzdy/566375">http://www.fi­nancninoviny.cz/ka­riera/zpravy/o­ecd-kde-jsou-nejvyssi-ciste-mzdy/566375</a></p>
-<p><a href="http://www.dinside.no/php/oko/bensin/vis_prisliste.php">http://www.din­side.no/php/o­ko/bensin/vis_pris­liste.php</a></p>
-<p><a href="http://www.uamk.cz/cs/index.php?option=com_content&view=article&id=79&Itemid=88">http://www.uam­k.cz/cs/index­.php?option=com_con­tent&view=arti­cle&id=79&Ite­mid=88</a></p>
-<p><a href="http://www.kurzy.cz/kurzy-men/nejlepsi-kurzy/">http://www.kur­zy.cz/kurzy-men/nejlepsi-kurzy/</a></p>
-<p><a href="http://www.kurzy.cz/komodity/nr_index.asp?A=5&idk=38&od=3.1.2008&curr=CZK">http://www.kur­zy.cz/komodity­/nr_index.asp?A­=5&idk=38&od=3­.1.2008&curr=CZK</a></p>
+<p><a href="http://www.financninoviny.cz/kariera/zpravy/oecd-kde-jsou-nejvyssi-ciste-mzdy/566375">http://www.financninoviny.cz/kariera/zpravy/oecd-kde-jsou-nejvyssi-ciste-mzdy/566375</a></p>
+<p><a href="http://www.dinside.no/php/oko/bensin/vis_prisliste.php">http://www.dinside.no/php/oko/bensin/vis_prisliste.php</a></p>
+<p><a href="http://www.uamk.cz/cs/index.php?option=com_content&amp;view=article&amp;id=79&amp;Itemid=88">http://www.uamk.cz/cs/index.php?option=com_content&amp;view=article&amp;id=79&amp;Itemid=88</a></p>
+<p><a href="http://www.kurzy.cz/kurzy-men/nejlepsi-kurzy/">http://www.kurzy.cz/kurzy-men/nejlepsi-kurzy/</a></p>
+<p><a href="http://www.kurzy.cz/komodity/nr_index.asp?A=5&amp;idk=38&amp;od=3.1.2008&amp;curr=CZK">http://www.kurzy.cz/komodity/nr_index.asp?A=5&amp;idk=38&amp;od=3.1.2008&amp;curr=CZK</a></p>
 <p> </p>
 <p> </p>
 <p> </p>

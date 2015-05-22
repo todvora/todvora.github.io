@@ -16,7 +16,7 @@ Způsoby, jak testovat neměnnost proměnných v javě
 <p>Představte si třídu, která má na starosti jen držet nějaké konstanty,
 třeba ID témat v databázi. Mohla by vypadat například takhle:</p>
 
-<pre class="prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -26,8 +26,8 @@ import java.util.Set;
 public class ObjectIDs {
     public static final long FIRST_SECTION_ID = 268;
     public static final long SECOND_SECTION_ID = 269;
-    public static final Set<Long> TOPICS = Collections.unmodifiableSet(
-            new HashSet<Long>(Arrays.asList(
+    public static final Set&lt;Long&gt; TOPICS = Collections.unmodifiableSet(
+            new HashSet&lt;Long&gt;(Arrays.asList(
                     FIRST_SECTION_ID,
                     SECOND_SECTION_ID
             )));
@@ -37,12 +37,12 @@ public class ObjectIDs {
 <strong>final</strong>, jejich hodnota tedy nepůjde předefinovat z venku.
 V případě Setu je i přes modifikátor <strong>final</strong>
 možné měnit hodnoty, do Setu přidávat nebo z něj mazat. Řešením je
-<strong>Collections.un­modifiableSet()</strong>, která zajistí, že set
+<strong>Collections.unmodifiableSet()</strong>, která zajistí, že set
 bude read-only. To jsou tedy základní požadavky, které budeme testovat,
 final proměnné a u kolekcí to, že jsou neměnitelné. Jednoduchý jUnit
 test by mohl vypadat takhle:</p>
 
-<pre class="prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 import junit.framework.TestCase;
 
@@ -67,8 +67,8 @@ public class ObjectIDsTest extends TestCase {
             // mozne zmenit zvenci
             final int modifiers = field.getModifiers();
             if (!Modifier.isFinal(modifiers)) {
-                fail("Field '" + ObjectIDs.class.getName() + "#" + field.getName()
-                        + "' has not 'final' modifier but should have one!");
+                fail(&quot;Field '&quot; + ObjectIDs.class.getName() + &quot;#&quot; + field.getName()
+                        + &quot;' has not 'final' modifier but should have one!&quot;);
             }
 
             // test, zda kazda z kolekci ktere vraci ObjectIDs je sama o sobe
@@ -82,18 +82,18 @@ public class ObjectIDsTest extends TestCase {
                     int size = value.size();
                     try {
                         value.clear();
-                        fail("Field '" + ObjectIDs.class.getName() + "#"
+                        fail(&quot;Field '&quot; + ObjectIDs.class.getName() + &quot;#&quot;
                                 + field.getName()
-                                + "' is mutable (clear method didnt failed)" +
-                                " and should not be!");
+                                + &quot;' is mutable (clear method didnt failed)&quot; +
+                                &quot; and should not be!&quot;);
                     } catch (UnsupportedOperationException e) {
                         // tohle je ok, vyjimka musi vyskocit!
                     }
                     if (size != value.size()) {
-                        fail("Field '" + ObjectIDs.class.getName() + "#"
+                        fail(&quot;Field '&quot; + ObjectIDs.class.getName() + &quot;#&quot;
                                 + field.getName()
-                                + "'is mutable (clear changed collection size) " +
-                                "and should not be");
+                                + &quot;'is mutable (clear changed collection size) &quot; +
+                                &quot;and should not be&quot;);
                     }
                 }
             } catch (IllegalAccessException e) {
@@ -111,9 +111,9 @@ public class ObjectIDsTest extends TestCase {
 <ul>
 	<li>Reflexí projdeme všechny definované proměnné třídy</li>
 
-	<li>pomocí <strong>field.getModi­fiers()</strong> získáme modifikátory
+	<li>pomocí <strong>field.getModifiers()</strong> získáme modifikátory
 	proměnné,
-	<br />následně metodou <strong>Modifier.isFi­nal(modifiers)</strong>
+	<br />následně metodou <strong>Modifier.isFinal(modifiers)</strong>
 	ověříme, že je proměnná final. Tím ověříme první část požadavků,
 	nemožnost změnit proměnné.</li>
 
@@ -124,7 +124,7 @@ public class ObjectIDsTest extends TestCase {
 	To jsou indikátory co by mohli prozradit měnitelnost.</li>
 
 	<li>Varianta, kterou nevím jak otestovat, je když je neměnitelná kolekce
-	(např. <strong>Collections.un­modifiableSet()</strong>) vytvořena nad
+	(např. <strong>Collections.unmodifiableSet()</strong>) vytvořena nad
 	jinou kolekcí. Pokud se nám povede někudy změnit vnitřní kolekci a
 	nebudeme přitom přistupovat k objektu vnější kolekce, nenastane
 	vyjímka a změna se projeví!</li>
@@ -138,7 +138,7 @@ public class ObjectIDsTest extends TestCase {
 
 <hr />
 
-<pre class="prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -148,8 +148,8 @@ import java.util.Set;
 public class ObjectIDs {
     public static final long FIRST_SECTION_ID = 268;
     public static long SECOND_SECTION_ID = 269;
-    public static final Set<Long> TOPICS = Collections.unmodifiableSet(
-            new HashSet<Long>(Arrays.asList(
+    public static final Set&lt;Long&gt; TOPICS = Collections.unmodifiableSet(
+            new HashSet&lt;Long&gt;(Arrays.asList(
                     FIRST_SECTION_ID,
                     SECOND_SECTION_ID
             )));
@@ -157,7 +157,7 @@ public class ObjectIDs {
 
 <hr />
 
-<pre class="prettyprint"><code>junit.framework.AssertionFailedError: Field 'com.ivitera.examples.ObjectIDs#SECOND_SECTION_ID'
+<pre><code>junit.framework.AssertionFailedError: Field 'com.ivitera.examples.ObjectIDs#SECOND_SECTION_ID'
  has not 'final' modifier but should have one!
         at com.ivitera.examples.ObjectIDsTest.testImmutability(ObjectIDsTest.java:26)
         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -174,11 +174,11 @@ public class ObjectIDs {
 <p><strong>Měnitelnost kolekce:</strong></p>
 
 <p>(Změněný zdroják ObjectIDs.java, odstraněn
-Collections.un­modifiableSet okolo setu)</p>
+Collections.unmodifiableSet okolo setu)</p>
 
 <hr />
 
-<pre class="prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -187,7 +187,7 @@ import java.util.Set;
 public class ObjectIDs {
     public static final long FIRST_SECTION_ID = 268;
     public static final long SECOND_SECTION_ID = 269;
-    public static final Set<Long> TOPICS = new HashSet<Long>(Arrays.asList(
+    public static final Set&lt;Long&gt; TOPICS = new HashSet&lt;Long&gt;(Arrays.asList(
                     FIRST_SECTION_ID,
                     SECOND_SECTION_ID
             ));
@@ -195,7 +195,7 @@ public class ObjectIDs {
 
 <hr />
 
-<pre class="prettyprint"><code>junit.framework.AssertionFailedError: Field 'com.ivitera.examples.ObjectIDs#TOPICS' is mutable
+<pre><code>junit.framework.AssertionFailedError: Field 'com.ivitera.examples.ObjectIDs#TOPICS' is mutable
  (clear method didnt failed) and should not be!
         at com.ivitera.examples.ObjectIDsTest.testImmutability(ObjectIDsTest.java:41)
         at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)

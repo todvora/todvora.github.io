@@ -11,7 +11,7 @@ poplatky.
 
 
 <p><strong>Aktuálně: <a
-href="http://www.podnikatel.cz/clanky/radio-tv-v-provozovne-na-autorske-poplatky/">http://www.pod­nikatel.cz/clan­ky/radio-tv-v-provozovne-na-autorske-poplatky/</a></strong></p>
+href="http://www.podnikatel.cz/clanky/radio-tv-v-provozovne-na-autorske-poplatky/">http://www.podnikatel.cz/clanky/radio-tv-v-provozovne-na-autorske-poplatky/</a></strong></p>
 
 <p>Dnes jsem při objednávání paměťové karty do telefonu zjistil, že
 i za tu musím odvést „výpalné“ společnosti pro ochranu

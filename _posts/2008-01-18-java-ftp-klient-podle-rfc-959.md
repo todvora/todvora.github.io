@@ -26,21 +26,21 @@ problematiku bezpečného připojení.</p>
 <p>Funkce které klient implementuje:</p>
 
 <p>CDUP – návrat o složku výše
-<br />CWP – změna pra­covního adresá­ře
-<br />DELE – vymazá­ní souboru
+<br />CWP – změna pracovního adresáře
+<br />DELE – vymazání souboru
 <br
-/>HELP – seznam pří­kazů kterým ser­ver rozumí
+/>HELP – seznam příkazů kterým server rozumí
 <br
-/>LIST – seznam sou­borů a složek v pra­covním adresá­ři
-<br />MKD – vytvoře­ní složky
-<br />PASV – přepnu­tí na pasivní režim
-<br />PWD – výpis náz­vu aktuálního
-pracovního a­dresáře
-<br />QUIT – ukonče­ní komunikace
-<br />RETR – přenese­ní souboru na klienta
-<br />RMD – smazání prázdného adre­sáře
-<br />STOR – přenese­ní souboru na server
-<br />TYPE – přepnu­tí komunikace mezi binární
+/>LIST – seznam souborů a složek v pracovním adresáři
+<br />MKD – vytvoření složky
+<br />PASV – přepnutí na pasivní režim
+<br />PWD – výpis názvu aktuálního
+pracovního adresáře
+<br />QUIT – ukončení komunikace
+<br />RETR – přenesení souboru na klienta
+<br />RMD – smazání prázdného adresáře
+<br />STOR – přenesení souboru na server
+<br />TYPE – přepnutí komunikace mezi binární
 a ascii</p>
 
 <p>Odkaz ke stažení semestrální práce:

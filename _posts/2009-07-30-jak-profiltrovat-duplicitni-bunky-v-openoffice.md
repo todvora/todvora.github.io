@@ -58,5 +58,5 @@ duplicitní, stiskněte delete, a v listu zbydou pouze unikátní
 buňky.</p>
 
 <p>Návod je volným překladem stránky: <a
-href="http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Removing_Duplicate_Rows">http://wiki.ser­vices.openoffi­ce.org/wiki/Do­cumentation/How_Tos/R­emoving_Dupli­cate_Rows</a></p>
+href="http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Removing_Duplicate_Rows">http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Removing_Duplicate_Rows</a></p>
 

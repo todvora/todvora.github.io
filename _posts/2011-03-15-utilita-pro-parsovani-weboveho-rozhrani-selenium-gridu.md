@@ -17,7 +17,7 @@ případně k jinému automatizovnému přístupu ke Gridu
 <div><a href="/images/69.png"><img
 src="/images/69.png" alt="selenium grid screenshot" /></a></div>
 
-<pre class=".prettyprint"><code># -*- coding: utf-8 -*-
+<pre><code># -*- coding: utf-8 -*-
 
 # Utilitka pro parsovani uvodni stranky selenium-grid hubu, ktera rozumi jednotlivym sekcim a je
 # podle parametru schopna najit tu spravnou sekci a predat data pro dalsi zpracovani (grep, wc, ..)
@@ -31,63 +31,63 @@ import getopt
 timeout = 10
 urllib2.socket.setdefaulttimeout(timeout)
 
-sections = "configured,available,active"
+sections = &quot;configured,available,active&quot;
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "s:", ["sections="])
+    opts, args = getopt.getopt(sys.argv[1:], &quot;s:&quot;, [&quot;sections=&quot;])
 except getopt.GetoptError:
-    print "Error: Unable to read program parameters!"
+    print &quot;Error: Unable to read program parameters!&quot;
     print sys.exc_info()[1]
     exit(2)
 
 for opt, arg in opts:
-    if opt in ("-s", "--sections"):
+    if opt in (&quot;-s&quot;, &quot;--sections&quot;):
         sections = arg
 
 def printsection(section):
     for tr in section:
         rows = []
-        for td in tr.findAll("td"):
+        for td in tr.findAll(&quot;td&quot;):
             rows.append(td.string)
         print ' '.join(rows)
 
-the_page = ""
+the_page = &quot;&quot;
 downloaded = False
 download_counter = 0
-while not(downloaded) and download_counter < 30:
+while not(downloaded) and download_counter &lt; 30:
     try:
-        req = urllib2.Request("http://orion:4444/console")
+        req = urllib2.Request(&quot;http://orion:4444/console&quot;)
         response = urllib2.urlopen(req)
         the_page = response.read()
         downloaded = True
     except KeyboardInterrupt:
-        print "You hit control-c, exiting"
+        print &quot;You hit control-c, exiting&quot;
         exit(1)
     except:
         print sys.exc_info()[1]
         sys.stdout.flush()
     download_counter = download_counter + 1
 
-html = the_page.encode("utf-8")
+html = the_page.encode(&quot;utf-8&quot;)
 bs = BeautifulSoup(html)
-sections_html = bs.findAll('div', {"class":"section"})
+sections_html = bs.findAll('div', {&quot;class&quot;:&quot;section&quot;})
 
 configured = sections_html[0].findAll('tr')[1:]
 available = sections_html[1].findAll('tr')[1:]
 active = sections_html[2].findAll('tr')[1:]
 
-if(sections.find('configured') > -1):
+if(sections.find('configured') &gt; -1):
     printsection(configured)
 
-if(sections.find('available') > -1):
+if(sections.find('available') &gt; -1):
     printsection(available)
 
-if(sections.find('active') > -1):
+if(sections.find('active') &gt; -1):
     printsection(active)</code></pre>
 
 <p><strong>Výstup:</strong></p>
 
-<pre class=".prettyprint"><code>python utils/grid_sections.py -s available
+<pre><code>python utils/grid_sections.py -s available
     demeter.insite.cz 5766 IE9proxy
     forest.insite.cz 5566 *iexploreproxy
     localhost 5555 *chrome

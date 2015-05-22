@@ -30,7 +30,7 @@ Chytrý telefon mi značně zjednodušil cestování po Norsku. Mapy, odjezdy tr
 <p><img src="/images/364.png" alt="FergeTider - FerryTimes in Norway" width="300" height="500" /></p>
 
 <h2>NSB - Norges statsbaner</h2>
-<p>Mobilní aplikace norských státních drah. Možnost vyhledat si spoje, zjistit cenu jízdenek a najít nejlevnější spoje (M<a href="http://www.nsb.no/togbilletter/minipris-article37625-4324.html?icn=minipris&ici=venstre4_minipris">inipris cena</a>). Pokud má člověk účet u NSB, může ihned jízdenku zakoupit. My si jen našli tu pravou jízdenku a pak ji koupili v automatu na nádraží. Nakonec, pokud budete chtít vlakem na letiště v Oslu (45km daleko z centra), doporučujeme jet také s NSB, jízdenka stojí polovinu toho, co expresní vlak (Flytoget) a jede jen o pár minut déle.</p>
+<p>Mobilní aplikace norských státních drah. Možnost vyhledat si spoje, zjistit cenu jízdenek a najít nejlevnější spoje (M<a href="http://www.nsb.no/togbilletter/minipris-article37625-4324.html?icn=minipris&amp;ici=venstre4_minipris">inipris cena</a>). Pokud má člověk účet u NSB, může ihned jízdenku zakoupit. My si jen našli tu pravou jízdenku a pak ji koupili v automatu na nádraží. Nakonec, pokud budete chtít vlakem na letiště v Oslu (45km daleko z centra), doporučujeme jet také s NSB, jízdenka stojí polovinu toho, co expresní vlak (Flytoget) a jede jen o pár minut déle.</p>
 <p><a href="https://play.google.com/store/apps/details?id=com.intele.nsbmob.app">https://play.google.com/store/apps/details?id=com.intele.nsbmob.app</a></p>
 <p> <img src="/images/368.png" alt="NSB - Norges statsbaner" width="300" height="500" /> <img src="/images/367.png" alt="NSB - Norges statsbaner" width="300" height="500" /></p>
 
@@ -39,10 +39,10 @@ Chytrý telefon mi značně zjednodušil cestování po Norsku. Mapy, odjezdy tr
 <p><a href="https://play.google.com/store/apps/details?id=com.itasoftware.android.airshop">https://play.google.com/store/apps/details?id=com.itasoftware.android.airshop</a></p>
 <p><img src="/images/370.png" alt="OnTheFly" width="300" height="500" /> <img src="/images/371.png" alt="OnTheFly" width="300" height="500" /></p>
 
-<h2>Ping & DNS</h2>
-<p>Každou chvíli se připojuju na nějakou nezabezpečenou wifi a rád bych věděl, zda má smysl spouštět skype nebo uploadnout fotky na FTP. Aplikace Ping & DNS dovede zjistit odezvu na pár doteků. Vím pak, na jak kvalitním připojení jsem a jestli má smysl pokoušet se volat skypem nebo uploadovat fotky na web.</p>
+<h2>Ping &amp; DNS</h2>
+<p>Každou chvíli se připojuju na nějakou nezabezpečenou wifi a rád bych věděl, zda má smysl spouštět skype nebo uploadnout fotky na FTP. Aplikace Ping &amp; DNS dovede zjistit odezvu na pár doteků. Vím pak, na jak kvalitním připojení jsem a jestli má smysl pokoušet se volat skypem nebo uploadovat fotky na web.</p>
 <p><a href="https://play.google.com/store/apps/details?id=com.ulfdittmer.android.ping">https://play.google.com/store/apps/details?id=com.ulfdittmer.android.ping</a></p>
-<p> <img src="/images/372.png" alt="Ping & DNS" width="300" height="500" /></p>
+<p> <img src="/images/372.png" alt="Ping &amp; DNS" width="300" height="500" /></p>
 
 <h2>Get Altitude</h2>
 <p>Googlí mapa, kterou se dá procházet. Při dlouhém stisku dovede aplikace získat nadmořskou výšku bodu. Fajn pro odhad, jak náročná bude trasa, jakou zhruba teplotu čekat.</p>

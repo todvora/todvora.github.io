@@ -14,7 +14,7 @@ Java driver pro nerelační databázi MongoDB má jako defaultní chování nast
 <p><a href="http://www.mongodb.org/">MongoDB</a> je nerelační databáze (NoSQL), kterou používáme pro ukládání logů a generování statistik webových serverů. Ročně zaznamenáváme desítky milionů logů (bez robotů) a MongoDB je na to ideální. Svým dokumentovým modelem se skvěle hodí na proměnlivou strukturu logů a výkonově stíhá v reálném čase generovat reporty bez nutnosti předpočítávání dat.</p>
 <p>Dnes jsem narazil na jednu záludnost. MongoDB driver pro Javu v defaultním nastavení neobnovuje konexi v případě odpojení od serveru. Toto chování lze ovlivnit vhodnou konfigurací MongoOptions při vytváření připojení.</p>
 <p>Výchozí hodnoty pro <a href="http://api.mongodb.org/java/2.8.0/com/mongodb/MongoOptions.html">MongoOptions</a> použité při vytváření nového připojení jsou:</p>
-<pre class="prettyprint">description=null, 
+<pre>description=null, 
 connectionsPerHost=10, 
 threadsAllowedToBlockForConnectionMultiplier=5, 
 maxWaitTime=120000, 
@@ -38,7 +38,7 @@ j=false
 <p style="padding-left: 30px;"><em>The maximum amount of time in MS to spend retrying to open connection to the same server. Default is 0, which means to use the default 15s if autoConnectRetry is on.</em> </p>
 <p>Nerozumím, proč je defaultní hodnota 0 a znamená 15s (proč není default v milisekundách 15s, aby to bylo zřejmé?), pro naše potřeby je však 15s málo, nastavíme pro jistotu několik minut. To by mělo pokrýt i reboot databázového stroje v případě nutnosti (logy zaznamenáváme asynchronně, mohou se tedy hromadit ve frontě dokud MongoDB opět nenajede).</p>
 <p>Inicializace připojení, které je schopno se zotavit z problémů s konexí by pak mohla vypadat například:</p>
-<pre class="prettyprint">MongoOptions options = new MongoOptions();
+<pre>MongoOptions options = new MongoOptions();
 options.setAutoConnectRetry(true);
 options.setMaxAutoConnectRetryTime(RECONNECT_TIMEOUT);
 MONGO = new Mongo(new ServerAddress(server, port), options);

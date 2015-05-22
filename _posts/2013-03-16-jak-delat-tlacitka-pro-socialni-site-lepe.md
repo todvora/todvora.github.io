@@ -43,25 +43,25 @@ Také máte pod článkem několik tlačítek (pluginů) pro sociální sítě? 
 <p>Netahejte žádné scripty a externí data. Pro každou síť si připravte obrázek/ikonku/text, nastavte jej jako odkaz a ten nasměrujte na správnou URL. Načteno bude v mžiku, nebudete umožňovat špehování uživatelů a především - <strong>nebudete zatěžovat uživatele</strong>.</p>
 <p>Každá z běžných sociálních sítí má nějakou URL, na kterou jde poslat v parametrech adresu, popis nebo text a umožnit tak sdílet vaši stránku. Takovou url dovedete do tlačítka zanést ať už v okamžiku vykreslení stránky pomocí redakčního systému nebo programovacího jazyka, nebo až po načtení například pomocí vlastního jednoduchého JavaScriptu. Pokud si na to netroufáte, zeptejte se svého webmastera a ukažte mu tuto stránku. Bude vědět, jak na to.</p>
 <p>Provozovatelé sociálních sítí to nepovažují za preferovanou cestu sdílení. Přicházejí tak o mnoho cených dat, která jim tak (nevědomky) poskytujete. Pro běžné sítě jsem tedy připravil popis, jak na to.</p>
-<h3 class="prettyprint">Twitter URL pro sdílení</h3>
+<h3>Twitter URL pro sdílení</h3>
 <p>Detailní popis je ve <a href="https://dev.twitter.com/docs/tweet-button">vývojářské dokumentaci</a> na twitteru.Nejjednodušší zápis URL pro sdílení na twitteru může být:</p>
-<pre class="prettyprint">http://twitter.com/share?url=<strong>{articleUrl}</strong>&text=<strong>{articleTitle}</strong></pre>
+<pre>http://twitter.com/share?url=<strong>{articleUrl}</strong>&amp;text=<strong>{articleTitle}</strong></pre>
 <p>Proměnné <strong>{articleUrl} </strong>a<strong> </strong><strong>{articleTitle} </strong>nahraďte za konkrétní hodnoty pro vaši stránku(pro každý článek).<strong> </strong>Hodnoty by měly být URL encodovány (jak na to viz dokumentace pro <a href="http://php.net/manual/en/function.urlencode.php">PHP</a>, <a href="http://www.w3schools.com/jsref/jsref_encodeuricomponent.asp">JavaScript</a>, <a href="http://docs.oracle.com/javase/6/docs/api/java/net/URLEncoder.html">Javu</a>). Další možné parametry jsou například {via}, {related} nebo {hashtags}. Kompletní seznam a návod najdete v již zmíněné <a href="https://dev.twitter.com/docs/tweet-button">dokumentaci</a>.</p>
 <h3>Facebook URL pro sdílení</h3>
 <p>U facebooku se mi nepovedlo dohledat přímou dokumentaci ke konstrukci URL pro sdílení. Nějaká dokumentace je <a href="https://developers.facebook.com/docs/plugins/">zde</a>, ale samotná adresa tam popsána není.</p>
 <p>Adresa pro sdílení na facebooku je jednodušší, než u jiných služeb. Stačí předat cílovou stránku a Facebook si sám načte potřebné <a href="/posts/ma-vase-stranka-meta-informace-v-poradku">metainformace</a> (titulek, text, obrázek). Je tak dobré mít svůj web dobře upravený pro čtení facebook robotem. Jak na to jsem psal již dříve v článku <a href="/posts/ma-vase-stranka-meta-informace-v-poradku">Má vaše stránka meta informace v pořádku?</a></p>
 <p>Adresa má následující formát:</p>
-<pre class="prettyprint">http://www.facebook.com/sharer.php?u=<strong>{articleUrl}</strong></pre>
+<pre>http://www.facebook.com/sharer.php?u=<strong>{articleUrl}</strong></pre>
 <p>ArticleUrl by mělo být opět encodováno.</p>
 <h3>Google+ URL pro sdílení</h3>
 <p>I Google+ poskytuje jednoduchou adresu pro sdílení článku. Moc se tím nechlubí a raději by, abyste si na web nacpali jeho tlačítko, <a href="https://developers.google.com/+/web/share/#sharelink">dokumentaci</a> však poskytuje.</p>
 <p>Zápis URL je obdobný Facebooku, tedy:</p>
-<pre class="prettyprint">https://plus.google.com/share?url=<strong>{</strong><strong>articleUrl</strong><strong>}</strong></pre>
+<pre>https://plus.google.com/share?url=<strong>{</strong><strong>articleUrl</strong><strong>}</strong></pre>
 <h3 style="white-space: normal;">LinkedIn URL pro sdílení</h3>
 <p style="white-space: normal;">Detailní popis konstrukce URL je popsán v <a href="https://developer.linkedin.com/documents/share-linkedin">dokumentaci</a>. Tvar je takový:</p>
-<pre class="prettyprint">http://www.linkedin.com/shareArticle?mini=true&url=<strong>{articleUrl}</strong>&title=<strong>{articleTitle}</strong>&summary=<strong>{articleSummary}</strong>&source=<strong>{articleSource}</strong> </pre>
+<pre>http://www.linkedin.com/shareArticle?mini=true&amp;url=<strong>{articleUrl}</strong>&amp;title=<strong>{articleTitle}</strong>&amp;summary=<strong>{articleSummary}</strong>&amp;source=<strong>{articleSource}</strong> </pre>
 <p style="white-space: normal;">Parametry musí být URL encodované a nejsou všechny povinné (měl by stačit odkaz na článek, zbytek si dovede linkedin donačíst sám z <a href="/posts/ma-vase-stranka-meta-informace-v-poradku">metadat</a>).</p>
-<h2 class="prettyprint"><strong>Co tím získám?</strong></h2>
+<h2><strong>Co tím získám?</strong></h2>
 <ul>
 <li>Významně nižsí objem dat přenášených při načtení stránky (ocení hlavně mobilní uživatelé).</li>
 <li>Velmi rychlé načítání tlačítek.</li>

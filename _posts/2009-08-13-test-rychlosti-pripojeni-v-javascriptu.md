@@ -97,5 +97,5 @@ Speed : &lt;span id=&quot;speedTest&quot;&gt;&lt;/span&gt;
 kód na stránce <a href="/examples/speedcheck/speedcheck.html">SpeedTest</a></p>
 
 <p>Za kompletní návod děkuji autorovi článku : <a
-href="http://alexle.net/archives/257">http://alexle­.net/archives/257</a></p>
+href="http://alexle.net/archives/257">http://alexle.net/archives/257</a></p>
 

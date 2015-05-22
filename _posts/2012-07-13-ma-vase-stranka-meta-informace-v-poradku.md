@@ -35,7 +35,7 @@ Máte na vašich stránkách korektně uvedeny všechny běžně používané me
 <p>Nemá smysl do description uvádět něco, co na stránce ve skutečnosti není a doufat, že vám to pomůže na první pozice vyhledavačů. Takový podvod bude rychle rozpoznán a i kdyby ne, klamete uživatele a ten nejspíš vaši stránku opustí ihned po vstupu.</p>
 <h2>Obrázek</h2>
 <p>Pokud vaše stránka neposkytuje žádný relevantní obrázek, buď to vůbec neřešte nebo poskytněte svoje logo. Pokud máte ke každému článku odpovídající obrázek nebo fotku, stojí za to informaci v hlavičce poskytnout. Můžete k tomu využít element link s parametrem rel="image_src". Celý element pak může vypadat:</p>
-<pre class="prettyprint">&lt;link rel=&quot;image_src&quot; href=&quot;http://i.iinfo.cz/images/426/sprava-zakladnich-registru-1.jpg&quot;/&gt;</pre>
+<pre>&lt;link rel=&quot;image_src&quot; href=&quot;http://i.iinfo.cz/images/426/sprava-zakladnich-registru-1.jpg&quot;/&gt;</pre>
 <p>Co když nebudete mít definován žádný obrázek ke článku ale přesto na stránce nějaký vložený bude? Pak se robot rozhodne jeden vybrat sám (dost často třeba grafický prvek navigace webu), případně poskytne sdílejícímu uživateli možnost vybrat, který obrázek přiložit k příspěvku.</p>
 <h2>Opengraph na scéně</h2>
 <p><a href="https://developers.facebook.com/docs/opengraph/keyconcepts/">Opengraph</a> je technologie která umožňuje tvůrcům stránek lépe popsat, kam stránka patří, do které kategorie spadá (článek, video, hudba), kdo je autorem, jaký obrázek připojit k textu. </p>

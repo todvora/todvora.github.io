@@ -21,7 +21,7 @@ zacházet.</p>
 <p>Pro představu si vytvoříme třídu JavaBean, která bude reprezentovat
 třídu,ze které budeme dolovat informace. Její kód bude následující :</p>
 
-<pre class="prettyprint"><code>public class JavaBean {
+<pre><code>public class JavaBean {
 
    private String Jmeno;
    private String Prijmeni;
@@ -43,7 +43,7 @@ třídu,ze které budeme dolovat informace. Její kód bude následující :</p>
     }
 
     public String toString() {
-        return this.Jmeno + " - " + this.Prijmeni;
+        return this.Jmeno + &quot; - &quot; + this.Prijmeni;
     }
 }</code></pre>
 
@@ -51,7 +51,7 @@ třídu,ze které budeme dolovat informace. Její kód bude následující :</p>
 k získávání informací o naší JavaBean třídě. Do ní budeme
 psát následující kódy ( vždy pod kódem je vysvětlení, co se děje)</p>
 
-<pre class="prettyprint"><code>JavaBean jb = new JavaBean();
+<pre><code>JavaBean jb = new JavaBean();
 Class c = jb.getClass();</code></pre>
 
 <p>Vytvoříme novou instanci třídy JavaBean,a z ní následně do
@@ -61,25 +61,25 @@ JavaBean tak,jak nám to rozhraní reflection dovoluje. Tedy postupně:</p>
 
 <p><strong>Získání názvů deklarovaných metod:</strong></p>
 
-<pre class="prettyprint"><code>Method[] poleMetod = c.getMethods();</code></pre>
+<pre><code>Method[] poleMetod = c.getMethods();</code></pre>
 
-<p>Do pole typu Method (java.lang.re­flect.Method) se uloží všechny
+<p>Do pole typu Method (java.lang.reflect.Method) se uloží všechny
 definované a zděděné metody třídy JavaBean.
 <br />S těmi pak můžeme pracovat dále, ať nás zajímají jen názvy
 metod, nebo je budeme dále používat k volání jednotlivých metod.
 Jejich názvy můžeme vypsat třeba takto:</p>
 
-<pre class="prettyprint"><code>String[] nazvyMetod = new String[poleMetod.length];
-           for (int i = 0; i < poleMetod.length; i++) {
+<pre><code>String[] nazvyMetod = new String[poleMetod.length];
+           for (int i = 0; i &lt; poleMetod.length; i++) {
                nazvyMetod[i] = poleMetod[i].getName();
            }
            System.out.println(Arrays.toString(nazvyMetod));</code></pre>
 
 <p>Voláním metody getName() nad metodou nám vrátí jen její název, bez
-parametrů,navra­tových typů a modifikátorů. Výpis tohoto kousku kódu
+parametrů,navratových typů a modifikátorů. Výpis tohoto kousku kódu
 vypadá přibližně takto:</p>
 
-<pre class="prettyprint"><code>[getJmeno, setJmeno, getPrijmeni, setPrijmeni, toString,
+<pre><code>[getJmeno, setJmeno, getPrijmeni, setPrijmeni, toString,
 hashCode, getClass, wait, wait, wait, equals, notify, notifyAll]</code></pre>
 
 <p>Je vidět, že se nám vrátili nejen námi definované metody,ale
@@ -87,31 +87,31 @@ i metody zděděné z třídy Object.</p>
 
 <p><strong>Získání názvů deklarovaných atributů:</strong></p>
 
-<pre class="prettyprint"><code>Field[] poleAtributu = c.getDeclaredFields();</code></pre>
+<pre><code>Field[] poleAtributu = c.getDeclaredFields();</code></pre>
 
 <p>V tomto kroku máme uloženy v poli typu Field
-(java.lang.re­flect.Field) všechny atributy třídy JavaBean.</p>
+(java.lang.reflect.Field) všechny atributy třídy JavaBean.</p>
 
 <p>Jejich názvy získáme obdobně jako u metod:</p>
 
-<pre class="prettyprint"><code>String[] nazvyAtributu = new String[poleAtributu.length];
-         for (int i = 0; i < poleAtributu.length; i++) {
+<pre><code>String[] nazvyAtributu = new String[poleAtributu.length];
+         for (int i = 0; i &lt; poleAtributu.length; i++) {
              nazvyAtributu[i] = poleAtributu[i].getName();
          }
          System.out.println(Arrays.toString(nazvyAtributu));</code></pre>
 
 <p>Výstupem bude:</p>
 
-<pre class="prettyprint"><code>[Jmeno, Prijmeni]</code></pre>
+<pre><code>[Jmeno, Prijmeni]</code></pre>
 
 <p>Pro zajímavost uvedu výstupy tohoto kódu :</p>
 
-<pre class="prettyprint"><code>System.out.println(Arrays.toString(poleMetod));
+<pre><code>System.out.println(Arrays.toString(poleMetod));
 System.out.println(Arrays.toString(poleAtributu));</code></pre>
 
 <p>Výstup:</p>
 
-<pre class="prettyprint"><code>[public java.lang.String javareflections.JavaBean.getJmeno(),
+<pre><code>[public java.lang.String javareflections.JavaBean.getJmeno(),
 public void javareflections.JavaBean.setJmeno(java.lang.String),
 public java.lang.String javareflections.JavaBean.getPrijmeni(),
 public void javareflections.JavaBean.setPrijmeni

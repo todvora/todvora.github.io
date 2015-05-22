@@ -41,4 +41,4 @@ Letošní ročník konference o použitelnosti se opravdu povedl. Přednášky z
 <p>Web: <a href="http://www.tuesday.cz/akce/world-usability-day/">http://www.tuesday.cz/akce/world-usability-day/</a></p>
 <p>Souhrn prezentací na slideshare: <a href="http://www.slideshare.net/sigchi">http://www.slideshare.net/sigchi</a></p>
 <p>Fotky: <a href="http://t.co/pxWM87Pk">http://t.co/pxWM87Pk</a></p>
-<p>Twitter: <a href="https://twitter.com/search/realtime?q=%23wudprague&src=hash">https://twitter.com/search/realtime?q=%23wudprague&src=hash</a></p>
+<p>Twitter: <a href="https://twitter.com/search/realtime?q=%23wudprague&amp;src=hash">https://twitter.com/search/realtime?q=%23wudprague&amp;src=hash</a></p>

@@ -16,7 +16,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 <p>Data do MongoDB naimportujeme příkazem (předpokládám defaultní port a localhost):</p>
 <p><code>mongoimport --db test --collection zips cz_zip_codes.json</code></p>
 <p>Záznamy mají všechny stejné schéma, jeden konkrétní si vypišme:</p>
-<pre class="prettyprint">> db.zips.findOne()
+<pre>> db.zips.findOne()
 {
 	"_id" : ObjectId("5288d5a858a1a95122432632"),
 	"borough" : "Abertamy",
@@ -27,18 +27,18 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 
 </pre>
 <p>V kolekci je 16755 dokumentů. Dostačující pro naše agregační hrátky. </p>
-<pre class="prettyprint">> db.zips.count()
+<pre>> db.zips.count()
 16755
 </pre>
 <h2>Agregační možnosti MongoDB</h2>
 <p>MongoDB poskytuje tři hlavní způsoby, jak data agregovat. Každý k jinému použití a především jinak mocný a složitý. </p>
 <h3>Vestavěné jednoúčelové funkce </h3>
 <p>Nejjednodušší variantu agregačního příkazu už jsme si ukázali. Je jím metoda <a href="http://docs.mongodb.org/manual/reference/method/db.collection.count/#db.collection.count">count</a>. Ta spočítá všechny záznamy v kolekci. Je možné parametrem předat kritéria pro objekty, které budou do výsledku zahrnuty. Například takhle spočítáme objekty, které patří do okresu Karlovy Vary:</p>
-<pre class="prettyprint">> db.zips.count({district:'Karlovy Vary'})
+<pre>> db.zips.count({district:'Karlovy Vary'})
 240
 </pre>
 <p>Další jednoúčelový příkaz je <a href="http://docs.mongodb.org/manual/reference/method/db.collection.distinct/#db.collection.distinct">distinct</a>, známý opět ze světa SQL. Vrátí seznam unikátních hodnot. Pro naši kolekci tedy:</p>
-<pre class="prettyprint">> db.zips.distinct("district")
+<pre>> db.zips.distinct("district")
 [
 	"Karlovy Vary",
 	"Trutnov",
@@ -53,7 +53,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 </pre>
 <p>(Všimněte si, že návratovou hodnotou je pole, nikoliv seznam objektů nebo text.)</p>
 <p>Poslední z jednoúčelových funkcí je <a href="http://docs.mongodb.org/manual/reference/method/db.collection.group/#db.collection.group">group</a>. Slouží k jednoduché agregaci záznamů kolekce. Umožňuje nastavit klíč, podle kterého se bude agregovat, podmínku a JavaScriptovou funkci pro agregaci. Součty záznamů grupované přes okresy pak získáme:</p>
-<pre class="prettyprint">> db.zips.group({key:{district:1}, reduce:function(cur, result){result.count += 1}, initial:{count:0}})
+<pre>> db.zips.group({key:{district:1}, reduce:function(cur, result){result.count += 1}, initial:{count:0}})
 [
 	{
 		"district" : "Karlovy Vary",
@@ -77,7 +77,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 <p>Paralelní zpracování je výhodné především pokud máte kolekce v <a href="http://docs.mongodb.org/manual/sharding/">shardovaném</a> prostředí (jedna kolekce rozdělena na více samostatných databázových serverů).</p>
 <p>Můj poněkud neobratný popis snad lépe pochopíte na <a href="http://cs.wikipedia.org/wiki/MapReduce">wikipedii</a>, z <a href="http://docs.mongodb.org/manual/core/map-reduce/">dokumentace MongoDB</a> nebo na <a href="http://nosql.mypopescu.com/post/543568598/presentation-mapreduce-in-simple-terms">jednoduchých obrázcích</a>. A teď už pojďme na nějaký příklad nad našimi PSČ.</p>
 <p>Nejprve si pojďme pomocí Map-Reduce spočítat, kolik záznamů vlastně máme v kolekci (a snad tak získat stejný výsledek, jako při volání metody count). </p>
-<pre class="prettyprint">> var map = function(){emit("count", 1)}
+<pre>> var map = function(){emit("count", 1)}
 > var reduce = function(key, values){return Array.sum(values);}
 > db.zips.mapReduce(map, reduce, {out:{inline:1}})
 {
@@ -100,7 +100,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 </pre>
 <p>Nadefinovali jsme dvě funkce. Map, která emituje (vrací) jediný pár "count":1. A funkci Reduce, která postupně bere množiny výsledků a agreguje je - zde prostým součtem všech položek "count". Dopočetli jsme se ke stejnému výsledku, jako volání db.zips.count(). </p>
 <p>Pojďme si teď zjistit, kolik záznamů máme pro jednotlivé okresy (district). Modifikujeme funkci Map, nebude už emitovat fixní klíč "count". Jako klíč nám poslouží název okresu, tedy dynamická vlastnost this.district. This odkazuje na aktuálně zpracovávaný objekt. Funkce Reduce se nemění.</p>
-<pre class="prettyprint">> var map = function(){emit(this.district, 1)}
+<pre>> var map = function(){emit(this.district, 1)}
 > var reduce = function(key, values){return Array.sum(values);}
 > db.zips.mapReduce(map, reduce, {out:{inline:1}})
 {
@@ -121,7 +121,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 </pre>
 <p>Map-Reduce je jedna z mála operací, kdy dochází k opravdovému spuštění JavaScriptových funkcí na databázovém serveru. Funkce Map a Reduce poskytují dostatek možností pro libovolné výpočty nad daty. </p>
 <p>Řekněme, že chceme spočítat, kolik je v kterém okrese záznamů takových, že jejich město začíná na písmeno 'E'. </p>
-<pre class="prettyprint">> var map = function(){if(this.city.indexOf("E") == 0) { emit(this.district , 1)}}
+<pre>> var map = function(){if(this.city.indexOf("E") == 0) { emit(this.district , 1)}}
 > var reduce = function(key, values){return Array.sum(values);}
 > db.zips.mapReduce(map, reduce, {out:{inline:1}})
 {
@@ -155,7 +155,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 </pre>
 <p>(Všimněte si, že ve funkci Map je definována JavaScriptová podmínka, která určuje v jaké situaci se bude emitovat.)</p>
 <p>Výsledek můžeme ověřit ještě přímým vyhledáním konkrétních hodnot (filtrujeme pomocí regulárního výrazu nad polem 'city', ve výstupu pro přehlednost nevypisujeme _id a borough).</p>
-<pre class="prettyprint">> db.zips.find( { city: /E.*/ } , {_id:0, borough:0});
+<pre>> db.zips.find( { city: /E.*/ } , {_id:0, borough:0});
 { "city" : "Erpužice", "district" : "Tachov", "zip" : 34901 }
 { "city" : "Ejpovice", "district" : "Rokycany", "zip" : 33701 }
 { "city" : "Erpužice", "district" : "Tachov", "zip" : 34901 }
@@ -170,7 +170,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 <h2>Aggregation framework</h2>
 <p><a href="http://docs.mongodb.org/manual/core/aggregation-pipeline/">Aggregation framework</a> je nejnovější a velmi snadno použitelný způsob, jak agregovat data v MongoDB. Funguje na principu <a href="http://cs.wikipedia.org/wiki/Roura_(Unix)">unixové pipeline</a> a jednoduchých modifikátorů(příkazů) transformujících data. Framework poskytuje podobné možnosti jako Map-Reduce, bez složitých zápisů JavaScriptových funkcí. A výkonově je často lepší než MR.</p>
 <p>Vraťme se k příkladu s počítáním záznamů v jednotlivých okresech. Zápis v Aggregation Frameworku vypadá následovně:</p>
-<pre class="prettyprint">> db.zips.aggregate([{$group:{_id:"$district", count:{$sum:1}}}}])
+<pre>> db.zips.aggregate([{$group:{_id:"$district", count:{$sum:1}}}}])
 {
 	"result" : [
 		{
@@ -200,12 +200,12 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 </ul>
 <p>Jednotlivé operátory je možné libovolně řadit, kombinovat a opakovat. </p>
 <p>Pokud budeme chtít pomocí Aggregation frameworku získat počet všech prvků v kolekci (jako vestavěné count nebo příklad u Map-Reduce):</p>
-<pre class="prettyprint">> db.zips.aggregate([{$group:{_id:null, count:{$sum:1}}}])
+<pre>> db.zips.aggregate([{$group:{_id:null, count:{$sum:1}}}])
 { "result" : [ { "_id" : null, "count" : 16755 } ], "ok" : 1 }
 </pre>
 <p>Jako klíč (_id), podle kterého agregujeme, je použita hodnota null. Jde o trik, kterým do jednoho klíče sečteme všechny hodnoty.</p>
 <p>Řekněme, že chceme zjistit počty záznamů pro jednotlivé kraje (group podle district). Z nich pak vybrat pět největších. Zápis v Aggregation frameworku může vypadat:</p>
-<pre class="prettyprint">> var group = {$group:{_id:'$district', count:{$sum:1}}}
+<pre>> var group = {$group:{_id:'$district', count:{$sum:1}}}
 > var sort = {$sort:{count:-1}}
 > var limit = {$limit:5}
 > db.zips.aggregate([group, sort, limit])
@@ -236,7 +236,7 @@ Ze světa SQL známe formulaci GROUP BY. Jak se agregace řeší v dokumentové 
 }
 </pre>
 <p>A protože lze jednotlivé modifikátory libovolně opakovat a kombinovat, můžeme do kolony přidat další group. Dovedeme tak například sečíst počty pro okresy do výsledné hodnoty. Získáme celkový počet záznamů pro prvních pět nejpočetnějších okresů. Provádí se dvakrát za sebou group. </p>
-<pre class="prettyprint"> var group = {$group:{_id:'$district', count:{$sum:1}}}
+<pre> var group = {$group:{_id:'$district', count:{$sum:1}}}
 > var sort = {$sort:{count:-1}}
 > var limit = {$limit:5}
 > var total_group = {$group:{_id:null, count:{$sum:'$count'}}}

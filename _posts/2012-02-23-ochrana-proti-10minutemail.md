@@ -36,7 +36,7 @@ o nové desetiminutové doméně udělá. My takové blokujeme ve
 validátoru emailů, kterým ověřujeme platnost emailu ve webových
 formulářích.</p>
 
-<pre class=".prettyprint"><code># -*- coding: utf-8 -*-
+<pre><code># -*- coding: utf-8 -*-
 from pagedownloader import Downloader
 from BeautifulSoup import BeautifulSoup
 from mailer import Mailer
@@ -47,32 +47,32 @@ import hashlib
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-FROM = "info@mydomain.com"
-TO = "development@mydomain.com"
-SUBJECT = "Nová desetiminutová doména"
-DISCLAIMER = "(Toto je automatický email odeslaný na základě monitorování výše uvedené stránky.)"
+FROM = &quot;info@mydomain.com&quot;
+TO = &quot;development@mydomain.com&quot;
+SUBJECT = &quot;Nov&aacute; desetiminutov&aacute; dom&eacute;na&quot;
+DISCLAIMER = &quot;(Toto je automatick&yacute; email odeslan&yacute; na z&aacute;klad&#283; monitorov&aacute;n&iacute; v&yacute;&scaron;e uveden&eacute; str&aacute;nky.)&quot;
 
 
-url = "http://10minutemail.com/"
+url = &quot;http://10minutemail.com/&quot;
 src = Downloader(url).get().getcontent()
 bs = BeautifulSoup(src)
 main = bs.find('input', {'name':'addyForm:addressSelect'})
-domain = main['value'].split("@")[1].strip()
+domain = main['value'].split(&quot;@&quot;)[1].strip()
 # print 'Current domain: ' + domain
 
-DOMAINS_FILE = "/var/data/tenminutedomains.txt"
+DOMAINS_FILE = &quot;/var/data/tenminutedomains.txt&quot;
 
-all_domains = ""
+all_domains = &quot;&quot;
 if os.path.exists(DOMAINS_FILE):
     all_domains = open(DOMAINS_FILE).read()
 
-if(all_domains.find(domain) < 0):
+if(all_domains.find(domain) &lt; 0):
     # not in list of known tenminute mails
-    hash_file_again = open(DOMAINS_FILE, "w")
-    hash_file_again.write(all_domains + domain + "\n")
+    hash_file_again = open(DOMAINS_FILE, &quot;w&quot;)
+    hash_file_again.write(all_domains + domain + &quot;\n&quot;)
     hash_file_again.close()
-    Mailer().send_email(FROM, TO, None, SUBJECT, 'Nová doména desetiminutových emailů: '
-    + domain + "\n\nvíce viz " + url + "\n\n" + DISCLAIMER)</code></pre>
+    Mailer().send_email(FROM, TO, None, SUBJECT, 'Nov&aacute; dom&eacute;na desetiminutov&yacute;ch email&#367;: '
+    + domain + &quot;\n\nv&iacute;ce viz &quot; + url + &quot;\n\n&quot; + DISCLAIMER)</code></pre>
 
 <p>Za poslední dobu jsme vyblacklistovali tyto domény:</p>
 

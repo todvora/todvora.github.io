@@ -15,7 +15,7 @@ Po dlouhé době se do datových schránek dá dostat z libovolného systému a 
 
 <h2> 1) Vyhledávání podle jména</h2>
 <p><img src="/images/135.png" alt="Vyhledávání podle jména" width="700" height="525" /></p>
-<p>Podle svého jména jsem nenalezl vůbec nic. Přesto, že datových schránek na jméno <a href="http://seznam.gov.cz/ovm/searchList.do?ref=obcan&start=null&searchCriterium=ovm_name_of_subject&searchValue=VG9tw6HFoSBEdm%2FFmcOhaw%3D%3D">Tomáš Dvořák</a> existuje přesně 7.</p>
+<p>Podle svého jména jsem nenalezl vůbec nic. Přesto, že datových schránek na jméno <a href="http://seznam.gov.cz/ovm/searchList.do?ref=obcan&amp;start=null&amp;searchCriterium=ovm_name_of_subject&amp;searchValue=VG9tw6HFoSBEdm%2FFmcOhaw%3D%3D">Tomáš Dvořák</a> existuje přesně 7.</p>
 <p> </p>
 <h2>2) Vyhledávání podle IČ</h2>
 <p>OK, podle jména jsem nenalezl, doplním tedy IČ, měl by existovat jediný výsledek a snad to projde...</p>

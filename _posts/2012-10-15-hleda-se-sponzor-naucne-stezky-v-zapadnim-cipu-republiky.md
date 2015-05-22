@@ -45,7 +45,7 @@ Chcete udělat dobrý skutek? Nemáte zájem platit vysoké daně a raději než
 <p>Za jakoukoliv pomoc nebo i propagaci stezky mockrát děkujeme.</p>
 <h1>Několik informací o stezce samotné</h1>
 <p><img src="/images/241.jpg" alt="Naučná stezka Na cestě k trojstátí" width="400" height="196" /></p>
-<p><a href="http://www.mapy.cz/#t=s&x=12.171524&y=50.297502&z=12&l=16">http://www.mapy.cz/#t=s&x=12.171524&y=50.297502&z=12&l=16</a></p>
+<p><a href="http://www.mapy.cz/#t=s&amp;x=12.171524&amp;y=50.297502&amp;z=12&amp;l=16">http://www.mapy.cz/#t=s&amp;x=12.171524&amp;y=50.297502&amp;z=12&amp;l=16</a></p>
 <p> </p>
 <h2>ochrana přírody a trvale udržitelný rozvoj</h2>
 <p>Chráněná oblast Lužní potok je zařazena do soustavy Natura 2000, největšími raritami jsou - <a href="http://www.regionhranice.cz/galerie/index.php?album=Prirodni%20nej">mlž perlorodka říční a motýl hnědásek chrastavcový</a>, nachází se zde ale i mnoho dalších kriticky ohrožených druhů rostlin a živočichů, stezka lidem vysvětluje funkci biotopu a význam živé a neživé přírody.</p>

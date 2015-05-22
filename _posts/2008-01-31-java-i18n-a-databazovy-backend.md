@@ -16,7 +16,7 @@ překladů v databázové tabulce a nikoli v .properties souborech.
 
 <p>Před nějakou dobou jsem sháněl na internetu návod jak sprovoznit
 překládání stránek jsp pomocí i18n(zkratka anglického
-Internationali­zation) taglibu tak,že se překlady budou nacházet
+Internationalization) taglibu tak,že se překlady budou nacházet
 v databázi,a ne v .properties souboru, tak jak je to standartně.</p>
 
 <p>Nevýhodou těchto souborů je jejich špatná editovatelnost (špatně
@@ -40,7 +40,7 @@ provést několik kroků:</p>
 	databáze,pokud v ní nebylo nalezeno</li>
 
 	<li>Vytvoření třídy mujResource rozšiřující třídu
-	java.util.Resou­rceBundle</li>
+	java.util.ResourceBundle</li>
 
 	<li>Nastavení jsp stránek tak, aby používaly náš resourceBundle</li>
 
@@ -85,7 +85,7 @@ v tabulce podle klíče překladu
 <br />Má na starosti práci se samotnou databází a generování hashMapy
 slovník.</p>
 
-<pre class="prettyprint"><code>import java.sql.Connection;
+<pre><code>import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -101,37 +101,37 @@ public class Dictionary {
     String dbUri;
     HashMap slovnik;
     String lang;
-    public final String not_found = "NOT TRANSLATED";
+    public final String not_found = &quot;NOT TRANSLATED&quot;;
 
     public Dictionary(String lang) {
 
         slovnik = new HashMap();
-        this.machine = "localhost";
-        this.db = "databaze";
-        this.user = "uzivatel";
-        this.pass = "heslo";
-        this.dbUri = "jdbc:postgresql://" + machine + "/" + db +
-"?user=" + user + "&password=" + pass +
-"&characterEncoding=utf-8";
+        this.machine = &quot;localhost&quot;;
+        this.db = &quot;databaze&quot;;
+        this.user = &quot;uzivatel&quot;;
+        this.pass = &quot;heslo&quot;;
+        this.dbUri = &quot;jdbc:postgresql://&quot; + machine + &quot;/&quot; + db +
+&quot;?user=&quot; + user + &quot;&amp;password=&quot; + pass +
+&quot;&amp;characterEncoding=utf-8&quot;;
         this.lang = lang;
         Load();
     }
 
     private void Load() {
         try {
-            Class.forName("org.postgresql.Driver");
+            Class.forName(&quot;org.postgresql.Driver&quot;);
             Connection con = DriverManager.getConnection(dbUri);
             Statement s = con.createStatement();
-            String sql = "SELECT key, " + lang + " FROM \"Translate\"";
+            String sql = &quot;SELECT key, &quot; + lang + &quot; FROM \&quot;Translate\&quot;&quot;;
             ResultSet rs = s.executeQuery(sql);
             while (rs.next()) {
-                slovnik.put((String) rs.getString("key"), (String) rs.getString(lang));
+                slovnik.put((String) rs.getString(&quot;key&quot;), (String) rs.getString(lang));
             }
             rs.close();
             s.close();
             con.close();
         } catch (Exception e) {
-            System.out.println("Load:"+e.toString());
+            System.out.println(&quot;Load:&quot;+e.toString());
         }
     }
 
@@ -142,20 +142,20 @@ public class Dictionary {
     public boolean isKeyInDB(String key){
         int pocet=0;
           try {
-            Class.forName("org.postgresql.Driver");
+            Class.forName(&quot;org.postgresql.Driver&quot;);
             Connection con = DriverManager.getConnection(dbUri);
             Statement s = con.createStatement();
-            String sql = "SELECT COUNT(*) FROM \"Translate\" WHERE key='"+key+"'";
+            String sql = &quot;SELECT COUNT(*) FROM \&quot;Translate\&quot; WHERE key='&quot;+key+&quot;'&quot;;
             ResultSet rs = s.executeQuery(sql);
             rs.next();
-            pocet=rs.getInt("count");
+            pocet=rs.getInt(&quot;count&quot;);
             rs.close();
             s.close();
             con.close();
         } catch (Exception e) {
-            System.out.println("isKeyInDB:"+e.toString());
+            System.out.println(&quot;isKeyInDB:&quot;+e.toString());
         }
-        if(pocet>0){
+        if(pocet&gt;0){
             return true;
         }else{
             return false;
@@ -165,11 +165,11 @@ public class Dictionary {
     private ArrayList existingLanguages() {
         ArrayList languages=new ArrayList();
         try {
-            Class.forName("org.postgresql.Driver");
+            Class.forName(&quot;org.postgresql.Driver&quot;);
             Connection con = DriverManager.getConnection(dbUri);
             Statement s = con.createStatement();
-            String sql = "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.Columns
- WHERE TABLE_NAME = 'Translate'";
+            String sql = &quot;SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.Columns
+ WHERE TABLE_NAME = 'Translate'&quot;;
             ResultSet rs = s.executeQuery(sql);
             rs.next();
             while (rs.next()) {
@@ -187,15 +187,15 @@ public class Dictionary {
     public void putKey(String key) {
         if(!isKeyInDB(key)){
         try {
-            Class.forName("org.postgresql.Driver");
+            Class.forName(&quot;org.postgresql.Driver&quot;);
             Connection con = DriverManager.getConnection(dbUri);
             Statement s = con.createStatement();
-            String sql="INSERT INTO \"Translate\" (key) VALUES('"+key+"')";
+            String sql=&quot;INSERT INTO \&quot;Translate\&quot; (key) VALUES('&quot;+key+&quot;')&quot;;
             boolean rs = s.execute(sql);
             s.close();
             con.close();
         } catch (Exception e) {
-            System.out.println("putKey:"+e.toString());
+            System.out.println(&quot;putKey:&quot;+e.toString());
         }
       }
     }
@@ -219,7 +219,7 @@ ne v daném jazyce, databáze bude hlásit chybu,že daný klíč již
 existuje, a není tedy možné ho vložit. Proto nejprve otestujeme zda již
 klíč není obsažen, byť v jiném jazyce.</p>
 
-<p>Metoda <em>existingLangu­ages()</em> vrací arrayList jazyků, které
+<p>Metoda <em>existingLanguages()</em> vrací arrayList jazyků, které
 jsou evidovány v databázi.</p>
 
 <p>Poslední metodou je <em>putKey()</em> která je volána v případě
@@ -236,18 +236,18 @@ pouze služební třídou pro pokračování.</p>
 vrátí ho jako String, jinak se pokusí uložit ho do databáze, a vrátí
 konstantu značící, že text není přeložen.</p>
 
-<pre class="prettyprint"><code>import java.util.Enumeration;
+<pre><code>import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Locale;
 
 public class mujResource extends java.util.ResourceBundle{
 
     HashMap slovnik;
-    String slovo="";
+    String slovo=&quot;&quot;;
     Dictionary d;
 
     public mujResource() {
-        d= new Dictionary("en");
+        d= new Dictionary(&quot;en&quot;);
         slovnik=d.getDictionary();
 
     }
@@ -265,8 +265,8 @@ public class mujResource extends java.util.ResourceBundle{
     }
 
     @Override
-    public Enumeration<String> getKeys() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public Enumeration&lt;String&gt; getKeys() {
+        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;);
     }
 
 }</code></pre>
@@ -286,27 +286,27 @@ spolu s nahrazením jazyka v řádku
 
 <p>Na začátek stránky vložíme kód:</p>
 
-<pre class="prettyprint"><code><i18n:bundle baseName="translation.mujResource"
-             localeRef="userLocale"
-             scope="request"
-             changeResponseLocale="true"
+<pre><code>&lt;i18n:bundle baseName=&quot;translation.mujResource&quot;
+             localeRef=&quot;userLocale&quot;
+             scope=&quot;request&quot;
+             changeResponseLocale=&quot;true&quot;
 
-                         /></code></pre>
+                         /&gt;&lt;/code&gt;</pre>
 
 <p>Kde v atribudu baseName je cesta k dané standartní třídě
 slovníku, v mém případě v balíčku translation</p>
 
 <p>Pro kompletnost si uvedeme i jak si na stránce vyžádat překlad:</p>
 
-<pre class="prettyprint"><code><i18n:message key="informace" /></code></pre>
+<pre><code>&lt;i18n:message key=&quot;informace&quot; /&gt;</code></pre>
 
 <p>Pro běh tohoto taglibu je třeba ještě nastavit v web.xml cestu
 k tld souboru</p>
 
-<pre class="prettyprint"><code><taglib>
-    <taglib-uri>http://jakarta.apache.org/taglibs/i18n-1.0</taglib-uri>
-    <taglib-location>/WEB-INF/taglibs-i18n.tld</taglib-location>
-  </taglib></code></pre>
+<pre><code>&lt;taglib&gt;
+    &lt;taglib-uri&gt;http://jakarta.apache.org/taglibs/i18n-1.0&lt;/taglib-uri&gt;
+    &lt;taglib-location&gt;/WEB-INF/taglibs-i18n.tld&lt;/taglib-location&gt;
+  &lt;/taglib&gt;</code></pre>
 
 <p>a ve složce lib mít uložen jar soubor <em>taglibs-i18n.jar</em></p>
 
@@ -315,22 +315,22 @@ k tld souboru</p>
 ukládat proměnnou s názvem userLocale a její hodnotou dané locale,
 např:</p>
 
-<pre class="prettyprint"><code>session.setAttribute("userLocale",new Locale("cs","CZ"));</code></pre>
+<pre><code>session.setAttribute("userLocale",new Locale("cs","CZ"));</code></pre>
 
 <p>Úryvek ze servletu:</p>
 
-<pre class="prettyprint"><code>public void doGet(HttpServletRequest request,
+<pre><code>public void doGet(HttpServletRequest request,
            HttpServletResponse response)
            throws ServletException, IOException {
-       request.setCharacterEncoding("UTF-8");
-       response.setCharacterEncoding("UTF-8");
+       request.setCharacterEncoding(&quot;UTF-8&quot;);
+       response.setCharacterEncoding(&quot;UTF-8&quot;);
 
        HttpSession session = request.getSession();
 
-      String lang = request.getParameter("language");
- if ( "en".equals(lang) )
+      String lang = request.getParameter(&quot;language&quot;);
+ if ( &quot;en&quot;.equals(lang) )
    {
-   session.setAttribute("userLocale",Locale.ENGLISH);
+   session.setAttribute(&quot;userLocale&quot;,Locale.ENGLISH);
    }</code></pre>
 
 <p><strong>Závěr</strong></p>
@@ -350,6 +350,6 @@ měly být, ale základní funkčnost splňují, Každý si tak může
 následně doplnit třídy dle libosti.</p>
 
 <p>Jakékoli dotazy rád zodpovím,ať již na emailu <a
-href="mailto:data_4@seznam.cz">data_4 (at) sez­nam.cz</a>
+href="mailto:data_4@seznam.cz">data_4 (at) seznam.cz</a>
 nebo v komentářím pod článkem.</p>
 

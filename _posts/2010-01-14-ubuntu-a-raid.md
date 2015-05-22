@@ -31,7 +31,7 @@ v ubuntu softwarový raid
 	<li><strong>mdadm /dev/md0</strong> – vytváříme raid /dev/md0</li>
 
 	<li><strong>-l</strong> říká že raid bude typu 0 (<a
-	href="http://cs.wikipedia.org/wiki/RAID#RAID_0">http://cs.wi­kipedia.org/wi­ki/RAID#RAID_0</a>
+	href="http://cs.wikipedia.org/wiki/RAID#RAID_0">http://cs.wikipedia.org/wiki/RAID#RAID_0</a>
 	)</li>
 
 	<li><strong>-n</strong> počet zařízení v raidu</li>
@@ -70,7 +70,7 @@ přistupovat. Ideálně po startu, ve fstab.</p>
 UUID=063b009f:b5015e58:0fa743ad:aa0ca058</code></p>
 
 <p>tento řetězec je třeba přidat na konec souboru
-/etc/mdadm/mdad­m.conf</p>
+/etc/mdadm/mdadm.conf</p>
 
 <p><strong>! Tato část se v mnoha návodech na internetu nenachází a
 v mém případě se pak raid sám po rebootu nesestrojil a nefungoval

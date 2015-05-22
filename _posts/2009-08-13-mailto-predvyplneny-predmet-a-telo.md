@@ -28,7 +28,7 @@ email!</a></code></p>
 <p>Adresa pro odeslani emailu se skládá podle stejných zákonitostí jako url
 adresa stránky.</p>
 
-<p><code>protokol:adresa?parametr=hodnota_parametru&druhy_parametr=druha_hodnota</code></p>
+<p><code>protokol:adresa?parametr=hodnota_parametru&amp;druhy_parametr=druha_hodnota</code></p>
 
 <p>Proto do odkazu můžeme vložit i tělo emailu. V ten okamžik ale
 nastávají problémy s diakritikou, speciálními znaky, zlomy
@@ -50,11 +50,11 @@ ošetřeny</strong>(nahrazeny za hexa hodnotu :</p>
 <p>Výsledný plně využitý odkaz pak může vypadat třeba takto :</p>
 
 <pre><code><a href="mailto:jmeno@server.cz?cc=jmeno2@server.cz
-&bcc=jmeno3@server.cz&subject=Telo%20emailu
-&body=prvni%20radek%0Adruhy%20radek">Odeslat email!</a></code></pre>
+&amp;bcc=jmeno3@server.cz&amp;subject=Telo%20emailu
+&amp;body=prvni%20radek%0Adruhy%20radek">Odeslat email!</a></code></pre>
 
 <p>kde výsledný odkaz vypadá takto:
 <br /><a
-href="mailto:jmeno@server.cz?cc=jmeno2@server.cz&bcc=jmeno3@server.cz&subject=Telo%20emailu&body=prvni%20radek%0Adruhy%20radek">Odeslat
+href="mailto:jmeno@server.cz?cc=jmeno2@server.cz&amp;bcc=jmeno3@server.cz&amp;subject=Telo%20emailu&amp;body=prvni%20radek%0Adruhy%20radek">Odeslat
 email!</a></p>
 

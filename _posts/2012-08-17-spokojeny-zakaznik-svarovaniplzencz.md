@@ -10,7 +10,7 @@ tags:
 Pokud chcete v Plzni sehnat někoho, kdo Vám svaří kdejaký kov, opraví chladič, případně upraví různé držáky kufrů na motorku, stupačky a pod, pak zkuste  firmu Jiří Utišil - SOB, svarovaniplzen.cz. Jsem s nimi opakovaně velmi spokojen a rád je doporučím.
 
 <p>Na jaře jsem si u nich nechával svařit prasklou stupačku na motorce a drží perfektně. Po vyleštění není svár nijak výrazně vidět a především drží a stupačka funguje dál. </p>
-<p>Firmu <a href="https://maps.google.com/maps?q=49.750201,13.381959&num=1&t=h&z=20">najdete</a> hned za parkovacím domem Rychtářka. Kontakty jsou: </p>
+<p>Firmu <a href="https://maps.google.com/maps?q=49.750201,13.381959&amp;num=1&amp;t=h&amp;z=20">najdete</a> hned za parkovacím domem Rychtářka. Kontakty jsou: </p>
 <table style="margin-left: 30px;">
 <tbody>
 <tr>

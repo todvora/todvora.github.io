@@ -15,7 +15,7 @@ výsledkem.
 <p>Nejjednodušší přístup je vzít PDF soubor a pomocí Ghostscriptu
 z něj vygenerovat obrázky po stránce, přesně tak jak chceme:</p>
 
-<pre class=".prettyprint"><code>gs -q -dBATCH -dNOPAUSE -sDEVICE=jpeg -dJPEGQ88 -r150 -sOutputFile=%d.jpg katalog.pdf</code></pre>
+<pre><code>gs -q -dBATCH -dNOPAUSE -sDEVICE=jpeg -dJPEGQ88 -r150 -sOutputFile=%d.jpg katalog.pdf</code></pre>
 
 <p>Příkaz projde celý PDF katalog a z každé stránky vytvoří jeden
 obrázek se jménem 1.jpg až N.jpg.</p>
@@ -25,12 +25,12 @@ značně zubatě. Zvolíme tedy maličko jiný přístup, vygenerujeme sadu
 obrázků ve velkém rozlišení a ty pak zmenšíme spolu
 s vyhlazením.</p>
 
-<pre class=".prettyprint"><code>gs -q -dBATCH -dNOPAUSE -sDEVICE=jpeg -dJPEGQ88 -r1500 -sOutputFile=%d.jpg katalog.pdf</code></pre>
+<pre><code>gs -q -dBATCH -dNOPAUSE -sDEVICE=jpeg -dJPEGQ88 -r1500 -sOutputFile=%d.jpg katalog.pdf</code></pre>
 
 <p>Jediná změna nastala v parametru -r, kde jsme rozlišení výrazně
 zvětšili. V druhém kroku je třeba obrázky zmenšit a vyhladit</p>
 
-<pre class=".prettyprint"><code>for img in *.jpg ; do convert $img -filter Lanczos -resize 10% -quality 90 resized-$img ; done</code></pre>
+<pre><code>for img in *.jpg ; do convert $img -filter Lanczos -resize 10% -quality 90 resized-$img ; done</code></pre>
 
 <p>Tento příkaz obrázky vzal a pomocí ImageMagicku zmenšil na 10% původní
 velikosti. Zároveň provedl vyhlazení a výsledek vypadá o mnoho lépe.
@@ -47,7 +47,7 @@ src="/images/75.jpg" alt="S vyhlazením" /></a>
 
 <p>Kód celého příkladu by mohl vypadat například takto:</p>
 
-<pre class=".prettyprint"><code>#! /bin/bash
+<pre><code>#! /bin/bash
 
 gs -q -dBATCH -dNOPAUSE -sDEVICE=jpeg -dJPEGQ88 -r150 -sOutputFile=low-%d.jpg katalog.pdf
 gs -q -dBATCH -dNOPAUSE -sDEVICE=jpeg -dJPEGQ88 -r1500 -sOutputFile=high-%d.jpg katalog.pdf
@@ -60,5 +60,5 @@ resized-high-1.jpg až resized-high-N.jpg, to jsou zmenšené a vyhlazené
 obrázky ve vysokém rozlišení.</p>
 
 <p>Zdroj: <a
-href="http://www.perlmonks.org/?node_id=794918">http://www.per­lmonks.org/?no­de_id=794918</a></p>
+href="http://www.perlmonks.org/?node_id=794918">http://www.perlmonks.org/?node_id=794918</a></p>
 

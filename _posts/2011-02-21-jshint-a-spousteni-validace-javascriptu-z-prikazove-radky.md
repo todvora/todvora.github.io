@@ -21,7 +21,7 @@ z příkazové řádky.
 
 <p>UPDATE: obdobná funkčnost té popsané v článku je již
 v základu zahrnuta v projektu JSHint, více viz <a
-href="https://github.com/jshint/jshint/blob/master/env/rhino.js">https://github­.com/jshint/jshin­t/blob/master/en­v/rhino.js</a></p>
+href="https://github.com/jshint/jshint/blob/master/env/rhino.js">https://github.com/jshint/jshint/blob/master/env/rhino.js</a></p>
 
 <p>JSHint je javascriptová knihovna pro statickou analýzu zdrojových kódů
 v JavaScriptu. V následujícím článku se pokusím vysvětlit, jak
@@ -33,7 +33,7 @@ z příkazové řádky javascriptový kód, když validace sama je
 javascriptová funkce.</p>
 
 <p>Stáhneme si knihovnu JSHint, například zde: <a
-href="http://jshint.com/jshint.js">http://jshint­.com/jshint.js</a>, neměl
+href="http://jshint.com/jshint.js">http://jshint.com/jshint.js</a>, neměl
 by být problém pro analýzu použít i standardní <a
 href="http://www.jslint.com/">jslint</a>, pro ten však existují přímo
 hotové command line nástroje, například <a
@@ -42,7 +42,7 @@ budeme dále pracovat jen s <a href="http://jshint.com/">JSHint</a> .</p>
 
 <p>Javascript umí spouštět například Rhino, project mozilly, implementace
 javascriptu v Javě (<a
-href="http://www.mozilla.org/rhino/scriptjava.html">http://www.mo­zilla.org/rhi­no/scriptjava­.html</a>).
+href="http://www.mozilla.org/rhino/scriptjava.html">http://www.mozilla.org/rhino/scriptjava.html</a>).
 Konzoli javascriptu pak dovedeme pustit například příkazem</p>
 
 <pre><code>java -cp .:js.jar org.mozilla.javascript.tools.shell.Main</code></pre>
@@ -52,7 +52,7 @@ Konzoli javascriptu pak dovedeme pustit například příkazem</p>
 
 <p><strong>js.jar</strong> je samotná implementace Rhina, stáhnout lze ze
 stránek projektu (<a
-href="http://www.mozilla.org/rhino/download.html">http://www.mo­zilla.org/rhi­no/download.html</a>).</p>
+href="http://www.mozilla.org/rhino/download.html">http://www.mozilla.org/rhino/download.html</a>).</p>
 
 <p>To by byl první krok, dovedeme spustit z příkazové řádky
 javascriptovou konzoli. Teď je nutné přesvědčit ji, aby v dávce
@@ -61,11 +61,11 @@ parametr Rhinu cestu k souboru, začne automaticky vykonávat jeho kód.
 Vytvoříme si tedy javascript, který spustí validaci a vytiskne výstup.</p>
 
 <p>na stránce <a
-href="https://developer.mozilla.org/en/Rhino_Shell">https://develo­per.mozilla.or­g/en/Rhino_She­ll</a>
+href="https://developer.mozilla.org/en/Rhino_Shell">https://developer.mozilla.org/en/Rhino_Shell</a>
 je popsáno, jaké parametry Rhino akceptuje a zároveň jaké funkce nám
 poskytuje. Využijeme tyto funkce:</p>
 
-<p><strong>load([filename­,…])</strong></p>
+<p><strong>load([filename,…])</strong></p>
 
 <pre><code>Load JavaScript source files named by string arguments. If multiple
 arguments are given, each file is read in and executed in turn.</code></pre>
@@ -82,7 +82,7 @@ coding or default character coding if explicit coding argument is not given.</co
 
 <p>Kód samotného scriptu pro testování by mohl vypadat nějak tahle:</p>
 
-<pre class="prettyprint"><code>// dodefinujeme funci trim pro stringy, abychom mohli orezavat evidence hodnoty
+<pre><code>// dodefinujeme funci trim pro stringy, abychom mohli orezavat evidence hodnoty
 String.prototype.trim = function () {
     return this.replace(/^\s*/, "").replace(/\s*$/, "");
 };
@@ -131,11 +131,11 @@ for (i in arguments) {
 <p>Na začatku jsou definovány nějaké pomocné funce, jejich význam je jen
 hezčí formátování výstupu. To důležité je níže</p>
 
-<p><strong>load(„bin/jshin­t.js“);</strong> – naimportuje
+<p><strong>load(„bin/jshint.js“);</strong> – naimportuje
 z adresáře bin soubor <strong>jshint.js</strong>, to je naše testovací
 knihovna, tu vložíme a tu pak budeme volat.</p>
 
-<p><strong>JSHINT(readFi­le(arguments[i­]), "")</strong> –
+<p><strong>JSHINT(readFile(arguments[i]), "")</strong> –
 spustí test, funkce <strong>readFile()</strong> je funkce z Rhina, která
 umí načíst externí sobor (zdrojový kód k validaci). Návratová
 hodnota globální funkce <strong>JSHINT</strong> je logická proměnná, zda
@@ -154,7 +154,7 @@ chyby.</p>
 
 <p><strong>Vzorový javascript, který budeme validovat</strong></p>
 
-<pre class="prettyprint"><code>function timeMsg() {
+<pre><code>function timeMsg() {
     var t = setTimeout("alertMsg()", 3000);
 }
 function alertMsg() {
@@ -184,11 +184,11 @@ je její řešení je standardním výstupem validátoru.</p>
 
 <p><strong>Odkazy</strong>
 <br /><a
-href="http://www.mozilla.org/rhino/">http://www.mo­zilla.org/rhi­no/</a>
+href="http://www.mozilla.org/rhino/">http://www.mozilla.org/rhino/</a>
 : Rhino (JavaScript for Java)
-<br /><a href="http://jshint.com/">http://jshint­.com/</a> : JSHint
-<br /><a href="http://www.jslint.com/">http://www.jslin­t.com/</a> : JSLint
+<br /><a href="http://jshint.com/">http://jshint.com/</a> : JSHint
+<br /><a href="http://www.jslint.com/">http://www.jslint.com/</a> : JSLint
 <br /><a
-href="http://code.google.com/p/jslint4java/">http://code.go­ogle.com/p/jslin­t4java/</a>
+href="http://code.google.com/p/jslint4java/">http://code.google.com/p/jslint4java/</a>
 : jslint4java (command line tool)</p>
 

@@ -34,13 +34,13 @@ X-FRAME-OPTIONS HTTP hlavička funguje jako prostředek, jak může server sděl
 
 <div>V PHP můžete hlavičku nastavit voláním funkce <a href="http://php.net/manual/en/function.header.php">header</a>, například:</div>
 
-<pre class="prettyprint">header('X-Frame-Options: DENY'); </pre>
+<pre>header('X-Frame-Options: DENY'); </pre>
 <div>nebo:</div>
-<pre class="prettyprint">header('X-Frame-Options: SAMEORIGIN');</pre>
+<pre>header('X-Frame-Options: SAMEORIGIN');</pre>
 <p>V Apachi v konfiguraci virtualhosta pak stačí:</p>
-<pre class="prettyprint">Header set X-Frame-Options SAMEORIGIN</pre>
+<pre>Header set X-Frame-Options SAMEORIGIN</pre>
 <p>Nginx by měl akceptovat konfiguraci:</p>
-<pre class="prettyprint">add_header X-Frame-Options SAMEORIGIN;</pre>
+<pre>add_header X-Frame-Options SAMEORIGIN;</pre>
 <p>Pozor! Než hlavičku nastavíte, zvažte zda neposkytujete některému jinému webu svůj obsah v podobě stránky připravené pro vložení do iframu. Typicky se tak vkládá reklamní bloček s nabídkou volných pracovních pozic a pod. V takovém případě by se na stránkách Vašeho partnera začala zobrazovat chybová zpráva obdobná té v obrázcích níže.</p>
 <p>V chromiu se mi místo zakázaného rámce zobrazí pouze prázdné místo, opera zobrazí srozumitelnou hlášku o nemožnosti rám načíst s prolinkem na originální stránku. Internet Explorer 9 zobrazí také srozumitelnou chybovou hlášku.</p>
 <p><img src="/images/100.png" alt="Informace prohlížeče opera o zakázaném zobrazení iframu" width="404" height="239" /></p>
@@ -49,7 +49,7 @@ X-FRAME-OPTIONS HTTP hlavička funguje jako prostředek, jak může server sděl
 <p>(Obrázek 2: informace o nemožnosti zobrazit stránku v iframu, Internet Explorer 9)</p>
 <p> </p>
 <p>Pokud nemáte možnost manipulovat s HTTP hlavičkami a přesto byste rádi dosáhli podobné funkcionality, využijte JavaScript. Kód, který to řeší se běžně označuje jako <strong>Framekiller</strong>. Jeho nejjednodušší implementace může vypadat nějak takto:</p>
-<pre class="prettyprint"><script type="text/javascript">
+<pre><script type="text/javascript">
   if(top != self) top.location.replace(location);
 </script></pre>
 <p>Framekiller jde ale eliminovat a navíc vyžaduje podporu JavaScriptu na klientu.</p>

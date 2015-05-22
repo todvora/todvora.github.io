@@ -19,7 +19,7 @@ Monitorování I/O systému pomocí utility iotop a následný přenos dat do na
 <p>Protože se ale hodnoty <strong>Total DISK READ </strong>a<strong> Total DISK WRITE </strong>﻿mění v čase velmi značně, budeme muset data odečíst několikrát za sebou v krátkých intervalech a jejich hodnoty zprůměrovat. Počet oprakování se dá scriptu podstrčit v parametru <em>repeats.</em></p>
 <p>Hodnoty převádíme na byty, aby bylo možné zachovat konzistenci dat (iotop je zobrazuje v lidsky čitelných hodnotách - například kilo a mega bytech). </p>
 <p>Ted už samotný script monitorovacího pluginu:</p>
-<pre class="prettyprint">#! /usr/bin/env python
+<pre>#! /usr/bin/env python
 
 import re
 import sys

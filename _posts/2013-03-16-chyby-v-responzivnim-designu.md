@@ -14,16 +14,16 @@ Responsivní design je hit poslední doby. Denně se ale setkávám se stránkam
 <p><img src="/images/274.png" alt="Kinohled - přetékající FB bloček" width="250" height="417" /> <img src="/images/275.png" alt="Blog.mefistofeles.cz - přetékající facebookový bloček" width="250" height="417" /></p>
 <p> </p>
 <p>Ve zdrojovém kódu kinohledu vidím například bloček vložený takovýmto zápisem:</p>
-<pre class="prettyprint"><iframe id="facebook" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fkinohled&amp;<strong>width=600</strong>&amp;height=258&amp;show_faces=true&amp;colorscheme=dark&amp;stream=false&amp;border_color=%232C2C36&amp;header=false&amp;appId=408953665859714" scrolling="no" frameborder="0" style="border:none; overflow:hidden; <strong>width:600px;</strong> height:258px;" allowtransparency="true"></iframe></pre>
-<p class="prettyprint">Řešením je donutit facebookový bloček, aby nebyla šířka nastavena fixně. Záleží vždy na konkrétním případu a implementaci, ale začal bych CSS pravidly jako:</p>
-<pre class="prettyprint">max-width: 100% !important;</pre>
-<p class="prettyprint">Pak je nutné zkoušet a zkoušet. Několik nástrojů, které práci usnadní vyjmenovávám na konci článku v odstavci <em>Nástroje, které vám pomohou</em>.</p>
+<pre><iframe id="facebook" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fkinohled&amp;<strong>width=600</strong>&amp;height=258&amp;show_faces=true&amp;colorscheme=dark&amp;stream=false&amp;border_color=%232C2C36&amp;header=false&amp;appId=408953665859714" scrolling="no" frameborder="0" style="border:none; overflow:hidden; <strong>width:600px;</strong> height:258px;" allowtransparency="true"></iframe></pre>
+<p>Řešením je donutit facebookový bloček, aby nebyla šířka nastavena fixně. Záleží vždy na konkrétním případu a implementaci, ale začal bych CSS pravidly jako:</p>
+<pre>max-width: 100% !important;</pre>
+<p>Pak je nutné zkoušet a zkoušet. Několik nástrojů, které práci usnadní vyjmenovávám na konci článku v odstavci <em>Nástroje, které vám pomohou</em>.</p>
 <h2>Minimální šířka prvků</h2>
 <p>Vždy, když přidáte na web nový prvek, je dobré zkontrolovat, jak že to vypadá na mobilu. <a href="http://www.zdrojak.cz/">Zdroják</a>, postavený na wordpressu, má v horní části stránky vloženu admin lištu.</p>
-<pre class="prettyprint"><div id="wpadminbar" class="" role="navigation">...vynecháno...</div></pre>
-<p class="prettyprint"><img src="/images/276.png" alt="Zdroják.cz - lišta v hlavičce rozhodí responsivní design" width="250" height="417" /></p>
-<p class="prettyprint">Klasický design končí na zlomu pozadí, lišta však vynutí širkokou stránku bez ohledu na váš display. Chyba je v tom, že pomocí CSS této liště nastavují minimální šířku na 600px. Taková lišta se na menší telefony v portrét modu nemuže vejít. Ve stylech je uveden zápis:</p>
-<pre class="prettyprint">#wpadminbar {width: 100%; <strong>min-width: 600px;</strong> }</pre>
+<pre><div id="wpadminbar" class="" role="navigation">...vynecháno...</div></pre>
+<p><img src="/images/276.png" alt="Zdroják.cz - lišta v hlavičce rozhodí responsivní design" width="250" height="417" /></p>
+<p>Klasický design končí na zlomu pozadí, lišta však vynutí širkokou stránku bez ohledu na váš display. Chyba je v tom, že pomocí CSS této liště nastavují minimální šířku na 600px. Taková lišta se na menší telefony v portrét modu nemuže vejít. Ve stylech je uveden zápis:</p>
+<pre>#wpadminbar {width: 100%; <strong>min-width: 600px;</strong> }</pre>
 <h2>Obsah až pod přehybem</h2>
 <p>Kdysi, v době menších monitorů, se řešilo, aby se obsah webu vešel co nejlépe nad přehyb (fold) monitoru. Tedy aby byl obsah vidět bez nutnosti scrollování. Teď nastává ten samý problém u mobilů. Bylo by fajn, aby alespoň nadpis a část textu byla viditelná hned, bez scrollování. Zdroják to má tak na doraz, <a href="http://www.itefektivne.cz/">itefektivně.cz</a> má nadpis na mém telefonu (800x480px) až pod přehybem. Oba snímky jsou z detailu článku.</p>
 <p><img src="/images/277.png" alt="Zdroják - text začíná až pod přehybem" width="250" height="417" /> <img src="/images/278.png" alt="itefektivne - text začíná až za přehybem" width="250" height="417" /></p>

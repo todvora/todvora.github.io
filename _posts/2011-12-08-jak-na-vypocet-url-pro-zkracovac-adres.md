@@ -53,13 +53,13 @@ href="http://www.tomas-dvorak.cz">http://www.tomas-dvorak.cz</a>.</p>
 	<li>Redirect na zjištěnou kompletní URL</li>
 </ol>
 
-<pre class=".prettyprint"><code>package com.ivitera.examples;
+<pre><code>package com.ivitera.examples;
 
 public class ShortUrlsUtils {
     public static final String ALPHABET =
-            "0123456789" +
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
-            "abcdefghijklmnopqrstuvwxyz";
+            &quot;0123456789&quot; +
+            &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot; +
+            &quot;abcdefghijklmnopqrstuvwxyz&quot;;
 
 
     public static String toCode(long value) {
@@ -69,7 +69,7 @@ public class ShortUrlsUtils {
             builder.insert(0, ALPHABET.charAt((int) value % radix));
             value = value / radix;
         }
-        while (value > 0);
+        while (value &gt; 0);
         return builder.toString();
     }
 
@@ -78,10 +78,10 @@ public class ShortUrlsUtils {
         s = s.trim();
         int pos = 0;
         long result = 0;
-        while (pos < s.length() && !Character.isWhitespace(s.charAt(pos))) {
+        while (pos &lt; s.length() &amp;&amp; !Character.isWhitespace(s.charAt(pos))) {
             String digit = s.substring(pos, pos + 1);
             int i = ALPHABET.indexOf(digit);
-            if (i >= 0 && i < radix) {
+            if (i &gt;= 0 &amp;&amp; i &lt; radix) {
                 result *= radix;
                 result += i;
                 pos++;
@@ -239,7 +239,7 @@ kódů:</p>
 	</tr>
 </table>
 
-<p>Tedy pro ID <em>8392993658683­40224</em> v desítkové soustavě
+<p>Tedy pro ID <em>839299365868340224</em> v desítkové soustavě
 získáme kód <em>zzzzzzzzzz</em>. Ušetřili jsme tak 8 znaků.</p>
 
 <p>Pokud bychom chtěli sledovat, odkud byla zkrácená URL prokliknuta a

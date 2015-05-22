@@ -23,7 +23,7 @@ poslední den a vidět jak se situace mění během dne.</p>
 
 <p><a href="/images/70.png"><img src="/images/70.png" alt="centreon monitoring"/></a></p>
 
-<pre class=".prettyprint"><code>import subprocess
+<pre><code>import subprocess
 import sys
 import os
 import re
@@ -46,18 +46,18 @@ os.chdir(script_path)
 # --- ZACATEK KONFIGURACE SCRIPTU ---
 
 # adresar, pro stazena. POZOR! pred skoncenim behu scriptu bude obsah smazan
-DATA_DIR = "data/"
+DATA_DIR = &quot;data/&quot;
 # cesta ke cookie souboru, provadim v nem nejake nahrady abych udrzel prihlasenou session
-COOKIE_FILE = DATA_DIR + "cookie.txt"
+COOKIE_FILE = DATA_DIR + &quot;cookie.txt&quot;
 # url na ktere sedi centreon
-CENTREON_URL = "http://server/centreon"
+CENTREON_URL = &quot;http://server/centreon&quot;
 
 # prihlasovaci udaje, idealne nejake read-only, guest, ...
-CENTREON_LOGIN = "Admin"
-CENTREON_PASSWORD = "loremipsum"
+CENTREON_LOGIN = &quot;Admin&quot;
+CENTREON_PASSWORD = &quot;loremipsum&quot;
 
 #prijemce emailu s grafy
-SEND_TO = "foo@bar.com"
+SEND_TO = &quot;foo@bar.com&quot;
 
 # slovnik obsahuje pary nazev_souboru : id_metriky_v_centreonu
 # metrika grafu je ID v konfiguraci centreonu, zjisti se napriklad pri renderovani grafu z jeho url
@@ -79,9 +79,9 @@ if os.path.exists(COOKIE_FILE):
     os.remove(COOKIE_FILE)
 
 # provedu prihlaseni, tim se mi vytvori session cookie, kterou poslu pri pozadavku na graf
-command = "wget --cookies=on  --load-cookies={0} --keep-session-cookies --save-cookies={0} \
---post-data=\"useralias={1}&password={2}&submit=Login\" --output-document={3}login.html \
-{4}/index.php".format(COOKIE_FILE,CENTREON_LOGIN,CENTREON_PASSWORD,DATA_DIR,CENTREON_URL)
+command = &quot;wget --cookies=on  --load-cookies={0} --keep-session-cookies --save-cookies={0} \
+--post-data=\&quot;useralias={1}&amp;password={2}&amp;submit=Login\&quot; --output-document={3}login.html \
+{4}/index.php&quot;.format(COOKIE_FILE,CENTREON_LOGIN,CENTREON_PASSWORD,DATA_DIR,CENTREON_URL)
 
 print command
 process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -89,7 +89,7 @@ output, errors = process.communicate()
 process.wait()
 
 # nacteni obsahu cookie
-cookie_file = open(COOKIE_FILE, "r").read()
+cookie_file = open(COOKIE_FILE, &quot;r&quot;).read()
 
 # najdu v cookies tu, ktera se jmenuje PHPSESSID, musim ji predavat v url grafu
 m = re.search('PHPSESSID\s+(\w+)', cookie_file)
@@ -101,21 +101,21 @@ time_start = int(time_end - (24 * 60 * 60))
 
 # modifikace cookie souboru, zmenim jej tak,aby posilal session cookie, ktere nastavim platnost do
 # budoucna
-cookie_file_again = open(COOKIE_FILE, "w")
-search_text = "FALSE    /       FALSE   0"
-replace_text = "TRUE    /       FALSE   " + str(int(time.time() + 24 * 60 * 60 ))
+cookie_file_again = open(COOKIE_FILE, &quot;w&quot;)
+search_text = &quot;FALSE    /       FALSE   0&quot;
+replace_text = &quot;TRUE    /       FALSE   &quot; + str(int(time.time() + 24 * 60 * 60 ))
 cookie_file_again.write(cookie_file.replace(search_text, replace_text))
 cookie_file_again.close()
 
 for item in graphs:
     metric = graphs.get(item)
     # samotnym nactenim url se vygeneruje v datovem adresari obrazek grafu
-    url = "{0}/include/views/graphs/generateGraphs/generateODSMetricImage.php?session_id={1}\
-&cpt=1&metric={2}&end={3}&start={4}".format(CENTREON_URL, session, str(metric), str(time_end),
+    url = &quot;{0}/include/views/graphs/generateGraphs/generateODSMetricImage.php?session_id={1}\
+&amp;cpt=1&amp;metric={2}&amp;end={3}&amp;start={4}&quot;.format(CENTREON_URL, session, str(metric), str(time_end),
                                             str(time_start))
 
-    command = "wget --cookies=on --load-cookies={0} --keep-session-cookies --save-cookies={0} \
---output-document={1}{2} '{3}'".format(COOKIE_FILE, DATA_DIR, item, url)
+    command = &quot;wget --cookies=on --load-cookies={0} --keep-session-cookies --save-cookies={0} \
+--output-document={1}{2} '{3}'&quot;.format(COOKIE_FILE, DATA_DIR, item, url)
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output, errors = process.communicate()
     process.wait()
@@ -124,13 +124,13 @@ for item in graphs:
 files = []
 dir_list=os.listdir(DATA_DIR)
 for fname in dir_list:
-    if fname.endswith(".png"):
+    if fname.endswith(&quot;.png&quot;):
         files.append(DATA_DIR + fname)
 
-subject = "Grafy za obdobi " + time.strftime("%d.%m.%Y %H:%M:%S", time.localtime(time_start)) \
-    +  " - " + time.strftime("%d.%m.%Y %H:%M:%S", time.localtime(time_end))
+subject = &quot;Grafy za obdobi &quot; + time.strftime(&quot;%d.%m.%Y %H:%M:%S&quot;, time.localtime(time_start)) \
+    +  &quot; - &quot; + time.strftime(&quot;%d.%m.%Y %H:%M:%S&quot;, time.localtime(time_end))
 
-def send_mail(send_from, send_to, subject, text, files=[], server="localhost"):
+def send_mail(send_from, send_to, subject, text, files=[], server=&quot;localhost&quot;):
   msg = MIMEMultipart()
   msg['From'] = send_from
   msg['To'] = send_to
@@ -138,16 +138,16 @@ def send_mail(send_from, send_to, subject, text, files=[], server="localhost"):
   msg['Subject'] = subject
   msg.attach( MIMEText(text) )
   for f in files:
-    part = MIMEBase('image', "png")
-    part.set_payload( open(f,"rb").read() )
+    part = MIMEBase('image', &quot;png&quot;)
+    part.set_payload( open(f,&quot;rb&quot;).read() )
     Encoders.encode_base64(part)
-    part.add_header('Content-Disposition', 'attachment; filename="%s"' % os.path.basename(f))
+    part.add_header('Content-Disposition', 'attachment; filename=&quot;%s&quot;' % os.path.basename(f))
     msg.attach(part)
   smtp = smtplib.SMTP(server)
   smtp.sendmail(send_from, send_to, msg.as_string())
   smtp.close()
 
-send_mail("centreon@server.com", SEND_TO, "Grafy centreon", subject, files, server="localhost")
+send_mail(&quot;centreon@server.com&quot;, SEND_TO, &quot;Grafy centreon&quot;, subject, files, server=&quot;localhost&quot;)
 
 # uklidim po sobe datovy adresar, nic z toho co v nem je uz neni treba
 dir_list=os.listdir(DATA_DIR)
