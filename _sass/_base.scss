@@ -151,6 +151,16 @@ pre {
     }
 }
 
+table {
+  border-collapse: collapse;
+  margin-bottom:10px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 6px 13px;
+}
+
 
 
 /**

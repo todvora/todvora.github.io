@@ -78,14 +78,15 @@ permalink: /about/
 - And other, listed on my [LinkedIn Profile](https://www.linkedin.com/in/dvoraktomas).
 
 ### Certificates
-- [Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) @ Coursera
-- [Cryptography](https://www.coursera.org/course/crypto) I @ Coursera
-- [R programming](https://www.coursera.org/course/rprog) @ Coursera
-- [Machine Learning](https://www.coursera.org/course/ml) @ Coursera
-- [MongoDB for Java developers](https://university.mongodb.com/courses/10gen/M101J/2013_October/info) @ 10gen
-- [MongoDB for DBAs](https://university.mongodb.com/courses/10gen/M102/2013_December/about) @ 10gen
-- [NetBeans Certified Associate](https://edu.netbeans.org/courses/nbplatform-certified-training/) @ ZČU Pilsen
-- Designing What to Design: A Task-Focused Conceptual Model
-- SEO for webmasters by H1
+Course|Organisation | Date | Certificate
+--- | --- | --- | ---
+[Machine Learning](https://www.coursera.org/course/ml) | Stanford University, Coursera | Sep 30, 2014 | [Certificate](/downloads/certificates/coursera_ml_2015.pdf)
+[Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) | École Polytechnique Fédérale de Lausanne, Coursera | Jul 16, 2014 | [Certificate](/downloads/certificates/coursera_progfun_2015.pdf)
+[R programming](https://www.coursera.org/course/rprog) | Johns Hopkins University, Coursera | May 09, 2014 | [Certificate](/downloads/certificates/coursera_rprog_2014.pdf)
+[Cryptography I](https://www.coursera.org/course/crypto) | Stanford University, Coursera | Mar 11, 2014 |  [Certificate](/downloads/certificates/coursera_crypto_2014.pdf)
+[MongoDB for DBAs](https://university.mongodb.com/courses/M102/about) | 10gen | Jan 31, 2014 | [Certificate](/downloads/certificates/m102_mongodb_for_dbas.pdf)
+[MongoDB for Java developers](https://university.mongodb.com/courses/M101J/about) | 10gen | Dec 2, 2013 | [Certificate](/downloads/certificates/m101j_mongodb_for_java_developers.pdf)
+
+
 
 For up to date informations, skills, recommendations and experience please visit also my [LinkedIn Profile](https://www.linkedin.com/in/dvoraktomas).
