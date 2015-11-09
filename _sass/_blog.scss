@@ -33,7 +33,7 @@ header nav a {
 }
 
 header.site-header .wrapper {
-  margin: 80% 2em 0px;
+   margin: 30px 2em 0px;
 
    @include media-query($on-palm) {
     margin:20px;
@@ -67,4 +67,8 @@ header.site-header a, .site-nav .page-link, .site-title, .site-title:visited {
 .page-content .wrapper {
   max-width: -webkit-calc(1000px - (#{$spacing-unit} * 2));
   max-width:         calc(1000px - (#{$spacing-unit} * 2));
+}
+
+strong {
+  font-weight: bold;
 }
