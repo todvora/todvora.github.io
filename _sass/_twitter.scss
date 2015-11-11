@@ -1,0 +1,11 @@
+.twitter-feed {
+  max-width: 300px;
+  float: right;
+  margin-top: 50px;
+}
+
+@include media-query($on-palm) {
+  .twitter-feed {
+    display: none;
+  }
+}
