@@ -136,8 +136,6 @@ public class ObjectIDsTest extends TestCase {
 
 <p>(Změněný zdroják ObjectIDs.java, odstraněn modifikátor final)</p>
 
-<hr />
-
 <pre><code>package com.ivitera.examples;
 
 import java.util.Arrays;
@@ -155,8 +153,6 @@ public class ObjectIDs {
             )));
 }</code></pre>
 
-<hr />
-
 <pre><code>junit.framework.AssertionFailedError: Field 'com.ivitera.examples.ObjectIDs#SECOND_SECTION_ID'
  has not 'final' modifier but should have one!
         at com.ivitera.examples.ObjectIDsTest.testImmutability(ObjectIDsTest.java:26)
@@ -169,14 +165,10 @@ public class ObjectIDs {
         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
         at com.intellij.rt.execution.application.AppMain.main(AppMain.java:90)</code></pre>
 
-<hr />
-
 <p><strong>Měnitelnost kolekce:</strong></p>
 
 <p>(Změněný zdroják ObjectIDs.java, odstraněn
 Collections.unmodifiableSet okolo setu)</p>
-
-<hr />
 
 <pre><code>package com.ivitera.examples;
 
@@ -193,8 +185,6 @@ public class ObjectIDs {
             ));
 }</code></pre>
 
-<hr />
-
 <pre><code>junit.framework.AssertionFailedError: Field 'com.ivitera.examples.ObjectIDs#TOPICS' is mutable
  (clear method didnt failed) and should not be!
         at com.ivitera.examples.ObjectIDsTest.testImmutability(ObjectIDsTest.java:41)
@@ -206,6 +196,4 @@ public class ObjectIDs {
         at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
         at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
         at com.intellij.rt.execution.application.AppMain.main(AppMain.java:90)</code></pre>
-
-<hr />
 

@@ -19,17 +19,11 @@ header.site-header {
 }
 
 header nav a {
-    background: transparent none repeat scroll 0% 0%;
-    border: 2px solid #B0CADB;
-    color: #FFF;
     margin-top: 1em;
     letter-spacing: 0.05em;
-    text-transform: uppercase;
     font-size: 85%;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    border-radius: 2px;
     display: inline-block;
+    padding: 10px 5px;
 }
 
 header.site-header .wrapper {

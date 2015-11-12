@@ -72,8 +72,6 @@ aktualni_rychlost;
     return 0;
 }</code></pre>
 
-<hr />
-
 <pre><code>/**********************************************
 * P regulator pro regulaci rychlosti rakety *
 **********************************************/
@@ -88,8 +86,6 @@ e_t = pozadovana_rychlost - aktualni_rychlost;
 Wrel += (P * e_t) ;
 return 0;
 }</code></pre>
-
-<hr />
 
 <pre><code>/**********************************************
 * PI regulator pro regulaci rychlosti rakety *
@@ -108,8 +104,6 @@ sum_e += e_t;
 Wrel += (P * e_t) + (I * sum_e );
 return 0;
 }</code></pre>
-
-<hr />
 
 <pre><code>/***********************************************
 * PID regulator pro regulaci rychlosti rakety*

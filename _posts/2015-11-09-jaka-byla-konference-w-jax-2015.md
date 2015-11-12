@@ -43,7 +43,9 @@ Na přednášce *Přistání mimozemšťanů - Arquillian v praxi* jsme rychle p
 
 Big data den zakončila keynote *Reflexions on Big Data, Ethics, Politics and Human Rights*. Je neoddiskutovatelné, že naše data budou i nadále shromažďována, analyzována a prodávána. Jak velkou moc nad nimi máme my sami? Může ten samý dataset sloužit dobrým i zlým věcem zároveň? Jak moc jsou  anonymní data anonymizována? Takové otázky rozebírá [Data-Pop Alliance](http://datapopalliance.org/).
 
+<div class="video">
 <iframe src="https://player.vimeo.com/video/144769490" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
 
 # Den 3. - mikroservices, integrace, legacy systémy
 *The Rise of Jigsaw in JDK 9* - projekt [Jigsaw](http://openjdk.java.net/projects/jigsaw/), součást Javy 9, řeší modularitu aplikací i JDK samotného. Na úrovni zdrojových kódů, run-time i závislostí. Není od věci technologii otestovat a stále je čas zaslat své připomínky a návrhy k implementaci. Nemusíme jen čekat, co na nás s novou verzí Javy spadne. Ve vzdálenější budoucnosti (JDK 10?) pak stojí za to zmínit projekty [Panama](http://openjdk.java.net/projects/panama/) a [Valhalla](http://openjdk.java.net/projects/valhalla/).
@@ -54,7 +56,9 @@ Kdy se hodí víc REST API a kdy zasílání zpráv? Jak spolu mají komunikovat
 
 Následovala keynote od SAPu na téma internet věcí. Megalomanské projekty a [velkolepá promo videa](https://www.youtube.com/watch?v=5jOzUGvD_X8) nemohou chybět. Internet věcí nejsou jen fitness náramky a senzory v mobilu, ale třeba logistika nákladních kontejnerů nebo senzory sledující opotřebení pneumatik. Tam, kde se točí peníze narazí člověk dřív nebo později i na SAP.
 
+<div class="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5jOzUGvD_X8" frameborder="0" allowfullscreen></iframe>
+</div>
 
 Z opačného konce jde na business Red Hat. Firma, kterou živí opensource a peníze má z podpory a služeb. K tématu DevOps předvádí svůj [Openshift](https://www.openshift.com/), žonglují s Docker kontejnery a většina prezentace je záznam z command line. Mimochodem [Openshift free plan](https://www.openshift.com/pricing/plan-comparison.html) je fajn možnost, kde hostovat na webu své nestandardní aplikace zdarma. K dispozici prostor pro 3 aplikace, nonstop provoz, 1GB uložiště, přístup přes SSH, kód v Gitu. Na hraní a pet projekty rozhodně zajímavé.
 
@@ -64,7 +68,9 @@ Dostali jste na starost letitý systém, pořádný monolit. Odstávky jsou bě�
 
 *Rise of the Machines* - tak se jmenovala přednáška Marcuse Tandlera. Marcus je známý německý SEO specialista. Přednáška však (naštestí) nebyla o SEO, on a off-page faktorech, jak by člověk čekal. Google není firma na vyhledávání, Google je firma na umělou inteligenci. Udělejte si chvíli času a pusťte si Marcusovu [přednášku z TEDx](https://www.youtube.com/watch?v=Fa4jQIW2etI):
 
+<div class="video">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Fa4jQIW2etI" frameborder="0" allowfullscreen></iframe>
+</div>
 
 # Den 4. - Scala, Groovy, Go
 Co nového ve scale? Třeba magie ve formě [maker](http://docs.scala-lang.org/overviews/macros/overview.html). Užitečné ke generování kódu, statickým kontrolám, psaní vlastního DSL ([příklady](http://www.47deg.com/blog/scala-macros-annotate-your-case-classes)).

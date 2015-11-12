@@ -21,8 +21,6 @@ enctype=&quot;multipart/form-data&quot;&gt;
 &lt;input type=&quot;submit&quot; value=&quot;ulozit&quot;  /&gt;
 &lt;/form&gt;</code></pre>
 
-<hr />
-
 <p>A nyní obsah JSP stránky:</p>
 
 <div></div>
@@ -80,8 +78,6 @@ out.println(&quot;File saved as &quot; +saveFile);
 
 }
 %&gt;</code></pre>
-
-<hr />
 
 <p>Nazev souboru si jsp stánka nastaví sama,cesta je dána v proměnné
 cesta.

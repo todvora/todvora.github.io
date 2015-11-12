@@ -98,8 +98,6 @@ else:
     print &quot;Done, every detected velocity macro is used somewere&quot;
     exit(0)</code></pre>
 
-<hr />
-
 <p><strong>Výstup scriptu na datech jednoho z našich
 projektů:</strong></p>
 

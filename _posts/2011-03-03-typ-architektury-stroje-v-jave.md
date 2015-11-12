@@ -38,8 +38,6 @@ public class ArchitectureDetection {
 
 <pre><code>Current architecture: 32</code></pre>
 
-<hr />
-
 <p>Inspirováno FAQ: <a
 href="http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#64bit_detection">http://www.oracle.com/technetwork/java/hotspotfaq-138619.html#64bit_detection</a></p>
 

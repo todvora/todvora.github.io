@@ -26,8 +26,6 @@ href="/posts/monitorovani-stavu-inkoustu-v-hp-tiskarne-pomoci-nagios">Monitorov�
 <p><img src="/images/71.gif" alt="Samsung SCX-4×28 Series" />
 <br />Ilustrační obrázek tiskárny Samsung SCX-4×28 Series</p>
 
-<hr />
-
 <pre><code>#! /usr/bin/env python
 
 import urllib2
@@ -78,8 +76,6 @@ return_message = status_message + &quot;: Black toner level: &quot; + str(toner)
 )+&quot;%;&quot;+str(warning_level) + &quot;;&quot; + str(critical_level) + &quot;;;&quot;
 print return_message
 exit(return_code)</code></pre>
-
-<hr />
 
 <p><img
 src="/images/72.png" alt="stav inkoustu" />

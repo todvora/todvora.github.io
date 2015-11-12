@@ -1,7 +1,8 @@
 .twitter-feed {
   max-width: 300px;
   float: right;
-  margin-top: 50px;
+  margin-top: 35px;
+  font-size: 85%;
 }
 
 @include media-query($on-palm) {

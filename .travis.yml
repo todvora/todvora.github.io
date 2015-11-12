@@ -9,3 +9,8 @@ script: ./scripts/test.sh
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - secure: "Cu6BHH9NYI+4GXK7YTXyAy46D+/Wad4YfJ4MvOMeKTvPjoCpHJKNZhMpD4FL/H6zJcgZr6jy5zFo93v4ynKlHlvy/6Ua6T8wh0GrYT9rNCAbw0c6OsdHK9O5jvecPYppaVDOnU9kG2JFFdOeOuLxO1v39tOsUXJ2LwPgkkbKSXI="
+  - secure: "KQb82V1cZw/gugjOE/KAZs+U8TKq0bAQ4kWXgKp6oh/BJQHwRAPVV9p8rgdgVY2eeyZuh0tp6vw/iP2HN8bB4beXrk8XsmPrNQ4ZXiQ1FiZkoZoojuG5MlFcJ4Jq6N/JGJ644diFcLb7ZaEAeOFw+3KzY10Rs1ZEEjXOq3I7qKo="
+
+after_success:
+    "scp -r ./_site/* ${FTP_USERNAME}@${FTP_HOST}:/tomas-dvorak_cz/www/_site"

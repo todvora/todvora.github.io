@@ -7,6 +7,9 @@
 
     <nav>
         <a class="page-link" href="{{site.baseurl }}/about/">About</a>
+        {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+        {% endif %}
         <a class="page-link" href="{{site.baseurl }}/sitemap/">Sitemap</a>
     </nav>
 

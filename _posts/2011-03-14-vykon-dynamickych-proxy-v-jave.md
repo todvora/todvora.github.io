@@ -95,8 +95,6 @@ class MyProxy implements java.lang.reflect.InvocationHandler {
     }
 }</code></pre>
 
-<hr />
-
 <p>Výsledky testu jsou očekávané, volání která prochází skrz dynamickou
 proxy jsou o něco pomalejší, v mém konkrétním testovaném
 příkladu 1,7× pomalejší. To už není zanedbatelné u kritických
@@ -112,8 +110,6 @@ standardního volání oproti proxy variantě.</p>
 <pre><code>Proxy instance run took 108353 ms
 Simple instance run took 61760 ms
 Proxy calls are 75.44203367875647% slower than ordinal calls</code></pre>
-
-<hr />
 
 <p>Zdroje:
 <br /><a

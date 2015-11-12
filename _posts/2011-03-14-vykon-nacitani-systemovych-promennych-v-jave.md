@@ -59,8 +59,6 @@ public class SystemEnvSpeed {
     }
 }</code></pre>
 
-<hr />
-
 <p><strong>Výstup</strong></p>
 
 <pre><code>Value of java.runtime.name is: Java(TM) SE Runtime Environment

@@ -1,0 +1,7 @@
+---
+---
+{% if site.github %}
+User-agent: *
+Disallow: /
+{% endif %}
+Sitemap: {{ site.url }}/sitemap.xml
