@@ -16,6 +16,6 @@ before_install:
   -in deploy_key.enc -out deploy_key -d
 after_success:
 - chmod 600 deploy_key
-- mv deploy-key ~/.ssh/id_rsa
+- mv deploy_key ~/.ssh/id_rsa
 - echo -e "Host ${SSH_NO_HOST_CHECKING}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - rsync -r --delete -v -e "ssh -p ${SSH_PORT}" _site/* ${SSH_USER}@${SSH_HOST}:${SSH_TARGET_DIR}/_site
