@@ -15,7 +15,7 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_0a6c23fdb027_key -iv $encrypted_0a6c23fdb027_iv
   -in deploy_key.enc -out deploy_key -d
 after_success:
-- chmod 600 deploy-key
+- chmod 600 deploy_key
 - mv deploy-key ~/.ssh/id_rsa
 - echo -e "Host ${SSH_NO_HOST_CHECKING}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - rsync -r --delete -v -e "ssh -p ${SSH_PORT}" _site/* ${SSH_USER}@${SSH_HOST}:${SSH_TARGET_DIR}/_site
