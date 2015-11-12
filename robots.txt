@@ -3,5 +3,8 @@
 {% if site.github %}
 User-agent: *
 Disallow: /
-{% endif %}
+{% else %}
+User-agent: *
+Allow: /
 Sitemap: {{ site.url }}/sitemap.xml
+{% endif %}
