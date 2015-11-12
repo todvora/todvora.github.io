@@ -18,4 +18,4 @@ before_install:
 - mv deploy_key ~/.ssh/id_rsa
 after_success:
 - echo -e "Host ${SSH_NO_HOST_CHECKING}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- rsync -avW -v -e "ssh -p ${SSH_PORT}" --delete-before _site/* ${SSH_USER}@${SSH_HOST}:${SSH_TARGET_DIR}/_site
+- rsync -avW -v -e "ssh -p ${SSH_PORT}" --delete-before _site/ ${SSH_USER}@${SSH_HOST}:${SSH_TARGET_DIR}/_site
