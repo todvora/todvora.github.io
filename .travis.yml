@@ -13,6 +13,8 @@ env:
   - secure: "H3CxyEUV2Spm/g9EKByGK1Qmk4em1zp0RURV2KbNEw6zl4eMfBAaFSeCckljcmT4PB8HJPdce04gCLlF241j0jt/EgYmakq/vLeGF9JROty+4rEf4GrNdf5go6SY7Vj6SrUI9iPZtKccRqnehFIzY7XZ5aXTLWGC4WrDsRXvIJM="
   - secure: "H44TebmiWD0isV+iwNUvzw9TTbaCRTaeC5tDgRlOTC53Wzesr+7eVQZYdP0KdXNMZaPW5v+9MO4ofVJcyikyixjHnlMsr+3mkf/s88bmM7l4tfJNWgY3QfIQXCIOrhx4lznR4i7bQZydNag+dedkqJOD5UEN75PAD0fYFbS+w9g="
   - secure: "K4P09CFdoyFEb1R/WyBeUc75fEThaEOFLCLMCg38/daxPMwo+E9Y94vNM+uIDSMw3edBNBCtnk9IOra/wB1N5jdajhzjnomoYPCPHiAANNH5qoweFRm2YXI8PVpmzL7UUjr190YvaM1CK6jPozHg5PcLIVmW9gd6igK4kqdEkJI="
+  - secure: "njECMQYZrJNLbfXUwWCTjlWlYfmfkOOGDd5oYXcXfUJVHx0DbnaOF39D+5mjTAhzfxjUBQ/6p7R6Hiy1ddM0e3kJF01NxKxbp/4gl4LY6/+9GddvOk5FROC7y2D1rhlV4PtT4mhwbCZlMq8lYDuZAisU/xAXUCwPHU5q4Bi36N4="
 
 after_success:
-  'rsync -r --delete -v -e "ssh -p ${SSH_PORT}" _site/* ${SSH_USER}@${SSH_HOST}:${SSH_TARGET_DIR}/_site'
+  - 'echo -e "Host ${SSH_NO_HOST_CHECKING}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config'
+  - 'rsync -r --delete -v -e "ssh -p ${SSH_PORT}" _site/* ${SSH_USER}@${SSH_HOST}:${SSH_TARGET_DIR}/_site'
