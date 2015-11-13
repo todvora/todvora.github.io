@@ -27,7 +27,7 @@ All the symptoms are there - memory consumption is quickly rising, the GC runs m
 My tests use the [Mockito framework](http://mockito.org/). I love Mockito. Simple, elegant and powerful. But 2 500 000 of [InvocationImpl](https://github.com/mockito/mockito/blob/master/src/org/mockito/internal/invocation/InvocationImpl.java) objects is too much. These objects hold all the information about mock invocations. Usually for later verification:
 
 
-```
+```java
 Mockito.verify(myActionMock, Mockito.times(3)).invoke();
 ```
 
@@ -37,7 +37,7 @@ But there shouln't be 2.5M of invocation records constantly stored in my memory.
 
 ### Stinky static code
 
-```
+```java
 @Before
 public void setUp() throws Exception {
 	Appender appender = Mockito.mock(Appender.class);
@@ -50,7 +50,7 @@ This setUp seems strange. There is no @After method, that removes this [Appender
 Lets add to every affected test simple cleanup method:
 
 
-```
+```java
 @After
 public void tearDown() throws Exception {
 	LogManager.getRootLogger().removeAppender(appender);
