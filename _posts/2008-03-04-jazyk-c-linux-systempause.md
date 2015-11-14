@@ -6,8 +6,7 @@ tags:
 - jazyk C
 ---
 
-Náhrada system(„pause“) v linuxech za cyklus
-s podmínkou
+Náhrada system(„pause“) v linuxech za cyklus s podmínkou
 
 
 <p>Ve školních příkladech se často na konci metody main nachází
