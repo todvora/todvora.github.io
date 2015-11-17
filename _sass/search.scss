@@ -1,14 +1,20 @@
+.loader {
+  margin-top: 20px;
+}
+
 .loader::before {
   content: "Loading results...";
 }
 
 #results {
 
-  margin-top: 20px;
+  div {
+    margin: 20px 0;
+    padding-bottom: 20px;
+  }
 
   small {
     color:gray;
-    padding-left: 10px;
   }
 
   a {
@@ -18,7 +24,19 @@
 
   div {
     margin-top: 25px;
-    border-bottom: 1px solid #f5f5f5; 
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .tags:empty {
+    display: none;
+  }
+
+  .tags::before {
+    content: " - ";
+  }
+
+  p {
+    margin-bottom: 0;
   }
 }
 

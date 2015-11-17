@@ -1,5 +1,17 @@
 window.searcher = null;
 
+var escapeHtml = function(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+};
+
+var decodeHtml = function(text){
+    var div = document.createElement("div");
+    div.innerHTML = text;
+    return ("textContent" in div) ? div.textContent : div.innerText;
+}
+
 var loadData = function(callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', encodeURI('/js/search_data.json'));
@@ -19,9 +31,8 @@ var getSearcher = function(callback) {
   } else {
     window.searcher = {};
     window.searcher.idx = lunr(function() {
-      this.field('title', {
-        boost: 10
-      })
+      this.field('title', { boost: 10 });
+      this.field('tags', { boost: 5 });
       this.field('url');
       this.field('content');
       this.ref('url');
@@ -46,18 +57,22 @@ var formatOneResult = function(doc) {
 
   var link = document.createElement('a');
   link.setAttribute('href', doc.url);
-  link.appendChild(document.createTextNode(doc.title));
+  link.appendChild(document.createTextNode(decodeHtml(doc.title)));
 
   var dateSpan = document.createElement('small');
   dateSpan.appendChild(document.createTextNode(doc.date));
+
+  var tags = document.createElement('small');
+  tags.appendChild(document.createTextNode(doc.tags));
+  tags.classList.add("tags");
 
   var excerpt = document.createElement('p');
   excerpt.appendChild(document.createTextNode(doc.excerpt))
 
   article.appendChild(link);
-  article.appendChild(dateSpan);
   article.appendChild(excerpt);
-
+  article.appendChild(dateSpan);
+  article.appendChild(tags);
   return article;
 };
 
@@ -69,9 +84,7 @@ var formatNoResults = function() {
     return result;
 }
 
-document.getElementById('searchform').addEventListener('submit', function(e) {
-  e.preventDefault();
-
+var searchFor = function(query) {
   var list = document.getElementById('results');
 
   while (list.firstChild) {
@@ -79,12 +92,8 @@ document.getElementById('searchform').addEventListener('submit', function(e) {
   }
   list.classList.add('loader');
 
-  var query = document.getElementById('query').value;
-
   getSearcher(function(searcher) {
-
     var found = searcher.idx.search(query);
-
     var docfrag = document.createDocumentFragment();
     if(found.length > 0) {
       found.forEach(function(item) {
@@ -98,8 +107,21 @@ document.getElementById('searchform').addEventListener('submit', function(e) {
     } else {
         docfrag.appendChild(formatNoResults());
     }
-
     list.classList.remove('loader');
     list.appendChild(docfrag);
   });
+}
+
+document.getElementById('searchform').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var query = document.getElementById('query').value;
+  window.location.hash = '#' + encodeURIComponent(query);
+  searchFor(query);
 });
+
+if(window.location.hash) {
+  var hash = window.location.hash.substring(1);
+  var safeValue = escapeHtml(decodeURIComponent(hash));
+  document.getElementById('query').value = safeValue;
+  searchFor(safeValue);
+}
