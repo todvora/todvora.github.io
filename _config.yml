@@ -18,6 +18,9 @@ redcarpet:
 paginate: 10
 permalink: "/posts/:title"
 
+sass:
+    style: compressed
+
 gems:
   - jekyll-sitemap
 
