@@ -2,7 +2,7 @@
 layout: post
 title: Gitbook Tester - introduction
 date:   2015-12-03 18:50:16
-categories:
+tags:
   - publishing
   - e-book
   - integration tests
@@ -11,7 +11,7 @@ image: /images/gitbook-tester/gitbook-tester.png
 ---
 
 Gitbook-tester is a small wrapper and integration framework around [Gitbook](https://github.com/GitbookIO/gitbook) itself.
-It tries to make integration testing as easy as possible. Just provide some content,
+It tries to make integration testing as easy as possible. You just provide some content,
 let gitbook-tester do its job and validate the results. Especially useful for authors of
 gitbook plugins.
 
@@ -23,12 +23,11 @@ book, PDF, E-Book, online page, whatever you need. I am using it for writing
 technical documentation to software products.
 
 ## Installation
-[Gitbook-tester](https://github.com/todvora/gitbook-tester) is provided as a npm module.
-Simply call
+[Gitbook-tester](https://github.com/todvora/gitbook-tester) is provided as a npm module. Simply call:
 ```sh
 npm install gitbook-tester --save-dev
 ```
-to add it to your project and save in ```package.json``` [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies).
+to add it to your project and save in ```package.json``` [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies). Gitbook toolchain is installed automatically as a NPM dependency.
 
 ## Basic usage
 Lets say we want to test built-in plugin [emphasize](https://www.npmjs.com/package/gitbook-plugin-emphasize) to see if it does, what promises.
@@ -57,11 +56,11 @@ Write your unit tests to test functions, utilities, classes. But at the end,
 you want some certainty, that your software plays nicely with gitbook itself. You provide
 some hooks or entry points and need to validate that they are called, parameters
 passed and results transported back to a book. That's not something you can do by
-mocking Gitbook itself. You need real integration tests and real Gitbook engine. That's where Gitbook-tester helps.
+mocking Gitbook itself. You need real integration tests and real Gitbook engine. That's where gitbook-tester helps.
 
 ## Test your gitbook-plugin
 Lets say you wrote your first Gitbook plugin. Maybe you want to wrap every image
- into [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) and display some caption underneath. The result could look like:
+ into a [figure](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure) and display some caption underneath. The result could look like:
 
  ![Image captions](/images/gitbook-tester/caption.jpeg)
 
@@ -85,7 +84,7 @@ describe('gitbook-plugin-image-captions', function() {
 });
  ```
 
-```Describe``` and ```it``` functions come from Mocha or Jasmine or any other
+```Describe``` and ```it``` functions come from Mocha, Jasmine or any other
 test framework you like. The real gitbook-tester work starts with ```tester.builder()```. Then you can configure your test book. We are adding some content by calling:
 
 ```js
@@ -99,7 +98,7 @@ Then we need to provide our local plugin and make it available to gitbook:
 Current script directory (in node.js available under ```__dirname```) will be attached
 to the book and plugin automatically registered.
 
-The call ```.create()``` starts the real ```gitbook build``` command. Output of the execution is a HTML format of the book. This is read and provided to our test as a promise.
+The call ```.create()``` starts the real ```gitbook build``` command. Output of the execution is a HTML version of your book. This is read and provided to our test as a promise.
 Last step in our call chain is usual promise function ```then```.
 
 ```js
@@ -132,6 +131,8 @@ used in several gitbook core plugins:
 
 - [empatize](https://github.com/GitbookIO/plugin-emphasize/blob/master/test/index.js)
 - [superscript](https://github.com/GitbookIO/plugin-superscript/blob/master/test/index.js)
-- [image-captions](https://github.com/todvora/gitbook-plugin-image-captions/blob/master/spec/tests_spec.js)
+- [image-captions](https://github.com/todvora/gitbook-plugin-image-captions/blob/markomanninen-master/spec/tests_spec.js)
 
-Use those projects as a additional guide and source of copy-paste tests :-)
+Use those projects as a additional guide or example implementations. Would you like
+to use gitbook-tester in a different way? Do you miss something? Let me know or send
+a [pull-request](https://github.com/todvora/gitbook-tester).
