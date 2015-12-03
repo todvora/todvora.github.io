@@ -17,7 +17,7 @@ gitbook plugins.
 
 
 ## But ... what is Gitbook?
-Gitbook is a modern book format and toolchain using Git and Markdown. You write your
+[Gitbook](https://github.com/GitbookIO/gitbook) is a modern book format and toolchain using Git and Markdown. You write your
 content in Markdown (or AsciiDoc) and Gitbook will build your content to a beautiful
 book, PDF, E-Book, online page, whatever you need. I am using it for writing
 technical documentation to software products.
@@ -127,9 +127,9 @@ where ```jsonObject``` is a standard javascript object like:
 
 ## Real world usage
 [Gitbook-tester](https://github.com/todvora/gitbook-tester) is new project, but already
-used in several gitbook core plugins:
+used in several gitbook plugins:
 
-- [empatize](https://github.com/GitbookIO/plugin-emphasize/blob/master/test/index.js)
+- [emphasize](https://github.com/GitbookIO/plugin-emphasize/blob/master/test/index.js)
 - [superscript](https://github.com/GitbookIO/plugin-superscript/blob/master/test/index.js)
 - [image-captions](https://github.com/todvora/gitbook-plugin-image-captions/blob/markomanninen-master/spec/tests_spec.js)
 
