@@ -49,6 +49,14 @@ header.site-header a, .site-nav .page-link, .site-title, .site-title:visited {
    @include media-query($on-palm) {
       margin-left:auto;
    }
+  font-family: "Lucida Grande","Segoe UI",Ubuntu,Cantarell,sans-serif;
+
+  p {
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+  }
+  color: #383a42;
 }
 
 .post-list h2 a {
@@ -56,6 +64,21 @@ header.site-header a, .site-nav .page-link, .site-title, .site-title:visited {
   color: #295177;
   margin-bottom: 0.2em;
   font-weight: bold;
+}
+
+.post-list {
+  .image {
+    float:left;
+    max-width:160px;
+    max-height:120px;
+    margin:0 10px 10px 0;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
 }
 
 .page-content .wrapper {
