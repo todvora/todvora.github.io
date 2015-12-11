@@ -31,7 +31,7 @@ header.site-header .wrapper {
 
    @include media-query($on-palm) {
     margin:20px;
-    margin: 0px 20px 20px 0;
+    margin: 0px auto;
    }
 }
 
