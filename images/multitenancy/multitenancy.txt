@@ -1,0 +1,22 @@
+title JPA Multitenancy
+
+Client->WS: HTTP/SOAP\nrequest
+
+WS-->ThreadLocal: set tenant name
+
+WS->ProxyEntityManager: JPA Query\ntenant free
+
+ProxyEntityManager-->-ThreadLocal: read tenant name
+
+ProxyEntityManager->ProxyEntityManager: translate name\nto schema
+
+ProxyEntityManager->Database: tenant scoped\nconnection
+
+note right of Database: Schema A
+note right of Database: Schema B
+
+Database->-WS: results
+
+WS-->ThreadLocal: clear tenant name
+
+WS->-Client:response

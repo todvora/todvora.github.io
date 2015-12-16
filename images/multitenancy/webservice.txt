@@ -1,0 +1,12 @@
+title Tenant aware webservice
+
+Client->WS: HTTP/SOAP\nrequest
+
+WS-->ThreadLocal: set tenant name
+
+note over WS: Application logic\nSession Beans call\nDatabase access\n...
+
+WS-->ThreadLocal: clear tenant name
+
+WS->-Client:response
+

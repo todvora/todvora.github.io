@@ -1,0 +1,18 @@
+title Proxy entity manager
+
+participant Bean
+participant ProxyEntityManager
+
+
+ProxyEntityManager-->Bean: inject
+Bean->ProxyEntityManager: em.createQuery
+
+ProxyEntityManager->DynamicProxy: wrap + forward
+
+DynamicProxy-->*ThreadLocal: read tenant name
+
+DynamicProxy->DynamicProxy: create tenant\nEntityManager 
+
+DynamicProxy->DynamicProxy: evaluate query
+
+DynamicProxy->Bean: results
