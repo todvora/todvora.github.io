@@ -11,7 +11,7 @@ tags:
 image: /images/multitenancy/javaee.png
 ---
 
-How to create a multitenancy architecture for JavaEE applications based on JPA and CDI, while keeping the source code as clean and simple as possible. Arquillian tests included!
+How to create a multi-tenant architecture for JavaEE applications based on JPA and CDI, while keeping the source code as clean and simple as possible. Arquillian tests included!
 
 ## What is multitenancy
 Multitenancy is a software architecture in which a single instance of a software runs on a server and serves multiple tenants. Software as a Service (SaaS) is a typical example of this approach. One server shared by many users, each with its own data.
