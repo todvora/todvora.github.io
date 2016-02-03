@@ -1,11 +1,19 @@
 a.previous:before {
-  content: "◂ ";
+  content: "< ";
 }
 
 a.next:after {
-  content: " ▸";
+  content: " >";
 }
 
 .pagination a {
   padding: 10px;
+}
+
+.pagination a.disabled {
+  color: gray;
+}
+
+.pagination a.disabled:hover {
+  text-decoration: none;
 }
