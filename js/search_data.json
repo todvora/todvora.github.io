@@ -6,8 +6,8 @@ layout: null
 {
 "title": "{{ post.title | xml_escape }}",
 "url": "{{ post.url | xml_escape }}",
-"content" : "{{ post.content | strip_html | strip_newlines | remove:'"' | remove:"\"  }}",
-"excerpt" : "{{ post.excerpt | strip_html | strip_newlines | remove:'"' | remove:"\"  }}",
+"content" : "{{ post.content | jsonify | strip_html | strip_newlines | xml_escape | remove:'"' | remove:"\" | escape  }}",
+"excerpt" : "{{ post.excerpt | strip_html | strip_newlines | xml_escape | remove:'"' | remove:"\" | escape  }}",
 "date": "{{post.date | date: "%b %-d, %Y"}}",
 "tags": "{{post.tags | join:', ' | remove:'"' }}"
 }

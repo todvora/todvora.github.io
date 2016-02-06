@@ -10,13 +10,13 @@ twitter_username: tdvorak
 github_username:  todvora
 
 # Build settings
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
+kramdown:
+  input: GFM
 
 # Outputting
 paginate: 10
-permalink: "/posts/:title"
+permalink: "/posts/:title/"
 
 sass:
     style: compressed
@@ -24,6 +24,7 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-coffeescript
 
 exclude:
   - [vendor]

@@ -17,3 +17,11 @@ a.next:after {
 .pagination a.disabled:hover {
   text-decoration: none;
 }
+
+.pagination a.disabled {
+  color: gray;
+}
+
+.pagination a.disabled:hover {
+  text-decoration: none;
+}

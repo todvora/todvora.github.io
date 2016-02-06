@@ -24,9 +24,11 @@ technical documentation to software products.
 
 ## Installation
 [Gitbook-tester](https://github.com/todvora/gitbook-tester) is provided as a npm module. Simply call:
+
 ```sh
 npm install gitbook-tester --save-dev
 ```
+
 to add it to your project and save in ```package.json``` [devDependencies](https://docs.npmjs.com/files/package.json#devdependencies). Gitbook toolchain is installed automatically as a NPM dependency.
 
 ## Basic usage
@@ -67,7 +69,7 @@ Lets say you wrote your first Gitbook plugin. Maybe you want to wrap every image
  To test that, you need to attach some image to a book, make your plugin available
  and build the book using Gitbook. Complete test could look like:
 
- ```js
+```js
 var tester = require('gitbook-tester');
 var assert = require('assert');
 
@@ -78,11 +80,11 @@ describe('gitbook-plugin-image-captions', function() {
       .withLocalPlugin(__dirname)
       .create()
       .then(function(results) {
-        assert.equal(results[0].content, '<figure><img src="foo.jpg" alt="bar"><figcaption>Figure: bar</figcaption></figure>');
+        assert.equal(results[0].content, '&lt;figure&gt;&lt;img src=&quot;foo.jpg&quot; alt=&quot;bar&quot;&gt;&lt;figcaption&gt;Figure: bar&lt;/figcaption&gt;&lt;/figure&gt;');
       });
   });
 });
- ```
+```
 
 ```Describe``` and ```it``` functions come from Mocha, Jasmine or any other
 test framework you like. The real gitbook-tester work starts with ```tester.builder()```. Then you can configure your test book. We are adding some content by calling:
@@ -92,6 +94,7 @@ test framework you like. The real gitbook-tester work starts with ```tester.buil
 ```
 
 Then we need to provide our local plugin and make it available to gitbook:
+
 ```js
 .withLocalPlugin(__dirname)
 ```
@@ -110,9 +113,11 @@ Last step in our call chain is usual promise function ```then```.
 ## Adapting book.json content
 Your plugin has probably some configuration, that should be noted in ```book.json```.
 Simply add to the build chain following call:
+
 ```js
 .withBookJson(jsonObject)
 ```
+
 where ```jsonObject``` is a standard javascript object like:
 
 ```json

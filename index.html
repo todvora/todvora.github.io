@@ -30,7 +30,7 @@ layout: default
     {% if paginator.previous_page %}
         <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
     {% else %}
-          <a class="previous disabled">Previous</a>
+          <a class="previous disabled" data-proofer-ignore>Previous</a>
     {% endif %}
         <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}

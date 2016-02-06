@@ -31,7 +31,7 @@ My tests use the [Mockito framework](http://mockito.org/). I love Mockito. Simpl
 Mockito.verify(myActionMock, Mockito.times(3)).invoke();
 ```
 
-It means: the method ```invoke()``` should be called exactly 3 times on my mock/object ```myActionMock```. To achieve this, Mockito records every interaction with the mocked object. 
+It means: the method ```invoke()``` should be called exactly 3 times on my mock/object ```myActionMock```. To achieve this, Mockito records every interaction with the mocked object.
 
 But there shouln't be 2.5M of invocation records constantly stored in my memory. They are not released properly and the GC cannot throw them away. The count of invocations says, that they are heavily used. In this moment I had to go through my tests and find something suspicious. Something, that is able to survive through all the test runs. Something ... static!
 
@@ -57,7 +57,7 @@ public void tearDown() throws Exception {
 }
 ```
 
-And bingo! The tests are not failing anymore, memory usage is back to normal, the CPU is relaxing. 
+And bingo! The tests are not failing anymore, memory usage is back to normal, the CPU is relaxing.
 
 ![Memory consumption, tests OK](/images/oom/graph_ok.png)
 

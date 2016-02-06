@@ -9,43 +9,23 @@ tags:
 - metadata
 ---
 
-Icecast je free streamovací audio server, který využívají některá
-internetová rádia. Podíváme se, jak je možné získávat informaci
-o tom, jaký song zrovna hraje a kdo je jeho autorem. Využijeme
-k tomu jednoduchý Python script.
+Icecast je free streamovací audio server, který využívají některá internetová rádia. Podíváme se, jak je možné získávat informaci o tom, jaký song zrovna hraje a kdo je jeho autorem. Využijeme k tomu jednoduchý Python script.
 
+Icecast na sebe prozrazuje informace podle hlaviček HTTP požadavků. Je tedy nutné vyslat požadavek ve správném formátu, na který icecast vrátí informace opět v hlavičkách + audio stream, ze kterého budeme číst text.
 
-<p>Icecast na sebe prozrazuje informace podle hlaviček HTTP požadavků. Je
-tedy nutné vyslat požadavek ve správném formátu, na který icecast vrátí
-informace opět v hlavičkách + audio stream, ze kterého budeme číst
-text.</p>
+V požadavku musíme předat hlavičku **Icy-Metadata** s hodnotou **1**. Na to nám server odpoví tak ,že v hlavičče najdeme číslo, které značí, po kolika bytech streamu se nachází textové informace. Hlavička se jmenuje **icy-metaint**. Pokud tedy otevřeme stream a posuneme se na danou pozici, čeká nás byte, který informuje o tom, jak dlouhá textová informace se ve streamu nachází. Tu vynásobíme 16ti a pokud ze streamu načteme blok v tomto intervalu, získáme kýžená metadata. Byte s délkou metadat běžně bývá 0, v takovém případě se na té pozici metadata nenachází a je nutné počkat na další výskyt.
 
-<p>V požadavku musíme předat hlavičku <strong>Icy-Metadata</strong>
-s hodnotou <strong>1</strong>. Na to nám server odpoví tak ,že
-v hlavičče najdeme číslo, které značí, po kolika bytech streamu se
-nachází textové informace. Hlavička se jmenuje <strong>icy-metaint</strong>.
-Pokud tedy otevřeme stream a posuneme se na danou pozici, čeká nás byte,
-který informuje o tom, jak dlouhá textová informace se ve streamu
-nachází. Tu vynásobíme 16ti a pokud ze streamu načteme blok v tomto
-intervalu, získáme kýžená metadata. Byte s délkou metadat běžně
-bývá 0, v takovém případě se na té pozici metadata nenachází a je
-nutné počkat na další výskyt.</p>
+Metadata vypadají například takto:
 
-<p>Metadata vypadají například takto:</p>
+```
+StreamTitle='Blondie - One Way Or Another';StreamUrl='http://www.bandit.no';
+```
 
-<pre><code>StreamTitle='Blondie - One Way Or Another';StreamUrl='http://www.bandit.no';</code></pre>
+Kde středníkem jsou odděleny jednotlivé informace ve tvaru Klíč=‚hodnota‘.
 
-<p>Kde středníkem jsou odděleny jednotlivé informace ve tvaru
-Klíč=‚hodnota‘.</p>
+Nás zajímá klíč StreamTitle, který nese autora a název písně (zřejmě záleží na typu streamu, je nutné ozkoušet). Proto jej regulárním výrazem vytahneme z metadat a vypíšeme i s časem nalezení. Vypisovat budeme jen pokud se text změní s dalším songem, protože metadata se ve streamu vyskytují v různé hustotě a často se opakují v rámci jednoho songu. Celý script vypadá takto:
 
-<p>Nás zajímá klíč StreamTitle, který nese autora a název písně
-(zřejmě záleží na typu streamu, je nutné ozkoušet). Proto jej
-regulárním výrazem vytahneme z metadat a vypíšeme i s časem
-nalezení. Vypisovat budeme jen pokud se text změní s dalším songem,
-protože metadata se ve streamu vyskytují v různé hustotě a často se
-opakují v rámci jednoho songu. Celý script vypadá takto:</p>
-
-<pre><code># -*- coding: utf-8 -*-
+```py
 import urllib2
 import sys
 import io
@@ -56,24 +36,26 @@ import re
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-req = urllib2.Request(&quot;http://mms-live.online.no:80/p4_bandit&quot;)
-req.add_header(&quot;Icy-Metadata&quot;, 1)
+req = urllib2.Request("http://mms-live.online.no:80/p4_bandit")
+req.add_header("Icy-Metadata", 1)
 stream = urllib2.urlopen(req)
-byteinterval = int(stream.info().get(&quot;icy-metaint&quot;))
-last_text = &quot;&quot;
+byteinterval = int(stream.info().get("icy-metaint"))
+last_text = ""
 while(stream.read(byteinterval)):
     length = ord(stream.read(1)) * 16
     text = stream.read(length)
-    if(length &gt; 0 and text != last_text):
+    if(length > 0 and text != last_text):
         last_text = text
         m = re.search('StreamTitle=\'(.*?)\';', text)
         title = m.group(1)
-        if(len(title.strip()) &gt; 0):
-            print title + &quot; (&quot; + strftime(&quot;%H:%M:%S&quot;, localtime()) + &quot;)&quot;</code></pre>
+        if(len(title.strip()) > 0):
+            print title + " (" + strftime("%H:%M:%S", localtime()) + ")"
+```
 
-<p>a výstupem může být například</p>
+a výstupem může být například
 
-<pre><code>Motorpsycho - Walkin' With J. (11:16:03)
+```
+Motorpsycho - Walkin' With J. (11:16:03)
 The Clash - Lost In The Supermarked (11:16:04)
 Sheryl Crow - Leaving Las Vegas (11:19:56)
 Ash - End Of The World (11:26:36)
@@ -99,7 +81,7 @@ Jeff Beck - I Ain't Superstitious (12:47:59)
 David Bowie - Golden Years (12:52:39)
 Duncan Sheik - Barely Breathing (12:56:39)
 Thin Lizzy - The Boys Are Back In Town (13:00:39)
-Marc Bolan/&amp; T. Rex - Metal Guru (13:07:19)
+Marc Bolan/& T. Rex - Metal Guru (13:07:19)
 Bryan Adams - Summer Of '69 (13:09:58)
 Poison - Unskinny Bop (13:13:08)
 My Chemical Romance - Welcome To The Black Parade (13:17:10)
@@ -107,12 +89,9 @@ Bob Marley - No Woman, No Cry (13:21:49)
 Blues Traveler - Run Around (13:25:50)
 Orson - Ain't No Party (13:31:50)
 Wild Cherry - Play That Funky Music (13:35:09)
-Van Halen - Panama (13:39:50)</code></pre>
+Van Halen - Panama (13:39:50)
+```
 
-<p>Kde je uveden klíč StreamTitle a v závorce čas, ve kterém jsme
-poprvé tato metadata načetli (v podstatě začátek songu).</p>
+Kde je uveden klíč StreamTitle a v závorce čas, ve kterém jsme poprvé tato metadata načetli (v podstatě začátek songu).
 
-<p>Tento postup byl testován na norském rádiu <a
-href="http://www.bandit.no">Bandit</a>, které hraje světový rock a dá se
-poslouchat v podstatě pořád ;)</p>
-
+Tento postup byl testován na norském rádiu [Bandit](http://www.bandit.no), které hraje světový rock a dá se poslouchat v podstatě pořád ;)
