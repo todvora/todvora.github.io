@@ -139,6 +139,12 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
+.site-footer .generated {
+  font-size:80%;
+  text-align:right;
+  color:$grey-color;
+}
+
 @include media-query($on-laptop) {
     .footer-col-1,
     .footer-col-2 {
