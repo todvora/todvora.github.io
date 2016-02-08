@@ -2,7 +2,7 @@
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = 'tdvorak';
-    var disqus_identifier = '{{page.url}}';
+    var disqus_identifier = '{{page.url | append: '@' | remove_first:'/@'}}';
     
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
