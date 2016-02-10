@@ -64,15 +64,17 @@ permalink: /about/
 - Spanish (Elementary proficiency)
 
 ### Projects
+- [Gitbook plugin: Image Captions](https://github.com/todvora/gitbook-plugin-image-captions)
 - [Wicket Lambdamodel](https://github.com/todvora/wicket-lambdamodel)
 - [Database of Stolen Cars](http://www.odcizena-vozidla.cz/)
 - [Apache Velocity templates validator](https://github.com/todvora/velocity-validator)
 - [Unofficial API](http://www.policeapi.cz/) to the official CZ police database of stolen vehicles
-- [Interactive map of Czechpoints] (https://todvora.github.io/czechpoints/) (network of assisted public administration centres):
+- [Interactive map of Czechpoints](https://todvora.github.io/czechpoints/) (network of assisted public administration centres):
 - [Variety - schema analyzer for MongoDB](https://github.com/variety/variety)
 - And other, listed on my [GitHub Profile](https://github.com/todvora).
 
 ### Certificates
+
 Course|Organisation | Date | Certificate
 --- | --- | --- | ---
 [Principles of Reactive Programming](https://www.coursera.org/course/reactive) | École Polytechnique Fédérale de Lausanne| Jun&nbsp;2015 | [Certificate](/downloads/certificates/coursera_ml_2015.pdf)
