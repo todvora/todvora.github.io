@@ -230,5 +230,6 @@ docker run jpa-multitenancy
 - [Class InheritableThreadLocal](https://docs.oracle.com/javase/6/docs/api/java/lang/InheritableThreadLocal.html)
 - [Steve Hostettler - Multi-Tenancy With EJB 3.1 and JPA 2.0](http://www.hostettler.net/blog/2012/11/20/multi-tenancy/)
 - [Github repository of this project](https://github.com/todvora/jpa-multitenancy)
+- [Some interesting articles about JPA/Hibernate Multi-Tenancy](https://gist.github.com/todvora/80e960fbc84730563a5e), forked from [rponte/some_links.md](https://gist.github.com/rponte/0b9f8736103a70390283)
 
 Do you see room for improvement? Have you found a bug? Let me know in comments below or send a pull-request to the [project repository](https://github.com/todvora/jpa-multitenancy). Thanks!
