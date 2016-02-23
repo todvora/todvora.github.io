@@ -7,4 +7,4 @@ SCRIPTPATH=`dirname $SCRIPT`
 
 cd $SCRIPTPATH/..
 rm -rf _site/
-bundle exec jekyll serve "$@"
+bundle exec jekyll serve "$@" --incremental
