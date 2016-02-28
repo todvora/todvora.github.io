@@ -74,7 +74,7 @@ Finišujeme snídani, vyměnili jsme paštiky za marmelády. Ani vegetarián neu
 
 ![Ferrata na Triglav](/images/triglav/ferrata.jpg)
 
-Oblíkáme se do sedáků a cvakáme karabiny k ocelovému lanu a stoupáme. Doháníme skupinku babušek. Jsou z Polska, nebo možná Chorvatska, těžko říct. Z těch pár slov, co zaslechneme, poznáváme jen slovanský jazyk. Čím jsme si ale jisti je, že nemají žádné jištění. V keckách šmajdají vzhůru, šátky na hlavách, drží se zmrzlého lana a jestli se nemodlí, tak by měli. Namrzlá skála dost klouže.
+Oblíkáme se do sedáků a cvakáme karabiny k ocelovému lanu a stoupáme. Doháníme skupinku babušek. Jsou z Polska, nebo možná Chorvatska, těžko říct. Z těch pár slov, co zaslechneme, poznáváme jen slovanský jazyk. Čím jsme si ale jisti je, že nemají žádné jištění. V keckách šmajdají vzhůru, šátky na hlavách, drží se zmrzlého lana a jestli se nemodlí, tak by měly. Namrzlá skála dost klouže.
 
 A najednou šup, je to tu. Vrchol a nepřehlédnutelný Aljažev Stolp - nouzový přístřešek a ochrana před blesky při bouřích.
 
