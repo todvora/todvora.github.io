@@ -1,0 +1,28 @@
+@media print {
+   .site-header, .share-page, #disqus_thread, .hide-print {
+     display: none;
+   }
+   .page-content .wrapper {
+     margin-left: 0;
+   }
+
+   .wrapper {
+     padding: 0;
+   }
+
+   .footer-col {
+     float: none;
+   }
+
+   .footer-col-1, .footer-col-2, .footer-col-3 {
+      width:auto;
+   }
+
+   pre {
+    white-space: pre-wrap;       /* css-3 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
+   }
+}

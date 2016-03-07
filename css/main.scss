@@ -17,7 +17,7 @@ $text-color:       #111;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color:       #3C3B3B;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
@@ -51,5 +51,6 @@ $on-laptop:        1280px;
         "blog",
         "twitter",
         "video",
-        "search"
+        "search",
+        "print"
 ;
