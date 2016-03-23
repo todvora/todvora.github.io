@@ -3,6 +3,14 @@
 {% if site.github %}
 User-agent: *
 Disallow: /
+Allow: /gh-events-widget/
+Allow: /wblg/
+Allow: /extrade/
+Allow: /czechpoints/
+Allow: /ilsb/
+Allow: /properties2xml/
+Allow: /localstorage-backup/
+
 {% else %}
 User-agent: *
 Allow: /
