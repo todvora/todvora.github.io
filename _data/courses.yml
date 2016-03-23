@@ -1,0 +1,41 @@
+- name: Principles of Reactive Programming
+  url: https://www.coursera.org/course/reactive
+  organisation: École Polytechnique Fédérale de Lausanne
+  date: Jun 2015
+  attachment: /downloads/certificates/coursera_ml_2015.pdf
+
+- name: Machine Learning
+  url: https://www.coursera.org/course/ml
+  organisation: Stanford University
+  date: Sep 2014
+  attachment: /downloads/certificates/coursera_ml_2015.pdf
+
+- name: Functional Programming Principles in Scala
+  url: https://www.coursera.org/course/progfun
+  organisation: École Polytechnique Fédérale de Lausanne
+  date: Jul 2014
+  attachment: /downloads/certificates/coursera_progfun_2015.pdf
+
+- name: R programming
+  url: https://www.coursera.org/course/rprog
+  organisation: Johns Hopkins University
+  date: May 2014
+  attachment: /downloads/certificates/coursera_rprog_2014.pdf
+
+- name: Cryptography I
+  url: https://www.coursera.org/course/crypto
+  organisation:  Stanford University
+  date: Mar 2014
+  attachment: /downloads/certificates/coursera_crypto_2014.pdf
+
+- name: MongoDB for DBAs
+  url: https://university.mongodb.com/courses/M102/about
+  organisation:  10gen
+  date: Jan 2014
+  attachment: /downloads/certificates/m102_mongodb_for_dbas.pdf
+
+- name: MongoDB for Java developers
+  url: https://university.mongodb.com/courses/M101J/about
+  organisation:  10gen
+  date: Dec 2013
+  attachment: /downloads/certificates/m101j_mongodb_for_java_developers.pdf

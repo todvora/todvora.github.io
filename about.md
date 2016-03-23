@@ -27,24 +27,16 @@ permalink: /about/
     Main technologies: Java EE, JBoss, Hibernate, WebServices, JUnit+Mockito, Oracle DB
 
 - **August 2008 – February 2014 (5 years 7 months): Freelance software/web developer**
-
     Open source projects, non profit project [odcizena-vozidla.cz](http://www.odcizena-vozidla.cz), web presentations for customers, data mining
-
     Webapp security audits (SQL injection and XSS vulnerabilities, unauthorized access)
-
     Main technologies: Java, PHP, Node.js, Python, Javascript, Bash, MongoDB
 
 
 - **September 2008 – July 2013 (4 years 11 months): Software development manager, Java developer     IVITERA a.s.**, Czech Republic.
-
     Responsible for development, long term maintenance and enhancement of Java based web portals. For example [educity.cz](http://www.educity.cz), [hrnews.cz](http://www.hrnews.cz), [selflearning.cz](http://www.selflearning.cz), [jobcity.cz](http://www.jobcity.cz) and many other
-
     Providing datasets and customized web applications for large companies mostly in telco, IT, financial and energo sectors
-
     Website traffic analysis tool development - tens of millions of records every year, realtime data, Wicket frontend, MongoDB storage
-
     Large set of tests, tools and Continuous Integration utilities for quality assurance (Teamcity, JUnit, Nagios, Git)
-
     Main backend technologies: Java, Groovy, Wicket, GWT, Webservices, NoSQL DB, Python, Apache, Tomcat
     Frontend technologies: JavaScript, Bootstrap, Mustache, Velocity
 
@@ -73,18 +65,11 @@ permalink: /about/
 - [Variety - schema analyzer for MongoDB](https://github.com/variety/variety)
 - And other, listed on my [GitHub Profile](https://github.com/todvora).
 
-### Certificates
-
-Course|Organisation | Date | Certificate
---- | --- | --- | ---
-[Principles of Reactive Programming](https://www.coursera.org/course/reactive) | École Polytechnique Fédérale de Lausanne| Jun&nbsp;2015 | [Certificate](/downloads/certificates/coursera_ml_2015.pdf)
-[Machine Learning](https://www.coursera.org/course/ml) | Stanford University, Coursera | Sep&nbsp;2014 | [Certificate](/downloads/certificates/coursera_ml_2015.pdf)
-[Functional Programming Principles in Scala](https://www.coursera.org/course/progfun) | École Polytechnique Fédérale de Lausanne, Coursera | Jul&nbsp;2014 | [Certificate](/downloads/certificates/coursera_progfun_2015.pdf)
-[R programming](https://www.coursera.org/course/rprog) | Johns Hopkins University, Coursera | May&nbsp;2014 | [Certificate](/downloads/certificates/coursera_rprog_2014.pdf)
-[Cryptography I](https://www.coursera.org/course/crypto) | Stanford University, Coursera | Mar&nbsp;2014 |  [Certificate](/downloads/certificates/coursera_crypto_2014.pdf)
-[MongoDB for DBAs](https://university.mongodb.com/courses/M102/about) | 10gen | Jan&nbsp;2014 | [Certificate](/downloads/certificates/m102_mongodb_for_dbas.pdf)
-[MongoDB for Java developers](https://university.mongodb.com/courses/M101J/about) | 10gen | Dec&nbsp;2013 | [Certificate](/downloads/certificates/m101j_mongodb_for_java_developers.pdf)
-
-
+### Courses
+<ul>
+{% for item in site.data.courses %}
+  <li><a href="{{ item.url }}">{{ item.name }}</a> by {{ item.organisation }}, {{ item.date }} [<a href="{{ item.attachment }}">view certificate</a>]</li>
+{% endfor %}
+</ul>
 
 For up to date information, skills, recommendations, projects and experience please visit also my [LinkedIn](https://www.linkedin.com/in/dvoraktomas) and [GitHub](https://github.com/todvora) profiles.
