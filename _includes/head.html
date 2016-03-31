@@ -11,5 +11,11 @@
     {% if site.github %}
         <meta name="robots" content="noindex, nofollow">
     {% endif %}
+    {% if paginator.previous_page %}
+      <link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
+    {% if paginator.next_page %}
+      <link rel="next" href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}">
+    {% endif %}
     {% include opengraph-meta.html %}
 </head>
