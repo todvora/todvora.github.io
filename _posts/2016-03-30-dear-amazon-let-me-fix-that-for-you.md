@@ -11,6 +11,10 @@ image: /images/kindle/kindle-logo.jpg
 
 I know that company of your size and specialization could have problems to find an employee to fix your [Send to Kindle extension](https://addons.mozilla.org/en-US/firefox/addon/sendtokindle/) for Firefox. So I took the burden from you and here is a small wrap-up.
 
+
+**Update 14. April 2016**: Amazon fixed the extension in version 1.0.2.76 and it should work. Details at the end of this article.
+
+
 As a new owner of Kindle Paperwhite, I would like to send web articles to my new Kindle. But those official extensions are broken.
 
 Quick search through [the reviews](https://addons.mozilla.org/en-US/firefox/addon/sendtokindle/reviews/) shows this:
@@ -111,4 +115,14 @@ Feel free to copy, paste, modify, execute and share this snippet ([WTFPL licence
 
 **Seriously Amazon, was it so hard ?!**
 
-PS: I really [tried to contact you](/downloads/amazon.pdf) (twice) before writing this post. Unfortunately without any answer. 
+PS: I really [tried to contact you](/downloads/amazon.pdf) (twice) before writing this post. Unfortunately without any answer.
+
+## Update 14. April 2016
+After two weeks of my blogpost Amazon released new version of the Send-to-Kindle extension. It has fixed this bug on the same line as I&nbsp;recommended to fix. They even found a nicer solution. Kudos to them!
+
+```diff
+- return Services.wm.getMostRecentWindow("navigator:browser").XMLHttpRequest();
++ return new (Services.wm.getMostRecentWindow("navigator:browser")).XMLHttpRequest();
+```
+
+The complete diff between old version 1.0.2.75 and new 1.0.2.76 is [available here](https://gist.github.com/todvora/b3afde0470b7be93e596c8a0be7af929). As you can see, there isn't much changed :-)
