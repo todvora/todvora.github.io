@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "12 důvodů, proč žít v Rakousku"
-date:   2016-04-05 04:34:01
+date:   2016-04-15 13:00:00
 tags:
   - Rakousko
 image: /images/rakousko/flag.png
@@ -42,7 +42,7 @@ Jednou tu někdo vykradl sklep, vzpomínají místní. Na detaily si nepamatují
 Totéž platí i pro ČR, ale považuji to za důležité zmínit. Velká letiště jsou kousek. To salzburské mám za rohem, na mnichovské musím hodinu a půl vlakem. Noční vlaky jezdí do Říma, Benátek, Berlína, Varšavy, Zürichu... Autem je člověk za pár hodin u moře.
 
 ![Salzburské letiště](/images/rakousko/flughafen.jpeg)
-(Plane potting v Salzburgu)
+(Plane spotting v Salzburgu)
 
 ## Bezproblémové úřady
 Jasně, papírování je hodně, zřejmě ještě pozůstatek z Rakousko-Uherska. Ale na úřadech jsou milí, všechno funguje spolehlivě a člověk nemá dojem, že je totálně v moci úředníka a že musí skákat, jak se píská.
