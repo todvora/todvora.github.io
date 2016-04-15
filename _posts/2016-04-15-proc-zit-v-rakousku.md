@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "12 důvodů, proč žít v Rakousku"
-date:   2016-04-15 13:00:00
+date:   2016-04-15 12:00:00
 tags:
   - Rakousko
 image: /images/rakousko/flag.png
