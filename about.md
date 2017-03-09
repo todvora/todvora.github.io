@@ -12,18 +12,12 @@ permalink: /about/
 - GitHub: [github.com/todvora](https://github.com/todvora)
 - LinkedIn: [www.linkedin.com/in/dvoraktomas](https://www.linkedin.com/in/dvoraktomas)
 
-### Education
-- 2009–2011 : **University of West Bohemia in Pilsen**, The Faculty of Applied Sciences
-  Master study, Computer Science - Software Engineering
-  (Completed only first two semesters, then terminated because of work reasons)
-- 2005–2009 : **University of West Bohemia in Pilsen**, The Faculty of Applied Sciences
-  Computer Science and Engineering - Bachelor study - Information Technologies
-- 2001–2005 : **Gymnasium Cheb**,
-  Graduation: Math, IT, English, Czech language
-
 ### Experience
+- **January 2017 - Present: Software Developer, SYMPTOMA GmbH**, Austria.
+    Healthcare startup, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
 
-- **March 2014 - Present: Software Developer, Skidata A.G.**, Austria
+- **March 2014 - December 2016: Software Developer, Skidata A.G.**, Austria.
+    Working on a communication platform and set of webservices providing communication between different ski systems.
     Main technologies: Java EE, JBoss, Hibernate, WebServices, JUnit+Mockito, Oracle DB
 
 - **August 2008 – February 2014 (5 years 7 months): Freelance software/web developer**
@@ -49,6 +43,15 @@ permalink: /about/
 - **March 2007 –  March 2008 (1 year): Java Developer, YoungBrains s.r.o.**, Czech Republic,
     Developer of portal for real estate companies, JEE and postgreSQL, designer of the object model, backend implementations.
 
+### Education
+- 2009–2011 : **University of West Bohemia in Pilsen**, The Faculty of Applied Sciences
+  Master study, Computer Science - Software Engineering
+  (Completed only first two semesters, then terminated because of work reasons)
+- 2005–2009 : **University of West Bohemia in Pilsen**, The Faculty of Applied Sciences
+  Computer Science and Engineering - Bachelor study - Information Technologies
+- 2001–2005 : **Gymnasium Cheb**,
+  Graduation: Math, IT, English, Czech language
+
 ### Languages
 - Czech (Native)
 - English (Professional working proficiency)
@@ -56,6 +59,7 @@ permalink: /about/
 - Spanish (Elementary proficiency)
 
 ### Projects
+- [Java client for electronic Registration of Sales in CZ](https://github.com/todvora/eet-client)
 - [Gitbook plugin: Image Captions](https://github.com/todvora/gitbook-plugin-image-captions)
 - [Wicket Lambdamodel](https://github.com/todvora/wicket-lambdamodel)
 - [Database of Stolen Cars](http://www.odcizena-vozidla.cz/)
