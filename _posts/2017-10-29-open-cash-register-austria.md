@@ -98,7 +98,7 @@ Data are stored locally, signed by the smart card, you can configure location fo
 
 QRK supports Linux, Windows and Mac, so you can run it on almost anything, even your laptop if you serve only small amount of customers. Automatic updates are available, for Ubuntu as a [PPA repository](http://www.ckvsoft.at/knowledgebase/installation-linux/). Interesting experiment could be to run it on a Raspberry Pi with a touch screen attached.
 
-This is the most important piece of puzzle. You could still connect your computer to the internet and use any of the web-based solutions, with remote signing and cloud storage. But the QRK cash-desk saves you money and preserves your privacy. And if you need, you can pay a programmer to write an extension or change parts of the system. It's open source, so you can have it fully under your control.
+This is the most important piece of puzzle. You could still connect your computer to the internet and use any of the web-based solutions, with remote signing and cloud storage. But the QRK cash register saves you money and preserves your privacy. And if you need, you can pay a programmer to write an extension or change parts of the system. It's open source, so you can have it fully under your control.
 
 Your data is stored locally, so you have to take care of backups. And you can run it on an encrypted hard drive, which adds another layer of security.  
 
@@ -137,4 +137,4 @@ You are now responsible for updates and backups, but you have it all under your 
 The QRK software is open source and their authors are not paid from licenses or fees. So if you decide to use it, consider also sending them [a reasonable donation](http://www.ckvsoft.at/unterstuetzen-sie-die-qrk-entwickler/). Especially, if you see how much troubles and money they save you.  
 
 ### Disclaimer:
-I am not anyhow related to any of mentioned products, companies and software solutions. But feel free to ask me anything on this topic and please do support open solutions by using it, by donations, by writing and telling people that there are better ways how to deal with a typically business domain as cash desks are.
+I am not anyhow related to any of mentioned products, companies and software solutions. But feel free to ask me anything on this topic and please do support open solutions by using it, by donations, by writing and telling people that there are better ways how to deal with a typically business domain as cash registers are.
