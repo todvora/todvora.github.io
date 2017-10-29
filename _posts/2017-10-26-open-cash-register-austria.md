@@ -32,7 +32,7 @@ Additionally, all the simple tablet solutions do always require internet connect
 You can check some prices on [registrierkassen-test.info](http://registrierkassen-test.info/gesamtliste-registrierkassen/). They are usually somewhere between 20 and 50€ / month. You can find several for 5€ or 9€, sometimes with an "activation fee" of 100€ or such. This all means at least 100-500€ payment yearly.
 
 ### Cloud solution: free (almost)
-But what about those free of charge solutions in the list, like [Kassa24](www.kassa24.at/) or [helloCash](https://hellocash.at)? What's wrong with them? Usually, **when you are not paying, you are not customer - you are the product.** So expect their advertising on your receipts, expect offerings to upgrade to a paid plan, count with very limited support. Kassa24, for example, promises availability of 99,5% on their free plan. This corresponds to a daily outage of 7m 12s, weekly 50m 24s, monthly 3h 39min.
+But what about those free of charge solutions in the list, like [Kassa24](http://www.kassa24.at/) or [helloCash](https://hellocash.at)? What's wrong with them? Usually, **when you are not paying, you are not customer - you are the product.** So expect their advertising on your receipts, expect offerings to upgrade to a paid plan, count with very limited support. Kassa24, for example, promises availability of 99,5% on their free plan. This corresponds to a daily outage of 7m 12s, weekly 50m 24s, monthly 3h 39min.
 
 And there can be some additional, hidden costs as well. HelloCash states that the price is without a required certificate in price of 30€ / year (wait, what's that?!).
 
