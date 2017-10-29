@@ -5,7 +5,7 @@ email: todvora@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Software Developer (Java, Node.js, MongoDB, security), who loves travelling and sports (ski, bike, via ferrata). Also vegan and passionate reader. Currently living in Austria and enjoying the mountains.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.tomas-dvorak.cz" # the base hostname & protocol for your site
+url: "https://www.tomas-dvorak.cz" # the base hostname & protocol for your site
 
 timezone: Europe/Vienna
 future: true
