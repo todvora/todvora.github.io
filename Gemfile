@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'github-pages', '>=44'
+gem 'github-pages', '>=166'
 gem 'jekyll-paginate'
 gem 'jekyll-coffeescript'
 gem 'thor'
