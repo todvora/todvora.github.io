@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Open solution for cash registers in Austria"
-date:   2017-10-26 08:00:00
+date:   2017-10-29 08:00:00
 tags:
   - opensource
   - linux
