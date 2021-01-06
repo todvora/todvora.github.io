@@ -13,15 +13,15 @@ permalink: /about/
 - LinkedIn: [www.linkedin.com/in/dvoraktomas](https://www.linkedin.com/in/dvoraktomas)
 
 ### Experience
-- **January 2017 - Present: Software Developer, SYMPTOMA GmbH**, Austria.
-    Healthcare startup, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
+- **January 2017 - April 2020: Software Developer, SYMPTOMA GmbH**, Austria.
+    Healthcare startup, Elasticsearch core of the system, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
 
 - **March 2014 - December 2016: Software Developer, Skidata A.G.**, Austria.
-    Working on a communication platform and set of webservices providing communication between different ski systems.
+    Working on a communication platform and set of webservices for data interchange between different skiing-resort systems.
     Main technologies: Java EE, JBoss, Hibernate, WebServices, JUnit+Mockito, Oracle DB
 
 - **August 2008 – February 2014 (5 years 7 months): Freelance software/web developer**
-    Open source projects, non profit project [odcizena-vozidla.cz](http://www.odcizena-vozidla.cz), web presentations for customers, data mining
+    Open source projects, web presentations for customers, data mining
     Webapp security audits (SQL injection and XSS vulnerabilities, unauthorized access)
     Main technologies: Java, PHP, Node.js, Python, Javascript, Bash, MongoDB
 
@@ -34,15 +34,6 @@ permalink: /about/
     Main backend technologies: Java, Groovy, Wicket, GWT, Webservices, NoSQL DB, Python, Apache, Tomcat
     Frontend technologies: JavaScript, Bootstrap, Mustache, Velocity
 
-
-- **May 2008 – April 2010 (2 years): Elektro Euron s.r.o.**, Czech Republic
-    Management of ICT Infrastructure, administering Windows SBS 2003, Debian, management and maintenance of workstations, Helios IS administration, network monitoring
-
-- **November 2007 – April 2008 (6 months): PHP programmer, Netspring s.r.o.**, Czech Republic, CMS and CRM development and modifications, configuration and administration of MySQL, Smarty template language, communication with customers.
-
-- **March 2007 –  March 2008 (1 year): Java Developer, YoungBrains s.r.o.**, Czech Republic,
-    Developer of portal for real estate companies, JEE and postgreSQL, designer of the object model, backend implementations.
-
 ### Education
 - 2009–2011 : **University of West Bohemia in Pilsen**, The Faculty of Applied Sciences
   Master study, Computer Science - Software Engineering
@@ -54,18 +45,15 @@ permalink: /about/
 
 ### Languages
 - Czech (Native)
-- English (Professional working proficiency)
+- English (Working proficiency)
 - German (Working proficiency)
-- Spanish (Elementary proficiency)
 
 ### Projects
+- [Strava outliers](https://todvora.github.io/outliers/)
+- [Peak datasets comparison (OSM + SBG Opendata)](https://todvora.github.io/gipfel/)
 - [Java client for electronic Registration of Sales in CZ](https://github.com/todvora/eet-client)
 - [Gitbook plugin: Image Captions](https://github.com/todvora/gitbook-plugin-image-captions)
-- [Wicket Lambdamodel](https://github.com/todvora/wicket-lambdamodel)
-- [Database of Stolen Cars](http://www.odcizena-vozidla.cz/)
 - [Apache Velocity templates validator](https://github.com/todvora/velocity-validator)
-- [Unofficial API](http://www.policeapi.cz/) to the official CZ police database of stolen vehicles
-- [Interactive map of Czechpoints](https://todvora.github.io/czechpoints/) (network of assisted public administration centres):
 - [Variety - schema analyzer for MongoDB](https://github.com/variety/variety)
 - And other, listed on my [GitHub Profile](https://github.com/todvora).
 
