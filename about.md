@@ -14,25 +14,22 @@ permalink: /about/
 
 ### Experience
 - **January 2017 - April 2020: Software Developer, SYMPTOMA GmbH**, Austria.
-    Healthcare startup, Elasticsearch core of the system, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
+    [Healthcare startup](https://www.symptoma.com/), Elasticsearch core of the system, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Elasticsearch, Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
 
 - **March 2014 - December 2016: Software Developer, Skidata A.G.**, Austria.
     Working on a communication platform and set of webservices for data interchange between different skiing-resort systems.
     Main technologies: Java EE, JBoss, Hibernate, WebServices, JUnit+Mockito, Oracle DB
 
-- **August 2008 – February 2014 (5 years 7 months): Freelance software/web developer**
+- **August 2008 – February 2014: Freelance software/web developer**
     Open source projects, web presentations for customers, data mining
     Webapp security audits (SQL injection and XSS vulnerabilities, unauthorized access)
     Main technologies: Java, PHP, Node.js, Python, Javascript, Bash, MongoDB
 
 
-- **September 2008 – July 2013 (4 years 11 months): Software development manager, Java developer     IVITERA a.s.**, Czech Republic.
-    Responsible for development, long term maintenance and enhancement of Java based web portals. For example [educity.cz](http://www.educity.cz), [hrnews.cz](http://www.hrnews.cz), [selflearning.cz](http://www.selflearning.cz), [jobcity.cz](http://www.jobcity.cz) and many other
-    Providing datasets and customized web applications for large companies mostly in telco, IT, financial and energo sectors
-    Website traffic analysis tool development - tens of millions of records every year, realtime data, Wicket frontend, MongoDB storage
+- **September 2008 – July 2013: Software development manager, Java developer     IVITERA a.s.**, Czech Republic.
+    Responsible for development, long term maintenance and enhancement of Java based web portals [educity.cz](http://www.educity.cz), [hrnews.cz](http://www.hrnews.cz), [selflearning.cz](http://www.selflearning.cz), [jobcity.cz](http://www.jobcity.cz) and many other.
+    Providing datasets and customized web applications for large companies mostly in telco, IT, financial and energo sectors.
     Large set of tests, tools and Continuous Integration utilities for quality assurance (Teamcity, JUnit, Nagios, Git)
-    Main backend technologies: Java, Groovy, Wicket, GWT, Webservices, NoSQL DB, Python, Apache, Tomcat
-    Frontend technologies: JavaScript, Bootstrap, Mustache, Velocity
 
 ### Education
 - 2009–2011 : **University of West Bohemia in Pilsen**, The Faculty of Applied Sciences
