@@ -14,7 +14,7 @@ permalink: /about/
 
 ### Experience
 - **January 2017 - April 2020: Software Developer, SYMPTOMA GmbH**, Austria.
-    [Healthcare startup](https://www.symptoma.com/), Elasticsearch core of the system, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Elasticsearch, Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
+    [Healthcare startup](https://www.symptoma.com/), Responsible mainly for the search architecture and processes based on Elasticsearch, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Elasticsearch, Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
 
 - **March 2014 - December 2016: Software Developer, Skidata A.G.**, Austria.
     Working on a communication platform and set of webservices for data interchange between different skiing-resort systems.
@@ -46,11 +46,11 @@ permalink: /about/
 - German (Working proficiency)
 
 ### Projects
-- [Strava outliers](https://todvora.github.io/outliers/)
+- [Strava outliers, Tool for fixing GPX tracks]: (https://todvora.github.io/outliers/)
 - [Peak datasets comparison (OSM + SBG Opendata)](https://todvora.github.io/gipfel/)
+- [Austrian E-Card reader](https://github.com/todvora/ecard-reader)
 - [Java client for electronic Registration of Sales in CZ](https://github.com/todvora/eet-client)
 - [Gitbook plugin: Image Captions](https://github.com/todvora/gitbook-plugin-image-captions)
-- [Apache Velocity templates validator](https://github.com/todvora/velocity-validator)
 - [Variety - schema analyzer for MongoDB](https://github.com/variety/variety)
 - And other, listed on my [GitHub Profile](https://github.com/todvora).
 
