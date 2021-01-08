@@ -46,7 +46,7 @@ permalink: /about/
 - German (Working proficiency)
 
 ### Projects
-- [Strava outliers, Tool for fixing GPX tracks]: (https://todvora.github.io/outliers/)
+- [Strava outliers, Tool for fixing GPX tracks](https://todvora.github.io/outliers/)
 - [Peak datasets comparison (OSM + SBG Opendata)](https://todvora.github.io/gipfel/)
 - [Austrian E-Card reader](https://github.com/todvora/ecard-reader)
 - [Java client for electronic Registration of Sales in CZ](https://github.com/todvora/eet-client)
