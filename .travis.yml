@@ -6,16 +6,3 @@ script: ./bin/test.sh
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: Mgk+i5xX9TEOaL70G2ftqgip9shbKJvg9bLsk9qY/LQjgxlzEMoFQD2+xgQJBQxwK92GQrBrPYUI816Xva5lq4w0RemybdYf4DMFciEpHFWGEFviP2O4v2pcbh6zdbpZHGaizaTkZuzipmSSO+ug55Sor9gPH+UrR1RyLjYAzzI=
-  - secure: H3CxyEUV2Spm/g9EKByGK1Qmk4em1zp0RURV2KbNEw6zl4eMfBAaFSeCckljcmT4PB8HJPdce04gCLlF241j0jt/EgYmakq/vLeGF9JROty+4rEf4GrNdf5go6SY7Vj6SrUI9iPZtKccRqnehFIzY7XZ5aXTLWGC4WrDsRXvIJM=
-  - secure: H44TebmiWD0isV+iwNUvzw9TTbaCRTaeC5tDgRlOTC53Wzesr+7eVQZYdP0KdXNMZaPW5v+9MO4ofVJcyikyixjHnlMsr+3mkf/s88bmM7l4tfJNWgY3QfIQXCIOrhx4lznR4i7bQZydNag+dedkqJOD5UEN75PAD0fYFbS+w9g=
-  - secure: K4P09CFdoyFEb1R/WyBeUc75fEThaEOFLCLMCg38/daxPMwo+E9Y94vNM+uIDSMw3edBNBCtnk9IOra/wB1N5jdajhzjnomoYPCPHiAANNH5qoweFRm2YXI8PVpmzL7UUjr190YvaM1CK6jPozHg5PcLIVmW9gd6igK4kqdEkJI=
-  - secure: njECMQYZrJNLbfXUwWCTjlWlYfmfkOOGDd5oYXcXfUJVHx0DbnaOF39D+5mjTAhzfxjUBQ/6p7R6Hiy1ddM0e3kJF01NxKxbp/4gl4LY6/+9GddvOk5FROC7y2D1rhlV4PtT4mhwbCZlMq8lYDuZAisU/xAXUCwPHU5q4Bi36N4=
-before_install:
-- openssl aes-256-cbc -K $encrypted_0a6c23fdb027_key -iv $encrypted_0a6c23fdb027_iv
-  -in deploy_key.enc -out deploy_key -d
-- chmod 600 deploy_key
-- mv deploy_key ~/.ssh/id_rsa
-after_success:
-- echo -e "Host ${SSH_NO_HOST_CHECKING}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
-- rsync -avW -v -e "ssh -p ${SSH_PORT}" --delete-before --exclude lbks --exclude .htaccess _site/ ${SSH_USER}@${SSH_HOST}:${SSH_TARGET_DIR}/
