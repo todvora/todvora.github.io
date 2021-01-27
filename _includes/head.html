@@ -8,9 +8,6 @@
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    {% if site.github %}
-        <meta name="robots" content="noindex, nofollow">
-    {% endif %}
     {% if paginator.previous_page %}
       <link rel="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
