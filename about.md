@@ -14,10 +14,10 @@ permalink: /about/
 
 ### Hire me if you need
 
-- Java backend developer with over 12 years of coding, knowing every aspect of the java ecosystem 
-- Integrating platforms and tools. E.g. CD from gitlab via ansible of a node/vue.js app using elasticsearch via rest api
-- Search! Your own powerful search and analytics platform on elasticsearch, several languages, gigabites of documents
-- Somebody who will force you into clean code, continues integration, tests, automation
+- **Java backend developer** with over 12 years of coding, knowing every aspect of the java ecosystem 
+- **Integrating platforms** and tools. E.g. CD from gitlab via ansible of a node/vue.js app using elasticsearch via rest api
+- Search! Your own powerful search and analytics platform on **elasticsearch**, several languages, gigabites of documents
+- Somebody who will force you into **clean code**, continues integration, tests, automation
 
 ### Experience
 - **January 2017 - April 2020: Software Developer, SYMPTOMA GmbH**, Austria.
