@@ -6,17 +6,20 @@ permalink: /about/
 
 ## Tomas Dvorak
 
-### Contact
+👨‍💻 Software developer  
+🌍 Salzburg, Austria
+
+### Contacts
 - E-mail: [todvora@gmail.com](mailto:todvora@gmail.com)
 - Web: [www.tomas-dvorak.cz](http://www.tomas-dvorak.cz)
 - GitHub: [github.com/todvora](https://github.com/todvora)
 - LinkedIn: [www.linkedin.com/in/dvoraktomas](https://www.linkedin.com/in/dvoraktomas)
 
-### Hire me if you need
+### Hire me if you need a
 
 - **Java backend developer** with over 12 years of coding, knowing every aspect of the java ecosystem 
-- **Integrating platforms** and tools. E.g. CD from gitlab via ansible of a node/vue.js app using elasticsearch via spring rest api
-- Search! Your own powerful search and analytics platform on **elasticsearch**, several languages, gigabites of documents
+- **Integrating platforms** and tools. E.g. CD from gitlab via ansible of a node/vue.js app using elasticsearch over spring rest api
+- Search! Your own powerful search and analytics platform on **elasticsearch**, several languages, gigabytes of documents
 - Somebody who will force you into **clean code**, continues integration, tests, automation
 
 ### Experience
@@ -48,9 +51,9 @@ permalink: /about/
   Graduation: Math, IT, English, Czech language
 
 ### Languages
-- Czech (Native)
 - English (Working proficiency)
 - German (Working proficiency)
+- Czech (Native)
 
 ### Projects
 - [Strava outliers, Tool for fixing GPX tracks](https://todvora.github.io/outliers/)
