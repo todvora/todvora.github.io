@@ -10,10 +10,10 @@ permalink: /about/
 🌍 Salzburg, Austria
 
 ### Contacts
-- E-mail: [todvora@gmail.com](mailto:todvora@gmail.com)
-- Web: [www.tomas-dvorak.cz](http://www.tomas-dvorak.cz)
-- GitHub: [github.com/todvora](https://github.com/todvora)
-- LinkedIn: [www.linkedin.com/in/dvoraktomas](https://www.linkedin.com/in/dvoraktomas)
+- [todvora@gmail.com](mailto:todvora@gmail.com)
+- [www.tomas-dvorak.cz](http://www.tomas-dvorak.cz)
+- [github.com/todvora](https://github.com/todvora)
+- [linkedin.com/in/dvoraktomas](https://www.linkedin.com/in/dvoraktomas)
 
 ### Hire me if you need
 
