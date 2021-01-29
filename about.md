@@ -1,6 +1,6 @@
 ---
 layout: without-header
-title: About
+title: Tomas Dvorak 
 permalink: /about/
 ---
 
