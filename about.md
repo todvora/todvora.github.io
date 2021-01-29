@@ -12,9 +12,16 @@ permalink: /about/
 - GitHub: [github.com/todvora](https://github.com/todvora)
 - LinkedIn: [www.linkedin.com/in/dvoraktomas](https://www.linkedin.com/in/dvoraktomas)
 
+### Hire me if you need
+
+- Java backend developer with over 12 years of coding, knowing every aspect of the java ecosystem 
+- Integrating platforms and tools. E.g. CD from gitlab via ansible of a node/vue.js app using elasticsearch via rest api
+- Search! Your own powerful search and analytics platform on elasticsearch, several languages, gigabites of documents
+- Somebody who will force you into clean code, continues integration, tests, automation
+
 ### Experience
 - **January 2017 - April 2020: Software Developer, SYMPTOMA GmbH**, Austria.
-    [Healthcare startup](https://www.symptoma.com/), Responsible mainly for the search architecture and processes based on Elasticsearch, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Elasticsearch, Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
+    [eHealth startup](https://www.symptoma.com/), Responsible mainly for the search architecture and processes based on Elasticsearch, information retrieval, APIs and integrations, continuous integration and delivery, tests, clean code and dirty prototypes. Main technologies: Elasticsearch, Java and Spring, Docker, Gitlab, Vue.js and scripting of all types and flavors.
 
 - **March 2014 - December 2016: Software Developer, Skidata A.G.**, Austria.
     Working on a communication platform and set of webservices for data interchange between different skiing-resort systems.
