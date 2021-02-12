@@ -9,6 +9,8 @@ tags:
 image: /images/mikrohaus_1/pozemek.jpg
 ---
 
+První ze série článků o našem experimentu s tiny-house stavbou v Rakousku. Jde skloubit bikepacking a nákup nemovitosti? 
+
 ### Jako vždycky, to zajímavý se u nás točí kolem kola. 
 
 Když na jaře 2020 skončil první lockdown, na nic jsme nečekali a vyrazili na týden na kolo.
